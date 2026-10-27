@@ -1,0 +1,16 @@
+# Link checking for data/ URLs and Markdown files. Used by .github/workflows/links.yml.
+cache = true
+max_cache_age = "2d"
+max_concurrency = 16
+max_retries = 3
+retry_wait_time = 4
+timeout = 30
+user_agent = "Mozilla/5.0 (compatible; awesome-inference-engineering link checker; +https://github.com/0xmsu/awesome-inference-engineering)"
+# Many publishers block automated requests: treat "forbidden" and "rate limited" as alive and review manually.
+accept = ["200..=299", "403", "429"]
+include_fragments = "none"
+exclude = [
+  "^https://img\\.shields\\.io/",
+  "^https://0xmsu\\.github\\.io/awesome-inference-engineering",
+  "^https://(www\\.)?linkedin\\.com/",
+]

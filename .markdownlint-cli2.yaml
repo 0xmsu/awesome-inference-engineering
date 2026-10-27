@@ -1,0 +1,18 @@
+config:
+  default: true
+  MD013: false # long lines are fine; prose is never hard-wrapped
+  MD024:
+    siblings_only: true
+  MD033:
+    allowed_elements: [sub, details, summary, p, img, br, picture, source]
+  MD041: false # README starts with a generated-file comment
+globs:
+  - "**/*.md"
+ignores:
+  - "node_modules/**"
+  - "**/node_modules/**"
+  - "site/dist/**"
+  - "site/.astro/**"
+  - ".research/**"
+  - "dist/**"
+  - "CODE_OF_CONDUCT.md"

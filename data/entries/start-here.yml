@@ -1,0 +1,99 @@
+# Ordered reading path. Order matters: it is rendered as a numbered list.
+
+- id: inference-engineering-book
+  name: Inference Engineering
+  url: https://www.baseten.co/inference-engineering/
+  description: Free book by Philip Kiely that frames inference engineering as a discipline, from hardware and runtimes to optimization and deployment.
+  section: start-here
+  type: book
+  tags: [llm]
+  pricing: freemium
+  added: 2026-10-27
+
+- id: scaling-book-inference
+  name: How to Scale Your Model — Inference
+  url: https://jax-ml.github.io/scaling-book/inference/
+  description: Derives prefill and decode costs, batching limits, and KV cache memory from first principles, with worked latency estimates.
+  section: start-here
+  type: book
+  tags: [llm, tpu, nvidia]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: transformer-inference-arithmetic
+  name: Transformer Inference Arithmetic
+  url: https://kipp.ly/p/transformer-inference-arithmetic
+  description: Back-of-the-envelope math for FLOPs, weight and KV bytes, and communication during transformer inference.
+  section: start-here
+  type: article
+  tags: [llm]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: llm-inference-handbook
+  name: LLM Inference Handbook
+  url: https://handbook.modular.com/
+  description: Practitioner handbook on inference metrics, optimization techniques, and deployment patterns, originally published by BentoML.
+  section: start-here
+  type: book
+  tags: [llm]
+  added: 2026-10-27
+
+- id: making-dl-go-brrrr
+  name: Making Deep Learning Go Brrrr From First Principles
+  url: https://horace.io/brrr_intro.html
+  description: Explains why a workload is bound by compute, memory bandwidth, or overhead, and what to do about each case.
+  section: start-here
+  type: article
+  added: 2026-10-27
+
+- id: modal-gpu-glossary
+  name: GPU Glossary
+  url: https://modal.com/gpu-glossary
+  description: Hyperlinked reference that explains GPU hardware and CUDA software terms from streaming multiprocessors to PTX.
+  section: start-here
+  type: docs
+  tags: [nvidia]
+  added: 2026-10-27
+
+- id: inside-vllm
+  name: "Inside vLLM: Anatomy of a High-Throughput LLM Inference System"
+  url: https://www.aleksagordic.com/blog/vllm
+  description: Walks through a modern engine end to end, from the scheduler and paged KV cache to prefix caching, speculative decoding, and disaggregation.
+  section: start-here
+  type: article
+  tags: [llm]
+  added: 2026-10-27
+
+- id: efficiently-scaling-transformer-inference
+  name: Efficiently Scaling Transformer Inference
+  url: https://arxiv.org/abs/2211.05102
+  description: Analytical model of latency, memory, and partitioning trade-offs for serving very large transformers.
+  section: start-here
+  type: paper
+  tags: [llm, tpu]
+  paper:
+    venue: MLSys
+    year: 2023
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: defeating-nondeterminism
+  name: Defeating Nondeterminism in LLM Inference
+  url: https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/
+  description: Shows that batch-dependent reduction order, not concurrency, makes outputs vary, and builds batch-invariant kernels to fix it.
+  section: start-here
+  type: article
+  tags: [llm, rl]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: ai-systems-performance-engineering
+  name: AI Systems Performance Engineering
+  url: https://github.com/cfregly/ai-performance-engineering
+  description: Code and labs for Chris Fregly's O'Reilly book on profiling-driven GPU, distributed training, and inference tuning.
+  section: start-here
+  type: book
+  tags: [nvidia, llm]
+  via: [fregly]
+  added: 2026-10-27

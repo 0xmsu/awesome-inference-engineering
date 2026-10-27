@@ -1,0 +1,345 @@
+# Mobile & Embedded Runtimes
+- id: executorch
+  name: ExecuTorch
+  url: https://github.com/pytorch/executorch
+  description: PyTorch's on-device runtime that exports models ahead of time and runs them on phones, wearables, and microcontrollers through pluggable hardware backends.
+  section: edge/mobile
+  type: library
+  tags: [llm, mobile, embedded, cpp, python]
+  license: BSD-3-Clause
+  featured: true
+  added: 2026-10-27
+
+- id: litert-lm
+  name: LiteRT-LM
+  url: https://github.com/google-ai-edge/LiteRT-LM
+  description: LLM orchestration layer on top of LiteRT for Android, iOS, web, desktop, and IoT, with GPU and NPU paths and multi-token prediction for Gemma 4.
+  section: edge/mobile
+  type: library
+  tags: [llm, vlm, mobile, npu, cpp, python]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: litert
+  name: LiteRT
+  url: https://github.com/google-ai-edge/LiteRT
+  description: Runtime that succeeds TensorFlow Lite, converting models and running them on phones and edge devices through CPU, GPU, and NPU accelerators.
+  section: edge/mobile
+  type: library
+  tags: [mobile, embedded, npu, cpp]
+  added: 2026-10-27
+
+- id: mediapipe-llm-inference
+  name: MediaPipe LLM Inference API
+  url: https://developers.google.com/edge/mediapipe/solutions/genai/llm_inference
+  description: MediaPipe task for running LLMs in Android, iOS, and web apps, now marked maintenance-only by Google, which recommends LiteRT-LM for new projects.
+  section: edge/mobile
+  type: library
+  tags: [llm, mobile, browser]
+  repo: google-ai-edge/mediapipe
+  license: Apache-2.0
+  status: maintenance
+  successor: litert-lm
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: mnn
+  name: MNN
+  url: https://github.com/alibaba/MNN
+  description: Lightweight C++ inference engine from Alibaba for mobile and embedded devices, including an LLM module for running chat models on Android and iOS.
+  section: edge/mobile
+  type: library
+  tags: [llm, mobile, embedded, cpp]
+  added: 2026-10-27
+
+- id: mlc-llm
+  name: MLC LLM
+  url: https://github.com/mlc-ai/mlc-llm
+  description: Compiler-based LLM deployment stack built on TVM that targets iOS, Android, desktop GPUs, and browsers from one model definition.
+  section: edge/mobile
+  type: tool
+  tags: [llm, mobile, webgpu, python, cpp]
+  added: 2026-10-27
+
+- id: cactus
+  name: Cactus
+  url: https://github.com/cactus-compute/cactus
+  description: Hybrid edge-and-cloud engine for phones and wearables with its own kernels, quantization, and OpenAI-style APIs; source-available under a revenue-gated license.
+  section: edge/mobile
+  type: library
+  tags: [llm, mobile, cpp]
+  license: source-available
+  added: 2026-10-27
+
+- id: qualcomm-ai-hub
+  name: Qualcomm AI Hub
+  url: https://aihub.qualcomm.com/
+  description: Qualcomm's portal and Workbench for compiling, profiling, and validating models on Snapdragon devices, with a catalog of pre-optimized models.
+  section: edge/mobile
+  type: tool
+  tags: [mobile, qualcomm, npu]
+  added: 2026-10-27
+
+- id: geniex
+  name: GenieX
+  url: https://github.com/qualcomm/GenieX
+  description: Developer-preview runtime for LLMs and VLMs on Snapdragon that dispatches to llama.cpp or Qualcomm AI Engine Direct across NPU, GPU, and CPU; formerly Nexa SDK.
+  section: edge/mobile
+  type: tool
+  tags: [llm, vlm, mobile, qualcomm, npu, python]
+  maturity: experimental
+  verified: 2026-10-27
+  added: 2026-10-27
+
+# Apple Silicon
+- id: mlx
+  name: MLX
+  url: https://github.com/ml-explore/mlx
+  description: Array framework for Apple silicon with NumPy-style Python and C++ APIs, lazy evaluation, and unified memory; the base layer under mlx-lm.
+  section: edge/apple
+  type: library
+  tags: [llm, apple, python, cpp, swift]
+  featured: true
+  added: 2026-10-27
+
+- id: mlx-swift
+  name: MLX Swift
+  url: https://github.com/ml-explore/mlx-swift
+  description: Swift bindings for MLX so iOS and macOS apps can run array computation and neural networks natively on Apple silicon.
+  section: edge/apple
+  type: library
+  tags: [apple, mobile, swift]
+  added: 2026-10-27
+
+- id: mlx-swift-lm
+  name: MLX Swift LM
+  url: https://github.com/ml-explore/mlx-swift-lm
+  description: Swift package that loads and runs LLMs and vision-language models on MLX inside iOS and macOS apps, layered on the MLX Swift bindings.
+  section: edge/apple
+  type: library
+  tags: [llm, vlm, apple, mobile, swift]
+  added: 2026-10-27
+
+- id: coremltools
+  name: Core ML Tools
+  url: https://github.com/apple/coremltools
+  description: Converter from PyTorch and other frameworks to the Core ML format, with quantization, palettization, and pruning tools for shipping models on Apple devices.
+  section: edge/apple
+  type: tool
+  tags: [apple, mobile, python]
+  added: 2026-10-27
+
+- id: apple-foundation-models
+  name: Apple Foundation Models Framework
+  url: https://developer.apple.com/documentation/foundationmodels
+  description: Swift framework that lets apps prompt Apple's on-device language model, with guided generation, tool calling, and streamed responses.
+  section: edge/apple
+  type: docs
+  tags: [llm, apple, mobile, swift]
+  license: proprietary
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: apple-core-ai
+  name: Apple Core AI
+  url: https://developer.apple.com/documentation/coreai
+  description: Apple's WWDC26 beta framework for running LLMs and generative models on-device across CPU, GPU, and Neural Engine; announced as Core ML's successor.
+  section: edge/apple
+  type: docs
+  tags: [llm, apple, mobile, swift]
+  license: proprietary
+  maturity: experimental
+  verified: 2026-10-27
+  added: 2026-10-27
+
+# PCs & NPUs
+- id: windows-ml
+  name: Windows ML
+  url: https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview
+  description: Windows-managed copy of ONNX Runtime that routes models to NPU, GPU, or CPU through execution providers that Windows installs and keeps updated.
+  section: edge/pc-npu
+  type: docs
+  tags: [npu, intel, amd, qualcomm, nvidia, cpp]
+  repo: microsoft/onnxruntime
+  license: proprietary
+  added: 2026-10-27
+
+- id: onnxruntime-qnn-ep
+  name: ONNX Runtime QNN Execution Provider
+  url: https://onnxruntime.ai/docs/execution-providers/QNN-ExecutionProvider.html
+  description: ONNX Runtime provider that offloads models to the Hexagon NPU on Snapdragon through Qualcomm AI Engine Direct, including Windows on Arm laptops.
+  section: edge/pc-npu
+  type: docs
+  tags: [npu, qualcomm, cpp, python]
+  repo: microsoft/onnxruntime
+  license: MIT
+  added: 2026-10-27
+
+- id: ryzen-ai-software
+  name: AMD Ryzen AI Software
+  url: https://ryzenai.docs.amd.com/en/latest/
+  description: AMD's stack for running ONNX and LLM workloads on Ryzen AI PCs, using the XDNA NPU and integrated GPU through ONNX Runtime and the Quark quantizer.
+  section: edge/pc-npu
+  type: docs
+  tags: [llm, amd, npu, python, cpp]
+  repo: amd/RyzenAI-SW
+  license: MIT
+  added: 2026-10-27
+
+- id: openvino-npu
+  name: OpenVINO NPU Plugin
+  url: https://docs.openvino.ai/2026/openvino-workflow/running-inference/inference-devices-and-modes/npu-device.html
+  description: OpenVINO documentation for its NPU plugin, covering drivers, the model compiler, and model caching for running inference on Intel neural processors.
+  section: edge/pc-npu
+  type: docs
+  tags: [intel, npu, cpp, python]
+  repo: openvinotoolkit/openvino
+  license: Apache-2.0
+  added: 2026-10-27
+
+- id: qualcomm-ai-engine-direct
+  name: Qualcomm AI Engine Direct SDK
+  url: https://www.qualcomm.com/developer/software/qualcomm-ai-engine-direct-sdk
+  description: Qualcomm's low-level runtime API for the Hexagon NPU, Adreno GPU, and Kryo CPU, which Genie and ONNX Runtime's QNN provider build on; also called QAIRT.
+  section: edge/pc-npu
+  type: library
+  tags: [qualcomm, npu, mobile, cpp]
+  license: proprietary
+  added: 2026-10-27
+
+# Browser & WebGPU
+- id: webllm
+  name: WebLLM
+  url: https://github.com/mlc-ai/web-llm
+  description: In-browser LLM engine that runs models on WebGPU with an OpenAI-style API, streaming output, and web-worker isolation.
+  section: edge/browser
+  type: library
+  tags: [llm, browser, webgpu, typescript]
+  featured: true
+  added: 2026-10-27
+
+- id: transformers-js
+  name: Transformers.js
+  url: https://github.com/huggingface/transformers.js
+  description: Runs Hugging Face models in browsers, Node, Bun, and Deno on ONNX Runtime; version 4 swaps in a rewritten C++ WebGPU runtime.
+  section: edge/browser
+  type: library
+  tags: [llm, embeddings, browser, webgpu, typescript]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: onnxruntime-web
+  name: ONNX Runtime Web
+  url: https://onnxruntime.ai/docs/tutorials/web/
+  description: Documentation for the browser builds of ONNX Runtime, with WebAssembly, WebGPU, and WebNN execution providers for in-page inference.
+  section: edge/browser
+  type: docs
+  tags: [browser, webgpu, typescript]
+  repo: microsoft/onnxruntime
+  license: MIT
+  added: 2026-10-27
+
+- id: wllama
+  name: wllama
+  url: https://github.com/ngxson/wllama
+  description: WebAssembly binding for llama.cpp that runs GGUF models in a browser tab, with worker isolation, split-file loading, and WebGPU support in v3.
+  section: edge/browser
+  type: library
+  tags: [llm, browser, webgpu, typescript, cpp]
+  added: 2026-10-27
+
+- id: webgpu-spec
+  name: WebGPU Specification
+  url: https://www.w3.org/TR/webgpu/
+  description: W3C specification for the browser API that exposes GPU compute and rendering, which in-browser LLM runtimes use for acceleration.
+  section: edge/browser
+  type: spec
+  tags: [browser, webgpu]
+  repo: gpuweb/gpuweb
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: webnn
+  name: Web Neural Network API (WebNN)
+  url: https://www.w3.org/TR/webnn/
+  description: W3C candidate recommendation draft for a browser API that runs neural network graphs on NPUs, GPUs, and CPUs; browser availability is still limited.
+  section: edge/browser
+  type: spec
+  tags: [browser, npu]
+  repo: webmachinelearning/webnn
+  maturity: experimental
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: chrome-prompt-api
+  name: Chrome Prompt API
+  url: https://developer.chrome.com/docs/ai/prompt-api
+  description: Chrome's JavaScript API for prompting Gemini Nano on-device; the docs say the web version is still in development and list storage and hardware needs.
+  section: edge/browser
+  type: docs
+  tags: [llm, browser]
+  license: proprietary
+  maturity: experimental
+  verified: 2026-10-27
+  added: 2026-10-27
+
+# Embedded Accelerators
+- id: tensorrt-edge-llm
+  name: TensorRT Edge-LLM
+  url: https://github.com/NVIDIA/TensorRT-Edge-LLM
+  description: C++ runtime for LLMs and VLMs on Jetson, DRIVE, and DGX Spark with an export and engine-build workflow and no Python dependency at run time.
+  section: edge/embedded
+  type: library
+  tags: [llm, vlm, nvidia, embedded, cpp]
+  maturity: experimental
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: jetson-ai-lab
+  name: Jetson AI Lab
+  url: https://www.jetson-ai-lab.com/
+  description: Tutorial hub for running LLMs, vision-language models, and diffusion models locally on Jetson Orin and Thor boards, with community projects.
+  section: edge/embedded
+  type: docs
+  tags: [llm, vlm, nvidia, embedded]
+  featured: true
+  added: 2026-10-27
+
+- id: jetson-containers
+  name: jetson-containers
+  url: https://github.com/dusty-nv/jetson-containers
+  description: Modular build system and prebuilt images for ML stacks such as PyTorch, vLLM, SGLang, and MLC on Jetson, matched to JetPack and CUDA versions.
+  section: edge/embedded
+  type: tool
+  tags: [llm, nvidia, embedded, python]
+  license: MIT
+  added: 2026-10-27
+
+- id: nvidia-jetson-thor
+  name: NVIDIA Jetson Thor
+  url: https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/
+  description: Blackwell-based Jetson module and developer kit for robots and edge systems, aimed at running LLM, VLM, and vision-language-action models on the device.
+  section: edge/embedded
+  type: hardware
+  tags: [nvidia, embedded, robotics, vlm]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: raspberry-pi-ai-hat-plus
+  name: Raspberry Pi AI HAT+ Documentation
+  url: https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html
+  description: Official Raspberry Pi documentation for the AI HAT+ boards that attach a Hailo accelerator to a Pi 5 over PCIe, covering setup and supported software.
+  section: edge/embedded
+  type: docs
+  tags: [embedded, npu]
+  added: 2026-10-27
+
+- id: hailo-ai-software-suite
+  name: Hailo AI Software Suite
+  url: https://hailo.ai/products/hailo-software/hailo-ai-software-suite/
+  description: Hailo's compiler, HailoRT runtime, and model zoo for its accelerators, including precompiled LLM, VLM, and speech models served through a REST API.
+  section: edge/embedded
+  type: tool
+  tags: [llm, embedded, npu, cpp, python]
+  repo: hailo-ai/hailort
+  added: 2026-10-27

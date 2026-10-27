@@ -1,0 +1,44 @@
+{
+  "name": "awesome-inference-engineering",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A curated, continuously verified map of inference engineering: tools, techniques, hardware, and knowledge.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@10.29.3",
+  "scripts": {
+    "validate": "node scripts/validate.ts",
+    "build:readme": "node scripts/build-readme.ts",
+    "build:exports": "node scripts/build-exports.ts",
+    "build": "pnpm build:readme && pnpm build:exports",
+    "enrich": "node scripts/enrich.ts",
+    "add-entry": "node scripts/add-entry.ts",
+    "extract-links": "node scripts/extract-links.ts",
+    "changed-urls": "node scripts/changed-urls.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint:md": "markdownlint-cli2",
+    "format": "prettier --write \"data/**/*.yml\" \"schema/*.json\"",
+    "format:check": "prettier --check \"data/**/*.yml\" \"schema/*.json\"",
+    "check": "pnpm validate && node scripts/build-readme.ts --check && pnpm lint:md && pnpm format:check && pnpm typecheck && pnpm test",
+    "site:build": "node scripts/build-exports.ts --out site/public && pnpm --filter ./site build",
+    "site:dev": "node scripts/build-exports.ts --out site/public && pnpm --filter ./site dev",
+    "site:preview": "pnpm --filter ./site preview"
+  },
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "github-slugger": "^2.0.0",
+    "markdownlint-cli2": "^0.24.0",
+    "prettier": "^3.9.10",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}

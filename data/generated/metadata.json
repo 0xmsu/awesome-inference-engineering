@@ -1,0 +1,4102 @@
+{
+  "generatedAt": "2026-10-27T17:04:28.487Z",
+  "repos": {
+    "a2aproject/a2a": {
+      "nameWithOwner": "a2aproject/A2A",
+      "stars": 26311,
+      "pushedAt": "2026-10-27T16:21:48Z",
+      "createdAt": "2025-03-25T18:44:21Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.0.1",
+        "publishedAt": "2026-05-28T11:34:36Z"
+      },
+      "description": "Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque agentic applications."
+    },
+    "agentgateway/agentgateway": {
+      "nameWithOwner": "agentgateway/agentgateway",
+      "stars": 5680,
+      "pushedAt": "2026-10-27T16:35:26Z",
+      "createdAt": "2025-03-18T20:55:22Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.6.0",
+        "publishedAt": "2026-10-02T16:26:26Z"
+      },
+      "description": "Next Generation Agentic Proxy for AI Agents and MCP servers"
+    },
+    "ai-dynamo/aiconfigurator": {
+      "nameWithOwner": "ai-dynamo/aiconfigurator",
+      "stars": 462,
+      "pushedAt": "2026-10-20T22:45:28Z",
+      "createdAt": "2025-07-22T04:28:47Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.12.0",
+        "publishedAt": "2026-09-18T17:04:46Z"
+      },
+      "description": "Offline optimization of your disaggregated Dynamo graph"
+    },
+    "ai-dynamo/aiperf": {
+      "nameWithOwner": "ai-dynamo/aiperf",
+      "stars": 827,
+      "pushedAt": "2026-10-27T06:12:48Z",
+      "createdAt": "2025-04-16T22:51:08Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.13.0",
+        "publishedAt": "2026-09-24T01:30:21Z"
+      },
+      "description": "AIPerf is a comprehensive benchmarking tool that measures the performance of generative AI models served by your preferred inference solution."
+    },
+    "ai-dynamo/aisimulate": {
+      "nameWithOwner": "ai-dynamo/aisimulate",
+      "stars": 107,
+      "pushedAt": "2026-10-27T17:00:04Z",
+      "createdAt": "2026-08-11T00:17:42Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v0.13.0",
+        "publishedAt": "2026-10-21T23:51:49Z"
+      },
+      "description": "AISimulate predicts LLM serving behavior and searches for strong deployment configurations offline, without bringing up a GPU serving cluster"
+    },
+    "ai-dynamo/dynamo": {
+      "nameWithOwner": "ai-dynamo/dynamo",
+      "stars": 8397,
+      "pushedAt": "2026-10-27T17:02:03Z",
+      "createdAt": "2025-03-03T18:40:07Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v1.6.0",
+        "publishedAt": "2026-10-22T22:31:45Z"
+      },
+      "description": "A Datacenter Scale Distributed Inference Serving Framework"
+    },
+    "ai-dynamo/grove": {
+      "nameWithOwner": "ai-dynamo/grove",
+      "stars": 281,
+      "pushedAt": "2026-10-27T15:06:31Z",
+      "createdAt": "2024-09-25T16:54:47Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.1.0-alpha.17",
+        "publishedAt": "2026-10-26T04:34:03Z"
+      },
+      "description": "Kubernetes enhancements for Network Topology Aware Gang Scheduling & Autoscaling"
+    },
+    "ai-dynamo/modelexpress": {
+      "nameWithOwner": "ai-dynamo/modelexpress",
+      "stars": 195,
+      "pushedAt": "2026-10-27T05:37:45Z",
+      "createdAt": "2025-05-13T17:45:18Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.7.0",
+        "publishedAt": "2026-10-03T18:28:30Z"
+      },
+      "description": "Model Express is a Rust-based component meant to be placed next to existing model inference systems to speed up their startup times and improve overall performance."
+    },
+    "ai-dynamo/nixl": {
+      "nameWithOwner": "ai-dynamo/nixl",
+      "stars": 1335,
+      "pushedAt": "2026-10-27T16:57:05Z",
+      "createdAt": "2025-03-05T17:20:28Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v1.5.1",
+        "publishedAt": "2026-10-26T17:10:11Z"
+      },
+      "description": "NVIDIA Inference Xfer Library (NIXL)"
+    },
+    "ali-vilab/teacache": {
+      "nameWithOwner": "ali-vilab/TeaCache",
+      "stars": 1387,
+      "pushedAt": "2025-06-08T14:29:09Z",
+      "createdAt": "2024-11-27T09:34:58Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Timestep Embedding Tells: It's Time to Cache for Video Diffusion Model"
+    },
+    "alibaba/clusterdata": {
+      "nameWithOwner": "alibaba/clusterdata",
+      "stars": 2242,
+      "pushedAt": "2026-10-13T09:47:22Z",
+      "createdAt": "2017-09-05T03:16:34Z",
+      "archived": false,
+      "isFork": false,
+      "license": null,
+      "latestRelease": null,
+      "description": "cluster data collected from production clusters in Alibaba for cluster management research"
+    },
+    "alibaba/mnn": {
+      "nameWithOwner": "alibaba/MNN",
+      "stars": 16297,
+      "pushedAt": "2026-10-27T02:41:10Z",
+      "createdAt": "2019-04-15T07:40:18Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "3.6.1",
+        "publishedAt": "2026-07-23T02:13:32Z"
+      },
+      "description": "MNN: A blazing-fast, lightweight inference engine battle-tested by Alibaba, powering high-performance on-device LLMs and Edge AI."
+    },
+    "alibaba/rtp-llm": {
+      "nameWithOwner": "alibaba/rtp-llm",
+      "stars": 1377,
+      "pushedAt": "2026-10-27T16:38:13Z",
+      "createdAt": "2023-12-27T08:22:59Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.2.0",
+        "publishedAt": "2025-10-31T07:54:08Z"
+      },
+      "description": "RTP-LLM: Alibaba's high-performance LLM inference engine for diverse applications."
+    },
+    "alibaba/servegen": {
+      "nameWithOwner": "alibaba/ServeGen",
+      "stars": 185,
+      "pushedAt": "2026-08-27T03:39:15Z",
+      "createdAt": "2025-06-05T01:46:38Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "A framework for generating realistic LLM serving workloads"
+    },
+    "amd/quark": {
+      "nameWithOwner": "amd/Quark",
+      "stars": 186,
+      "pushedAt": "2026-09-28T02:28:07Z",
+      "createdAt": "2024-06-19T10:27:17Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.13",
+        "publishedAt": "2026-09-28T03:03:52Z"
+      },
+      "description": null
+    },
+    "amd/ryzenai-sw": {
+      "nameWithOwner": "amd/RyzenAI-SW",
+      "stars": 894,
+      "pushedAt": "2026-08-18T01:59:26Z",
+      "createdAt": "2023-05-12T00:10:59Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v1.8.0",
+        "publishedAt": "2026-07-23T04:37:16Z"
+      },
+      "description": "AMD Ryzen™ AI Software includes the tools and runtime libraries for optimizing and deploying AI inference on AMD Ryzen™ AI powered PCs."
+    },
+    "apache/tvm": {
+      "nameWithOwner": "apache/tvm",
+      "stars": 13868,
+      "pushedAt": "2026-10-24T14:39:45Z",
+      "createdAt": "2016-10-12T22:20:28Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.27.0.post1",
+        "publishedAt": "2026-09-29T19:11:57Z"
+      },
+      "description": "Open Machine Learning Compiler Framework"
+    },
+    "apple/coremltools": {
+      "nameWithOwner": "apple/coremltools",
+      "stars": 5439,
+      "pushedAt": "2026-09-30T16:18:33Z",
+      "createdAt": "2017-06-30T07:39:02Z",
+      "archived": false,
+      "isFork": false,
+      "license": "BSD-3-Clause",
+      "latestRelease": {
+        "tag": "9.0",
+        "publishedAt": "2025-11-10T22:22:40Z"
+      },
+      "description": "Core ML tools contain supporting tools for Core ML model conversion, editing, and validation."
+    },
+    "areal-project/areal": {
+      "nameWithOwner": "areal-project/AReaL",
+      "stars": 5879,
+      "pushedAt": "2026-10-27T13:10:59Z",
+      "createdAt": "2025-02-24T07:23:43Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v2.1.0",
+        "publishedAt": "2026-08-25T10:23:59Z"
+      },
+      "description": "The RL Bridge for LLM-based Agent Applications. Made Simple & Flexible."
+    },
+    "argmaxinc/argmax-oss-swift": {
+      "nameWithOwner": "argmaxinc/argmax-oss-swift",
+      "stars": 6428,
+      "pushedAt": "2026-10-11T01:10:21Z",
+      "createdAt": "2024-01-26T07:11:52Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v1.1.1",
+        "publishedAt": "2026-10-08T13:48:07Z"
+      },
+      "description": "On-device Speech AI for Apple Silicon"
+    },
+    "azure/azurepublicdataset": {
+      "nameWithOwner": "Azure/AzurePublicDataset",
+      "stars": 1218,
+      "pushedAt": "2026-10-01T21:03:50Z",
+      "createdAt": "2017-08-18T17:37:45Z",
+      "archived": false,
+      "isFork": false,
+      "license": "CC-BY-4.0",
+      "latestRelease": {
+        "tag": "ghcp-coding-agent-2026",
+        "publishedAt": "2026-10-01T01:21:42Z"
+      },
+      "description": "Microsoft Azure Traces"
+    },
+    "basetenlabs/truss": {
+      "nameWithOwner": "basetenlabs/truss",
+      "stars": 1225,
+      "pushedAt": "2026-10-26T19:23:09Z",
+      "createdAt": "2022-07-06T05:39:37Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.18.36",
+        "publishedAt": "2026-10-21T18:18:51Z"
+      },
+      "description": "The simplest way to serve AI/ML models in production"
+    },
+    "bentoml/bentoml": {
+      "nameWithOwner": "bentoml/BentoML",
+      "stars": 8920,
+      "pushedAt": "2026-10-27T00:35:17Z",
+      "createdAt": "2019-04-02T01:39:27Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.4.40",
+        "publishedAt": "2026-10-23T19:51:33Z"
+      },
+      "description": "The easiest way to serve AI apps and models - Build Model Inference APIs, Job queues, LLM apps, Multi-model pipelines, and more!"
+    },
+    "bentoml/llm-optimizer": {
+      "nameWithOwner": "bentoml/llm-optimizer",
+      "stars": 202,
+      "pushedAt": "2026-10-20T01:42:02Z",
+      "createdAt": "2025-07-28T17:17:20Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Benchmark and optimize LLM inference across frameworks with ease"
+    },
+    "berriai/litellm": {
+      "nameWithOwner": "BerriAI/litellm",
+      "stars": 62162,
+      "pushedAt": "2026-10-27T16:58:41Z",
+      "createdAt": "2023-07-27T00:09:52Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v1.106.4",
+        "publishedAt": "2026-10-25T09:39:15Z"
+      },
+      "description": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]"
+    },
+    "bitsandbytes-foundation/bitsandbytes": {
+      "nameWithOwner": "bitsandbytes-foundation/bitsandbytes",
+      "stars": 8534,
+      "pushedAt": "2026-10-19T14:35:27Z",
+      "createdAt": "2021-06-04T00:10:34Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "0.50.2",
+        "publishedAt": "2026-08-27T00:13:56Z"
+      },
+      "description": "Accessible large language models via k-bit quantization for PyTorch."
+    },
+    "bytedance-seed/triton-distributed": {
+      "nameWithOwner": "ByteDance-Seed/Triton-distributed",
+      "stars": 1573,
+      "pushedAt": "2026-09-18T07:07:53Z",
+      "createdAt": "2025-04-02T06:57:03Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "Distributed Compiler and Optimized Parallel Kernels"
+    },
+    "cactus-compute/cactus": {
+      "nameWithOwner": "cactus-compute/cactus",
+      "stars": 6162,
+      "pushedAt": "2026-09-26T03:14:00Z",
+      "createdAt": "2025-04-23T14:33:43Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v2.2.2",
+        "publishedAt": "2026-09-26T03:13:21Z"
+      },
+      "description": "Quantization, kernels, runtime and inference engine for mobiles, wearables, smart home and robots. "
+    },
+    "cfregly/ai-performance-engineering": {
+      "nameWithOwner": "cfregly/ai-performance-engineering",
+      "stars": 2121,
+      "pushedAt": "2026-10-27T09:20:35Z",
+      "createdAt": "2025-04-21T13:16:52Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Code, labs, and resources for O'Reilly AI Systems Performance Engineering: GPU optimization, distributed training, inference scaling, and full-stack tuning."
+    },
+    "cncf/k8s-ai-conformance": {
+      "nameWithOwner": "cncf/k8s-ai-conformance",
+      "stars": 311,
+      "pushedAt": "2026-10-15T15:27:41Z",
+      "createdAt": "2025-05-08T19:35:33Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Kubernetes AI Conformance"
+    },
+    "comfy-org/comfyui": {
+      "nameWithOwner": "Comfy-Org/ComfyUI",
+      "stars": 143513,
+      "pushedAt": "2026-10-27T16:50:12Z",
+      "createdAt": "2023-01-17T03:15:56Z",
+      "archived": false,
+      "isFork": false,
+      "license": "GPL-3.0",
+      "latestRelease": {
+        "tag": "v0.43.0",
+        "publishedAt": "2026-10-27T02:40:46Z"
+      },
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world."
+    },
+    "containers/ramalama": {
+      "nameWithOwner": "containers/ramalama",
+      "stars": 3092,
+      "pushedAt": "2026-10-26T08:04:35Z",
+      "createdAt": "2024-07-24T19:09:58Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.25.0",
+        "publishedAt": "2026-09-25T12:23:34Z"
+      },
+      "description": "RamaLama is an open-source developer tool that simplifies the local serving of AI models from any source and facilitates their use for inference in production, all through the familiar language of containers."
+    },
+    "contrastive-lm/clm": {
+      "nameWithOwner": "Contrastive-LM/CLM",
+      "stars": 3125,
+      "pushedAt": "2026-10-05T21:13:17Z",
+      "createdAt": "2026-09-23T19:29:56Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Contrastive Language Models (CLMs) are a new class of System One model trained with a contrastive learning objective that connects states and actions."
+    },
+    "coreweave/tensorizer": {
+      "nameWithOwner": "coreweave/tensorizer",
+      "stars": 327,
+      "pushedAt": "2026-07-07T23:57:49Z",
+      "createdAt": "2022-10-25T22:28:23Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "Module, Model, and Tensor Serialization/Deserialization"
+    },
+    "d-matrix-ai/dmx-compressor": {
+      "nameWithOwner": "d-matrix-ai/dmx-compressor",
+      "stars": 21,
+      "pushedAt": "2026-09-24T17:12:01Z",
+      "createdAt": "2023-07-05T17:17:04Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.1.11",
+        "publishedAt": "2025-10-22T21:55:24Z"
+      },
+      "description": "d-Matrix DMX Compressor: A Pytorch toolkit for nn.Module transformations supporting advanced quantization, sparsity, and elementwise function approximations."
+    },
+    "dao-ailab/flash-attention": {
+      "nameWithOwner": "Dao-AILab/flash-attention",
+      "stars": 25220,
+      "pushedAt": "2026-10-26T18:12:04Z",
+      "createdAt": "2022-05-19T21:22:06Z",
+      "archived": false,
+      "isFork": false,
+      "license": "BSD-3-Clause",
+      "latestRelease": {
+        "tag": "v2.8.3.post2",
+        "publishedAt": "2026-10-13T05:41:17Z"
+      },
+      "description": "Fast and memory-efficient exact attention"
+    },
+    "dao-ailab/quack": {
+      "nameWithOwner": "Dao-AILab/quack",
+      "stars": 1180,
+      "pushedAt": "2026-10-15T16:32:44Z",
+      "createdAt": "2025-05-20T18:34:37Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.6.5",
+        "publishedAt": "2026-09-11T05:08:18Z"
+      },
+      "description": "A Quirky Assortment of CuTe Kernels"
+    },
+    "deepseek-ai/deepep": {
+      "nameWithOwner": "deepseek-ai/DeepEP",
+      "stars": 10369,
+      "pushedAt": "2026-10-21T03:50:43Z",
+      "createdAt": "2025-02-17T01:33:04Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v1.2.1",
+        "publishedAt": "2025-09-16T01:48:40Z"
+      },
+      "description": "DeepEP: an efficient expert-parallel communication library"
+    },
+    "deepseek-ai/deepgemm": {
+      "nameWithOwner": "deepseek-ai/DeepGEMM",
+      "stars": 9116,
+      "pushedAt": "2026-10-20T05:07:07Z",
+      "createdAt": "2025-02-13T09:09:21Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v2.1.1.post3",
+        "publishedAt": "2025-10-15T14:30:54Z"
+      },
+      "description": "DeepGEMM: clean and efficient BLAS kernel library on GPU"
+    },
+    "deepseek-ai/deepinfer": {
+      "nameWithOwner": "deepseek-ai/DeepInfer",
+      "stars": 23344,
+      "pushedAt": "2026-10-26T05:30:52Z",
+      "createdAt": "2026-10-16T07:47:23Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models"
+    },
+    "deepseek-ai/deepselect": {
+      "nameWithOwner": "deepseek-ai/DeepSelect",
+      "stars": 521,
+      "pushedAt": "2026-09-30T01:54:54Z",
+      "createdAt": "2026-09-09T14:38:04Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "DeepSelect: TopK kernels for DeepSeek Sparse Attention (DSA) and Samplers"
+    },
+    "deepseek-ai/eplb": {
+      "nameWithOwner": "deepseek-ai/EPLB",
+      "stars": 1463,
+      "pushedAt": "2025-03-24T09:17:10Z",
+      "createdAt": "2025-02-26T10:41:00Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "Expert Parallelism Load Balancer"
+    },
+    "deepseek-ai/flashmla": {
+      "nameWithOwner": "deepseek-ai/FlashMLA",
+      "stars": 13202,
+      "pushedAt": "2026-10-27T02:50:40Z",
+      "createdAt": "2025-02-21T06:31:27Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "FlashMLA: Efficient Multi-head Latent Attention Kernels"
+    },
+    "deepseek-ai/open-infra-index": {
+      "nameWithOwner": "deepseek-ai/open-infra-index",
+      "stars": 8118,
+      "pushedAt": "2025-05-15T02:00:43Z",
+      "createdAt": "2025-02-21T02:29:19Z",
+      "archived": false,
+      "isFork": false,
+      "license": "CC0-1.0",
+      "latestRelease": null,
+      "description": "Production-tested AI infrastructure tools for efficient AGI development and community-driven innovation"
+    },
+    "deepseek-ai/tilekernels": {
+      "nameWithOwner": "deepseek-ai/TileKernels",
+      "stars": 2012,
+      "pushedAt": "2026-10-14T05:49:06Z",
+      "createdAt": "2026-04-22T05:38:31Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "A kernel library written in tilelang"
+    },
+    "dmlc/treelite": {
+      "nameWithOwner": "dmlc/treelite",
+      "stars": 832,
+      "pushedAt": "2026-10-27T03:07:12Z",
+      "createdAt": "2017-06-28T23:39:47Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "4.8.0",
+        "publishedAt": "2026-10-24T05:54:35Z"
+      },
+      "description": "Universal model exchange and serialization format for decision tree forests"
+    },
+    "docker/mcp-gateway": {
+      "nameWithOwner": "docker/mcp-gateway",
+      "stars": 1616,
+      "pushedAt": "2026-10-26T18:57:04Z",
+      "createdAt": "2025-04-22T09:02:03Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "docker mcp CLI plugin / MCP Gateway"
+    },
+    "docker/model-runner": {
+      "nameWithOwner": "docker/model-runner",
+      "stars": 658,
+      "pushedAt": "2026-10-26T09:42:34Z",
+      "createdAt": "2025-03-28T20:51:37Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.2.9",
+        "publishedAt": "2026-10-22T08:34:13Z"
+      },
+      "description": "Docker Model Runner"
+    },
+    "dottxt-ai/outlines": {
+      "nameWithOwner": "dottxt-ai/outlines",
+      "stars": 15984,
+      "pushedAt": "2026-09-21T17:58:05Z",
+      "createdAt": "2023-03-17T16:01:18Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "1.3.3",
+        "publishedAt": "2026-08-06T12:26:25Z"
+      },
+      "description": "Structured Outputs"
+    },
+    "dropbox/hqq": {
+      "nameWithOwner": "dropbox/hqq",
+      "stars": 960,
+      "pushedAt": "2026-02-26T12:50:29Z",
+      "createdAt": "2023-11-07T20:15:00Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.2.8.post1",
+        "publishedAt": "2025-10-20T15:39:37Z"
+      },
+      "description": "Official implementation of Half-Quadratic Quantization (HQQ)"
+    },
+    "dstackai/dstack": {
+      "nameWithOwner": "dstackai/dstack",
+      "stars": 2291,
+      "pushedAt": "2026-10-27T12:02:03Z",
+      "createdAt": "2022-01-04T10:29:46Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MPL-2.0",
+      "latestRelease": {
+        "tag": "0.22.5",
+        "publishedAt": "2026-10-22T11:04:51Z"
+      },
+      "description": "A unified orchestration layer for heterogeneous AI compute. It standardizes how to manage compute and run training and inference on GPU clouds, Kubernetes, VMs, or bare-metal clusters."
+    },
+    "dsx-ai-factory/model-streamer": {
+      "nameWithOwner": "dsx-ai-factory/model-streamer",
+      "stars": 400,
+      "pushedAt": "2026-10-27T09:56:32Z",
+      "createdAt": "2024-07-28T13:29:46Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "0.17.0",
+        "publishedAt": "2026-10-13T15:26:25Z"
+      },
+      "description": null
+    },
+    "dsx-ai-factory/run-ai": {
+      "nameWithOwner": "dsx-ai-factory/run-ai",
+      "stars": 667,
+      "pushedAt": "2026-10-27T16:12:47Z",
+      "createdAt": "2026-08-25T14:43:10Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "3.0.21",
+        "publishedAt": "2026-10-26T08:30:46Z"
+      },
+      "description": "Run:ai is the AI workload orchestration platform for Kubernetes. This monorepo contains the control plane services, in-cluster Kubernetes operator/controllers, shared libraries and clients, the installer, and the local dev environment."
+    },
+    "dusty-nv/jetson-containers": {
+      "nameWithOwner": "dusty-nv/jetson-containers",
+      "stars": 4892,
+      "pushedAt": "2026-10-26T06:46:30Z",
+      "createdAt": "2020-04-29T19:50:58Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": null,
+      "description": "Machine Learning Containers for NVIDIA Jetson and JetPack-L4T"
+    },
+    "ericlbuehler/mistral.rs": {
+      "nameWithOwner": "EricLBuehler/mistral.rs",
+      "stars": 7780,
+      "pushedAt": "2026-10-24T20:55:30Z",
+      "createdAt": "2024-02-26T22:30:06Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.9.5",
+        "publishedAt": "2026-10-19T13:36:30Z"
+      },
+      "description": "Fast, flexible LLM inference"
+    },
+    "exo-explore/exo": {
+      "nameWithOwner": "exo-explore/exo",
+      "stars": 48065,
+      "pushedAt": "2026-10-13T20:11:49Z",
+      "createdAt": "2024-06-24T18:36:22Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.0.71",
+        "publishedAt": "2026-04-23T15:04:10Z"
+      },
+      "description": "Run frontier AI locally."
+    },
+    "facebookresearch/holistictraceanalysis": {
+      "nameWithOwner": "facebookresearch/HolisticTraceAnalysis",
+      "stars": 564,
+      "pushedAt": "2026-10-08T22:21:42Z",
+      "createdAt": "2022-11-29T20:55:25Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.6.1",
+        "publishedAt": "2026-04-21T22:27:18Z"
+      },
+      "description": "A library to analyze PyTorch traces."
+    },
+    "fla-org/flash-linear-attention": {
+      "nameWithOwner": "fla-org/flash-linear-attention",
+      "stars": 5988,
+      "pushedAt": "2026-10-27T11:13:53Z",
+      "createdAt": "2023-12-20T06:50:18Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.6.0",
+        "publishedAt": "2026-10-23T17:47:36Z"
+      },
+      "description": "🚀 Efficient implementations for emerging model architectures"
+    },
+    "flashinfer-ai/flashinfer": {
+      "nameWithOwner": "flashinfer-ai/flashinfer",
+      "stars": 6799,
+      "pushedAt": "2026-10-27T17:04:27Z",
+      "createdAt": "2023-07-22T00:29:04Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.7.2.post1",
+        "publishedAt": "2026-10-23T18:38:46Z"
+      },
+      "description": "FlashInfer: Kernel Library for LLM Serving"
+    },
+    "flashinfer-ai/flashinfer-bench": {
+      "nameWithOwner": "flashinfer-ai/flashinfer-bench",
+      "stars": 300,
+      "pushedAt": "2026-09-25T20:05:00Z",
+      "createdAt": "2025-06-30T23:55:54Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.1.2",
+        "publishedAt": "2026-02-13T09:40:08Z"
+      },
+      "description": "Building the Virtuous Cycle for AI-driven LLM Systems"
+    },
+    "foundation-model-stack/fastsafetensors": {
+      "nameWithOwner": "foundation-model-stack/fastsafetensors",
+      "stars": 180,
+      "pushedAt": "2026-10-17T14:14:01Z",
+      "createdAt": "2024-05-22T01:57:20Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "0.5.0",
+        "publishedAt": "2026-10-17T14:14:02Z"
+      },
+      "description": "High-performance safetensors model loader"
+    },
+    "geeeekexplorer/nano-vllm": {
+      "nameWithOwner": "GeeeekExplorer/nano-vllm",
+      "stars": 16168,
+      "pushedAt": "2026-04-26T05:10:12Z",
+      "createdAt": "2025-06-09T16:22:14Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "Nano vLLM"
+    },
+    "ggml-org/ggml": {
+      "nameWithOwner": "ggml-org/ggml",
+      "stars": 15544,
+      "pushedAt": "2026-10-20T11:20:56Z",
+      "createdAt": "2022-09-18T17:07:19Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.27.0",
+        "publishedAt": "2026-10-15T13:14:14Z"
+      },
+      "description": "Tensor library for machine learning"
+    },
+    "ggml-org/llama.cpp": {
+      "nameWithOwner": "ggml-org/llama.cpp",
+      "stars": 132543,
+      "pushedAt": "2026-10-27T17:03:50Z",
+      "createdAt": "2023-03-10T18:58:00Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.7.0",
+        "publishedAt": "2026-10-15T17:13:19Z"
+      },
+      "description": "LLM inference in C/C++"
+    },
+    "ggml-org/whisper.cpp": {
+      "nameWithOwner": "ggml-org/whisper.cpp",
+      "stars": 54703,
+      "pushedAt": "2026-10-27T14:17:43Z",
+      "createdAt": "2022-09-25T18:26:37Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v1.9.5",
+        "publishedAt": "2026-10-06T17:39:17Z"
+      },
+      "description": "Port of OpenAI's Whisper model in C/C++"
+    },
+    "google-ai-edge/litert": {
+      "nameWithOwner": "google-ai-edge/LiteRT",
+      "stars": 3536,
+      "pushedAt": "2026-10-27T17:03:34Z",
+      "createdAt": "2024-09-04T03:33:35Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v2.3.2",
+        "publishedAt": "2026-10-26T20:48:08Z"
+      },
+      "description": "LiteRT, successor to TensorFlow Lite. is Google's On-device framework for high-performance ML & GenAI deployment on edge platforms, via efficient conversion, runtime, and optimization"
+    },
+    "google-ai-edge/litert-lm": {
+      "nameWithOwner": "google-ai-edge/LiteRT-LM",
+      "stars": 6755,
+      "pushedAt": "2026-10-27T16:38:03Z",
+      "createdAt": "2025-04-14T21:00:20Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.18.1",
+        "publishedAt": "2026-10-20T22:36:51Z"
+      },
+      "description": "LiteRT-LM is Google's production-ready, high-performance, open-source inference framework for deploying Large Language Models on edge devices."
+    },
+    "google-ai-edge/mediapipe": {
+      "nameWithOwner": "google-ai-edge/mediapipe",
+      "stars": 37426,
+      "pushedAt": "2026-10-27T00:58:20Z",
+      "createdAt": "2019-06-13T19:16:41Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.1.1",
+        "publishedAt": "2026-10-14T21:20:25Z"
+      },
+      "description": "Cross-platform, customizable ML solutions for live and streaming media."
+    },
+    "google/gemma.cpp": {
+      "nameWithOwner": "google/gemma.cpp",
+      "stars": 7067,
+      "pushedAt": "2026-10-27T09:16:59Z",
+      "createdAt": "2024-02-13T04:36:03Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.1.4",
+        "publishedAt": "2025-03-25T18:04:03Z"
+      },
+      "description": "lightweight, standalone C++ inference engine for Google's Gemma models."
+    },
+    "google/perfetto": {
+      "nameWithOwner": "google/perfetto",
+      "stars": 6709,
+      "pushedAt": "2026-10-27T16:43:21Z",
+      "createdAt": "2019-12-10T10:32:44Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v59.1",
+        "publishedAt": "2026-10-27T02:09:05Z"
+      },
+      "description": "Production-grade client-side tracing, profiling, and analysis for complex software systems."
+    },
+    "gpu-mode/awesomemlsys": {
+      "nameWithOwner": "gpu-mode/awesomeMLSys",
+      "stars": 1148,
+      "pushedAt": "2026-02-19T06:25:40Z",
+      "createdAt": "2024-05-06T02:54:42Z",
+      "archived": false,
+      "isFork": false,
+      "license": null,
+      "latestRelease": null,
+      "description": "An ML Systems Onboarding list"
+    },
+    "gpu-mode/lectures": {
+      "nameWithOwner": "gpu-mode/lectures",
+      "stars": 6920,
+      "pushedAt": "2026-09-09T00:33:47Z",
+      "createdAt": "2024-01-20T19:28:02Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Material for gpu-mode lectures"
+    },
+    "gpu-mode/triton-puzzles": {
+      "nameWithOwner": "gpu-mode/Triton-Puzzles",
+      "stars": 2652,
+      "pushedAt": "2026-04-01T04:01:16Z",
+      "createdAt": "2024-03-19T00:40:03Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Puzzles for learning Triton"
+    },
+    "gpustack/gpustack": {
+      "nameWithOwner": "gpustack/gpustack",
+      "stars": 5901,
+      "pushedAt": "2026-10-27T14:34:30Z",
+      "createdAt": "2024-05-11T03:41:58Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v2.3.0",
+        "publishedAt": "2026-10-23T10:02:38Z"
+      },
+      "description": "A GPU cluster manager for high-performance AI model serving (vLLM, SGLang) and on-demand SSH-accessible GPU instances."
+    },
+    "gpuweb/gpuweb": {
+      "nameWithOwner": "gpuweb/gpuweb",
+      "stars": 5520,
+      "pushedAt": "2026-10-26T20:01:56Z",
+      "createdAt": "2017-02-10T01:17:35Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": null,
+      "description": "Where the GPU for the Web work happens!"
+    },
+    "guidance-ai/guidance": {
+      "nameWithOwner": "guidance-ai/guidance",
+      "stars": 21814,
+      "pushedAt": "2026-05-21T17:08:04Z",
+      "createdAt": "2022-11-10T18:21:45Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "0.3.2",
+        "publishedAt": "2026-03-18T22:18:46Z"
+      },
+      "description": "A guidance language for controlling large language models."
+    },
+    "guidance-ai/jsonschemabench": {
+      "nameWithOwner": "guidance-ai/jsonschemabench",
+      "stars": 102,
+      "pushedAt": "2026-09-28T09:41:42Z",
+      "createdAt": "2025-01-15T00:16:38Z",
+      "archived": false,
+      "isFork": false,
+      "license": null,
+      "latestRelease": null,
+      "description": null
+    },
+    "guidance-ai/llguidance": {
+      "nameWithOwner": "guidance-ai/llguidance",
+      "stars": 901,
+      "pushedAt": "2026-10-26T15:36:56Z",
+      "createdAt": "2024-07-25T23:34:06Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "Super-fast Structured Outputs"
+    },
+    "hahnyuan/llm-viewer": {
+      "nameWithOwner": "hahnyuan/LLM-Viewer",
+      "stars": 689,
+      "pushedAt": "2024-09-11T05:51:47Z",
+      "createdAt": "2024-01-07T15:43:24Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "Analyze the inference of Large Language Models (LLMs). Analyze aspects like computation, storage, transmission, and hardware roofline model in a user-friendly interface. "
+    },
+    "hailo-ai/hailort": {
+      "nameWithOwner": "hailo-ai/hailort",
+      "stars": 228,
+      "pushedAt": "2026-10-25T15:43:09Z",
+      "createdAt": "2022-03-02T08:59:43Z",
+      "archived": false,
+      "isFork": false,
+      "license": null,
+      "latestRelease": {
+        "tag": "v5.4.0",
+        "publishedAt": "2026-08-16T11:35:47Z"
+      },
+      "description": "An open source light-weight and high performance inference framework for Hailo devices"
+    },
+    "hao-ai-lab/fastvideo": {
+      "nameWithOwner": "hao-ai-lab/FastVideo",
+      "stars": 4750,
+      "pushedAt": "2026-10-27T08:45:21Z",
+      "createdAt": "2024-10-24T02:11:32Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.2.0",
+        "publishedAt": "2026-06-04T21:24:02Z"
+      },
+      "description": "A unified inference and post-training framework for accelerated video generation."
+    },
+    "harvard-edge/cs249r_book": {
+      "nameWithOwner": "harvard-edge/cs249r_book",
+      "stars": 29702,
+      "pushedAt": "2026-10-27T16:51:34Z",
+      "createdAt": "2023-09-06T19:31:06Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "slides-latest",
+        "publishedAt": "2026-05-11T23:07:18Z"
+      },
+      "description": "Machine Learning Systems: Foundations, Scaling, Agentic AI, and Physical AI (Vols I–IV) • Harvard CS249r | https://mlsysbook.ai"
+    },
+    "hazyresearch/hipkittens": {
+      "nameWithOwner": "HazyResearch/HipKittens",
+      "stars": 479,
+      "pushedAt": "2026-10-15T08:16:07Z",
+      "createdAt": "2025-10-31T19:15:23Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "Fast and Furious AMD Kernels"
+    },
+    "hazyresearch/megakernels": {
+      "nameWithOwner": "HazyResearch/Megakernels",
+      "stars": 871,
+      "pushedAt": "2026-05-26T20:37:19Z",
+      "createdAt": "2025-05-27T18:25:49Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "Kernels, of the mega variety :)"
+    },
+    "hazyresearch/thunderkittens": {
+      "nameWithOwner": "HazyResearch/ThunderKittens",
+      "stars": 3786,
+      "pushedAt": "2026-09-12T19:29:53Z",
+      "createdAt": "2024-03-04T13:27:35Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "Tile primitives for speedy kernels"
+    },
+    "hemingkx/spec-bench": {
+      "nameWithOwner": "hemingkx/Spec-Bench",
+      "stars": 415,
+      "pushedAt": "2025-04-22T02:56:41Z",
+      "createdAt": "2024-02-21T01:56:26Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Spec-Bench: A Comprehensive Benchmark and Unified Evaluation Platform for Speculative Decoding (ACL 2024 Findings)"
+    },
+    "higress-group/higress": {
+      "nameWithOwner": "higress-group/higress",
+      "stars": 9648,
+      "pushedAt": "2026-10-22T15:16:03Z",
+      "createdAt": "2022-10-27T03:53:00Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v2.2.5",
+        "publishedAt": "2026-10-04T19:46:14Z"
+      },
+      "description": "🤖 AI Gateway | AI Native API Gateway"
+    },
+    "hpmll/burstgpt": {
+      "nameWithOwner": "HPMLL/BurstGPT",
+      "stars": 293,
+      "pushedAt": "2026-06-30T07:03:47Z",
+      "createdAt": "2024-01-30T06:27:21Z",
+      "archived": false,
+      "isFork": false,
+      "license": "CC-BY-4.0",
+      "latestRelease": {
+        "tag": "v2.0",
+        "publishedAt": "2026-01-15T16:39:16Z"
+      },
+      "description": "A ChatGPT(GPT-3.5) & GPT-4 Workload Trace to Optimize LLM Serving Systems"
+    },
+    "huggingface/aienergyscore": {
+      "nameWithOwner": "huggingface/AIEnergyScore",
+      "stars": 43,
+      "pushedAt": "2025-12-02T22:01:48Z",
+      "createdAt": "2024-07-22T15:11:30Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "AI Energy Score: Initiative to establish comparable energy efficiency ratings for AI models."
+    },
+    "huggingface/candle": {
+      "nameWithOwner": "huggingface/candle",
+      "stars": 21238,
+      "pushedAt": "2026-10-14T11:15:47Z",
+      "createdAt": "2023-06-19T16:06:31Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Minimalist ML framework for Rust"
+    },
+    "huggingface/diffusers": {
+      "nameWithOwner": "huggingface/diffusers",
+      "stars": 34819,
+      "pushedAt": "2026-10-27T08:51:21Z",
+      "createdAt": "2022-05-30T16:04:02Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.42.1",
+        "publishedAt": "2026-10-27T07:41:43Z"
+      },
+      "description": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch."
+    },
+    "huggingface/inference-benchmarker": {
+      "nameWithOwner": "huggingface/inference-benchmarker",
+      "stars": 176,
+      "pushedAt": "2026-09-23T13:19:42Z",
+      "createdAt": "2024-09-05T15:41:45Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.1.0",
+        "publishedAt": "2025-03-28T09:58:52Z"
+      },
+      "description": "Inference server benchmarking tool"
+    },
+    "huggingface/kernels": {
+      "nameWithOwner": "huggingface/kernels",
+      "stars": 781,
+      "pushedAt": "2026-10-27T15:21:52Z",
+      "createdAt": "2024-11-29T15:46:13Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.17.2",
+        "publishedAt": "2026-10-02T13:35:03Z"
+      },
+      "description": "Build compute kernels and load them from the Hub."
+    },
+    "huggingface/sentence-transformers": {
+      "nameWithOwner": "huggingface/sentence-transformers",
+      "stars": 19227,
+      "pushedAt": "2026-10-27T16:49:44Z",
+      "createdAt": "2019-07-24T10:53:51Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v6.2.0",
+        "publishedAt": "2026-10-21T12:27:04Z"
+      },
+      "description": "State-of-the-Art Embeddings, Retrieval, and Reranking"
+    },
+    "huggingface/text-embeddings-inference": {
+      "nameWithOwner": "huggingface/text-embeddings-inference",
+      "stars": 5087,
+      "pushedAt": "2026-10-13T14:33:07Z",
+      "createdAt": "2023-10-13T13:36:51Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.9.4",
+        "publishedAt": "2026-09-15T09:28:03Z"
+      },
+      "description": "A blazing fast inference solution for text embeddings models"
+    },
+    "huggingface/text-generation-inference": {
+      "nameWithOwner": "huggingface/text-generation-inference",
+      "stars": 10881,
+      "pushedAt": "2026-03-21T11:34:22Z",
+      "createdAt": "2022-10-08T10:26:28Z",
+      "archived": true,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v3.3.7",
+        "publishedAt": "2025-12-19T14:35:25Z"
+      },
+      "description": "Large Language Model Text Generation Inference"
+    },
+    "huggingface/transformers.js": {
+      "nameWithOwner": "huggingface/transformers.js",
+      "stars": 16382,
+      "pushedAt": "2026-10-27T16:23:07Z",
+      "createdAt": "2023-02-13T13:51:45Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "4.3.1",
+        "publishedAt": "2026-10-07T03:19:38Z"
+      },
+      "description": "State-of-the-art Machine Learning for the web. Run 🤗 Transformers directly in your browser, with no need for a server!"
+    },
+    "huggingface/xet-core": {
+      "nameWithOwner": "huggingface/xet-core",
+      "stars": 619,
+      "pushedAt": "2026-10-27T16:14:13Z",
+      "createdAt": "2024-09-10T20:57:29Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.7.0",
+        "publishedAt": "2026-10-06T20:11:40Z"
+      },
+      "description": "xet client tech, used in huggingface_hub"
+    },
+    "ibm/mcp-context-forge": {
+      "nameWithOwner": "IBM/mcp-context-forge",
+      "stars": 4704,
+      "pushedAt": "2026-10-27T17:04:07Z",
+      "createdAt": "2025-05-08T08:16:59Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.1.0",
+        "publishedAt": "2026-10-20T17:31:29Z"
+      },
+      "description": "An AI Gateway, registry, and proxy that sits in front of any MCP, A2A, or REST/gRPC APIs, exposing a unified endpoint with centralized discovery, guardrails and management. Optimizes Agent & Tool calling, and supports plugins."
+    },
+    "ikawrakow/ik_llama.cpp": {
+      "nameWithOwner": "ikawrakow/ik_llama.cpp",
+      "stars": 3342,
+      "pushedAt": "2026-10-27T17:04:10Z",
+      "createdAt": "2024-06-27T06:01:47Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "llama.cpp fork with additional SOTA quants and improved performance"
+    },
+    "inclusionai/dinfer": {
+      "nameWithOwner": "inclusionAI/dInfer",
+      "stars": 488,
+      "pushedAt": "2026-02-11T03:10:42Z",
+      "createdAt": "2025-09-29T08:07:23Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.2.0",
+        "publishedAt": "2025-12-21T07:11:08Z"
+      },
+      "description": "dInfer: An Efficient Inference Framework for Diffusion Language Models"
+    },
+    "intel/auto-round": {
+      "nameWithOwner": "intel/auto-round",
+      "stars": 1692,
+      "pushedAt": "2026-10-27T15:00:10Z",
+      "createdAt": "2024-01-04T02:41:51Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.16.1",
+        "publishedAt": "2026-10-16T03:10:46Z"
+      },
+      "description": "PTQ-Level Efficiency, QAT-Level Accuracy | 训练后量化的效率，量化感知训练的精度"
+    },
+    "internlm/lmdeploy": {
+      "nameWithOwner": "InternLM/lmdeploy",
+      "stars": 8121,
+      "pushedAt": "2026-10-27T03:07:12Z",
+      "createdAt": "2023-06-15T12:38:06Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.18.0",
+        "publishedAt": "2026-09-28T07:04:58Z"
+      },
+      "description": "LMDeploy is a toolkit for compressing, deploying, and serving LLMs."
+    },
+    "iree-org/iree": {
+      "nameWithOwner": "iree-org/iree",
+      "stars": 3996,
+      "pushedAt": "2026-10-27T16:41:28Z",
+      "createdAt": "2019-09-12T20:57:39Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v3.13.0",
+        "publishedAt": "2026-10-19T11:26:44Z"
+      },
+      "description": "A retargetable MLIR-based machine learning compiler and runtime toolkit."
+    },
+    "ist-daslab/marlin": {
+      "nameWithOwner": "IST-DASLab/marlin",
+      "stars": 1172,
+      "pushedAt": "2024-09-04T13:35:00Z",
+      "createdAt": "2024-01-17T13:07:53Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "FP16xINT4 LLM inference kernel that can achieve near-ideal ~4x speedups up to medium batchsizes of 16-32 tokens."
+    },
+    "janhq/jan": {
+      "nameWithOwner": "janhq/jan",
+      "stars": 45118,
+      "pushedAt": "2026-10-27T17:03:34Z",
+      "createdAt": "2023-08-17T02:17:10Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v0.8.7",
+        "publishedAt": "2026-10-20T04:33:57Z"
+      },
+      "description": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer."
+    },
+    "jax-ml/jax": {
+      "nameWithOwner": "jax-ml/jax",
+      "stars": 36511,
+      "pushedAt": "2026-10-27T16:55:15Z",
+      "createdAt": "2018-10-25T21:25:02Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "jax-v0.12.0.1",
+        "publishedAt": "2026-10-22T05:37:05Z"
+      },
+      "description": "Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more"
+    },
+    "jax-ml/scaling-book": {
+      "nameWithOwner": "jax-ml/scaling-book",
+      "stars": 1505,
+      "pushedAt": "2026-10-19T19:48:39Z",
+      "createdAt": "2025-02-03T01:38:25Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "Home for \"How To Scale Your Model\", a short blog-style textbook about scaling LLMs on TPUs"
+    },
+    "jmaczan/tiny-vllm": {
+      "nameWithOwner": "jmaczan/tiny-vllm",
+      "stars": 1171,
+      "pushedAt": "2026-10-22T17:58:00Z",
+      "createdAt": "2026-02-09T16:40:15Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Build your own high performance LLM inference engine in C++ and CUDA - a smaller version of vLLM"
+    },
+    "k2-fsa/sherpa-onnx": {
+      "nameWithOwner": "k2-fsa/sherpa-onnx",
+      "stars": 15549,
+      "pushedAt": "2026-10-27T12:50:50Z",
+      "createdAt": "2022-09-01T05:47:33Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v2.0.1",
+        "publishedAt": "2026-10-26T15:24:29Z"
+      },
+      "description": "Speech-to-text, text-to-speech, speaker diarization, speech enhancement, source separation, and VAD using next-gen Kaldi with onnxruntime without Internet connection. Support embedded systems, Android, iOS, HarmonyOS, Raspberry Pi, RISC-V, RK NPU, Axera NPU, Ascend NPU, x86_64 servers, websocket server/client, support 12 programming languages"
+    },
+    "kai-scheduler/kai-scheduler": {
+      "nameWithOwner": "kai-scheduler/KAI-Scheduler",
+      "stars": 1614,
+      "pushedAt": "2026-10-26T15:05:41Z",
+      "createdAt": "2025-02-26T20:39:42Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.18.6",
+        "publishedAt": "2026-10-15T15:53:08Z"
+      },
+      "description": "KAI Scheduler is an open source Kubernetes Native scheduler for AI workloads at large scale"
+    },
+    "kaito-project/kaito": {
+      "nameWithOwner": "kaito-project/kaito",
+      "stars": 1030,
+      "pushedAt": "2026-10-27T07:04:51Z",
+      "createdAt": "2023-09-09T01:53:38Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v0.13.0",
+        "publishedAt": "2026-10-24T04:21:35Z"
+      },
+      "description": "Kubernetes AI Toolchain Operator"
+    },
+    "katanemo/plano": {
+      "nameWithOwner": "katanemo/plano",
+      "stars": 7099,
+      "pushedAt": "2026-10-24T19:03:25Z",
+      "createdAt": "2024-07-09T20:25:56Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "0.4.39",
+        "publishedAt": "2026-10-24T19:03:25Z"
+      },
+      "description": "Plano is an AI-native proxy server and data plane for agentic apps. Smart LLM routing, observability, agent orchestration, and guardrails so you stay focused on your agents core logic."
+    },
+    "kedacore/keda": {
+      "nameWithOwner": "kedacore/keda",
+      "stars": 10675,
+      "pushedAt": "2026-10-27T16:15:02Z",
+      "createdAt": "2019-02-13T00:12:33Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v2.21.0",
+        "publishedAt": "2026-09-23T16:20:41Z"
+      },
+      "description": " KEDA is a Kubernetes-based Event Driven Autoscaling component. It provides event driven scale for any container running in Kubernetes "
+    },
+    "kitops-ml/kitops": {
+      "nameWithOwner": "kitops-ml/kitops",
+      "stars": 1436,
+      "pushedAt": "2026-10-26T20:05:38Z",
+      "createdAt": "2024-02-02T18:53:31Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.16.0",
+        "publishedAt": "2026-09-29T17:59:11Z"
+      },
+      "description": "An open source DevOps tool from the CNCF for packaging and versioning AI/ML models, datasets, code, and configuration into an OCI Artifact."
+    },
+    "kong/kong": {
+      "nameWithOwner": "Kong/kong",
+      "stars": 44309,
+      "pushedAt": "2026-10-19T02:45:09Z",
+      "createdAt": "2014-11-17T23:56:08Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "3.9.4",
+        "publishedAt": "2026-10-12T07:27:48Z"
+      },
+      "description": "🦍 The API and AI Gateway"
+    },
+    "kserve/kserve": {
+      "nameWithOwner": "kserve/kserve",
+      "stars": 6162,
+      "pushedAt": "2026-10-27T17:00:29Z",
+      "createdAt": "2019-03-27T21:14:14Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.21.0",
+        "publishedAt": "2026-09-25T17:04:20Z"
+      },
+      "description": "Standardized Distributed Generative and Predictive AI Inference Platform for Scalable, Multi-Framework Deployment on Kubernetes"
+    },
+    "kserve/open-inference-protocol": {
+      "nameWithOwner": "kserve/open-inference-protocol",
+      "stars": 79,
+      "pushedAt": "2025-05-12T02:44:20Z",
+      "createdAt": "2023-04-06T03:26:59Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Repository for open inference protocol specification"
+    },
+    "kubeai-project/kubeai": {
+      "nameWithOwner": "kubeai-project/kubeai",
+      "stars": 1288,
+      "pushedAt": "2026-10-27T16:33:36Z",
+      "createdAt": "2023-10-21T00:59:51Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "helm-chart-models-0.24.0",
+        "publishedAt": "2026-10-07T14:33:59Z"
+      },
+      "description": "AI Inference Operator for Kubernetes. The easiest way to serve ML models in production. Supports VLMs, LLMs, embeddings, and speech-to-text."
+    },
+    "kuberay-project/kuberay": {
+      "nameWithOwner": "kuberay-project/kuberay",
+      "stars": 2749,
+      "pushedAt": "2026-10-24T05:24:53Z",
+      "createdAt": "2020-10-29T20:42:00Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.7.1",
+        "publishedAt": "2026-09-21T06:42:58Z"
+      },
+      "description": "A toolkit to run Ray applications on Kubernetes"
+    },
+    "kubernetes-sigs/gateway-api-inference-extension": {
+      "nameWithOwner": "kubernetes-sigs/gateway-api-inference-extension",
+      "stars": 798,
+      "pushedAt": "2026-10-19T21:43:43Z",
+      "createdAt": "2024-08-28T20:04:10Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.6.2",
+        "publishedAt": "2026-09-17T20:18:39Z"
+      },
+      "description": "Gateway API Inference Extension"
+    },
+    "kubernetes-sigs/inference-perf": {
+      "nameWithOwner": "kubernetes-sigs/inference-perf",
+      "stars": 267,
+      "pushedAt": "2026-10-27T16:33:23Z",
+      "createdAt": "2025-01-14T22:26:31Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.7.0",
+        "publishedAt": "2026-09-15T17:19:14Z"
+      },
+      "description": "GenAI inference performance benchmarking tool"
+    },
+    "kubernetes-sigs/lws": {
+      "nameWithOwner": "kubernetes-sigs/lws",
+      "stars": 895,
+      "pushedAt": "2026-10-27T12:15:04Z",
+      "createdAt": "2024-02-22T05:07:17Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.0.0",
+        "publishedAt": "2026-10-16T14:26:34Z"
+      },
+      "description": "LeaderWorkerSet & DisaggregatedSet: Kubernetes APIs for Distributed and Disaggregated AI Serving"
+    },
+    "kvcache-ai/ktransformers": {
+      "nameWithOwner": "kvcache-ai/ktransformers",
+      "stars": 19641,
+      "pushedAt": "2026-10-20T08:47:10Z",
+      "createdAt": "2024-07-26T07:18:28Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.7.2",
+        "publishedAt": "2026-10-15T07:09:13Z"
+      },
+      "description": "A Flexible Framework for Experiencing Heterogeneous LLM Inference/Fine-tune Optimizations"
+    },
+    "kvcache-ai/mooncake": {
+      "nameWithOwner": "kvcache-ai/Mooncake",
+      "stars": 6897,
+      "pushedAt": "2026-10-27T15:06:13Z",
+      "createdAt": "2024-06-25T05:21:05Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.3.13.post1",
+        "publishedAt": "2026-08-31T09:52:42Z"
+      },
+      "description": "Mooncake is the serving platform for Kimi, a leading LLM service provided by Moonshot AI."
+    },
+    "kyutai-labs/delayed-streams-modeling": {
+      "nameWithOwner": "kyutai-labs/delayed-streams-modeling",
+      "stars": 3040,
+      "pushedAt": "2026-01-26T09:28:20Z",
+      "createdAt": "2025-06-16T19:36:53Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Kyutai's Speech-To-Text and Text-To-Speech models based on the Delayed Streams Modeling framework."
+    },
+    "leejet/stable-diffusion.cpp": {
+      "nameWithOwner": "leejet/stable-diffusion.cpp",
+      "stars": 7806,
+      "pushedAt": "2026-10-27T17:02:32Z",
+      "createdAt": "2023-08-13T07:36:51Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "master-1017-be48649",
+        "publishedAt": "2026-10-26T18:33:51Z"
+      },
+      "description": "Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++"
+    },
+    "lemonade-sdk/lemonade": {
+      "nameWithOwner": "lemonade-sdk/lemonade",
+      "stars": 6006,
+      "pushedAt": "2026-10-27T17:04:12Z",
+      "createdAt": "2025-05-15T19:17:39Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v2026.43.3",
+        "publishedAt": "2026-10-21T18:32:06Z"
+      },
+      "description": "Lemonade helps users discover and run local AI apps by serving optimized LLMs right from their own GPUs and NPUs. Join our discord: https://discord.gg/5xXzkMu8Zk"
+    },
+    "lightning-ai/lightning-thunder": {
+      "nameWithOwner": "Lightning-AI/lightning-thunder",
+      "stars": 1475,
+      "pushedAt": "2026-10-12T22:06:56Z",
+      "createdAt": "2024-03-18T15:30:56Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "0.2.6",
+        "publishedAt": "2025-10-22T04:53:39Z"
+      },
+      "description": "PyTorch compiler that accelerates training and inference. Get built-in optimizations for performance, memory, parallelism, and easily write your own."
+    },
+    "lightning-ai/litserve": {
+      "nameWithOwner": "Lightning-AI/LitServe",
+      "stars": 3956,
+      "pushedAt": "2026-10-20T21:03:42Z",
+      "createdAt": "2023-12-12T14:45:03Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.2.19",
+        "publishedAt": "2026-09-09T17:10:09Z"
+      },
+      "description": "A minimal Python framework for building custom AI inference servers with full control over logic, batching, and scaling."
+    },
+    "lightseekorg/tokenspeed": {
+      "nameWithOwner": "lightseekorg/tokenspeed",
+      "stars": 2814,
+      "pushedAt": "2026-10-27T16:21:38Z",
+      "createdAt": "2026-05-06T13:13:21Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.1.1",
+        "publishedAt": "2026-10-06T05:42:25Z"
+      },
+      "description": "TokenSpeed is a speed-of-light LLM inference engine."
+    },
+    "lightseekorg/torchspec": {
+      "nameWithOwner": "lightseekorg/TorchSpec",
+      "stars": 265,
+      "pushedAt": "2026-10-27T08:57:29Z",
+      "createdAt": "2026-02-21T04:18:35Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "A PyTorch native library for training speculative decoding models"
+    },
+    "livekit/agents": {
+      "nameWithOwner": "livekit/agents",
+      "stars": 14962,
+      "pushedAt": "2026-10-27T16:59:29Z",
+      "createdAt": "2023-10-19T23:00:55Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "livekit-agents@1.8.9",
+        "publishedAt": "2026-10-24T02:35:39Z"
+      },
+      "description": "A framework for building realtime voice AI agents 🤖🎙️📹 "
+    },
+    "llm-d/llm-d": {
+      "nameWithOwner": "llm-d/llm-d",
+      "stars": 5052,
+      "pushedAt": "2026-10-27T16:52:45Z",
+      "createdAt": "2025-04-29T18:28:17Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.0.0",
+        "publishedAt": "2026-10-20T02:30:10Z"
+      },
+      "description": "State of the art inference performance with modern accelerators on Kubernetes"
+    },
+    "llm-d/llm-d-autoscaling": {
+      "nameWithOwner": "llm-d/llm-d-autoscaling",
+      "stars": 61,
+      "pushedAt": "2026-10-13T14:13:30Z",
+      "createdAt": "2025-06-02T15:34:38Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.0.0",
+        "publishedAt": "2026-10-13T14:16:19Z"
+      },
+      "description": "Variant optimization autoscaler for distributed inference workloads"
+    },
+    "llm-d/llm-d-router": {
+      "nameWithOwner": "llm-d/llm-d-router",
+      "stars": 432,
+      "pushedAt": "2026-10-27T13:37:38Z",
+      "createdAt": "2025-05-05T12:45:33Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.0.0",
+        "publishedAt": "2026-10-16T16:37:36Z"
+      },
+      "description": "llm-d Router: The intelligent entry point for inference requests"
+    },
+    "llumnix-project/llumnix": {
+      "nameWithOwner": "llumnix-project/llumnix",
+      "stars": 39,
+      "pushedAt": "2026-05-26T02:59:57Z",
+      "createdAt": "2026-02-24T01:36:47Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.1.0",
+        "publishedAt": "2026-04-22T06:48:37Z"
+      },
+      "description": null
+    },
+    "llvm/llvm-project": {
+      "nameWithOwner": "llvm/llvm-project",
+      "stars": 41222,
+      "pushedAt": "2026-10-27T16:58:09Z",
+      "createdAt": "2016-12-07T09:39:33Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "llvmorg-23.1.4",
+        "publishedAt": "2026-10-20T13:03:13Z"
+      },
+      "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies."
+    },
+    "lmcache/lmcache": {
+      "nameWithOwner": "LMCache/LMCache",
+      "stars": 12182,
+      "pushedAt": "2026-10-27T14:51:08Z",
+      "createdAt": "2024-05-28T21:06:04Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.5.6",
+        "publishedAt": "2026-10-14T22:21:42Z"
+      },
+      "description": "LMCache: Supercharge Your LLM with the Fastest KV Cache Layer"
+    },
+    "lmstudio-ai/lms": {
+      "nameWithOwner": "lmstudio-ai/lms",
+      "stars": 5384,
+      "pushedAt": "2026-10-14T20:50:03Z",
+      "createdAt": "2024-04-15T15:04:41Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "LM Studio CLI"
+    },
+    "lostruins/koboldcpp": {
+      "nameWithOwner": "LostRuins/koboldcpp",
+      "stars": 12075,
+      "pushedAt": "2026-10-27T14:27:50Z",
+      "createdAt": "2023-03-16T02:07:02Z",
+      "archived": false,
+      "isFork": true,
+      "license": "AGPL-3.0",
+      "latestRelease": {
+        "tag": "v1.123.1",
+        "publishedAt": "2026-10-13T13:36:42Z"
+      },
+      "description": "KoboldCpp - Run GGUF AI models locally with a KoboldAI UI. One File. Zero Install."
+    },
+    "luminal-ai/luminal": {
+      "nameWithOwner": "luminal-ai/luminal",
+      "stars": 3032,
+      "pushedAt": "2026-10-27T03:05:56Z",
+      "createdAt": "2023-07-18T22:02:51Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "0.2",
+        "publishedAt": "2024-03-01T23:10:25Z"
+      },
+      "description": "Inference at the speed of light."
+    },
+    "lyogavin/airllm": {
+      "nameWithOwner": "lyogavin/airllm",
+      "stars": 40957,
+      "pushedAt": "2026-10-27T06:21:04Z",
+      "createdAt": "2023-06-12T16:28:41Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v4.0.0",
+        "publishedAt": "2026-09-05T15:43:11Z"
+      },
+      "description": "AirLLM 2.8T LLM inference with single 4GB GPU"
+    },
+    "maximhq/bifrost": {
+      "nameWithOwner": "maximhq/bifrost",
+      "stars": 9146,
+      "pushedAt": "2026-10-27T17:03:21Z",
+      "createdAt": "2025-03-19T07:21:26Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "ent-v2.3.2-base",
+        "publishedAt": "2026-10-21T01:04:28Z"
+      },
+      "description": "Open-source, high-performance AI gateway that works as your LLM gateway, MCP gateway and agent gateway. One OpenAI-compatible API for 10,000+ models, with failover, load balancing, semantic caching, virtual keys, budgets and MCP Code Mode. Works with any SDK or agent and adds under 200µs of overhead at 5k RPS."
+    },
+    "meta-pytorch/gpt-fast": {
+      "nameWithOwner": "meta-pytorch/gpt-fast",
+      "stars": 6265,
+      "pushedAt": "2025-08-22T23:37:14Z",
+      "createdAt": "2023-10-17T05:30:32Z",
+      "archived": false,
+      "isFork": false,
+      "license": "BSD-3-Clause",
+      "latestRelease": null,
+      "description": "Simple and efficient pytorch-native transformer text generation in <1000 LOC of python."
+    },
+    "meta-pytorch/torchrec": {
+      "nameWithOwner": "meta-pytorch/torchrec",
+      "stars": 2619,
+      "pushedAt": "2026-10-27T08:17:51Z",
+      "createdAt": "2021-07-12T23:15:48Z",
+      "archived": false,
+      "isFork": false,
+      "license": "BSD-3-Clause",
+      "latestRelease": {
+        "tag": "v1.9.2-rc3",
+        "publishedAt": "2026-09-30T23:47:24Z"
+      },
+      "description": "Pytorch domain library for recommendation systems"
+    },
+    "meta-pytorch/tritonbench": {
+      "nameWithOwner": "meta-pytorch/tritonbench",
+      "stars": 373,
+      "pushedAt": "2026-10-27T15:54:22Z",
+      "createdAt": "2024-10-07T21:06:25Z",
+      "archived": false,
+      "isFork": false,
+      "license": "BSD-3-Clause",
+      "latestRelease": null,
+      "description": "Tritonbench is a collection of PyTorch custom operators with example inputs to measure their performance."
+    },
+    "meta-recsys/generative-recommenders": {
+      "nameWithOwner": "meta-recsys/generative-recommenders",
+      "stars": 2015,
+      "pushedAt": "2026-10-21T22:57:35Z",
+      "createdAt": "2024-04-08T06:03:18Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Repository hosting code for \"Actions Speak Louder than Words: Trillion-Parameter Sequential Transducers for Generative Recommendations\" (https://arxiv.org/abs/2402.17152)."
+    },
+    "michaelfeil/infinity": {
+      "nameWithOwner": "michaelfeil/infinity",
+      "stars": 2970,
+      "pushedAt": "2026-10-27T15:43:57Z",
+      "createdAt": "2023-10-11T17:53:38Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v3.0.0",
+        "publishedAt": "2026-10-26T03:02:21Z"
+      },
+      "description": "Infinity is a high-throughput, low-latency serving engine for text-embeddings, reranking models, clip, clap and colpali"
+    },
+    "microsoft/bitnet": {
+      "nameWithOwner": "microsoft/BitNet",
+      "stars": 41254,
+      "pushedAt": "2026-07-27T05:52:06Z",
+      "createdAt": "2024-08-05T09:07:38Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "Official inference framework for 1-bit LLMs"
+    },
+    "microsoft/foundry-local": {
+      "nameWithOwner": "microsoft/foundry-local",
+      "stars": 2599,
+      "pushedAt": "2026-10-27T14:45:09Z",
+      "createdAt": "2025-03-31T21:51:15Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v2.2.1",
+        "publishedAt": "2026-10-23T09:17:33Z"
+      },
+      "description": null
+    },
+    "microsoft/mcp-gateway": {
+      "nameWithOwner": "microsoft/mcp-gateway",
+      "stars": 898,
+      "pushedAt": "2026-10-21T22:18:08Z",
+      "createdAt": "2025-05-14T18:16:35Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "MCP Gateway is a reverse proxy and management layer for MCP servers, enabling scalable, session-aware stateful routing and lifecycle management of MCP servers in Kubernetes environments."
+    },
+    "microsoft/minference": {
+      "nameWithOwner": "microsoft/MInference",
+      "stars": 1229,
+      "pushedAt": "2026-10-10T03:06:32Z",
+      "createdAt": "2024-05-22T12:59:47Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.1.6",
+        "publishedAt": "2025-06-17T09:29:24Z"
+      },
+      "description": "[NeurIPS'24 Spotlight, ICLR'25, ICML'25] To speed up Long-context LLMs' inference, approximate and dynamic sparse calculate the attention, which reduces inference latency by up to 10x for pre-filling on an A100 while maintaining accuracy."
+    },
+    "microsoft/mscclpp": {
+      "nameWithOwner": "microsoft/mscclpp",
+      "stars": 567,
+      "pushedAt": "2026-10-27T00:12:43Z",
+      "createdAt": "2023-02-02T00:24:25Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.10.0",
+        "publishedAt": "2026-07-22T22:24:20Z"
+      },
+      "description": "MSCCL++: A GPU-driven communication stack for scalable AI applications"
+    },
+    "microsoft/onnxruntime": {
+      "nameWithOwner": "microsoft/onnxruntime",
+      "stars": 22181,
+      "pushedAt": "2026-10-27T16:35:12Z",
+      "createdAt": "2018-11-10T02:22:53Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v1.31.1",
+        "publishedAt": "2026-10-26T19:29:51Z"
+      },
+      "description": "ONNX Runtime: cross-platform, high performance ML inferencing and training accelerator"
+    },
+    "microsoft/onnxruntime-genai": {
+      "nameWithOwner": "microsoft/onnxruntime-genai",
+      "stars": 1146,
+      "pushedAt": "2026-10-27T17:03:33Z",
+      "createdAt": "2023-11-13T20:37:15Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.17.0",
+        "publishedAt": "2026-09-28T06:15:36Z"
+      },
+      "description": "Generative AI with ONNX Runtime"
+    },
+    "microsoft/vidur": {
+      "nameWithOwner": "microsoft/vidur",
+      "stars": 713,
+      "pushedAt": "2026-08-24T12:47:47Z",
+      "createdAt": "2023-11-02T10:05:21Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "Accurate, large-scale, and extensible simulator for LLM inference Systems"
+    },
+    "mirage-project/mirage": {
+      "nameWithOwner": "mirage-project/mirage",
+      "stars": 2575,
+      "pushedAt": "2026-10-26T14:27:22Z",
+      "createdAt": "2024-05-08T04:14:42Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "osdi26-ae-v1",
+        "publishedAt": "2026-06-05T21:18:38Z"
+      },
+      "description": "Mirage Persistent Kernel: Compiling LLMs into a MegaKernel"
+    },
+    "ml-energy/benchmark": {
+      "nameWithOwner": "ml-energy/benchmark",
+      "stars": 18,
+      "pushedAt": "2026-05-10T02:43:33Z",
+      "createdAt": "2025-07-19T23:52:30Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v3.0",
+        "publishedAt": "2025-12-01T15:36:48Z"
+      },
+      "description": "A time & energy benchmark suite for generative AI"
+    },
+    "ml-energy/zeus": {
+      "nameWithOwner": "ml-energy/zeus",
+      "stars": 383,
+      "pushedAt": "2026-10-26T13:48:24Z",
+      "createdAt": "2022-08-13T21:20:30Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "zeus-v0.16.0",
+        "publishedAt": "2026-07-07T20:46:52Z"
+      },
+      "description": "Measure and optimize the energy consumption of your AI applications!"
+    },
+    "ml-explore/mlx": {
+      "nameWithOwner": "ml-explore/mlx",
+      "stars": 28953,
+      "pushedAt": "2026-10-27T08:15:21Z",
+      "createdAt": "2023-11-28T23:33:45Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.32.4",
+        "publishedAt": "2026-10-14T23:37:14Z"
+      },
+      "description": "MLX: An array framework for Apple silicon"
+    },
+    "ml-explore/mlx-lm": {
+      "nameWithOwner": "ml-explore/mlx-lm",
+      "stars": 7484,
+      "pushedAt": "2026-10-24T00:10:47Z",
+      "createdAt": "2025-03-11T16:38:30Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.32.2",
+        "publishedAt": "2026-10-16T02:49:02Z"
+      },
+      "description": "Run LLMs with MLX"
+    },
+    "ml-explore/mlx-swift": {
+      "nameWithOwner": "ml-explore/mlx-swift",
+      "stars": 2066,
+      "pushedAt": "2026-10-26T23:13:41Z",
+      "createdAt": "2023-12-12T19:58:52Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "0.32.3",
+        "publishedAt": "2026-09-30T18:20:13Z"
+      },
+      "description": "Swift API for MLX"
+    },
+    "ml-explore/mlx-swift-lm": {
+      "nameWithOwner": "ml-explore/mlx-swift-lm",
+      "stars": 847,
+      "pushedAt": "2026-10-26T15:50:05Z",
+      "createdAt": "2025-10-02T00:45:12Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "3.32.3",
+        "publishedAt": "2026-09-30T20:38:34Z"
+      },
+      "description": "LLMs and VLMs with MLX Swift"
+    },
+    "mlc-ai/mlc-llm": {
+      "nameWithOwner": "mlc-ai/mlc-llm",
+      "stars": 23281,
+      "pushedAt": "2026-10-27T11:03:31Z",
+      "createdAt": "2023-04-29T01:59:25Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Universal LLM Deployment Engine with ML Compilation"
+    },
+    "mlc-ai/web-llm": {
+      "nameWithOwner": "mlc-ai/web-llm",
+      "stars": 19318,
+      "pushedAt": "2026-10-11T13:30:43Z",
+      "createdAt": "2023-04-13T18:11:59Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.2.86",
+        "publishedAt": "2026-10-11T13:30:43Z"
+      },
+      "description": "High-performance In-browser LLM Inference Engine "
+    },
+    "mlc-ai/xgrammar": {
+      "nameWithOwner": "mlc-ai/xgrammar",
+      "stars": 1979,
+      "pushedAt": "2026-10-27T03:05:57Z",
+      "createdAt": "2024-06-28T06:34:27Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.2.8",
+        "publishedAt": "2026-09-24T18:02:00Z"
+      },
+      "description": "Fast, Flexible and Portable Structured Generation"
+    },
+    "mlcommons/endpoints": {
+      "nameWithOwner": "mlcommons/endpoints",
+      "stars": 25,
+      "pushedAt": "2026-10-27T01:39:42Z",
+      "createdAt": "2025-10-30T00:21:12Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "MLCommons Inference Endpoints repository"
+    },
+    "mlcommons/inference": {
+      "nameWithOwner": "mlcommons/inference",
+      "stars": 1654,
+      "pushedAt": "2026-09-16T13:09:34Z",
+      "createdAt": "2018-09-13T01:53:57Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v5.1.1",
+        "publishedAt": "2025-10-28T14:21:04Z"
+      },
+      "description": "Reference implementations of MLPerf® inference benchmarks"
+    },
+    "mlcommons/mlperf_client": {
+      "nameWithOwner": "mlcommons/mlperf_client",
+      "stars": 95,
+      "pushedAt": "2026-09-24T15:18:33Z",
+      "createdAt": "2024-12-10T23:29:41Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v2.0.1",
+        "publishedAt": "2026-09-24T15:11:28Z"
+      },
+      "description": "MLPerf Client is a benchmark for Windows, Linux and macOS, focusing on client form factors in ML inference scenarios."
+    },
+    "modelcloud/gptqmodel": {
+      "nameWithOwner": "ModelCloud/GPTQModel",
+      "stars": 1281,
+      "pushedAt": "2026-10-27T16:42:13Z",
+      "createdAt": "2024-06-17T06:45:30Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v7.7.0",
+        "publishedAt": "2026-10-23T10:42:30Z"
+      },
+      "description": "LLM model quantization (compression) toolkit with HW acceleration support for Nvidia, AMD, Intel GPU and Intel/AMD/Apple CPU via HF, vLLM, and SGLang."
+    },
+    "modelcontextprotocol/modelcontextprotocol": {
+      "nameWithOwner": "modelcontextprotocol/modelcontextprotocol",
+      "stars": 9543,
+      "pushedAt": "2026-10-26T22:36:48Z",
+      "createdAt": "2024-09-24T20:26:52Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "2026-07-28",
+        "publishedAt": "2026-07-28T16:47:49Z"
+      },
+      "description": "Specification and documentation for the Model Context Protocol"
+    },
+    "modelpack/model-spec": {
+      "nameWithOwner": "modelpack/model-spec",
+      "stars": 237,
+      "pushedAt": "2026-10-13T19:39:17Z",
+      "createdAt": "2024-08-28T12:14:18Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "An Open Standard for Packaging, Distributing and Running LLMs in Cloud-Native Environments"
+    },
+    "modeltc/lightllm": {
+      "nameWithOwner": "ModelTC/LightLLM",
+      "stars": 4339,
+      "pushedAt": "2026-10-27T15:39:05Z",
+      "createdAt": "2023-07-22T08:11:15Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.2.0",
+        "publishedAt": "2026-08-10T04:20:46Z"
+      },
+      "description": "LightLLM is a Python-based LLM (Large Language Model) inference and serving framework, notable for its lightweight design, easy scalability, and high-speed performance."
+    },
+    "modeltc/lightx2v": {
+      "nameWithOwner": "ModelTC/LightX2V",
+      "stars": 2960,
+      "pushedAt": "2026-10-27T11:26:02Z",
+      "createdAt": "2025-03-24T10:27:56Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "0.6.0",
+        "publishedAt": "2026-10-12T09:13:16Z"
+      },
+      "description": "Lightweight Image Video Action Generation Inference Framework"
+    },
+    "modular/modular": {
+      "nameWithOwner": "modular/modular",
+      "stars": 30056,
+      "pushedAt": "2026-10-26T13:23:41Z",
+      "createdAt": "2023-04-28T22:17:24Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "max/v26.7.0",
+        "publishedAt": "2026-10-22T18:21:28Z"
+      },
+      "description": "The Modular Platform (includes MAX & Mojo)"
+    },
+    "modular/mojo-gpu-puzzles": {
+      "nameWithOwner": "modular/mojo-gpu-puzzles",
+      "stars": 431,
+      "pushedAt": "2026-10-26T13:16:54Z",
+      "createdAt": "2025-04-30T20:48:00Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": null,
+      "description": "Learn GPU Programming in Mojo🔥 by Solving Puzzles"
+    },
+    "moonshotai/checkpoint-engine": {
+      "nameWithOwner": "MoonshotAI/checkpoint-engine",
+      "stars": 1018,
+      "pushedAt": "2026-10-22T05:10:16Z",
+      "createdAt": "2025-09-08T08:04:20Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.4.2",
+        "publishedAt": "2026-07-04T09:26:11Z"
+      },
+      "description": "Checkpoint-engine is a simple middleware to update model weights in LLM inference engines"
+    },
+    "moonshotai/kimi-vendor-verifier": {
+      "nameWithOwner": "MoonshotAI/Kimi-Vendor-Verifier",
+      "stars": 186,
+      "pushedAt": "2026-09-17T09:09:22Z",
+      "createdAt": "2026-01-02T05:43:58Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "Kimi-Vendor-Verifier"
+    },
+    "moonshotai/moonep": {
+      "nameWithOwner": "MoonshotAI/MoonEP",
+      "stars": 1194,
+      "pushedAt": "2026-10-12T09:18:17Z",
+      "createdAt": "2026-07-24T09:07:21Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "MoonEP: A Perfectly Balanced Expert Parallelism Library via Dynamic Redundant Experts"
+    },
+    "mozilla-ai/llamafile": {
+      "nameWithOwner": "mozilla-ai/llamafile",
+      "stars": 26496,
+      "pushedAt": "2026-10-12T00:26:41Z",
+      "createdAt": "2023-09-10T21:12:32Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "0.10.6",
+        "publishedAt": "2026-09-15T16:02:33Z"
+      },
+      "description": "Distribute and run LLMs with a single file."
+    },
+    "mudler/localai": {
+      "nameWithOwner": "mudler/LocalAI",
+      "stars": 50005,
+      "pushedAt": "2026-10-27T15:31:36Z",
+      "createdAt": "2023-03-18T22:58:02Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v4.12.1",
+        "publishedAt": "2026-10-23T10:27:00Z"
+      },
+      "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required."
+    },
+    "mukel/llama3.java": {
+      "nameWithOwner": "mukel/llama3.java",
+      "stars": 817,
+      "pushedAt": "2026-04-24T16:38:39Z",
+      "createdAt": "2024-04-25T09:09:02Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "Llama 3+ inference in pure Java"
+    },
+    "nandhakishorm/laya": {
+      "nameWithOwner": "NandhaKishorM/laya",
+      "stars": 34458,
+      "pushedAt": "2026-10-26T02:59:09Z",
+      "createdAt": "2026-09-18T04:46:33Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.4.15",
+        "publishedAt": "2026-10-24T19:17:13Z"
+      },
+      "description": "Non-autoregressive System 1 decision engine. Typed choice, score and yes/no decisions over any text in a single forward pass, in 100+ languages, with a router that picks the right checkpoint per request."
+    },
+    "ngxson/wllama": {
+      "nameWithOwner": "ngxson/wllama",
+      "stars": 1351,
+      "pushedAt": "2026-10-20T14:57:56Z",
+      "createdAt": "2024-03-13T23:18:27Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "3.8.1",
+        "publishedAt": "2026-10-02T14:20:41Z"
+      },
+      "description": "WebAssembly binding for llama.cpp - Enabling on-browser LLM inference"
+    },
+    "noamgat/lm-format-enforcer": {
+      "nameWithOwner": "noamgat/lm-format-enforcer",
+      "stars": 2038,
+      "pushedAt": "2026-04-04T14:57:50Z",
+      "createdAt": "2023-09-21T12:16:48Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.11.2",
+        "publishedAt": "2025-08-09T05:26:21Z"
+      },
+      "description": "Enforce the output format (JSON Schema, Regex etc) of a language model"
+    },
+    "novasky-ai/skyrl": {
+      "nameWithOwner": "NovaSky-AI/SkyRL",
+      "stars": 2463,
+      "pushedAt": "2026-10-27T16:36:05Z",
+      "createdAt": "2025-04-22T17:33:31Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "skyrl-v0.4.0",
+        "publishedAt": "2026-10-01T21:32:56Z"
+      },
+      "description": "SkyRL: A Modular Full-stack RL Library for LLMs"
+    },
+    "nunchux-ai/nunchaku": {
+      "nameWithOwner": "nunchux-ai/nunchaku",
+      "stars": 3962,
+      "pushedAt": "2026-09-06T23:07:26Z",
+      "createdAt": "2024-11-06T07:24:40Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.2.1",
+        "publishedAt": "2026-01-25T03:48:53Z"
+      },
+      "description": "[ICLR2025 Spotlight] SVDQuant: Absorbing Outliers by Low-Rank Components for 4-Bit Diffusion Models"
+    },
+    "nvidia-nemo/rl": {
+      "nameWithOwner": "NVIDIA-NeMo/RL",
+      "stars": 2088,
+      "pushedAt": "2026-10-27T17:02:58Z",
+      "createdAt": "2025-03-16T17:43:21Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.7.0",
+        "publishedAt": "2026-07-29T04:31:13Z"
+      },
+      "description": "Scalable toolkit for efficient model reinforcement"
+    },
+    "nvidia-nemo/switchyard": {
+      "nameWithOwner": "NVIDIA-NeMo/Switchyard",
+      "stars": 3456,
+      "pushedAt": "2026-10-27T17:03:33Z",
+      "createdAt": "2026-05-19T19:06:33Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.3.0",
+        "publishedAt": "2026-09-22T18:06:59Z"
+      },
+      "description": "Switchyard lets LLM applications route traffic across models and providers while preserving native OpenAI and Anthropic API compatibility - enabling flexible model selection, benchmarking, and cost/performance optimization."
+    },
+    "nvidia/accelerated-computing-hub": {
+      "nameWithOwner": "NVIDIA/accelerated-computing-hub",
+      "stars": 2137,
+      "pushedAt": "2026-10-26T18:06:20Z",
+      "createdAt": "2024-06-14T21:57:48Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": null,
+      "description": "NVIDIA curated collection of educational resources related to general purpose GPU programming."
+    },
+    "nvidia/cuda-checkpoint": {
+      "nameWithOwner": "NVIDIA/cuda-checkpoint",
+      "stars": 504,
+      "pushedAt": "2026-07-06T17:32:59Z",
+      "createdAt": "2024-04-17T19:45:28Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": null,
+      "description": "CUDA checkpoint and restore utility"
+    },
+    "nvidia/cutile-python": {
+      "nameWithOwner": "NVIDIA/cutile-python",
+      "stars": 2164,
+      "pushedAt": "2026-10-27T10:49:41Z",
+      "createdAt": "2025-06-13T22:07:17Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": null,
+      "description": "cuTile is a programming model for writing parallel kernels for NVIDIA GPUs"
+    },
+    "nvidia/cutlass": {
+      "nameWithOwner": "NVIDIA/cutlass",
+      "stars": 10664,
+      "pushedAt": "2026-10-21T09:49:15Z",
+      "createdAt": "2017-11-30T00:11:24Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v4.8.1",
+        "publishedAt": "2026-10-21T09:49:16Z"
+      },
+      "description": "CUDA Templates and Python DSLs for High-Performance Linear Algebra"
+    },
+    "nvidia/dcgm": {
+      "nameWithOwner": "NVIDIA/DCGM",
+      "stars": 809,
+      "pushedAt": "2026-10-27T01:47:22Z",
+      "createdAt": "2020-12-15T23:12:04Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "NVIDIA Data Center GPU Manager (DCGM) is a project for gathering telemetry and measuring the health of NVIDIA GPUs"
+    },
+    "nvidia/dcgm-exporter": {
+      "nameWithOwner": "NVIDIA/dcgm-exporter",
+      "stars": 1916,
+      "pushedAt": "2026-09-18T21:23:51Z",
+      "createdAt": "2021-08-11T15:40:37Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "4.8.4",
+        "publishedAt": "2026-09-18T20:35:04Z"
+      },
+      "description": "NVIDIA GPU metrics exporter for Prometheus leveraging DCGM"
+    },
+    "nvidia/isaac-gr00t": {
+      "nameWithOwner": "NVIDIA/Isaac-GR00T",
+      "stars": 8279,
+      "pushedAt": "2026-10-22T21:49:58Z",
+      "createdAt": "2025-03-11T18:34:24Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "n1.7-release",
+        "publishedAt": "2026-04-18T14:45:14Z"
+      },
+      "description": "NVIDIA Isaac GR00T N1.7 -  A Foundation Model for Generalist Robots."
+    },
+    "nvidia/kvpress": {
+      "nameWithOwner": "NVIDIA/kvpress",
+      "stars": 1239,
+      "pushedAt": "2026-10-27T12:56:37Z",
+      "createdAt": "2024-11-06T19:23:20Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.5.5",
+        "publishedAt": "2026-09-17T12:45:18Z"
+      },
+      "description": "LLM KV cache compression made easy"
+    },
+    "nvidia/model-optimizer": {
+      "nameWithOwner": "NVIDIA/Model-Optimizer",
+      "stars": 5453,
+      "pushedAt": "2026-10-27T17:00:54Z",
+      "createdAt": "2024-04-23T19:00:54Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "0.47.0",
+        "publishedAt": "2026-09-23T18:55:03Z"
+      },
+      "description": "A unified library of SOTA model optimization techniques like quantization, distillation, pruning, neural architecture search, speculative decoding, etc. It compresses deep learning models for downstream deployment frameworks like TensorRT-LLM, TensorRT, vLLM, etc. to optimize inference speed."
+    },
+    "nvidia/nccl": {
+      "nameWithOwner": "NVIDIA/nccl",
+      "stars": 5189,
+      "pushedAt": "2026-10-26T15:08:32Z",
+      "createdAt": "2015-11-14T00:12:04Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v2.32.3-1",
+        "publishedAt": "2026-09-17T21:09:42Z"
+      },
+      "description": "Optimized primitives for collective multi-GPU communication"
+    },
+    "nvidia/nvshmem": {
+      "nameWithOwner": "NVIDIA/nvshmem",
+      "stars": 596,
+      "pushedAt": "2026-10-19T17:24:12Z",
+      "createdAt": "2025-08-27T15:37:11Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v3.8.0-0",
+        "publishedAt": "2026-09-22T21:42:08Z"
+      },
+      "description": "NVIDIA NVSHMEM is a parallel programming interface for NVIDIA GPUs based on OpenSHMEM. NVSHMEM can significantly reduce multi-process communication and coordination overheads by allowing programmers to perform one-sided communication from within CUDA kernels and on CUDA streams."
+    },
+    "nvidia/recsys-examples": {
+      "nameWithOwner": "NVIDIA/recsys-examples",
+      "stars": 355,
+      "pushedAt": "2026-10-27T13:18:07Z",
+      "createdAt": "2025-04-18T20:57:50Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v26.08",
+        "publishedAt": "2026-09-14T03:18:01Z"
+      },
+      "description": "Examples for Recommenders - easy to train and deploy on accelerated infrastructure."
+    },
+    "nvidia/sol-execbench": {
+      "nameWithOwner": "NVIDIA/SOL-ExecBench",
+      "stars": 323,
+      "pushedAt": "2026-07-15T17:31:33Z",
+      "createdAt": "2026-03-04T23:59:22Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "A benchmark of real-world DL kernel problems "
+    },
+    "nvidia/tensorrt": {
+      "nameWithOwner": "NVIDIA/TensorRT",
+      "stars": 13421,
+      "pushedAt": "2026-10-09T17:55:04Z",
+      "createdAt": "2019-05-02T22:02:08Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v11.4",
+        "publishedAt": "2026-10-09T17:55:05Z"
+      },
+      "description": "NVIDIA® TensorRT™ is an SDK for high-performance deep learning inference on NVIDIA GPUs. This repository contains the open source components of TensorRT."
+    },
+    "nvidia/tensorrt-edge-llm": {
+      "nameWithOwner": "NVIDIA/TensorRT-Edge-LLM",
+      "stars": 604,
+      "pushedAt": "2026-10-26T23:53:14Z",
+      "createdAt": "2025-10-02T17:40:17Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.11.0",
+        "publishedAt": "2026-09-29T16:12:35Z"
+      },
+      "description": "High-performance, light-weight C++ LLM and VLM Inference Software for Physical AI"
+    },
+    "nvidia/tensorrt-llm": {
+      "nameWithOwner": "NVIDIA/TensorRT-LLM",
+      "stars": 14961,
+      "pushedAt": "2026-10-27T16:45:44Z",
+      "createdAt": "2023-08-16T17:14:27Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v1.2.1",
+        "publishedAt": "2026-04-20T11:51:33Z"
+      },
+      "description": "TensorRT LLM provides users with an easy-to-use Python API to define Large Language Models (LLMs) and supports state-of-the-art optimizations to perform inference efficiently on NVIDIA GPUs. TensorRT LLM also contains components to create Python and C++ runtimes that orchestrate the inference execution in a performant way."
+    },
+    "nvidia/tensorrt-rtx": {
+      "nameWithOwner": "NVIDIA/TensorRT-RTX",
+      "stars": 115,
+      "pushedAt": "2026-10-15T23:44:23Z",
+      "createdAt": "2025-06-05T19:55:09Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.6.1.120",
+        "publishedAt": "2026-07-28T20:50:04Z"
+      },
+      "description": "NVIDIA TensorRT-RTX is an SDK for high-performance AI inference on NVIDIA RTX GPUs. This repository contains Open-Source Software components of TensorRT-RTX."
+    },
+    "nvidia/transformerengine": {
+      "nameWithOwner": "NVIDIA/TransformerEngine",
+      "stars": 3598,
+      "pushedAt": "2026-10-27T16:12:29Z",
+      "createdAt": "2022-09-20T15:20:26Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v2.20.2",
+        "publishedAt": "2026-10-05T21:14:28Z"
+      },
+      "description": "A library for accelerating Transformer models on NVIDIA GPUs, including using 8-bit and 4-bit floating point (FP8 and FP4) precision on Hopper, Ada and Blackwell GPUs, to provide better performance with lower memory utilization in both training and inference."
+    },
+    "nvlabs/fast-dllm": {
+      "nameWithOwner": "NVlabs/Fast-dLLM",
+      "stars": 1109,
+      "pushedAt": "2026-05-30T10:38:26Z",
+      "createdAt": "2025-05-27T14:46:09Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Official implementation of \"Fast-dLLM: Training-free Acceleration of Diffusion LLM by Enabling KV Cache and Parallel Decoding\""
+    },
+    "ollama/ollama": {
+      "nameWithOwner": "ollama/ollama",
+      "stars": 185001,
+      "pushedAt": "2026-10-27T15:47:51Z",
+      "createdAt": "2023-06-26T19:39:32Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.40.11",
+        "publishedAt": "2026-10-24T00:30:13Z"
+      },
+      "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+    },
+    "ome-projects/ome": {
+      "nameWithOwner": "ome-projects/ome",
+      "stars": 521,
+      "pushedAt": "2026-10-27T15:54:53Z",
+      "createdAt": "2025-05-19T19:30:46Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.2.2",
+        "publishedAt": "2026-08-05T17:48:00Z"
+      },
+      "description": "Open Model Engine (OME) — Kubernetes operator for LLM serving, GPU scheduling, and model lifecycle management. Works with SGLang, vLLM, TensorRT-LLM, and Triton"
+    },
+    "onnx/onnx": {
+      "nameWithOwner": "onnx/onnx",
+      "stars": 21624,
+      "pushedAt": "2026-10-27T17:03:58Z",
+      "createdAt": "2017-09-07T04:53:45Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.23.2",
+        "publishedAt": "2026-10-06T01:30:11Z"
+      },
+      "description": "Open standard for machine learning interoperability"
+    },
+    "oobabooga/textgen": {
+      "nameWithOwner": "oobabooga/textgen",
+      "stars": 47726,
+      "pushedAt": "2026-08-17T17:38:16Z",
+      "createdAt": "2022-12-21T04:17:37Z",
+      "archived": false,
+      "isFork": false,
+      "license": "AGPL-3.0",
+      "latestRelease": {
+        "tag": "v4.9",
+        "publishedAt": "2026-05-20T19:02:34Z"
+      },
+      "description": "Open-source desktop app for local LLMs. Text, vision, tool-calling, OpenAI/Anthropic-compatible API. 100% private."
+    },
+    "open-telemetry/semantic-conventions-genai": {
+      "nameWithOwner": "open-telemetry/semantic-conventions-genai",
+      "stars": 488,
+      "pushedAt": "2026-10-27T16:52:03Z",
+      "createdAt": "2026-05-05T03:08:44Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": null
+    },
+    "openai/harmony": {
+      "nameWithOwner": "openai/harmony",
+      "stars": 4535,
+      "pushedAt": "2026-04-08T23:52:09Z",
+      "createdAt": "2025-07-31T16:10:01Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Renderer for the harmony response format to be used with gpt-oss"
+    },
+    "openai/openai-openapi": {
+      "nameWithOwner": "openai/openai-openapi",
+      "stars": 2557,
+      "pushedAt": "2026-10-27T16:35:30Z",
+      "createdAt": "2021-12-14T22:18:57Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "2.0.0",
+        "publishedAt": "2023-06-19T21:44:06Z"
+      },
+      "description": "OpenAPI specification for the OpenAI API"
+    },
+    "openresponses/openresponses": {
+      "nameWithOwner": "openresponses/openresponses",
+      "stars": 1174,
+      "pushedAt": "2026-10-22T04:11:30Z",
+      "createdAt": "2026-01-15T01:53:57Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": null
+    },
+    "openvinotoolkit/model_server": {
+      "nameWithOwner": "openvinotoolkit/model_server",
+      "stars": 952,
+      "pushedAt": "2026-10-27T15:12:45Z",
+      "createdAt": "2018-09-26T16:40:53Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v2026.4.1",
+        "publishedAt": "2026-10-06T21:12:46Z"
+      },
+      "description": "A scalable inference server for models optimized with OpenVINO™"
+    },
+    "openvinotoolkit/openvino": {
+      "nameWithOwner": "openvinotoolkit/openvino",
+      "stars": 11078,
+      "pushedAt": "2026-10-27T16:55:30Z",
+      "createdAt": "2018-10-15T10:54:40Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "2026.4.1",
+        "publishedAt": "2026-10-01T13:45:59Z"
+      },
+      "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference"
+    },
+    "openvinotoolkit/openvino.genai": {
+      "nameWithOwner": "openvinotoolkit/openvino.genai",
+      "stars": 604,
+      "pushedAt": "2026-10-27T16:18:33Z",
+      "createdAt": "2023-10-16T13:38:16Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "2026.4.1.0",
+        "publishedAt": "2026-10-01T13:52:44Z"
+      },
+      "description": "Run Generative AI models with simple C++/Python API and using OpenVINO Runtime"
+    },
+    "openxla/stablehlo": {
+      "nameWithOwner": "openxla/stablehlo",
+      "stars": 713,
+      "pushedAt": "2026-10-27T16:03:53Z",
+      "createdAt": "2022-08-04T00:19:31Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.0.0",
+        "publishedAt": "2024-05-14T23:37:03Z"
+      },
+      "description": "Backward compatible ML compute opset inspired by HLO/MHLO"
+    },
+    "openxla/xla": {
+      "nameWithOwner": "openxla/xla",
+      "stars": 4615,
+      "pushedAt": "2026-10-27T17:04:18Z",
+      "createdAt": "2022-08-09T15:30:01Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "A machine learning compiler for GPUs, CPUs, and ML accelerators"
+    },
+    "ovg-project/kvcached": {
+      "nameWithOwner": "ovg-project/kvcached",
+      "stars": 2011,
+      "pushedAt": "2026-10-27T13:09:57Z",
+      "createdAt": "2025-05-27T17:34:02Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.1.6",
+        "publishedAt": "2026-10-03T19:47:30Z"
+      },
+      "description": "Virtualized Elastic KV Cache for Dynamic GPU Sharing and Beyond"
+    },
+    "paddlepaddle/fastdeploy": {
+      "nameWithOwner": "PaddlePaddle/FastDeploy",
+      "stars": 3724,
+      "pushedAt": "2026-09-24T14:17:31Z",
+      "createdAt": "2022-06-27T10:22:10Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v2.5.0",
+        "publishedAt": "2026-04-09T06:26:05Z"
+      },
+      "description": "High-performance Inference and Deployment Toolkit for LLMs and VLMs based on PaddlePaddle"
+    },
+    "perplexityai/pplx-garden": {
+      "nameWithOwner": "perplexityai/pplx-garden",
+      "stars": 951,
+      "pushedAt": "2026-09-02T22:40:14Z",
+      "createdAt": "2025-11-04T17:35:34Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "Perplexity open source garden for inference technology"
+    },
+    "physical-intelligence/openpi": {
+      "nameWithOwner": "Physical-Intelligence/openpi",
+      "stars": 14427,
+      "pushedAt": "2026-08-24T16:27:13Z",
+      "createdAt": "2024-10-21T15:23:28Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": null
+    },
+    "pipecat-ai/pipecat": {
+      "nameWithOwner": "pipecat-ai/pipecat",
+      "stars": 16850,
+      "pushedAt": "2026-10-27T13:48:43Z",
+      "createdAt": "2023-12-27T12:59:00Z",
+      "archived": false,
+      "isFork": false,
+      "license": "BSD-2-Clause",
+      "latestRelease": {
+        "tag": "v1.14.0",
+        "publishedAt": "2026-10-24T01:24:33Z"
+      },
+      "description": "Open Source framework for voice agents, multimodal apps, and realtime AI. Maintained by Daily and the community."
+    },
+    "portkey-ai/gateway": {
+      "nameWithOwner": "Portkey-AI/gateway",
+      "stars": 13280,
+      "pushedAt": "2026-05-25T13:54:51Z",
+      "createdAt": "2023-08-23T11:52:47Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v1.15.2",
+        "publishedAt": "2026-01-12T08:46:07Z"
+      },
+      "description": "A blazing fast AI Gateway with integrated guardrails. Route to 1,600+ LLMs, 50+ AI Guardrails with 1 fast & friendly API."
+    },
+    "primeintellect-ai/prime-rl": {
+      "nameWithOwner": "PrimeIntellect-ai/prime-rl",
+      "stars": 2198,
+      "pushedAt": "2026-10-27T16:40:52Z",
+      "createdAt": "2025-02-18T02:56:56Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.10.0",
+        "publishedAt": "2026-10-13T22:20:01Z"
+      },
+      "description": "Agentic RL Training at Scale"
+    },
+    "project-hami/hami": {
+      "nameWithOwner": "Project-HAMi/HAMi",
+      "stars": 4975,
+      "pushedAt": "2026-10-27T02:04:59Z",
+      "createdAt": "2021-09-14T11:51:49Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v2.10.0",
+        "publishedAt": "2026-08-21T06:31:16Z"
+      },
+      "description": "Heterogeneous GPU Sharing on Kubernetes"
+    },
+    "pydantic/pydantic-ai": {
+      "nameWithOwner": "pydantic/pydantic-ai",
+      "stars": 20905,
+      "pushedAt": "2026-10-27T17:02:21Z",
+      "createdAt": "2024-06-21T15:55:04Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v2.62.0",
+        "publishedAt": "2026-10-27T02:38:43Z"
+      },
+      "description": "How Python does AI. Agents, realtime voice, image generation, embeddings. Every model, every interface, typed end to end."
+    },
+    "pytorch/ao": {
+      "nameWithOwner": "pytorch/ao",
+      "stars": 3016,
+      "pushedAt": "2026-10-27T01:42:50Z",
+      "createdAt": "2023-11-03T21:27:36Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v0.18.0",
+        "publishedAt": "2026-08-03T20:44:24Z"
+      },
+      "description": "PyTorch native quantization for training and inference"
+    },
+    "pytorch/executorch": {
+      "nameWithOwner": "pytorch/executorch",
+      "stars": 5132,
+      "pushedAt": "2026-10-27T16:55:54Z",
+      "createdAt": "2022-02-25T17:58:31Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v1.5.1",
+        "publishedAt": "2026-09-23T16:58:34Z"
+      },
+      "description": "On-device AI across mobile, embedded and edge for PyTorch"
+    },
+    "pytorch/helion": {
+      "nameWithOwner": "pytorch/helion",
+      "stars": 975,
+      "pushedAt": "2026-10-27T16:23:23Z",
+      "createdAt": "2025-04-22T17:50:13Z",
+      "archived": false,
+      "isFork": false,
+      "license": "BSD-3-Clause",
+      "latestRelease": {
+        "tag": "v1.5.1",
+        "publishedAt": "2026-10-15T21:00:33Z"
+      },
+      "description": "A Python-embedded DSL that makes it easy to write fast, scalable ML kernels with minimal boilerplate."
+    },
+    "pytorch/tensorrt": {
+      "nameWithOwner": "pytorch/TensorRT",
+      "stars": 3018,
+      "pushedAt": "2026-10-27T16:48:33Z",
+      "createdAt": "2020-03-11T17:17:43Z",
+      "archived": false,
+      "isFork": false,
+      "license": "BSD-3-Clause",
+      "latestRelease": {
+        "tag": "v2.14.0",
+        "publishedAt": "2026-09-10T05:39:50Z"
+      },
+      "description": "PyTorch/TorchScript/FX compiler for NVIDIA GPUs using TensorRT"
+    },
+    "qdrant/fastembed": {
+      "nameWithOwner": "qdrant/fastembed",
+      "stars": 3267,
+      "pushedAt": "2026-10-27T14:47:40Z",
+      "createdAt": "2023-07-14T04:59:33Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.9.1",
+        "publishedAt": "2026-10-24T18:32:20Z"
+      },
+      "description": "Fast, Accurate, Lightweight Python library to make State of the Art Embedding"
+    },
+    "qualcomm/cloud-ai-sdk": {
+      "nameWithOwner": "qualcomm/cloud-ai-sdk",
+      "stars": 85,
+      "pushedAt": "2026-10-07T15:38:55Z",
+      "createdAt": "2023-08-07T16:46:44Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": null,
+      "description": "Qualcomm Cloud AI SDK (Platform and Apps) enable high performance deep learning inference on Qualcomm Cloud AI platforms delivering high throughput and low latency across Computer Vision, Object Detection, Natural Language Processing and Generative AI models."
+    },
+    "qualcomm/geniex": {
+      "nameWithOwner": "qualcomm/GenieX",
+      "stars": 8465,
+      "pushedAt": "2026-10-27T15:11:49Z",
+      "createdAt": "2024-08-16T20:13:07Z",
+      "archived": false,
+      "isFork": false,
+      "license": "BSD-3-Clause",
+      "latestRelease": {
+        "tag": "v0.9.3",
+        "publishedAt": "2026-10-19T23:13:48Z"
+      },
+      "description": "Run frontier LLMs and VLMs locally on Qualcomm devices across NPU, GPU, and CPU with a few lines of code"
+    },
+    "qualcomm/vllm-qaic": {
+      "nameWithOwner": "qualcomm/vllm-qaic",
+      "stars": 13,
+      "pushedAt": "2026-10-27T07:11:08Z",
+      "createdAt": "2026-06-19T18:31:46Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v1.23.0",
+        "publishedAt": "2026-09-22T21:04:59Z"
+      },
+      "description": "Qaic plugin backend for vllm to utilize Cloud AI accelerators"
+    },
+    "radixark/miles": {
+      "nameWithOwner": "radixark/miles",
+      "stars": 3223,
+      "pushedAt": "2026-10-27T17:03:41Z",
+      "createdAt": "2025-10-09T06:04:57Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.1.3",
+        "publishedAt": "2026-10-23T03:25:59Z"
+      },
+      "description": "Miles is an enterprise-facing reinforcement learning framework for LLM and VLM post-training, forked from and co-evolving with slime."
+    },
+    "ray-project/ray": {
+      "nameWithOwner": "ray-project/ray",
+      "stars": 44130,
+      "pushedAt": "2026-10-27T16:33:24Z",
+      "createdAt": "2016-10-25T19:38:30Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "ray-2.59.0",
+        "publishedAt": "2026-10-02T07:04:37Z"
+      },
+      "description": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads."
+    },
+    "replicate/cog": {
+      "nameWithOwner": "replicate/cog",
+      "stars": 9492,
+      "pushedAt": "2026-10-27T11:44:16Z",
+      "createdAt": "2021-02-26T23:43:09Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.23.1",
+        "publishedAt": "2026-10-20T17:53:24Z"
+      },
+      "description": "Containers for machine learning"
+    },
+    "rocm/aiter": {
+      "nameWithOwner": "ROCm/aiter",
+      "stars": 598,
+      "pushedAt": "2026-10-27T16:56:54Z",
+      "createdAt": "2024-11-11T10:38:20Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.1.27",
+        "publishedAt": "2026-10-26T08:41:21Z"
+      },
+      "description": "AI Tensor Engine for ROCm"
+    },
+    "rocm/amdmigraphx": {
+      "nameWithOwner": "ROCm/AMDMIGraphX",
+      "stars": 337,
+      "pushedAt": "2026-10-27T16:22:22Z",
+      "createdAt": "2018-04-23T15:29:10Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "rocm-10.1",
+        "publishedAt": "2026-10-07T14:25:27Z"
+      },
+      "description": "AMD's graph optimization engine."
+    },
+    "rocm/atom": {
+      "nameWithOwner": "ROCm/ATOM",
+      "stars": 201,
+      "pushedAt": "2026-10-27T16:55:11Z",
+      "createdAt": "2025-11-07T03:22:41Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.1.8",
+        "publishedAt": "2026-10-19T06:39:20Z"
+      },
+      "description": "AiTer Optimized Model"
+    },
+    "rocm/device-metrics-exporter": {
+      "nameWithOwner": "ROCm/device-metrics-exporter",
+      "stars": 68,
+      "pushedAt": "2026-10-27T09:33:31Z",
+      "createdAt": "2024-11-14T21:27:56Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.5.3",
+        "publishedAt": "2026-10-07T05:55:48Z"
+      },
+      "description": "Device Metrics Exporter exports metrics from AMD devices (GPUs) to collectors like Prometheus."
+    },
+    "rocm/rocm-libraries": {
+      "nameWithOwner": "ROCm/rocm-libraries",
+      "stars": 456,
+      "pushedAt": "2026-10-27T17:02:48Z",
+      "createdAt": "2025-04-23T18:11:23Z",
+      "archived": false,
+      "isFork": false,
+      "license": null,
+      "latestRelease": {
+        "tag": "therock-10.1",
+        "publishedAt": "2026-10-05T10:51:15Z"
+      },
+      "description": "super repo for rocm libraries"
+    },
+    "rocm/rocm-systems": {
+      "nameWithOwner": "ROCm/rocm-systems",
+      "stars": 543,
+      "pushedAt": "2026-10-27T17:02:38Z",
+      "createdAt": "2025-04-07T16:23:38Z",
+      "archived": false,
+      "isFork": false,
+      "license": null,
+      "latestRelease": {
+        "tag": "therock-10.1",
+        "publishedAt": "2026-10-05T10:42:49Z"
+      },
+      "description": "super repo for rocm systems projects"
+    },
+    "rocm/therock": {
+      "nameWithOwner": "ROCm/TheRock",
+      "stars": 1409,
+      "pushedAt": "2026-10-27T16:53:50Z",
+      "createdAt": "2024-03-01T08:56:06Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "therock-10.1",
+        "publishedAt": "2026-10-05T10:42:56Z"
+      },
+      "description": "The HIP Environment and ROCm Kit - A lightweight open source build system for HIP and ROCm"
+    },
+    "safeailab/eagle": {
+      "nameWithOwner": "SafeAILab/EAGLE",
+      "stars": 2563,
+      "pushedAt": "2026-02-20T02:53:29Z",
+      "createdAt": "2023-12-07T19:08:39Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": null,
+      "description": "Official Implementation of EAGLE-1 (ICML'24), EAGLE-2 (EMNLP'24), and EAGLE-3 (NeurIPS'25)."
+    },
+    "safetensors/safetensors": {
+      "nameWithOwner": "safetensors/safetensors",
+      "stars": 3937,
+      "pushedAt": "2026-10-06T17:33:11Z",
+      "createdAt": "2022-09-22T14:54:51Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.8.0",
+        "publishedAt": "2026-06-09T08:34:30Z"
+      },
+      "description": "Simple, safe way to store and distribute tensors"
+    },
+    "scalingintelligence/kernelbench": {
+      "nameWithOwner": "ScalingIntelligence/KernelBench",
+      "stars": 1301,
+      "pushedAt": "2026-03-24T04:29:13Z",
+      "createdAt": "2024-10-25T00:08:19Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": null,
+      "description": "KernelBench: Can LLMs Write GPU Kernels? - Benchmark + Toolkit with Torch -> CUDA (+ more DSLs)"
+    },
+    "semianalysisai/inferencex": {
+      "nameWithOwner": "SemiAnalysisAI/InferenceX",
+      "stars": 1935,
+      "pushedAt": "2026-10-27T16:58:04Z",
+      "createdAt": "2025-07-12T20:07:46Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Open Source AI Accelerator Research Platform Standard / 开源推理研究平台"
+    },
+    "serverlessllm/serverlessllm": {
+      "nameWithOwner": "ServerlessLLM/ServerlessLLM",
+      "stars": 717,
+      "pushedAt": "2026-09-04T06:24:01Z",
+      "createdAt": "2024-01-23T18:12:30Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.8.0",
+        "publishedAt": "2025-11-03T15:31:29Z"
+      },
+      "description": "Serverless LLM Serving for Everyone."
+    },
+    "sgl-project/genai-bench": {
+      "nameWithOwner": "sgl-project/genai-bench",
+      "stars": 332,
+      "pushedAt": "2026-10-14T22:01:03Z",
+      "createdAt": "2025-06-19T18:44:38Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.0.5",
+        "publishedAt": "2026-07-17T21:10:05Z"
+      },
+      "description": "Genai-bench is a powerful benchmark tool designed for comprehensive token-level performance evaluation of large language model (LLM) serving systems."
+    },
+    "sgl-project/mini-sglang": {
+      "nameWithOwner": "sgl-project/mini-sglang",
+      "stars": 5455,
+      "pushedAt": "2026-05-17T12:37:42Z",
+      "createdAt": "2025-09-01T22:31:45Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "A compact implementation of SGLang, designed to demystify the complexities of modern LLM serving systems."
+    },
+    "sgl-project/rbg": {
+      "nameWithOwner": "sgl-project/rbg",
+      "stars": 312,
+      "pushedAt": "2026-10-27T06:23:04Z",
+      "createdAt": "2025-08-28T05:55:13Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.8.0",
+        "publishedAt": "2026-08-31T02:13:44Z"
+      },
+      "description": "A workload for deploying LLM inference services on Kubernetes"
+    },
+    "sgl-project/sgl-learning-materials": {
+      "nameWithOwner": "sgl-project/sgl-learning-materials",
+      "stars": 898,
+      "pushedAt": "2026-01-05T04:55:34Z",
+      "createdAt": "2024-09-10T16:04:05Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "Materials for learning SGLang"
+    },
+    "sgl-project/sglang": {
+      "nameWithOwner": "sgl-project/sglang",
+      "stars": 38273,
+      "pushedAt": "2026-10-27T17:04:34Z",
+      "createdAt": "2024-01-08T04:15:52Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.5.22",
+        "publishedAt": "2026-10-19T02:55:19Z"
+      },
+      "description": "SGLang is a high-performance serving framework for large language models and multimodal models."
+    },
+    "sgl-project/sglang-omni": {
+      "nameWithOwner": "sgl-project/sglang-omni",
+      "stars": 1636,
+      "pushedAt": "2026-10-27T15:13:12Z",
+      "createdAt": "2026-01-07T06:58:29Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "voxt-v1.16.3",
+        "publishedAt": "2026-10-23T00:09:55Z"
+      },
+      "description": "High Performance Serving Runtime For Interactive Super Intelligence System"
+    },
+    "sgl-project/specforge": {
+      "nameWithOwner": "sgl-project/SpecForge",
+      "stars": 1243,
+      "pushedAt": "2026-10-27T09:53:29Z",
+      "createdAt": "2025-06-09T05:28:34Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "Train speculative decoding models effortlessly and port them smoothly to SGLang serving."
+    },
+    "simonw/llm-prices": {
+      "nameWithOwner": "simonw/llm-prices",
+      "stars": 196,
+      "pushedAt": "2026-10-26T18:18:47Z",
+      "createdAt": "2025-04-24T00:58:54Z",
+      "archived": false,
+      "isFork": false,
+      "license": null,
+      "latestRelease": null,
+      "description": "Prices of various LLMs"
+    },
+    "skypilot-org/skypilot": {
+      "nameWithOwner": "skypilot-org/skypilot",
+      "stars": 10754,
+      "pushedAt": "2026-10-27T08:09:23Z",
+      "createdAt": "2021-08-11T23:32:15Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.14.1",
+        "publishedAt": "2026-10-19T21:48:22Z"
+      },
+      "description": "The AI Compute Platform for frontier teams. SkyPilot turns fragmented AI compute into one AI supercomputer, so frontier AI teams build custom intelligence faster."
+    },
+    "skyzh/tiny-llm": {
+      "nameWithOwner": "skyzh/tiny-llm",
+      "stars": 4789,
+      "pushedAt": "2026-10-22T01:06:02Z",
+      "createdAt": "2025-04-19T20:01:33Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "learn LLM inference system on Apple Silicon for systems engineers: build a tiny vLLM + Qwen"
+    },
+    "speaches-ai/speaches": {
+      "nameWithOwner": "speaches-ai/speaches",
+      "stars": 3740,
+      "pushedAt": "2026-10-26T18:16:06Z",
+      "createdAt": "2024-05-18T02:26:20Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.9.0-rc.3",
+        "publishedAt": "2025-12-27T18:55:06Z"
+      },
+      "description": null
+    },
+    "stas00/ml-engineering": {
+      "nameWithOwner": "stas00/ml-engineering",
+      "stars": 19623,
+      "pushedAt": "2026-10-27T02:35:48Z",
+      "createdAt": "2020-09-02T19:23:01Z",
+      "archived": false,
+      "isFork": false,
+      "license": "CC-BY-SA-4.0",
+      "latestRelease": null,
+      "description": "Machine Learning Engineering Open Book"
+    },
+    "sustainable-computing-io/kepler": {
+      "nameWithOwner": "sustainable-computing-io/kepler",
+      "stars": 1593,
+      "pushedAt": "2026-10-27T13:55:50Z",
+      "createdAt": "2022-02-01T19:48:56Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.12.0",
+        "publishedAt": "2026-09-22T12:44:23Z"
+      },
+      "description": "Kepler is CNCF Sandbox project to attribute the energy use of Kubernetes workloads. Let's make every watt matter. ⚡"
+    },
+    "systran/faster-whisper": {
+      "nameWithOwner": "SYSTRAN/faster-whisper",
+      "stars": 26223,
+      "pushedAt": "2026-10-25T07:17:13Z",
+      "createdAt": "2023-02-11T09:17:27Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v1.2.1",
+        "publishedAt": "2025-10-31T11:34:00Z"
+      },
+      "description": "Faster Whisper transcription with CTranslate2"
+    },
+    "taco-project/flexkv": {
+      "nameWithOwner": "taco-project/FlexKV",
+      "stars": 380,
+      "pushedAt": "2026-10-27T07:36:52Z",
+      "createdAt": "2025-07-02T04:49:20Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": null,
+      "description": null
+    },
+    "tenstorrent/tt-metal": {
+      "nameWithOwner": "tenstorrent/tt-metal",
+      "stars": 1727,
+      "pushedAt": "2026-10-27T17:04:11Z",
+      "createdAt": "2023-02-13T15:30:05Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.80.0",
+        "publishedAt": "2026-10-14T12:25:50Z"
+      },
+      "description": ":metal: TT-NN operator library, and TT-Metalium low level kernel programming model."
+    },
+    "theagentrouter/agent-router": {
+      "nameWithOwner": "theagentrouter/agent-router",
+      "stars": 2304,
+      "pushedAt": "2026-10-26T14:42:06Z",
+      "createdAt": "2024-10-21T02:59:59Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.2.0",
+        "publishedAt": "2026-10-07T11:58:00Z"
+      },
+      "description": "Manages Unified Access to Generative AI Services built on Envoy Gateway"
+    },
+    "thinking-machines-lab/batch_invariant_ops": {
+      "nameWithOwner": "thinking-machines-lab/batch_invariant_ops",
+      "stars": 1089,
+      "pushedAt": "2025-11-04T05:08:17Z",
+      "createdAt": "2025-09-10T00:08:08Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": null
+    },
+    "thu-ml/sageattention": {
+      "nameWithOwner": "thu-ml/SageAttention",
+      "stars": 3980,
+      "pushedAt": "2026-01-17T17:43:28Z",
+      "createdAt": "2024-10-03T09:33:18Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "[ICLR2025, ICML2025, NeurIPS2025 Spotlight] Quantized Attention achieves speedup of 2-5x compared to FlashAttention, without losing end-to-end metrics across language, image, and video models."
+    },
+    "thu-pacman/chitu": {
+      "nameWithOwner": "thu-pacman/chitu",
+      "stars": 2992,
+      "pushedAt": "2026-10-23T08:50:15Z",
+      "createdAt": "2025-02-20T06:34:38Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.6.0",
+        "publishedAt": "2026-07-02T09:24:11Z"
+      },
+      "description": "High-performance inference framework for large language models, focusing on efficiency, flexibility, and availability."
+    },
+    "thudm/slime": {
+      "nameWithOwner": "THUDM/slime",
+      "stars": 8747,
+      "pushedAt": "2026-10-27T03:45:40Z",
+      "createdAt": "2025-06-18T07:15:54Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.4.0",
+        "publishedAt": "2026-10-09T03:04:12Z"
+      },
+      "description": "slime is an LLM training framework for RL Scaling."
+    },
+    "tiiny-ai/powerinfer": {
+      "nameWithOwner": "Tiiny-AI/PowerInfer",
+      "stars": 9849,
+      "pushedAt": "2026-05-11T06:48:06Z",
+      "createdAt": "2023-12-15T02:24:10Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "High-speed Large Language Model Serving for Local Deployment"
+    },
+    "tile-ai/tilelang": {
+      "nameWithOwner": "tile-ai/tilelang",
+      "stars": 8805,
+      "pushedAt": "2026-10-27T16:57:30Z",
+      "createdAt": "2024-10-03T09:25:45Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v0.1.15",
+        "publishedAt": "2026-09-30T00:29:55Z"
+      },
+      "description": " Domain-specific language designed to streamline the development of high-performance GPU/CPU/Accelerators kernels"
+    },
+    "tile-ai/tilert": {
+      "nameWithOwner": "tile-ai/TileRT",
+      "stars": 1874,
+      "pushedAt": "2026-09-24T15:33:21Z",
+      "createdAt": "2025-11-12T02:21:07Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v0.1.5.post2",
+        "publishedAt": "2026-08-06T07:33:35Z"
+      },
+      "description": "Tile-Based Runtime for Ultra-Low-Latency LLM Inference"
+    },
+    "tracel-ai/burn": {
+      "nameWithOwner": "tracel-ai/burn",
+      "stars": 16178,
+      "pushedAt": "2026-10-27T17:01:16Z",
+      "createdAt": "2022-07-18T23:11:45Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.22.1",
+        "publishedAt": "2026-10-20T17:48:47Z"
+      },
+      "description": "Burn is a next generation tensor library and Deep Learning Framework that doesn't compromise on flexibility, efficiency and portability."
+    },
+    "trailofbits/fickling": {
+      "nameWithOwner": "trailofbits/fickling",
+      "stars": 675,
+      "pushedAt": "2026-10-23T23:52:28Z",
+      "createdAt": "2021-01-21T17:44:51Z",
+      "archived": false,
+      "isFork": false,
+      "license": "LGPL-3.0",
+      "latestRelease": {
+        "tag": "v0.1.12",
+        "publishedAt": "2026-06-26T23:55:21Z"
+      },
+      "description": "A Python pickling decompiler and static analyzer"
+    },
+    "triton-inference-server/fil_backend": {
+      "nameWithOwner": "triton-inference-server/fil_backend",
+      "stars": 94,
+      "pushedAt": "2026-10-09T05:05:33Z",
+      "createdAt": "2021-03-10T18:56:24Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "FIL backend for the Triton Inference Server"
+    },
+    "triton-inference-server/server": {
+      "nameWithOwner": "triton-inference-server/server",
+      "stars": 11115,
+      "pushedAt": "2026-10-27T16:52:42Z",
+      "createdAt": "2018-10-04T21:10:30Z",
+      "archived": false,
+      "isFork": false,
+      "license": "BSD-3-Clause",
+      "latestRelease": {
+        "tag": "v2.73.0",
+        "publishedAt": "2026-09-30T22:26:40Z"
+      },
+      "description": "The Triton Inference Server provides an optimized cloud and edge inferencing solution. "
+    },
+    "triton-lang/triton": {
+      "nameWithOwner": "triton-lang/triton",
+      "stars": 20462,
+      "pushedAt": "2026-10-27T15:46:58Z",
+      "createdAt": "2014-08-30T17:07:16Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v3.8.0",
+        "publishedAt": "2026-08-28T18:25:56Z"
+      },
+      "description": "Development repository for the Triton language and compiler"
+    },
+    "turboderp-org/exllamav3": {
+      "nameWithOwner": "turboderp-org/exllamav3",
+      "stars": 1754,
+      "pushedAt": "2026-10-25T21:31:24Z",
+      "createdAt": "2025-04-06T12:36:08Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": {
+        "tag": "v1.6.5",
+        "publishedAt": "2026-10-25T17:35:35Z"
+      },
+      "description": "An optimized quantization and inference library for running LLMs locally on modern consumer-class GPUs "
+    },
+    "uccl-project/uccl": {
+      "nameWithOwner": "uccl-project/uccl",
+      "stars": 1556,
+      "pushedAt": "2026-10-25T23:54:59Z",
+      "createdAt": "2025-01-06T06:56:09Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.1.1",
+        "publishedAt": "2026-05-10T05:26:14Z"
+      },
+      "description": "UCCL is an efficient communication library for GPUs, covering collectives, P2P (e.g., KV cache transfer, RL weight transfer), and EP (e.g., GPU-driven)"
+    },
+    "ulab-uiuc/llmrouter": {
+      "nameWithOwner": "ulab-uiuc/LLMRouter",
+      "stars": 3038,
+      "pushedAt": "2026-10-19T18:48:19Z",
+      "createdAt": "2025-10-07T22:22:55Z",
+      "archived": false,
+      "isFork": false,
+      "license": "MIT",
+      "latestRelease": null,
+      "description": "LLMRouter: An Open-Source Library for LLM Routing"
+    },
+    "verl-project/verl": {
+      "nameWithOwner": "verl-project/verl",
+      "stars": 24038,
+      "pushedAt": "2026-10-27T12:14:43Z",
+      "createdAt": "2024-10-31T06:11:15Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.9.1",
+        "publishedAt": "2026-09-20T07:24:43Z"
+      },
+      "description": "verl/HybridFlow: A Flexible and Efficient RL Post-Training Framework "
+    },
+    "vipshop/cache-dit": {
+      "nameWithOwner": "vipshop/cache-dit",
+      "stars": 1297,
+      "pushedAt": "2026-10-27T15:29:34Z",
+      "createdAt": "2025-06-12T07:54:30Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.5.3",
+        "publishedAt": "2026-10-15T06:12:51Z"
+      },
+      "description": "A PyTorch-native inference engine with cache, parallelism, quantization and cpu offload for DiTs."
+    },
+    "vllm-project/afd-plugin": {
+      "nameWithOwner": "vllm-project/afd-plugin",
+      "stars": 242,
+      "pushedAt": "2026-10-27T11:15:00Z",
+      "createdAt": "2026-05-14T06:44:20Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.26.0rc1",
+        "publishedAt": "2026-08-19T14:49:21Z"
+      },
+      "description": "vLLM plugin for attention-ffn disaggregation support"
+    },
+    "vllm-project/aibrix": {
+      "nameWithOwner": "vllm-project/aibrix",
+      "stars": 5163,
+      "pushedAt": "2026-10-27T04:33:14Z",
+      "createdAt": "2024-06-10T23:06:10Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.8.0",
+        "publishedAt": "2026-10-13T00:06:30Z"
+      },
+      "description": "Cost-efficient and pluggable Infrastructure components for GenAI inference"
+    },
+    "vllm-project/guidellm": {
+      "nameWithOwner": "vllm-project/guidellm",
+      "stars": 1727,
+      "pushedAt": "2026-10-27T03:55:24Z",
+      "createdAt": "2024-05-29T21:54:22Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.8.1",
+        "publishedAt": "2026-10-08T16:37:22Z"
+      },
+      "description": "Evaluate and Enhance Your LLM Deployments for Real-World Inference Needs"
+    },
+    "vllm-project/llm-compressor": {
+      "nameWithOwner": "vllm-project/llm-compressor",
+      "stars": 3922,
+      "pushedAt": "2026-10-27T16:50:05Z",
+      "createdAt": "2024-06-20T20:13:34Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "0.14.0",
+        "publishedAt": "2026-09-22T18:59:17Z"
+      },
+      "description": "State-of-the-art LLM compression, built for production inference with vLLM"
+    },
+    "vllm-project/production-stack": {
+      "nameWithOwner": "vllm-project/production-stack",
+      "stars": 2697,
+      "pushedAt": "2026-10-27T06:45:57Z",
+      "createdAt": "2025-01-21T23:09:11Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "vllm-stack-0.1.13",
+        "publishedAt": "2026-09-29T23:48:34Z"
+      },
+      "description": "vLLM’s reference system for K8S-native cluster-wide deployment with community-driven performance optimization"
+    },
+    "vllm-project/router": {
+      "nameWithOwner": "vllm-project/router",
+      "stars": 483,
+      "pushedAt": "2026-10-27T14:37:20Z",
+      "createdAt": "2025-07-29T20:44:59Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.1.16",
+        "publishedAt": "2026-10-09T07:14:00Z"
+      },
+      "description": "A high-performance and light-weight router for vLLM large scale deployment"
+    },
+    "vllm-project/semantic-router": {
+      "nameWithOwner": "vllm-project/semantic-router",
+      "stars": 6277,
+      "pushedAt": "2026-10-27T16:29:22Z",
+      "createdAt": "2025-08-26T21:49:50Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.4.0",
+        "publishedAt": "2026-09-27T06:59:53Z"
+      },
+      "description": "An open, programmable decision layer for models and compute."
+    },
+    "vllm-project/speculators": {
+      "nameWithOwner": "vllm-project/speculators",
+      "stars": 925,
+      "pushedAt": "2026-10-27T15:44:13Z",
+      "createdAt": "2025-04-08T20:53:33Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.9.0",
+        "publishedAt": "2026-10-19T13:53:58Z"
+      },
+      "description": "A unified library for building, evaluating, and storing speculative decoding algorithms for LLM inference in vLLM"
+    },
+    "vllm-project/tpu-inference": {
+      "nameWithOwner": "vllm-project/tpu-inference",
+      "stars": 467,
+      "pushedAt": "2026-10-27T15:42:09Z",
+      "createdAt": "2025-05-06T00:10:06Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.32.0",
+        "publishedAt": "2026-10-23T02:35:15Z"
+      },
+      "description": "Moving to vllm-project/vllm-jax. TPU inference for vLLM, with unified JAX and PyTorch support."
+    },
+    "vllm-project/vllm": {
+      "nameWithOwner": "vllm-project/vllm",
+      "stars": 95696,
+      "pushedAt": "2026-10-27T17:01:14Z",
+      "createdAt": "2023-02-09T11:23:20Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.32.0",
+        "publishedAt": "2026-10-18T06:50:48Z"
+      },
+      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs"
+    },
+    "vllm-project/vllm-ascend": {
+      "nameWithOwner": "vllm-project/vllm-ascend",
+      "stars": 3023,
+      "pushedAt": "2026-10-27T16:40:09Z",
+      "createdAt": "2025-01-29T10:44:12Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.23.0.post1",
+        "publishedAt": "2026-09-22T02:47:19Z"
+      },
+      "description": "Community maintained hardware plugin for vLLM on Huawei Ascend"
+    },
+    "vllm-project/vllm-gaudi": {
+      "nameWithOwner": "vllm-project/vllm-gaudi",
+      "stars": 65,
+      "pushedAt": "2026-10-27T15:41:17Z",
+      "createdAt": "2025-06-25T16:01:09Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.30.0",
+        "publishedAt": "2026-10-09T08:51:58Z"
+      },
+      "description": "Community maintained hardware plugin for vLLM on Intel Gaudi"
+    },
+    "vllm-project/vllm-metal": {
+      "nameWithOwner": "vllm-project/vllm-metal",
+      "stars": 1919,
+      "pushedAt": "2026-10-27T12:17:42Z",
+      "createdAt": "2025-12-12T20:37:25Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.32.0",
+        "publishedAt": "2026-10-21T01:50:16Z"
+      },
+      "description": "Community maintained hardware plugin for vLLM on Apple Silicon"
+    },
+    "vllm-project/vllm-omni": {
+      "nameWithOwner": "vllm-project/vllm-omni",
+      "stars": 7385,
+      "pushedAt": "2026-10-27T15:45:41Z",
+      "createdAt": "2025-09-11T00:34:43Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.30.0",
+        "publishedAt": "2026-09-25T18:20:49Z"
+      },
+      "description": "A framework for efficient model inference with omni-modality models"
+    },
+    "volcano-sh/kthena": {
+      "nameWithOwner": "volcano-sh/kthena",
+      "stars": 488,
+      "pushedAt": "2026-10-27T12:25:58Z",
+      "createdAt": "2025-05-08T08:14:48Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.0.0",
+        "publishedAt": "2026-07-16T07:32:47Z"
+      },
+      "description": "Lightweight, Modular, Kubernetes-native AI serving platform for scalable model serving."
+    },
+    "webmachinelearning/webnn": {
+      "nameWithOwner": "webmachinelearning/webnn",
+      "stars": 572,
+      "pushedAt": "2026-10-21T23:27:15Z",
+      "createdAt": "2018-10-31T18:47:41Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": null,
+      "description": "🧠 Web Neural Network API"
+    },
+    "xdit-project/xdit": {
+      "nameWithOwner": "xdit-project/xDiT",
+      "stars": 2747,
+      "pushedAt": "2026-10-27T14:19:44Z",
+      "createdAt": "2024-03-19T06:19:55Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "0.7.0",
+        "publishedAt": "2026-09-25T10:42:29Z"
+      },
+      "description": "xDiT: A Scalable Inference Engine for Diffusion Transformers (DiTs) with Massive Parallelism"
+    },
+    "xllm-ai/xllm": {
+      "nameWithOwner": "xLLM-AI/xllm",
+      "stars": 1606,
+      "pushedAt": "2026-10-27T14:54:56Z",
+      "createdAt": "2025-08-12T13:16:07Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v0.11.0",
+        "publishedAt": "2026-09-16T15:25:27Z"
+      },
+      "description": "A high-performance inference engine for LLM, VLM, DiT and REC models, optimized for diverse AI accelerators. It is hosted in OpenAtom Foundation."
+    },
+    "xllm-ai/xllm-service": {
+      "nameWithOwner": "xLLM-AI/xllm-service",
+      "stars": 100,
+      "pushedAt": "2026-10-22T06:28:54Z",
+      "createdAt": "2025-08-12T13:18:41Z",
+      "archived": false,
+      "isFork": false,
+      "license": "NOASSERTION",
+      "latestRelease": {
+        "tag": "v0.9.0",
+        "publishedAt": "2026-04-15T08:55:04Z"
+      },
+      "description": "A flexible serving framework that delivers efficient and fault-tolerant LLM inference for clustered deployments."
+    },
+    "xorbitsai/inference": {
+      "nameWithOwner": "xorbitsai/inference",
+      "stars": 9629,
+      "pushedAt": "2026-10-27T17:04:30Z",
+      "createdAt": "2023-06-14T07:05:04Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v4.1.0",
+        "publishedAt": "2026-10-25T07:33:58Z"
+      },
+      "description": "Swap GPT for any LLM by changing a single line of code. Xinference lets you run open-source, speech, and multimodal models on cloud, on-prem, or your laptop — all through one unified, production-ready inference API."
+    },
+    "zml/zml": {
+      "nameWithOwner": "zml/zml",
+      "stars": 4202,
+      "pushedAt": "2026-10-27T16:56:05Z",
+      "createdAt": "2024-09-17T09:13:32Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "zml-smi-v0.3.0",
+        "publishedAt": "2026-04-22T15:44:07Z"
+      },
+      "description": "Any model. Any hardware. Zero compromise. Built with @ziglang / @openxla / MLIR / @bazelbuild"
+    },
+    "ztxz16/fastllm": {
+      "nameWithOwner": "ztxz16/fastllm",
+      "stars": 5120,
+      "pushedAt": "2026-10-27T12:05:06Z",
+      "createdAt": "2023-05-13T08:32:51Z",
+      "archived": false,
+      "isFork": false,
+      "license": "Apache-2.0",
+      "latestRelease": {
+        "tag": "v1.9.0",
+        "publishedAt": "2026-10-25T20:04:52Z"
+      },
+      "description": "fastllm是后端无依赖的高性能大模型推理库，帮助您在大部分设备上高效推理大模型！"
+    }
+  }
+}

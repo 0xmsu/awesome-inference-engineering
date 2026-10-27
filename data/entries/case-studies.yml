@@ -1,0 +1,229 @@
+# Production Case Studies
+- id: perplexity-disaggregated-prefill-decode
+  name: Disaggregated Prefill and Decode (Perplexity)
+  url: https://www.perplexity.ai/hub/blog/disaggregated-prefill-and-decode
+  description: How Perplexity runs prefill and decode on separate nodes, with an RDMA KV-cache messenger, tensor-parallel layouts, and DeepSeek-R1 and Qwen3-Coder deployments.
+  section: case-studies/production
+  type: article
+  tags: [llm, nvidia, datacenter]
+  featured: true
+  added: 2026-10-27
+
+- id: anthropic-postmortem-three-issues
+  name: A Postmortem of Three Recent Issues (Anthropic)
+  url: https://www.anthropic.com/research/a-postmortem-of-three-recent-issues
+  description: Anthropic's 2025 account of three serving bugs, covering a routing error, a TPU misconfiguration, and an approximate top-k compiler miscompilation.
+  section: case-studies/production
+  type: article
+  tags: [llm, tpu, datacenter]
+  added: 2026-10-27
+
+- id: cloudflare-extra-large-llms
+  name: Building the Foundation for Running Extra-Large Language Models (Cloudflare)
+  url: https://blog.cloudflare.com/high-performance-llms/
+  description: Cloudflare on running large open models in Workers AI with disaggregated prefill/decode, prompt caching, a shared KV cache, and speculative decoding.
+  section: case-studies/production
+  type: article
+  tags: [llm, nvidia, datacenter]
+  added: 2026-10-27
+
+- id: cloudflare-kv-cache-exposure
+  name: Cross-Request KV Cache Exposure in GLM-5.3 on Workers AI (Cloudflare)
+  url: https://blog.cloudflare.com/kv-cache-exposure-remediation/
+  description: Cloudflare's incident report on stale KV pages leaking across requests in a disaggregated SGLang deployment, with root cause and remediation.
+  section: case-studies/production
+  type: article
+  tags: [llm, datacenter]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: meta-scaling-llm-inference
+  name: "Scaling LLM Inference: Tensor, Context, and Expert Parallelism (Meta)"
+  url: https://engineering.fb.com/2025/10/17/ai-research/scaling-llm-inference-innovations-tensor-parallelism-context-parallelism-expert-parallelism/
+  description: Meta engineers describe the parallelism techniques they use to cut latency for large-model inference, with measurements for long-context prefill.
+  section: case-studies/production
+  type: article
+  tags: [llm, moe, nvidia, datacenter]
+  added: 2026-10-27
+
+- id: netflix-in-house-llm-serving
+  name: In-House LLM Serving at Netflix
+  url: https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c
+  description: Netflix on serving LLMs with vLLM and Triton behind its Model Scoring Service, including version pinning, constrained decoding, and deployment strategies.
+  section: case-studies/production
+  type: article
+  tags: [llm, nvidia, datacenter]
+  added: 2026-10-27
+
+- id: snowflake-arctic-inference
+  name: Arctic Inference with Shift Parallelism (Snowflake)
+  url: https://www.snowflake.com/en/blog/engineering/arctic-inference-shift-parallelism/
+  description: Snowflake AI Research introduces a vLLM plugin whose Shift Parallelism switches between tensor and sequence parallelism by load, used in Cortex AI.
+  section: case-studies/production
+  type: article
+  tags: [llm, nvidia, python, datacenter]
+  added: 2026-10-27
+
+- id: amazon-rufus-multi-node-inference
+  name: How Amazon Scaled Rufus with Multi-Node Inference on Trainium and vLLM
+  url: https://aws.amazon.com/blogs/machine-learning/how-amazon-scaled-rufus-by-building-multi-node-inference-using-aws-trainium-chips-and-vllm/
+  description: Amazon engineers on serving the Rufus shopping assistant across Trainium nodes with vLLM, leader-follower orchestration, hybrid parallelism, and EFA networking.
+  section: case-studies/production
+  type: article
+  tags: [llm, trainium, datacenter]
+  added: 2026-10-27
+
+- id: cursor-warp-decode
+  name: Better MoE Model Inference with Warp Decode (Cursor)
+  url: https://cursor.com/blog/warp-decode
+  description: Cursor's MoE decode kernel in which each warp computes one output value, with B200 measurements for a Qwen-style model on its internal inference system.
+  section: case-studies/production
+  type: article
+  tags: [llm, moe, nvidia, cuda]
+  added: 2026-10-27
+
+- id: cursor-speculative-edits
+  name: Editing Files at 1000 Tokens per Second (Cursor)
+  url: https://cursor.com/blog/instant-apply
+  description: Cursor's 2024 write-up of speculative edits, a draft-model-free form of speculative decoding for rewriting files, run on a fine-tuned Llama-3-70b via Fireworks.
+  section: case-studies/production
+  type: article
+  tags: [llm, nvidia, datacenter]
+  added: 2026-10-27
+
+- id: baseten-multi-cloud-capacity-management
+  name: How We Built Multi-Cloud Capacity Management (Baseten)
+  url: https://www.baseten.co/blog/how-we-built-multi-cloud-capacity-management/
+  description: Baseten's infrastructure team on a global scheduler that places inference replicas across clouds, with autoscaling, failover, and region constraints.
+  section: case-studies/production
+  type: article
+  tags: [llm, kubernetes, datacenter]
+  added: 2026-10-27
+
+# Engineering Blogs
+- id: vllm-blog
+  name: vLLM Blog
+  url: https://vllm.ai/blog
+  description: Release notes, performance write-ups, and new-model support posts from the vLLM project and its contributors.
+  section: case-studies/blogs
+  type: article
+  tags: [llm, datacenter]
+  featured: true
+  added: 2026-10-27
+
+- id: lmsys-blog
+  name: LMSYS Org Blog
+  url: https://www.lmsys.org/blog/
+  description: Posts from the LMSYS team on SGLang features, large-scale deployment recipes, and new hardware backends, alongside its other projects.
+  section: case-studies/blogs
+  type: article
+  tags: [llm, datacenter]
+  added: 2026-10-27
+
+- id: sglang-blog
+  name: SGLang Blog
+  url: https://www.sglang.io/blog
+  description: Releases, benchmark reports, and deep dives from the SGLang team, including day-0 model support and runtime topics such as memory management.
+  section: case-studies/blogs
+  type: article
+  tags: [llm, datacenter]
+  added: 2026-10-27
+
+- id: pytorch-blog
+  name: PyTorch Blog
+  url: https://pytorch.org/blog/
+  description: PyTorch Foundation posts, including inference-relevant writing on ExecuTorch, vLLM, NVIDIA Dynamo, kernels, and accelerator support.
+  section: case-studies/blogs
+  type: article
+  tags: [llm, python]
+  added: 2026-10-27
+
+- id: nvidia-technical-blog-inference
+  name: NVIDIA Technical Blog (Inference Performance)
+  url: https://developer.nvidia.com/blog/tag/inference-performance/
+  description: NVIDIA developer posts on inference topics such as Dynamo, TensorRT, speculative decoding, and decoding for hybrid state-space models.
+  section: case-studies/blogs
+  type: article
+  tags: [llm, nvidia, datacenter]
+  added: 2026-10-27
+
+- id: huggingface-blog
+  name: Hugging Face Blog
+  url: https://huggingface.co/blog
+  description: Staff and community posts on open models and inference tooling, including serving libraries, quantization, and batching explainers.
+  section: case-studies/blogs
+  type: article
+  tags: [llm, python]
+  added: 2026-10-27
+
+- id: together-ai-blog
+  name: Together AI Blog
+  url: https://www.together.ai/blog
+  description: Product and research posts from Together AI on serving open models, with coverage of inference techniques and GPU cluster offerings.
+  section: case-studies/blogs
+  type: article
+  tags: [llm, datacenter]
+  added: 2026-10-27
+
+- id: fireworks-blog
+  name: Fireworks AI Blog
+  url: https://fireworks.ai/blog
+  description: Posts from Fireworks AI on model releases, inference and training recipes, research notes, and customer deployments.
+  section: case-studies/blogs
+  type: article
+  tags: [llm, datacenter]
+  added: 2026-10-27
+
+- id: baseten-blog
+  name: Baseten Blog
+  url: https://www.baseten.co/blog/
+  description: Baseten posts on inference engineering, model performance, and infrastructure, plus product news and customer deployments.
+  section: case-studies/blogs
+  type: article
+  tags: [llm, datacenter]
+  added: 2026-10-27
+
+- id: modal-blog
+  name: Modal Blog
+  url: https://modal.com/blog
+  description: Modal's posts on serving models on GPUs, container and storage infrastructure, and inference benchmarks for open-weights LLMs.
+  section: case-studies/blogs
+  type: article
+  tags: [llm, serverless]
+  added: 2026-10-27
+
+- id: hazy-research-blog
+  name: Hazy Research Blog
+  url: https://hazyresearch.stanford.edu/blog
+  description: Stanford's Hazy Research posts on hardware-aware kernels, efficient architectures, and local AI, including the ThunderKittens releases.
+  section: case-studies/blogs
+  type: article
+  tags: [llm, nvidia, cuda]
+  added: 2026-10-27
+
+- id: thinking-machines-connectionism
+  name: Thinking Machines Connectionism
+  url: https://thinkingmachines.ai/blog/
+  description: Research blog from Thinking Machines Lab with posts on deterministic inference, on-policy distillation, and LoRA training.
+  section: case-studies/blogs
+  type: article
+  tags: [llm, rl]
+  added: 2026-10-27
+
+- id: cloudflare-workers-ai-blog
+  name: Cloudflare Blog (Workers AI)
+  url: https://blog.cloudflare.com/tag/workers-ai/
+  description: Cloudflare posts tagged Workers AI, covering the engineering of serving open models on its network alongside product announcements.
+  section: case-studies/blogs
+  type: article
+  tags: [llm, datacenter]
+  added: 2026-10-27
+
+- id: perplexity-research-blog
+  name: Perplexity Research
+  url: https://research.perplexity.ai/
+  description: Perplexity's research and systems posts, including its work on disaggregated prefill and decode, agents, and retrieval models.
+  section: case-studies/blogs
+  type: article
+  tags: [llm, agents]
+  added: 2026-10-27

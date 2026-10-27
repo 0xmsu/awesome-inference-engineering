@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://0xmsu.github.io/awesome-inference-engineering/schema/sources.schema.json",
+  "title": "Upstream sources",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "name", "repo", "license", "description"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+      "name": { "type": "string" },
+      "repo": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" },
+      "license": { "type": "string" },
+      "description": { "type": "string" },
+      "watch": { "description": "Include in the monthly upstream-watch job.", "type": "boolean" }
+    }
+  }
+}

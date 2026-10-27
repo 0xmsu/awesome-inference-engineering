@@ -1,0 +1,214 @@
+---
+// Fig. 1: the stack from the request down to the silicon. Plain HTML lists drawn against a request axis.
+import { withBase } from '../lib/base.ts';
+import { site } from '../lib/data.ts';
+import { resolveStack } from '../lib/stack.ts';
+
+const layers = resolveStack(site.sections, site.listedBySection);
+const onPath = layers.filter((l) => l.onPath);
+const offPath = layers.filter((l) => !l.onPath);
+const groups = [
+  { key: 'path', layers: onPath },
+  { key: 'off', layers: offPath },
+];
+---
+
+<section class="part" aria-labelledby="fig1-h">
+  <h2 class="part-h hang">
+    <span class="mn label">Fig. 1</span>
+    <span class="h" id="fig1-h">The stack</span>
+  </h2>
+  <div class="fig">
+    {
+      groups.map((g) => (
+        <ol class:list={['layers', g.key]}>
+          {g.layers.map((layer, i) => {
+            const first = g.key === 'path' && i === 0;
+            const last = g.key === 'path' && i === g.layers.length - 1;
+            return (
+              <li class:list={['layer', { first, last }]}>
+                <div class="body">
+                  <h3 class="name">{layer.name}</h3>
+                  <p class="secs">
+                    {layer.sections.map((s, j) => (
+                      <>{j > 0 && <span class="sep">&nbsp;· </span>}<span class="sec"><a href={withBase(`sections/${s.id}/`)}>{s.short}</a> <span class="count">{s.count}</span></span></>
+                    ))}
+                  </p>
+                </div>
+                {(first || last) && <span class="end label">{first ? 'Request' : 'Silicon'}</span>}
+              </li>
+            );
+          })}
+        </ol>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  /* The figure is the column plus 140px of the margin: 860px. The margin part holds the axis labels
+     and the request axis; the rows themselves stay inside the 720px column. */
+  .fig {
+    --ext: calc(var(--fig) - var(--main));
+    --label: calc(var(--ext) - var(--gutter));
+    --axis: calc(var(--label) + var(--gutter) / 2);
+    --tick-y: 27px;
+    margin-left: calc(-1 * var(--ext));
+    margin-top: 6px;
+  }
+
+  .layers {
+    position: relative;
+  }
+
+  .layer {
+    position: relative;
+    display: grid;
+    grid-template-columns: var(--label) var(--gutter) minmax(0, 1fr);
+    align-items: baseline;
+  }
+
+  .body {
+    grid-column: 3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 10.5rem minmax(0, 1fr);
+    column-gap: 16px;
+    align-items: baseline;
+    padding: 12px 0 13px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .off .layer:last-child .body {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .end {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: right;
+  }
+
+  .name {
+    position: relative;
+    font-size: var(--fs-small);
+    font-weight: 600;
+    line-height: 1.65;
+    letter-spacing: 0.01em;
+  }
+
+  .secs {
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+
+  .sec {
+    white-space: nowrap;
+  }
+
+  .sep {
+    color: var(--muted);
+  }
+
+  .secs .count {
+    margin-left: 0.15em;
+  }
+
+  /* The request axis: one vertical rule through the on-path layers, a tick into each of them. */
+  .path .layer::after {
+    content: '';
+    position: absolute;
+    left: var(--axis);
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid var(--ink);
+  }
+
+  .path .layer.first::after {
+    top: var(--tick-y);
+  }
+
+  .path .layer.last::after {
+    bottom: auto;
+    height: var(--tick-y);
+  }
+
+  .path .layer::before {
+    content: '';
+    position: absolute;
+    left: var(--axis);
+    top: var(--tick-y);
+    width: calc(var(--gutter) / 2 - 6px);
+    border-top: 1px solid var(--ink);
+  }
+
+  .path .layer:hover::before,
+  .path .layer:focus-within::before {
+    border-top: 2px solid var(--accent);
+    margin-top: -0.5px;
+  }
+
+  .off {
+    margin-top: 36px;
+  }
+
+  @media (max-width: 759px) {
+    .fig {
+      --axis: 0px;
+      --tick-y: 26px;
+      margin-left: 0;
+    }
+
+    .layer {
+      display: block;
+      padding-left: 22px;
+    }
+
+    .body {
+      display: block;
+      padding: 12px 0 14px;
+    }
+
+    .path .layer::before {
+      width: 14px;
+    }
+
+    .end {
+      display: block;
+      text-align: left;
+    }
+
+    .layer.first .end {
+      position: absolute;
+      top: -26px;
+      left: 0;
+    }
+
+    .path {
+      margin-top: 30px;
+    }
+
+    .layer.last .end {
+      position: absolute;
+      bottom: -28px;
+      left: 0;
+    }
+
+    .path .layer.last::after {
+      height: auto;
+      bottom: -6px;
+    }
+
+    .path .layer.first::after {
+      top: -6px;
+    }
+
+    .off {
+      margin-top: 52px;
+    }
+
+    .off .layer {
+      padding-left: 0;
+    }
+  }
+</style>

@@ -1,0 +1,15 @@
+name: Broken link
+description: A link in the list no longer works.
+title: "Broken link: "
+labels: [links]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Broken URL
+    validations:
+      required: true
+  - type: input
+    id: replacement
+    attributes:
+      label: Working replacement (if you know one)

@@ -1,0 +1,649 @@
+# Books
+- id: pmpp
+  name: Programming Massively Parallel Processors (5th ed.)
+  url: https://shop.elsevier.com/books/programming-massively-parallel-processors/hwu/978-0-443-43900-1
+  description: Standard textbook on GPU programming, memory hierarchies, and parallel patterns; the 2026 edition adds LLM workloads.
+  section: learning/books
+  type: book
+  tags: [nvidia, cuda]
+  pricing: commercial
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: ml-engineering
+  name: Machine Learning Engineering Open Book
+  url: https://github.com/stas00/ml-engineering
+  description: Stas Bekman's field notes on accelerators, networking, storage, debugging, and inference for running large models on GPU clusters.
+  section: learning/books
+  type: book
+  tags: [llm, nvidia]
+  added: 2026-10-27
+
+- id: scaling-book
+  name: How to Scale Your Model
+  url: https://jax-ml.github.io/scaling-book/
+  description: Full textbook behind the Start Here inference chapter, covering rooflines, TPU and GPU anatomy, sharding, and transformer math.
+  section: learning/books
+  type: book
+  tags: [llm, tpu, nvidia]
+  repo: jax-ml/scaling-book
+  featured: true
+  added: 2026-10-27
+
+- id: ai-systems-performance-engineering-book
+  name: AI Systems Performance Engineering (O'Reilly)
+  url: https://www.oreilly.com/library/view/ai-systems-performance/9798341627772/
+  description: Profiling-first book on tuning GPUs, CUDA kernels, PyTorch, and multi-node systems for training and inference, closing with an optimization checklist.
+  section: learning/books
+  type: book
+  tags: [nvidia, cuda, llm]
+  pricing: commercial
+  via: [fregly]
+  added: 2026-10-27
+
+- id: hands-on-llm-serving-optimization
+  name: Hands-On LLM Serving and Optimization
+  url: https://www.oreilly.com/library/view/hands-on-llm-serving/9798341621480/
+  description: O'Reilly book from 2026 on designing LLM serving systems, balancing latency against throughput, and hosting models cost-effectively at scale.
+  section: learning/books
+  type: book
+  tags: [llm]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: ultra-scale-playbook
+  name: The Ultra-Scale Playbook
+  url: https://huggingface.co/spaces/nanotron/ultrascale-playbook
+  description: Interactive Hugging Face book on data, tensor, pipeline, context, and expert parallelism on GPU clusters, with benchmarks for each strategy.
+  section: learning/books
+  type: book
+  tags: [llm, nvidia, moe]
+  added: 2026-10-27
+
+- id: ai-engineering-huyen
+  name: AI Engineering
+  url: https://www.oreilly.com/library/view/ai-engineering/9781098166298/
+  description: Chip Huyen's book on building applications on foundation models, with a chapter on inference optimization and serving trade-offs.
+  section: learning/books
+  type: book
+  tags: [llm]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: mlsysbook
+  name: Machine Learning Systems (Harvard CS249r)
+  url: https://mlsysbook.ai/
+  description: Open textbook from Harvard CS249r on the whole ML systems stack, including model compression, hardware acceleration, benchmarking, and operations.
+  section: learning/books
+  type: book
+  repo: harvard-edge/cs249r_book
+  license: CC-BY-NC-ND-4.0
+  added: 2026-10-27
+
+- id: efficient-processing-of-dnns
+  name: Efficient Processing of Deep Neural Networks
+  url: https://link.springer.com/book/10.1007/978-3-031-01766-7
+  description: MIT textbook by Sze, Chen, Yang, and Emer on dataflows, data reuse, and metrics for designing and comparing DNN accelerators.
+  section: learning/books
+  type: book
+  tags: [other-asic]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: efficient-deep-learning-book
+  name: Efficient Deep Learning
+  url: https://efficientdlbook.com/
+  description: Free draft chapters by Menghani and Singh on compression, efficient architectures, and training techniques for smaller models, predating LLMs.
+  section: learning/books
+  type: book
+  added: 2026-10-27
+
+# Courses
+- id: mit-6-5940
+  name: "MIT 6.5940: TinyML and Efficient AI Computing"
+  url: https://hanlab.mit.edu/courses/2026-fall-65940
+  description: Song Han's Fall 2026 course on pruning, quantization, distillation, and LLM deployment, with slides, videos, and labs posted for each lecture.
+  section: learning/courses
+  type: course
+  tags: [llm, diffusion]
+  verified: 2026-10-27
+  featured: true
+  added: 2026-10-27
+
+- id: cmu-15-442
+  name: "CMU 15-442/642: Machine Learning Systems"
+  url: https://mlsyscourse.org/
+  description: Spring 2026 course by Tianqi Chen and Zhihao Jia on ML frameworks, GPU acceleration, memory and parallelism, and LLM serving case studies.
+  section: learning/courses
+  type: course
+  tags: [llm, nvidia]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: cmu-11-868
+  name: "CMU 11-868: Large Language Model Systems"
+  url: https://llmsystem.github.io/llmsystem2026spring/
+  description: Spring 2026 course that goes from CUDA basics and a MiniTorch homework track to FlashAttention, vLLM, SGLang, and disaggregated serving.
+  section: learning/courses
+  type: course
+  tags: [llm, nvidia, cuda]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: stanford-cs336
+  name: "Stanford CS336: Language Modeling from Scratch"
+  url: https://cs336.stanford.edu/
+  description: Students build a language model end to end, including Triton kernels, parallelism, scaling laws, and inference, with lectures on YouTube.
+  section: learning/courses
+  type: course
+  tags: [llm, python]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: gpu-mode-lectures
+  name: GPU MODE Lectures
+  url: https://github.com/gpu-mode/lectures
+  description: Slides and code for the community lecture series on CUDA, Triton, CUTLASS, profiling, and inference kernels; recordings are on YouTube.
+  section: learning/courses
+  type: course
+  tags: [nvidia, cuda, python]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: ucsd-cse-234
+  name: "UCSD CSE 234: Data Systems for Machine Learning"
+  url: https://haoailab.com/cse234-w25/
+  description: Hao Zhang's Winter 2025 course on ML frameworks, GPUs, parallelism, and LLM serving with paged attention, batching, and speculative decoding.
+  section: learning/courses
+  type: course
+  tags: [llm]
+  added: 2026-10-27
+
+- id: mit-6-s894
+  name: "MIT 6.S894: Accelerated Computing"
+  url: https://accelerated-computing.academy/fall25/
+  description: Fall 2025 graduate course on performance engineering for accelerators, with weekly CUDA labs that build toward fast GPU kernels.
+  section: learning/courses
+  type: course
+  tags: [nvidia, cuda]
+  added: 2026-10-27
+
+- id: stanford-cs149
+  name: "Stanford CS149: Parallel Computing"
+  url: https://gfxcourses.stanford.edu/cs149/fall25
+  description: Fall 2025 course on parallel architectures and programming, from SIMD and multicore CPUs to GPUs and domain-specific accelerators.
+  section: learning/courses
+  type: course
+  tags: [nvidia, cpu]
+  added: 2026-10-27
+
+# Learning paths
+- id: gpu-mode-ml-systems-onboarding
+  name: ML Systems Onboarding Reading List
+  url: https://github.com/gpu-mode/awesomeMLSys
+  description: Annotated reading list from GPU MODE that says where to start on attention, serving optimizations, quantization, long context, and parallelism.
+  section: learning/learning-paths
+  type: list
+  tags: [llm]
+  added: 2026-10-27
+
+- id: triton-puzzles
+  name: Triton Puzzles
+  url: https://github.com/gpu-mode/Triton-Puzzles
+  description: Notebook puzzles that teach Triton from first principles, building from vector ops up to matmul and FlashAttention with a visual debugger.
+  section: learning/learning-paths
+  type: course
+  tags: [nvidia, python]
+  added: 2026-10-27
+
+- id: mojo-gpu-puzzles
+  name: Mojo GPU Puzzles
+  url: https://puzzles.modular.com/
+  description: Progressive puzzles that teach GPU programming in Mojo, from threads and shared memory to warp-level code, tensor cores, and profiling.
+  section: learning/learning-paths
+  type: course
+  tags: [nvidia, amd, mojo]
+  repo: modular/mojo-gpu-puzzles
+  license: Apache-2.0 WITH LLVM-exception
+  added: 2026-10-27
+
+- id: nvidia-accelerated-computing-hub
+  name: NVIDIA Accelerated Computing Hub
+  url: https://github.com/NVIDIA/accelerated-computing-hub
+  description: Open notebooks and syllabi from NVIDIA for CUDA C++, CUDA Python, and CUDA Tile, runnable on cloud GPUs or Colab.
+  section: learning/learning-paths
+  type: course
+  tags: [nvidia, cuda, python]
+  license: Apache-2.0 AND CC-BY-NC-SA-4.0
+  added: 2026-10-27
+
+# Deep dives
+- id: siboehm-cuda-matmul
+  name: How to Optimize a CUDA Matmul Kernel for cuBLAS-like Performance
+  url: https://siboehm.com/articles/22/CUDA-MMM
+  description: Worklog that takes a naive SGEMM through coalescing, shared-memory tiling, and warptiling, profiling each step against cuBLAS.
+  section: learning/deep-dives
+  type: article
+  tags: [nvidia, cuda]
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: gordic-matmul
+  name: "Inside NVIDIA GPUs: Anatomy of High-Performance Matmul Kernels"
+  url: https://www.aleksagordic.com/blog/matmul
+  description: Builds from GPU memory hierarchy and PTX/SASS up to Hopper matmul kernels that use TMA, wgmma, and warp specialization.
+  section: learning/deep-dives
+  type: article
+  tags: [nvidia, cuda]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: outperforming-cublas-h100
+  name: "Outperforming cuBLAS on H100: A Worklog"
+  url: https://cudaforfun.substack.com/p/outperforming-cublas-on-h100-a-worklog
+  description: Hopper follow-up to the Boehm worklog that grows a dependency-free GEMM in one CUDA file, adding TMA, wgmma, and warp specialization step by step.
+  section: learning/deep-dives
+  type: article
+  tags: [nvidia, cuda]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: tcgen05-for-dummies
+  name: tcgen05 for dummies
+  url: https://gau-nernst.github.io/tcgen05/
+  description: Plain CUDA C++ and PTX walkthrough of Blackwell's tcgen05 Tensor Core instructions, building a B200 matmul that approaches cuBLAS.
+  section: learning/deep-dives
+  type: article
+  tags: [nvidia, cuda]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: colfax-tma-tutorial
+  name: "CUTLASS Tutorial: Mastering the Tensor Memory Accelerator (TMA)"
+  url: https://research.colfax-intl.com/tutorial-hopper-tma/
+  description: Explains Hopper's TMA unit for asynchronous bulk copies, including loads, stores, and multicast, and how to drive it through CuTe.
+  section: learning/deep-dives
+  type: article
+  tags: [nvidia, cuda, cpp]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: colfax-wgmma-tutorial
+  name: "CUTLASS Tutorial: Fast Matrix Multiplication with WGMMA on Hopper"
+  url: https://research.colfax-intl.com/cutlass-tutorial-wgmma-hopper/
+  description: Shows how warpgroup-level wgmma instructions work on Hopper and how CUTLASS and CuTe expose them in a GEMM mainloop.
+  section: learning/deep-dives
+  type: article
+  tags: [nvidia, cuda, cpp]
+  added: 2026-10-27
+
+- id: cutlass-ping-pong-gemm
+  name: Deep Dive on CUTLASS Ping-Pong GEMM Kernel
+  url: https://pytorch.org/blog/cutlass-ping-pong-gemm-kernel/
+  description: Walks through a warp-specialized Hopper FP8 GEMM in which producer and consumer warpgroups alternate so math overlaps with epilogues.
+  section: learning/deep-dives
+  type: article
+  tags: [nvidia, cuda]
+  added: 2026-10-27
+
+- id: gpus-go-brrr
+  name: GPUs Go Brrr
+  url: https://hazyresearch.stanford.edu/blog/2024-05-12-tk
+  description: Hazy Research essay on what keeps an H100 busy, from tensor cores and TMA to async pipelines, and the ThunderKittens design built on it.
+  section: learning/deep-dives
+  type: article
+  tags: [nvidia, cuda]
+  added: 2026-10-27
+
+- id: optimizing-parallel-reduction
+  name: Optimizing Parallel Reduction in CUDA
+  url: https://developer.download.nvidia.com/assets/cuda/files/reduction.pdf
+  description: Classic NVIDIA slide deck that refines a sum-reduction kernel through seven versions, a template for reasoning about bandwidth limits.
+  section: learning/deep-dives
+  type: article
+  tags: [nvidia, cuda]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: lilian-weng-inference-optimization
+  name: Large Transformer Model Inference Optimization
+  url: https://lilianweng.github.io/posts/2023-01-10-inference-optimization/
+  description: Survey essay on distillation, quantization, pruning, sparsity, mixture of experts, and architecture changes that cut inference cost.
+  section: learning/deep-dives
+  type: article
+  tags: [llm]
+  featured: true
+  added: 2026-10-27
+
+- id: databricks-llm-inference-performance
+  name: "LLM Inference Performance Engineering: Best Practices"
+  url: https://www.databricks.com/blog/llm-inference-performance-engineering-best-practices
+  description: Defines latency, throughput, and model bandwidth utilization, then measures how batch size, tensor parallelism, and quantization trade off.
+  section: learning/deep-dives
+  type: article
+  tags: [llm, nvidia]
+  added: 2026-10-27
+
+- id: llm-inference-speed-of-light
+  name: LLM Inference Speed of Light
+  url: https://zeux.io/2024/03/15/llm-inference-sol/
+  description: Derives the memory-bandwidth floor on per-token decode latency and checks how close a hand-written inference engine gets to it.
+  section: learning/deep-dives
+  type: article
+  tags: [llm]
+  added: 2026-10-27
+
+- id: anyscale-continuous-batching
+  name: How Continuous Batching Enables 23x Throughput in LLM Inference
+  url: https://www.anyscale.com/blog/continuous-batching-llm-inference
+  description: Explains why static batching wastes GPU time during decoding and benchmarks iteration-level scheduling across serving frameworks.
+  section: learning/deep-dives
+  type: article
+  tags: [llm]
+  added: 2026-10-27
+
+- id: hf-continuous-batching
+  name: Continuous Batching from First Principles
+  url: https://huggingface.co/blog/continuous_batching
+  description: Derives continuous batching step by step from attention and the KV cache, covering ragged batches and chunked prefill along the way.
+  section: learning/deep-dives
+  type: article
+  tags: [llm, python]
+  added: 2026-10-27
+
+- id: flash-decoding
+  name: Flash-Decoding for Long-Context Inference
+  url: https://crfm.stanford.edu/2023/10/12/flashdecoding.html
+  description: Introduces splitting the KV sequence across thread blocks during decode and merging partial softmax results so small batches still fill the GPU.
+  section: learning/deep-dives
+  type: article
+  tags: [llm, nvidia]
+  added: 2026-10-27
+
+- id: pytorch-gpt-fast
+  name: "Accelerating Generative AI with PyTorch II: GPT, Fast"
+  url: https://pytorch.org/blog/accelerating-generative-ai-2/
+  description: Shows how far plain PyTorch goes for LLM decoding with torch.compile, int8 and int4 weights, speculative decoding, and tensor parallelism.
+  section: learning/deep-dives
+  type: article
+  tags: [llm, python]
+  added: 2026-10-27
+
+- id: fast-llm-inference-from-scratch
+  name: Fast LLM Inference From Scratch
+  url: https://andrewkchan.dev/posts/yalm.html
+  description: Builds a single-GPU inference engine in C++ and CUDA without libraries, profiling each step from a naive CPU loop to fused kernels.
+  section: learning/deep-dives
+  type: article
+  tags: [llm, cuda, cpp]
+  added: 2026-10-27
+
+- id: vllm-v1-architecture
+  name: "vLLM V1: A Major Upgrade to vLLM's Core Architecture"
+  url: https://vllm.ai/blog/2025-01-27-v1-alpha-release
+  description: Design notes on vLLM's rewritten core, covering the unified scheduler, a separate engine-core process, prefix caching, and piecewise CUDA graphs.
+  section: learning/deep-dives
+  type: article
+  tags: [llm]
+  added: 2026-10-27
+
+- id: character-ai-inference
+  name: Optimizing AI Inference at Character.AI
+  url: https://blog.character.ai/optimizing-ai-inference-at-character-ai/
+  description: Shows how multi-query attention, hybrid local-global layers, cross-layer KV sharing, and int8 shrink KV memory for long conversations.
+  section: learning/deep-dives
+  type: article
+  tags: [llm]
+  added: 2026-10-27
+
+- id: deepseek-inference-system-overview
+  name: DeepSeek-V3/R1 Inference System Overview
+  url: https://github.com/deepseek-ai/open-infra-index/blob/main/202502OpenSourceWeek/day_6_one_more_thing_deepseekV3R1_inference_system_overview.md
+  description: First-hand account of serving V3/R1 with cross-node expert parallelism, a prefill-decode split, compute-communication overlap, and load balancing.
+  section: learning/deep-dives
+  type: article
+  tags: [llm, moe, nvidia]
+  repo: deepseek-ai/open-infra-index
+  added: 2026-10-27
+
+- id: sglang-large-scale-ep
+  name: Deploying DeepSeek with PD Disaggregation and Large-Scale Expert Parallelism
+  url: https://www.lmsys.org/blog/2025-05-05-large-scale-ep/
+  description: Reproduces DeepSeek-style serving in SGLang on 96 H100s by combining prefill-decode disaggregation, DeepEP, two-batch overlap, and EPLB.
+  section: learning/deep-dives
+  type: article
+  tags: [llm, moe, nvidia]
+  added: 2026-10-27
+
+# Talks & videos
+- id: yc-paper-club-inference
+  name: Why Inference Matters 12x More Than Training (YC Paper Club)
+  url: https://www.youtube.com/watch?v=mHNKuH-9OxU
+  description: Engineers from Together AI, Ollama, Luminal, and SGLang trace a token through routing, caching, scheduling, kernels, and hardware.
+  section: learning/talks
+  type: video
+  tags: [llm]
+  featured: true
+  added: 2026-10-27
+
+- id: gpu-mode-youtube
+  name: GPU MODE (YouTube)
+  url: https://www.youtube.com/@GPUMODE
+  description: Recorded community lectures on CUDA, Triton, CUTLASS, profiling, and inference kernels, often given by the people who wrote them.
+  section: learning/talks
+  type: video
+  tags: [nvidia, cuda]
+  featured: true
+  added: 2026-10-27
+
+- id: latent-space-inference-engineering
+  name: The Inference Engineering Masterclass (Latent Space)
+  url: https://latent.space/p/inference-eng
+  description: Podcast episode with Baseten's Philip Kiely and Ali Taha on the practice of inference engineering for autoregressive and diffusion models.
+  section: learning/talks
+  type: podcast
+  tags: [llm, diffusion]
+  added: 2026-10-27
+
+- id: vllm-office-hours
+  name: vLLM Office Hours
+  url: https://vllm.ai/office-hours
+  description: Biweekly livestream from the vLLM team with release updates and guest deep dives; past sessions are archived with recordings and slides.
+  section: learning/talks
+  type: video
+  tags: [llm]
+  added: 2026-10-27
+
+- id: sgl-learning-materials
+  name: SGLang Learning Materials
+  url: https://github.com/sgl-project/sgl-learning-materials
+  description: Official collection of SGLang slide decks, blog links, and talk recordings from meetups, conferences, and vendor tech briefings.
+  section: learning/talks
+  type: video
+  tags: [llm]
+  added: 2026-10-27
+
+- id: ai-performance-engineering-youtube
+  name: AI Performance Engineering (YouTube)
+  url: https://www.youtube.com/@AIPerformanceEngineering
+  description: Recordings of Chris Fregly's monthly meetup, with practitioner talks on GPU profiling, low-precision formats, disaggregated serving, and accelerators.
+  section: learning/talks
+  type: video
+  tags: [nvidia, llm]
+  via: [fregly]
+  added: 2026-10-27
+
+- id: yc-paper-club-multi-gpu-kernels
+  name: Multi-GPU Kernels, Intelligence per Watt, and Heterogeneous Inference (YC Paper Club)
+  url: https://www.youtube.com/watch?v=n8dz2FX0_uY
+  description: Talks on Parallel Kittens multi-GPU kernels, intelligence per watt for local inference, AI-written kernels, and heterogeneous serving.
+  section: learning/talks
+  type: video
+  tags: [llm, nvidia]
+  added: 2026-10-27
+
+- id: yc-paper-club-speculative-decoding
+  name: Inference, Diffusion, World Models, and More (YC Paper Club)
+  url: https://www.youtube.com/watch?v=wE1ZgJdt4uM
+  description: Opens with a talk on Speculative Speculative Decoding (arXiv 2603.03251), followed by papers on diffusion control and world models.
+  section: learning/talks
+  type: video
+  tags: [llm]
+  added: 2026-10-27
+
+# Communities & newsletters
+- id: gpu-mode-discord
+  name: GPU MODE Discord
+  url: https://discord.gg/gpumode
+  description: Open Discord server for GPU programming with channels per kernel language and vendor, reading groups, lectures, and kernel competitions.
+  section: learning/communities
+  type: community
+  tags: [nvidia, amd, cuda]
+  featured: true
+  added: 2026-10-27
+
+- id: vllm-forums
+  name: vLLM Forums
+  url: https://discuss.vllm.ai/
+  description: Official discussion board for vLLM deployment, performance, and hardware-backend questions; real-time developer chat happens on the project Slack.
+  section: learning/communities
+  type: community
+  tags: [llm]
+  added: 2026-10-27
+
+- id: sglang-slack
+  name: SGLang Slack
+  url: https://slack.sglang.io/
+  description: Community workspace linked from the SGLang README where maintainers and users discuss deployments, kernels, and upcoming features.
+  section: learning/communities
+  type: community
+  tags: [llm]
+  added: 2026-10-27
+
+- id: r-localllama
+  name: r/LocalLLaMA
+  url: https://www.reddit.com/r/LocalLLaMA/
+  description: Subreddit for running open-weight models on your own hardware, with frequent comparisons of quantizations, runtimes, and multi-GPU builds.
+  section: learning/communities
+  type: community
+  tags: [llm, local]
+  added: 2026-10-27
+
+- id: ai-performance-engineering-meetup
+  name: AI Performance Engineering Meetup
+  url: https://www.meetup.com/ai-performance-engineering/
+  description: Monthly meetup run by Chris Fregly, with chapters in many cities and livestreamed talks on GPU performance, inference, and AI systems tuning.
+  section: learning/communities
+  type: community
+  tags: [nvidia, llm]
+  via: [fregly]
+  added: 2026-10-27
+
+- id: pytorch-dev-discuss
+  name: PyTorch Developer Discussions
+  url: https://dev-discuss.pytorch.org/
+  description: Forum where PyTorch core developers post design notes and updates on torch.compile, Inductor, export, and distributed internals.
+  section: learning/communities
+  type: community
+  tags: [python]
+  added: 2026-10-27
+
+- id: latent-space
+  name: Latent Space
+  url: https://latent.space/
+  description: AI engineering newsletter and podcast with recurring interviews on inference providers, serving stacks, and GPU economics.
+  section: learning/communities
+  type: community
+  tags: [llm]
+  added: 2026-10-27
+
+# Conferences & venues
+- id: mlsys-conference
+  name: MLSys
+  url: https://mlsys.org/
+  description: Annual conference on machine learning and systems, where serving, kernel, and quantization papers such as FlashInfer, AWQ, and XGrammar appeared.
+  section: learning/conferences
+  type: event
+  featured: true
+  added: 2026-10-27
+
+- id: osdi
+  name: OSDI
+  url: https://www.usenix.org/conferences/byname/179
+  description: USENIX symposium on operating systems design that published Orca, DistServe, Sarathi-Serve, and other LLM serving systems.
+  section: learning/conferences
+  type: event
+  featured: true
+  added: 2026-10-27
+
+- id: sosp
+  name: SOSP
+  url: https://sosp.org/
+  description: ACM symposium on operating systems principles, annual since 2023, where PagedAttention and vLLM were first published.
+  section: learning/conferences
+  type: event
+  added: 2026-10-27
+
+- id: nsdi
+  name: NSDI
+  url: https://www.usenix.org/conferences/byname/178
+  description: USENIX symposium on networked systems, covering cluster scheduling, collective communication, and datacenter-scale serving.
+  section: learning/conferences
+  type: event
+  added: 2026-10-27
+
+- id: eurosys
+  name: EuroSys
+  url: https://2027.eurosys.org/
+  description: European ACM SIGOPS systems conference with a growing share of LLM serving, scheduling, and KV cache papers; the link points to the 2027 edition.
+  section: learning/conferences
+  type: event
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: asplos
+  name: ASPLOS
+  url: https://www.asplos-conference.org/
+  description: Conference spanning computer architecture, compilers, and operating systems, a frequent home for accelerator and ML compiler work.
+  section: learning/conferences
+  type: event
+  added: 2026-10-27
+
+- id: hot-chips
+  name: Hot Chips
+  url: https://www.hotchips.org/
+  description: Annual symposium at Stanford where vendors present new GPUs, accelerators, and interconnects at the level of architecture detail.
+  section: learning/conferences
+  type: event
+  tags: [nvidia, amd, tpu, other-asic]
+  added: 2026-10-27
+
+- id: nvidia-gtc
+  name: NVIDIA GTC
+  url: https://www.nvidia.com/gtc/
+  description: NVIDIA's developer conference; most sessions, including CUDA and inference talks, are later free to stream on NVIDIA On-Demand.
+  section: learning/conferences
+  type: event
+  tags: [nvidia]
+  added: 2026-10-27
+
+- id: pytorch-conference
+  name: PyTorch Conference
+  url: https://events.linuxfoundation.org/pytorch-conference-north-america/
+  description: Linux Foundation conference for the PyTorch ecosystem, with sessions on compilers, kernels, and inference engines such as vLLM and SGLang.
+  section: learning/conferences
+  type: event
+  tags: [python]
+  added: 2026-10-27
+
+- id: vllm-conference
+  name: vLLM Conference
+  url: https://vllm.ai/events/vllm-conference/2026
+  description: First vLLM conference, held with Ray Summit in San Francisco in August 2026, on the roadmap, hardware backends, and production inference.
+  section: learning/conferences
+  type: event
+  tags: [llm]
+  verified: 2026-10-27
+  added: 2026-10-27

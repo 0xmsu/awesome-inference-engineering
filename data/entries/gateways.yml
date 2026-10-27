@@ -1,0 +1,235 @@
+# Gateways & Routing: the layer in front of the engines.
+
+# --- gateways/ai-gateways ---
+
+- id: litellm
+  name: LiteLLM
+  url: https://github.com/BerriAI/litellm
+  description: Python SDK and proxy that translate many provider APIs into the OpenAI format, with virtual keys, budgets, load balancing, and request logging.
+  section: gateways/ai-gateways
+  type: tool
+  tags: [llm, python]
+  featured: true
+  notes: Core is MIT; the enterprise/ directory has a separate commercial license (GitHub reports NOASSERTION).
+  added: 2026-10-27
+
+- id: agent-router
+  name: Agent Router
+  url: https://github.com/theagentrouter/agent-router
+  description: Envoy Gateway-based control plane that puts one OpenAI-compatible API over hosted models, self-hosted inference, and MCP servers; formerly Envoy AI Gateway.
+  section: gateways/ai-gateways
+  type: tool
+  tags: [llm, agents, kubernetes, go]
+  verified: 2026-10-27
+  notes: Renamed from Envoy AI Gateway (envoyproxy/ai-gateway); CRDs, CLI (aigw), and images unchanged.
+  added: 2026-10-27
+
+- id: bifrost
+  name: Bifrost
+  url: https://github.com/maximhq/bifrost
+  description: Go gateway with one OpenAI-compatible API over many providers, adding failover, semantic caching, virtual keys with budgets, and MCP tool access.
+  section: gateways/ai-gateways
+  type: tool
+  tags: [llm, agents, go]
+  added: 2026-10-27
+
+- id: kong-ai-gateway
+  name: Kong AI Gateway
+  url: https://developer.konghq.com/ai-gateway/
+  description: AI plugins for the Kong API gateway that proxy and normalize LLM provider APIs, with prompt guards, templates, and request and response transforms.
+  section: gateways/ai-gateways
+  type: tool
+  tags: [llm, kubernetes]
+  repo: Kong/kong
+  pricing: freemium
+  notes: Basic AI plugins (ai-proxy, prompt guard/template/decorator, transformers) are in OSS Kong; semantic caching and other advanced plugins are Enterprise.
+  added: 2026-10-27
+
+- id: higress
+  name: Higress
+  url: https://github.com/higress-group/higress
+  description: Envoy and Istio-based API gateway, originally from Alibaba, with Wasm plugins for LLM proxying, token rate limits, AI caching, and MCP server hosting.
+  section: gateways/ai-gateways
+  type: tool
+  tags: [llm, agents, kubernetes, go]
+  added: 2026-10-27
+
+- id: plano
+  name: Plano
+  url: https://github.com/katanemo/plano
+  description: Envoy-based data plane for agent apps that adds preference-aligned model routing, agent orchestration, guardrail filter chains, and tracing; formerly archgw.
+  section: gateways/ai-gateways
+  type: tool
+  tags: [llm, agents, rust]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: portkey-gateway
+  name: Portkey AI Gateway
+  url: https://github.com/Portkey-AI/gateway
+  description: TypeScript gateway that routes to many LLM providers with retries, fallbacks, load balancing, and pluggable guardrails, runnable on edge or Node.
+  section: gateways/ai-gateways
+  type: tool
+  tags: [llm, typescript]
+  status: maintenance
+  verified: 2026-10-27
+  notes: No commits merged since 2026-05-25 (community PRs still open); last release v1.15.2 (2026-01). Company acquired around that time; the 2.0 branch stopped in March.
+  added: 2026-10-27
+
+# --- gateways/agent-gateways ---
+
+- id: agentgateway
+  name: agentgateway
+  url: https://github.com/agentgateway/agentgateway
+  description: Rust proxy for agent traffic that speaks MCP and A2A as well as LLM APIs, adding authentication, policy, and observability across tools and agents.
+  section: gateways/agent-gateways
+  type: tool
+  tags: [agents, llm, kubernetes, rust]
+  featured: true
+  added: 2026-10-27
+
+- id: contextforge
+  name: ContextForge
+  url: https://github.com/IBM/mcp-context-forge
+  description: Registry and proxy that federates MCP servers, A2A agents, and REST or gRPC APIs behind one endpoint, with auth, rate limits, and OpenTelemetry tracing.
+  section: gateways/agent-gateways
+  type: tool
+  tags: [agents, python]
+  added: 2026-10-27
+
+- id: microsoft-mcp-gateway
+  name: MCP Gateway (Microsoft)
+  url: https://github.com/microsoft/mcp-gateway
+  description: Reverse proxy and management layer for MCP servers on Kubernetes that handles request routing, authorization, and server deployment lifecycle.
+  section: gateways/agent-gateways
+  type: tool
+  tags: [agents, kubernetes]
+  added: 2026-10-27
+
+- id: docker-mcp-gateway
+  name: Docker MCP Gateway
+  url: https://github.com/docker/mcp-gateway
+  description: Docker CLI plugin that runs each MCP server in an isolated container and exposes them to clients through a single gateway with managed secrets.
+  section: gateways/agent-gateways
+  type: tool
+  tags: [agents, local, go]
+  added: 2026-10-27
+
+# --- gateways/routing ---
+
+- id: vllm-semantic-router
+  name: vLLM Semantic Router
+  url: https://github.com/vllm-project/semantic-router
+  description: Policy-driven decision layer that classifies each request and selects or combines models across local and cloud backends by quality, latency, and cost.
+  section: gateways/routing
+  type: tool
+  tags: [llm, agents, go, python]
+  featured: true
+  added: 2026-10-27
+
+- id: llm-d-router
+  name: llm-d Router
+  url: https://github.com/llm-d/llm-d-router
+  description: Endpoint picker for Gateway API inference pools that scores replicas by prefix-cache locality, load, and priority; formerly the llm-d inference scheduler.
+  section: gateways/routing
+  type: tool
+  tags: [llm, kubernetes, go]
+  verified: 2026-10-27
+  notes: Renamed from llm-d-inference-scheduler; core EPP code moved here from gateway-api-inference-extension.
+  added: 2026-10-27
+
+- id: vllm-router
+  name: vLLM Router
+  url: https://github.com/vllm-project/router
+  description: Rust request router for large vLLM fleets with cache-aware and consistent-hash load balancing, prefill/decode routing, and Kubernetes discovery.
+  section: gateways/routing
+  type: tool
+  tags: [llm, kubernetes, rust]
+  added: 2026-10-27
+
+- id: sglang-model-gateway
+  name: SGLang Model Gateway
+  url: https://docs.sglang.io/docs/advanced_features/sgl_model_gateway
+  description: Rust gateway for SGLang worker fleets with cache-aware load balancing, prefill/decode routing, gRPC mode with gateway-side tokenization, and MCP tools.
+  section: gateways/routing
+  type: tool
+  tags: [llm, kubernetes, rust]
+  repo: sgl-project/sglang
+  added: 2026-10-27
+
+- id: nemo-switchyard
+  name: NeMo Switchyard
+  url: https://github.com/NVIDIA-NeMo/Switchyard
+  description: Rust routing library, embeddable in gateways or agent harnesses, that picks a model per request or agent step to balance task success against cost.
+  section: gateways/routing
+  type: library
+  tags: [llm, agents, rust, python]
+  added: 2026-10-27
+
+- id: llmrouter
+  name: LLMRouter
+  url: https://github.com/ulab-uiuc/LLMRouter
+  description: Research library that implements and benchmarks learned model-routing methods, from single-turn classifiers to multi-turn, multimodal, and agentic routers.
+  section: gateways/routing
+  type: library
+  tags: [llm, python]
+  added: 2026-10-27
+
+# --- gateways/api-specs ---
+
+- id: openai-openapi
+  name: OpenAI API OpenAPI Spec
+  url: https://github.com/openai/openai-openapi
+  description: Machine-readable OpenAPI description of the OpenAI API, the de facto contract that most engines and gateways implement.
+  section: gateways/api-specs
+  type: spec
+  tags: [llm]
+  featured: true
+  added: 2026-10-27
+
+- id: model-context-protocol-spec
+  name: Model Context Protocol Specification
+  url: https://github.com/modelcontextprotocol/modelcontextprotocol
+  description: JSON-RPC protocol and schema for connecting models and agents to external tools, resources, and prompts, published as dated versions.
+  section: gateways/api-specs
+  type: spec
+  tags: [agents, llm]
+  added: 2026-10-27
+
+- id: open-inference-protocol
+  name: Open Inference Protocol
+  url: https://github.com/kserve/open-inference-protocol
+  description: REST and gRPC inference protocol, also called KServe v2, implemented by KServe, Triton, MLServer, and OpenVINO Model Server.
+  section: gateways/api-specs
+  type: spec
+  tags: [classical-ml, llm]
+  notes: Spec repo last changed 2025-05; the protocol is stable and widely implemented.
+  added: 2026-10-27
+
+- id: open-responses
+  name: Open Responses
+  url: https://github.com/openresponses/openresponses
+  description: Provider-neutral spec derived from the OpenAI Responses API that defines items, semantic streaming events, and tool-call loops, with acceptance tests.
+  section: gateways/api-specs
+  type: spec
+  tags: [llm, agents]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: openai-harmony
+  name: OpenAI Harmony
+  url: https://github.com/openai/harmony
+  description: Prompt and response format used by gpt-oss, with separate analysis, commentary, and final channels, plus Rust and Python renderers.
+  section: gateways/api-specs
+  type: spec
+  tags: [llm, reasoning, rust, python]
+  added: 2026-10-27
+
+- id: a2a-protocol
+  name: Agent2Agent (A2A) Protocol
+  url: https://github.com/a2aproject/A2A
+  description: Linux Foundation protocol for agents to discover each other through agent cards and exchange tasks and messages over HTTP.
+  section: gateways/api-specs
+  type: spec
+  tags: [agents]
+  added: 2026-10-27

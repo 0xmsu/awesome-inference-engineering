@@ -1,0 +1,405 @@
+# Model APIs & Serverless Inference
+- id: together-ai
+  name: Together AI
+  url: https://docs.together.ai/intro
+  description: Hosted API for open and partner models across chat, image, video, speech, and rerank, with dedicated model and container endpoints and post-training.
+  section: providers/model-apis
+  type: service
+  tags: [llm, diffusion, speech, serverless, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: fireworks-ai
+  name: Fireworks AI
+  url: https://docs.fireworks.ai/getting-started/introduction
+  description: Inference platform with serverless and dedicated deployments for open models, plus batch, fine-tuning, custom model upload, and reserved throughput.
+  section: providers/model-apis
+  type: service
+  tags: [llm, vlm, serverless, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: baseten-model-apis
+  name: Baseten Model APIs
+  url: https://www.baseten.co/products/model-apis/
+  description: Hosted APIs for open models that run on the Baseten inference stack, alongside dedicated deployments of custom models on the same platform.
+  section: providers/model-apis
+  type: service
+  tags: [llm, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: deepinfra
+  name: DeepInfra
+  url: https://docs.deepinfra.com/
+  description: Pay-per-use API for open models covering chat, embeddings, reranking, image, and speech, with batch processing and private or LoRA-adapted deployments.
+  section: providers/model-apis
+  type: service
+  tags: [llm, embeddings, diffusion, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: hf-inference-providers
+  name: Hugging Face Inference Providers
+  url: https://huggingface.co/docs/inference-providers/index
+  description: Router that reaches partner inference providers through one Hugging Face token and an OpenAI-compatible endpoint, with provider selection policies and failover.
+  section: providers/model-apis
+  type: service
+  tags: [llm, diffusion, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: groq-cloud
+  name: GroqCloud
+  url: https://console.groq.com/docs/overview
+  description: API for open models served on Groq hardware, with OpenAI-compatible endpoints, tool use, speech models, and batch and flex service tiers.
+  section: providers/model-apis
+  type: service
+  tags: [llm, speech, other-asic, datacenter]
+  pricing: freemium
+  added: 2026-10-27
+
+- id: cerebras-inference
+  name: Cerebras Inference
+  url: https://inference-docs.cerebras.ai/
+  description: Hosted API for open models on Cerebras wafer-scale systems, with OpenAI-compatible endpoints, Python and Node SDKs, and a dedicated inference option.
+  section: providers/model-apis
+  type: service
+  tags: [llm, other-asic, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: sambanova-cloud
+  name: SambaNova Cloud
+  url: https://docs.sambanova.ai/docs/en/get-started/overview
+  description: API for open models on SambaNova hardware, with OpenAI- and Anthropic-compatible endpoints, function calling, prompt caching, and vision and audio models.
+  section: providers/model-apis
+  type: service
+  tags: [llm, vlm, other-asic, datacenter]
+  pricing: freemium
+  added: 2026-10-27
+
+- id: nebius-token-factory
+  name: Nebius Token Factory
+  url: https://nebius.com/services/token-factory
+  description: Nebius inference service, formerly AI Studio, with serverless public endpoints, dedicated endpoints, custom model weights, and post-training.
+  section: providers/model-apis
+  type: service
+  tags: [llm, nvidia, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: cloudflare-workers-ai
+  name: Cloudflare Workers AI
+  url: https://developers.cloudflare.com/workers-ai/
+  description: Serverless inference for open models on GPUs across Cloudflare's network, callable from Workers or the REST API, with batch requests and LoRA adapters.
+  section: providers/model-apis
+  type: service
+  tags: [llm, embeddings, serverless]
+  pricing: freemium
+  added: 2026-10-27
+
+# Serverless GPU Platforms
+- id: modal
+  name: Modal
+  url: https://modal.com/docs/guide
+  description: Python-first serverless platform that runs functions, web endpoints, and batch jobs in autoscaling GPU containers, with sandboxes and multi-node clusters.
+  section: providers/serverless-gpu
+  type: service
+  tags: [llm, nvidia, serverless, python]
+  pricing: freemium
+  added: 2026-10-27
+
+- id: runpod-serverless
+  name: Runpod Serverless
+  url: https://docs.runpod.io/serverless/overview
+  description: Autoscaling GPU workers behind queue-based or load-balanced endpoints, deployed from handler functions, custom containers, or a vLLM worker.
+  section: providers/serverless-gpu
+  type: service
+  tags: [llm, nvidia, serverless]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: replicate
+  name: Replicate
+  url: https://replicate.com/docs
+  description: Platform for running models through an API and for deploying custom models packaged with Cog, with a public model catalog, deployments, and webhooks.
+  section: providers/serverless-gpu
+  type: service
+  tags: [diffusion, llm, serverless]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: beam
+  name: Beam
+  url: https://docs.beam.cloud/v2/getting-started/introduction
+  description: Serverless platform driven by a Python SDK for GPU endpoints, async tasks, sandboxes, and virtual machines, with cold-start and warm-container controls.
+  section: providers/serverless-gpu
+  type: service
+  tags: [llm, serverless, python]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: cerebrium
+  name: Cerebrium
+  url: https://cerebrium.ai/docs/getting-started/introduction
+  description: Serverless GPU platform for real-time workloads, with custom container images, autoscaling, REST and WebSocket endpoints, and multi-region deployment.
+  section: providers/serverless-gpu
+  type: service
+  tags: [llm, speech, serverless, python]
+  pricing: freemium
+  added: 2026-10-27
+
+- id: fal-serverless
+  name: fal Serverless
+  url: https://fal.ai/serverless
+  description: Serverless layer of fal's generative-media inference platform for deploying custom model workloads on autoscaling GPUs, next to its hosted model APIs.
+  section: providers/serverless-gpu
+  type: service
+  tags: [diffusion, speech, serverless]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: hf-inference-endpoints
+  name: Hugging Face Inference Endpoints
+  url: https://huggingface.co/docs/inference-endpoints/index
+  description: Managed service that deploys Hub models to dedicated, autoscaling endpoints running vLLM, TGI, or a custom container, with logs and metrics.
+  section: providers/serverless-gpu
+  type: service
+  tags: [llm, embeddings, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+# GPU Clouds
+- id: coreweave
+  name: CoreWeave
+  url: https://www.coreweave.com/products/gpu-compute
+  description: GPU cloud with NVIDIA instances and clusters, offered alongside a managed Kubernetes service, for AI training and inference workloads.
+  section: providers/gpu-clouds
+  type: service
+  tags: [nvidia, kubernetes, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: lambda
+  name: Lambda
+  url: https://lambda.ai/instances
+  description: GPU cloud with on-demand NVIDIA instances, self-serve 1-Click Clusters, and larger reserved clusters, plus the Lambda Stack software bundle.
+  section: providers/gpu-clouds
+  type: service
+  tags: [nvidia, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: crusoe-cloud
+  name: Crusoe Cloud
+  url: https://www.crusoe.ai/cloud
+  description: GPU cloud offering NVIDIA and AMD instances, a managed inference service, and serverless fine-tuning on its own data center capacity.
+  section: providers/gpu-clouds
+  type: service
+  tags: [nvidia, amd, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: nebius
+  name: Nebius
+  url: https://nebius.com/
+  description: AI-focused cloud with non-virtualized GPU clusters on InfiniBand, self-service provisioning, and serverless and managed inference options.
+  section: providers/gpu-clouds
+  type: service
+  tags: [nvidia, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: vast-ai
+  name: Vast.ai
+  url: https://vast.ai/
+  description: Marketplace where hosts list GPUs that users rent as instances, with a CLI and API and a serverless endpoint layer on the same inventory.
+  section: providers/gpu-clouds
+  type: service
+  tags: [nvidia, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: verda
+  name: Verda
+  url: https://verda.com/
+  description: AI cloud formerly known as DataCrunch, with GPU instances, self-service InfiniBand clusters, and serverless containers for inference and batch jobs.
+  section: providers/gpu-clouds
+  type: service
+  tags: [nvidia, datacenter]
+  pricing: commercial
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: tensorwave
+  name: TensorWave
+  url: https://tensorwave.com/
+  description: Cloud built on AMD Instinct accelerators and ROCm, offering bare-metal access and inference services.
+  section: providers/gpu-clouds
+  type: service
+  tags: [amd, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+# Hyperscaler AI Platforms
+- id: amazon-bedrock
+  name: Amazon Bedrock
+  url: https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html
+  description: AWS managed service that serves foundation models from several providers through AWS APIs, including Converse and OpenAI-style endpoints.
+  section: providers/hyperscalers
+  type: service
+  tags: [llm, datacenter]
+  pricing: commercial
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: amazon-sagemaker-inference
+  name: Amazon SageMaker AI Inference
+  url: https://aws.amazon.com/sagemaker/ai/deploy/
+  description: Managed hosting for custom and open models on AWS instances, with real-time, asynchronous, serverless, and batch inference options.
+  section: providers/hyperscalers
+  type: service
+  tags: [llm, trainium, nvidia, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: gemini-enterprise-agent-platform
+  name: Gemini Enterprise Agent Platform (formerly Vertex AI)
+  url: https://cloud.google.com/products/gemini-enterprise-agent-platform
+  description: Google Cloud platform for serving Gemini and other models and for building, tuning, and deploying agents and custom models; the successor to Vertex AI.
+  section: providers/hyperscalers
+  type: service
+  tags: [llm, tpu, datacenter]
+  pricing: commercial
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: microsoft-foundry
+  name: Microsoft Foundry (formerly Azure AI Foundry)
+  url: https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry
+  description: Azure platform for deploying models and agents, with a model catalog, tracing and monitoring, role-based access control, and unified networking policies.
+  section: providers/hyperscalers
+  type: service
+  tags: [llm, datacenter]
+  pricing: commercial
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: oci-generative-ai
+  name: OCI Generative AI
+  url: https://docs.oracle.com/en-us/iaas/Content/generative-ai/home.htm
+  description: Oracle Cloud service for calling pretrained models or importing your own onto managed hosting, with routing profiles and guardrails.
+  section: providers/hyperscalers
+  type: service
+  tags: [llm, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+# Aggregators & Marketplaces
+- id: openrouter
+  name: OpenRouter
+  url: https://openrouter.ai/docs/quickstart
+  description: Single API and credit balance that routes requests to models from many providers, with provider selection, fallbacks, and per-request data policies.
+  section: providers/aggregators
+  type: service
+  tags: [llm]
+  pricing: freemium
+  added: 2026-10-27
+
+- id: vercel-ai-gateway
+  name: Vercel AI Gateway
+  url: https://vercel.com/docs/ai-gateway
+  description: Hosted endpoint from Vercel that fronts models from many providers behind one key, with routing, fallbacks, and usage observability.
+  section: providers/aggregators
+  type: service
+  tags: [llm]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: shadeform
+  name: Shadeform
+  url: https://shadeform.com/
+  description: GPU marketplace that provisions instances across many cloud providers from one console, with centralized billing and support.
+  section: providers/aggregators
+  type: service
+  tags: [nvidia, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: sf-compute
+  name: SF Compute
+  url: https://sfcompute.com/
+  description: GPU cloud offering VMs, bare metal, and managed Slurm, with a scheduler that lets tenants sell unused reserved capacity back to others.
+  section: providers/aggregators
+  type: service
+  tags: [nvidia, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+# Decentralized Networks
+- id: targon
+  name: Targon
+  url: https://targon.com/
+  description: Bittensor subnet 4 GPU cloud with VMs and bare metal; confidential VMs pair Intel TDX with NVIDIA confidential computing and attestation-gated disk keys.
+  section: providers/decentralized
+  type: service
+  tags: [nvidia, datacenter]
+  pricing: commercial
+  verified: 2026-10-27
+  notes: Run by Manifold Labs; the subnet code (validator, miner, sn4 CLI) is in manifold-inc/targon.
+  added: 2026-10-27
+
+- id: lium
+  name: Lium
+  url: https://docs.lium.io/intro
+  description: Bittensor subnet 51 marketplace for renting NVIDIA GPU pods over SSH from the web, CLI, SDK, or API; a validator checks each listed node every 15 minutes.
+  section: providers/decentralized
+  type: service
+  tags: [nvidia, datacenter]
+  pricing: commercial
+  verified: 2026-10-27
+  notes: Formerly Celium (rename confirmed only by secondary sources); run by Datura.
+  added: 2026-10-27
+
+- id: chutes
+  name: Chutes
+  url: https://chutes.ai/docs
+  description: Bittensor subnet 64 serverless platform with an OpenAI-compatible API for open models and an SDK to deploy custom images; TEE variants run on Intel TDX.
+  section: providers/decentralized
+  type: service
+  tags: [llm, diffusion, serverless, nvidia]
+  pricing: commercial
+  verified: 2026-10-27
+  notes: Subnet 64 confirmed from the NETUID default in chutesai/chutes-api; TEE details from the security-architecture docs page.
+  added: 2026-10-27
+
+- id: akash-network
+  name: Akash Network
+  url: https://akash.network/docs/
+  description: Open compute marketplace where independent providers bid on container deployments described in SDL, plus AkashML, an OpenAI-compatible inference API.
+  section: providers/decentralized
+  type: service
+  tags: [llm, nvidia, datacenter]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: io-net
+  name: io.net
+  url: https://io.net/docs/guides/getting-started
+  description: Decentralized GPU network for renting containers, VMs, and Ray or Kubernetes clusters, plus IO Intelligence, a hosted model API.
+  section: providers/decentralized
+  type: service
+  tags: [llm, nvidia, kubernetes]
+  pricing: commercial
+  added: 2026-10-27
+
+- id: nosana
+  name: Nosana
+  url: https://learn.nosana.com/
+  description: Solana-based GPU marketplace that runs container jobs on community-hosted NVIDIA GPUs, plus an OpenAI-compatible LLM API billed per token.
+  section: providers/decentralized
+  type: service
+  tags: [llm, nvidia]
+  pricing: commercial
+  added: 2026-10-27

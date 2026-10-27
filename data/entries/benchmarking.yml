@@ -1,0 +1,326 @@
+# Benchmarking & Capacity Planning: load generators, suites, traces, simulators, and methodology.
+
+# --- Benchmark Tools ---
+
+- id: aiperf
+  name: AIPerf
+  url: https://github.com/ai-dynamo/aiperf
+  description: Load generator for OpenAI-compatible servers with concurrency, request-rate, and trace-replay modes plus goodput; replaces Triton's GenAI-Perf.
+  section: benchmarking/tools
+  type: tool
+  tags: [llm, python]
+  featured: true
+  added: 2026-10-27
+
+- id: guidellm
+  name: GuideLLM
+  url: https://github.com/vllm-project/guidellm
+  description: SLO-oriented load tester that sweeps synchronous, concurrent, and rate-based traffic and reports full TTFT and inter-token latency distributions.
+  section: benchmarking/tools
+  type: tool
+  tags: [llm, python]
+  added: 2026-10-27
+
+- id: vllm-bench-cli
+  name: vLLM Benchmark CLI
+  url: https://docs.vllm.ai/en/latest/benchmarking/cli/
+  description: Usage guide for vllm bench serve and throughput, which drive online or offline load from ShareGPT, BurstGPT, random, multimodal, or custom datasets.
+  section: benchmarking/tools
+  type: docs
+  tags: [llm, python]
+  repo: vllm-project/vllm
+  added: 2026-10-27
+
+- id: genai-bench
+  name: genai-bench
+  url: https://github.com/sgl-project/genai-bench
+  description: Token-level serving benchmark from the SGLang project with a live progress dashboard, traffic-scenario sweeps, and Excel and plot reports.
+  section: benchmarking/tools
+  type: tool
+  tags: [llm, python]
+  added: 2026-10-27
+
+- id: inference-perf
+  name: Inference Perf
+  url: https://github.com/kubernetes-sigs/inference-perf
+  description: Server-agnostic load generator from Kubernetes WG Serving with goodput, multi-stage rate sweeps, and Azure or OpenTelemetry trace replay.
+  section: benchmarking/tools
+  type: tool
+  tags: [llm, kubernetes, python]
+  added: 2026-10-27
+
+- id: inference-benchmarker
+  name: Inference Benchmarker
+  url: https://github.com/huggingface/inference-benchmarker
+  description: Rust load tester for OpenAI-compatible text-generation servers with open-loop constant-rate runs, automatic throughput sweeps, and workload presets.
+  section: benchmarking/tools
+  type: tool
+  tags: [llm, rust]
+  added: 2026-10-27
+
+- id: llama-bench
+  name: llama-bench
+  url: https://github.com/ggml-org/llama.cpp/blob/master/tools/llama-bench/README.md
+  description: Bundled llama.cpp tool that measures prompt-processing and token-generation speed across models, batch sizes, threads, and GPU offload settings.
+  section: benchmarking/tools
+  type: tool
+  tags: [llm, local, cpu, cpp]
+  repo: ggml-org/llama.cpp
+  added: 2026-10-27
+
+# --- Suites & Leaderboards ---
+
+- id: mlperf-inference
+  name: "MLPerf Inference: Datacenter"
+  url: https://mlcommons.org/benchmarks/inference-datacenter/
+  description: Peer-reviewed industry benchmark with closed and open divisions, server and offline scenarios, and accuracy targets; latest round is v6.1 (September 2026).
+  section: benchmarking/suites
+  type: benchmark
+  tags: [llm, datacenter]
+  repo: mlcommons/inference
+  verified: 2026-10-27
+  featured: true
+  added: 2026-10-27
+
+- id: mlperf-endpoints
+  name: MLPerf Endpoints
+  url: https://mlcommons.org/benchmarks/endpoints/
+  description: MLCommons benchmark of live API endpoints that reports throughput, per-user speed, concurrency, and P90 TTFT as curves, with rolling submissions.
+  section: benchmarking/suites
+  type: benchmark
+  tags: [llm, datacenter]
+  repo: mlcommons/endpoints
+  via: [wafer-ai]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: mlperf-client
+  name: MLPerf Client
+  url: https://mlcommons.org/benchmarks/client/
+  description: MLCommons app that times LLM, image generation, and agentic workloads on Windows, macOS, and Linux PCs with GPUs or NPUs; v2.0 shipped in August 2026.
+  section: benchmarking/suites
+  type: benchmark
+  tags: [llm, local, npu, apple]
+  repo: mlcommons/mlperf_client
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: inferencex
+  name: InferenceX
+  url: https://inferencex.semianalysis.com/
+  description: SemiAnalysis benchmark, formerly InferenceMAX, that reruns public serving recipes on NVIDIA, AMD, and TPU systems through open CI with published logs.
+  section: benchmarking/suites
+  type: benchmark
+  tags: [llm, nvidia, amd, tpu]
+  repo: SemiAnalysisAI/InferenceX
+  verified: 2026-10-27
+  featured: true
+  added: 2026-10-27
+
+- id: artificial-analysis
+  name: Artificial Analysis
+  url: https://artificialanalysis.ai/
+  description: Independent leaderboards comparing models and API providers on quality indexes, output speed, latency, and price, with published methodology.
+  section: benchmarking/suites
+  type: benchmark
+  tags: [llm]
+  added: 2026-10-27
+
+- id: aa-agentperf
+  name: AA-AgentPerf
+  url: https://artificialanalysis.ai/methodology/agentperf
+  description: Hardware benchmark that plots total throughput against per-agent output speed on agentic coding workloads, normalized per accelerator, megawatt, and dollar.
+  section: benchmarking/suites
+  type: benchmark
+  tags: [llm, agents, datacenter]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: ml-energy-leaderboard
+  name: ML.ENERGY Leaderboard
+  url: https://ml.energy/leaderboard/
+  description: Measured time and GPU energy per response for open LLM, multimodal, and diffusion models served on production engines, from the ML.ENERGY benchmark.
+  section: benchmarking/suites
+  type: benchmark
+  tags: [llm, vlm, diffusion, nvidia]
+  repo: ml-energy/benchmark
+  added: 2026-10-27
+
+# --- Workload Traces & Datasets ---
+
+- id: azure-llm-traces
+  name: Azure Public Dataset (LLM inference traces)
+  url: https://github.com/Azure/AzurePublicDataset
+  description: Timestamped token-count traces from Azure LLM services behind the Splitwise and DynamoLLM papers, plus multimodal and Copilot coding-agent traces.
+  section: benchmarking/traces
+  type: dataset
+  tags: [llm, vlm, agents]
+  featured: true
+  added: 2026-10-27
+
+- id: burstgpt
+  name: BurstGPT
+  url: https://github.com/HPMLL/BurstGPT
+  description: Months of GPT-3.5 and GPT-4 request logs from an Azure-hosted service with timestamps and token counts, used to model bursty arrivals.
+  section: benchmarking/traces
+  type: dataset
+  tags: [llm]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: servegen
+  name: ServeGen
+  url: https://github.com/alibaba/ServeGen
+  description: Characterizes Alibaba Cloud Model Studio traffic for language, multimodal, and reasoning models and generates synthetic workloads that keep its burstiness.
+  section: benchmarking/traces
+  type: dataset
+  tags: [llm, vlm, reasoning, python]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: mooncake-traces
+  name: Mooncake Traces
+  url: https://github.com/kvcache-ai/Mooncake/blob/main/FAST25-release/README.md
+  description: Kimi production request traces with input and output lengths and hashed prefix blocks for conversation and tool-use workloads, released with the FAST'25 paper.
+  section: benchmarking/traces
+  type: dataset
+  tags: [llm, agents]
+  repo: kvcache-ai/Mooncake
+  added: 2026-10-27
+
+- id: alibaba-clusterdata
+  name: Alibaba Cluster Trace Program
+  url: https://github.com/alibaba/clusterdata
+  description: Alibaba production traces spanning GPU cluster scheduling, generative AI serving telemetry, and a six-month LLM inference trace from its MaaS platform.
+  section: benchmarking/traces
+  type: dataset
+  tags: [llm, datacenter]
+  added: 2026-10-27
+
+# --- Simulators & Capacity Planners ---
+
+- id: aisimulate
+  name: AISimulate
+  url: https://github.com/ai-dynamo/aisimulate
+  description: Predicts serving latency and throughput from measured operator data and searches aggregated and disaggregated configs offline; succeeds AIConfigurator.
+  section: benchmarking/simulators
+  type: tool
+  tags: [llm, nvidia, python]
+  license: Apache-2.0
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: aiconfigurator
+  name: AIConfigurator
+  url: https://github.com/ai-dynamo/aiconfigurator
+  description: NVIDIA configuration search for disaggregated Dynamo and llm-d deployments; accepts only fixes while its estimator moves to AISimulate.
+  section: benchmarking/simulators
+  type: tool
+  tags: [llm, nvidia, python]
+  status: maintenance
+  successor: aisimulate
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: llm-engineers-almanac
+  name: LLM Engineer's Almanac
+  url: https://modal.com/llm-almanac/advisor
+  description: Benchmark-backed advisor that ranks vLLM, SGLang, and TensorRT-LLM setups by latency target and cost per token, with guides on benchmarking and quantization.
+  section: benchmarking/simulators
+  type: tool
+  tags: [llm, nvidia]
+  featured: true
+  added: 2026-10-27
+
+- id: vidur
+  name: Vidur
+  url: https://github.com/microsoft/vidur
+  description: Simulator that predicts LLM serving latency and throughput from profiled operators, for testing schedulers and parallelism plans without GPUs.
+  section: benchmarking/simulators
+  type: tool
+  tags: [llm, python]
+  status: maintenance
+  added: 2026-10-27
+
+- id: llm-viewer
+  name: LLM-Viewer
+  url: https://github.com/hahnyuan/LLM-Viewer
+  description: Roofline-based analyzer that estimates per-layer compute, memory traffic, and latency of LLM prefill and decode on a chosen accelerator.
+  section: benchmarking/simulators
+  type: tool
+  tags: [llm, python]
+  status: maintenance
+  added: 2026-10-27
+
+- id: llm-optimizer
+  name: llm-optimizer
+  url: https://github.com/bentoml/llm-optimizer
+  description: Sweeps SGLang and vLLM launch arguments under latency and throughput constraints and offers a theoretical estimate mode for quick what-if checks.
+  section: benchmarking/simulators
+  type: tool
+  tags: [llm, python]
+  status: maintenance
+  added: 2026-10-27
+
+# --- Metrics & Methodology ---
+
+- id: roofline-model
+  name: "Roofline: An Insightful Visual Performance Model for Multicore Architectures"
+  url: https://dl.acm.org/doi/10.1145/1498765.1498785
+  description: Bounds attainable performance by arithmetic intensity, peak compute, and memory bandwidth; the usual lens for compute-bound prefill and memory-bound decode.
+  section: benchmarking/methodology
+  type: paper
+  paper:
+    venue: Communications of the ACM
+    year: 2009
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: mlperf-inference-paper
+  name: MLPerf Inference Benchmark
+  url: https://arxiv.org/abs/1911.02549
+  description: Defines the LoadGen scenarios, latency bounds, and accuracy targets behind MLPerf Inference and explains how they keep results comparable.
+  section: benchmarking/methodology
+  type: paper
+  paper:
+    venue: ISCA
+    year: 2020
+    code: https://github.com/mlcommons/inference
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: cutlass-gemm-measurement
+  name: CUTLASS GEMM Performance Measurement Methodology
+  url: https://docs.nvidia.com/cutlass/latest/media/docs/cpp/gemm_performance_measurement_methodology_guidelines.html
+  description: NVIDIA guidance on separate warmup loops, buffer rotation for cold caches, fixed-clock versus fixed-power runs, and input entropy for reproducible GEMM numbers.
+  section: benchmarking/methodology
+  type: docs
+  tags: [nvidia, cuda]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: etalon
+  name: "Etalon: Holistic Performance Evaluation Framework for LLM Inference Systems"
+  url: https://arxiv.org/abs/2407.07000
+  description: Argues that TTFT and TBT averages hide streaming stalls and proposes fluidity-index, a deadline-based metric, with a harness for measuring it.
+  section: benchmarking/methodology
+  type: paper
+  tags: [llm]
+  paper:
+    venue: arXiv
+    year: 2024
+    code: https://github.com/project-etalon/etalon
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: fregly-performance-checklist
+  name: AI Systems Performance Checklist
+  url: https://github.com/cfregly/ai-performance-engineering/blob/main/docs/appendix.md
+  description: Over 200 tuning and measurement items from Fregly's O'Reilly book, from steady-state timing and OS and CUDA settings up to cluster-scale cost controls.
+  section: benchmarking/methodology
+  type: article
+  tags: [nvidia, cuda]
+  repo: cfregly/ai-performance-engineering
+  via: [fregly]
+  added: 2026-10-27

@@ -1,0 +1,285 @@
+# Section tree for the list. Order here is the order in the README and on the site.
+# Entries reference a section as "<section-id>/<subsection-id>", or "<section-id>"
+# when the section has no subsections.
+
+sections:
+  - id: start-here
+    title: Start Here
+    ordered: true
+    description: >-
+      An ordered reading path that builds the mental model behind every other section: what happens to a request, where time and memory go, and why the hardware behaves the way it does.
+
+  - id: engines
+    title: Inference Engines
+    description: >-
+      The runtimes that actually execute models: batching requests, managing the KV cache, and launching kernels.
+    subsections:
+      - id: datacenter
+        title: Datacenter Engines
+      - id: local
+        title: Local & Desktop Runtimes
+      - id: hybrid-offloading
+        title: Hybrid CPU–GPU & Offloading
+      - id: language-native
+        title: Language-Native Runtimes
+        description: Engines written in Rust, C++, Zig, Mojo, and other systems languages.
+      - id: minimal
+        title: Minimal & Educational Engines
+        description: Small, readable implementations for learning how production engines work.
+
+  - id: serving
+    title: Distributed Serving & Orchestration
+    description: >-
+      Everything above a single engine instance: multi-node and disaggregated serving, Kubernetes integration, autoscaling, and getting weights onto GPUs quickly.
+    subsections:
+      - id: distributed
+        title: Distributed & Disaggregated Serving
+      - id: kubernetes
+        title: Kubernetes-Native Inference
+      - id: frameworks
+        title: Serving Frameworks & Platforms
+      - id: autoscaling
+        title: Autoscaling, Scheduling & Multi-Cloud
+      - id: packaging-loading
+        title: Model Packaging, Loading & Cold Starts
+
+  - id: gateways
+    title: Gateways & Routing
+    description: >-
+      The layer in front of the engines: unified APIs, traffic management, model selection, and the protocols that clients speak.
+    subsections:
+      - id: ai-gateways
+        title: AI Gateways
+      - id: agent-gateways
+        title: Agent & MCP Gateways
+      - id: routing
+        title: Model Routing & Cascades
+      - id: api-specs
+        title: API Specs & Protocols
+
+  - id: compression
+    title: Model Compression
+    description: >-
+      Making models smaller and cheaper to run: quantization toolkits, low-precision number formats, pruning, sparsity, and distillation.
+    subsections:
+      - id: quantization
+        title: Quantization Toolkits
+      - id: formats
+        title: Number Formats & Specs
+      - id: pruning-distillation
+        title: Pruning, Sparsity & Distillation
+
+  - id: decoding
+    title: Decoding Acceleration
+    description: >-
+      Techniques that produce more useful tokens per forward pass: speculative decoding, the tooling to train drafters, and fast constrained decoding.
+    subsections:
+      - id: speculative
+        title: Speculative Decoding
+      - id: drafter-training
+        title: Drafter Training
+      - id: structured-outputs
+        title: Structured Outputs & Constrained Decoding
+
+  - id: kv-cache
+    title: KV Cache & Attention
+    description: >-
+      The KV cache is the central memory object of LLM serving. This section covers storing, moving, compressing, and reusing it, plus attention variants designed to shrink it.
+    subsections:
+      - id: management
+        title: KV Cache Management & Offloading
+      - id: compression
+        title: KV Compression & Eviction
+      - id: prefix-caching
+        title: Prefix & Prompt Caching
+      - id: attention
+        title: Sparse, Linear & Hybrid Attention
+
+  - id: scheduling
+    title: Scheduling & Parallelism
+    description: >-
+      How requests are batched and scheduled, and how models are split across GPUs and nodes.
+    subsections:
+      - id: batching
+        title: Batching & Scheduling
+      - id: disaggregation
+        title: Prefill–Decode Disaggregation
+      - id: parallelism-moe
+        title: Parallelism & MoE Serving
+      - id: long-context
+        title: Long-Context Inference
+      - id: multi-lora
+        title: Multi-LoRA & Multi-Tenant Serving
+
+  - id: kernels
+    title: Kernels & GPU Programming
+    description: >-
+      The GPU code underneath the engines.
+    subsections:
+      - id: libraries
+        title: Kernel Libraries
+      - id: languages
+        title: Kernel Languages & DSLs
+      - id: megakernels
+        title: Megakernels & Superoptimizers
+      - id: communication
+        title: Collective Communication
+      - id: ai-generated
+        title: AI-Generated Kernels & Kernel Benchmarks
+
+  - id: compilers
+    title: Compilers & Graph Runtimes
+    description: >-
+      Whole-graph compilers and vendor runtimes that turn a model into an optimized executable.
+    subsections:
+      - id: pytorch
+        title: PyTorch Compilation Stack
+      - id: vendor-runtimes
+        title: Vendor Runtimes
+      - id: open-compilers
+        title: Open Compiler Stacks
+
+  - id: hardware
+    title: Hardware & Accelerators
+    description: >-
+      Architecture guides, whitepapers, and software stacks for the chips that run inference. Vendor peak numbers are not measurements; prefer the tuning guides and independent analysis.
+    subsections:
+      - id: nvidia
+        title: NVIDIA
+      - id: amd
+        title: AMD
+      - id: tpu
+        title: Google TPU
+      - id: trainium
+        title: AWS Trainium & Inferentia
+      - id: other-accelerators
+        title: Other Accelerators & ASICs
+      - id: interconnects
+        title: Interconnects & Networking
+      - id: analysis
+        title: Hardware Analysis
+
+  - id: benchmarking
+    title: Benchmarking & Capacity Planning
+    description: >-
+      Measuring inference honestly: load generators, public benchmark suites, real workload traces, simulators, and the methodology that makes numbers comparable.
+    subsections:
+      - id: tools
+        title: Benchmark Tools
+      - id: suites
+        title: Suites & Leaderboards
+      - id: traces
+        title: Workload Traces & Datasets
+      - id: simulators
+        title: Simulators & Capacity Planners
+      - id: methodology
+        title: Metrics & Methodology
+
+  - id: observability
+    title: Observability & Operations
+    description: >-
+      Running inference in production: profiling, telemetry, correctness and determinism, cost and energy, and security.
+    subsections:
+      - id: profiling
+        title: Profiling & Debugging
+      - id: monitoring
+        title: Monitoring & Telemetry
+      - id: correctness
+        title: Correctness & Determinism
+      - id: cost-energy
+        title: Cost & Energy Efficiency
+      - id: security
+        title: Security & Confidential Inference
+
+  - id: edge
+    title: Edge, Mobile & Browser
+    description: >-
+      Inference outside the datacenter: phones, laptops, NPUs, browsers, and embedded boards.
+    subsections:
+      - id: mobile
+        title: Mobile & Embedded Runtimes
+      - id: apple
+        title: Apple Silicon
+      - id: pc-npu
+        title: PCs & NPUs
+      - id: browser
+        title: Browser & WebGPU
+      - id: embedded
+        title: Embedded Accelerators
+
+  - id: verticals
+    title: Verticals
+    description: >-
+      Workload-specific serving: tools and research that only make sense for one modality or workload shape. General engines that also support these workloads live in their own sections and are tagged for the site's filters.
+    subsections:
+      - id: reasoning
+        title: Reasoning & Test-Time Compute
+      - id: multimodal
+        title: Multimodal & Omni Models
+      - id: image-video
+        title: Image & Video Generation
+      - id: speech
+        title: Speech & Real-Time Audio
+      - id: embeddings
+        title: Embeddings, Reranking & Retrieval
+      - id: decision-models
+        title: Decision Models
+        description: Models that answer typed questions with calibrated probabilities instead of generating text.
+      - id: agents
+        title: Agents & Compound AI
+      - id: rl-rollouts
+        title: RL Rollouts & Post-Training
+      - id: robotics
+        title: Robotics & Embodied AI
+      - id: diffusion-llms
+        title: Diffusion Language Models
+      - id: classical-ml
+        title: Classical ML & RecSys
+
+  - id: providers
+    title: Providers & Clouds
+    description: >-
+      Commercial places to run inference. Listed for completeness and marked 💲; no paid placement or referral links.
+    subsections:
+      - id: model-apis
+        title: Model APIs & Serverless Inference
+      - id: serverless-gpu
+        title: Serverless GPU Platforms
+      - id: gpu-clouds
+        title: GPU Clouds
+      - id: hyperscalers
+        title: Hyperscaler AI Platforms
+      - id: aggregators
+        title: Aggregators & Marketplaces
+      - id: decentralized
+        title: Decentralized Networks
+
+  - id: case-studies
+    title: Case Studies & Engineering Blogs
+    description: >-
+      How teams actually run inference at scale, written by the people who built it.
+    subsections:
+      - id: production
+        title: Production Case Studies
+      - id: blogs
+        title: Engineering Blogs
+
+  - id: learning
+    title: Learning Resources
+    description: >-
+      Books, courses, learning paths, and long-form writing for going deeper.
+    subsections:
+      - id: books
+        title: Books
+      - id: courses
+        title: Courses
+      - id: learning-paths
+        title: Learning Paths
+      - id: deep-dives
+        title: Deep Dives & Essays
+      - id: talks
+        title: Talks & Videos
+      - id: communities
+        title: Communities & Newsletters
+      - id: conferences
+        title: Conferences & Venues

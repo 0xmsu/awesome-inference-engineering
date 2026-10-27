@@ -1,0 +1,65 @@
+---
+import Page from '../layouts/Page.astro';
+import Entry from '../components/Entry.astro';
+import { newestFirst, site } from '../lib/data.ts';
+import { monthLabel } from '../lib/format.ts';
+import type { CatalogEntry } from '../lib/types.ts';
+
+// Months newest first; inside a month, the same order as "Recently added" on the home page.
+const months = new Map<string, CatalogEntry[]>();
+for (const e of [...site.entries].sort(newestFirst)) {
+  const ym = e.added.slice(0, 7);
+  if (!months.has(ym)) months.set(ym, []);
+  months.get(ym)?.push(e);
+}
+const hasPicks = site.entries.some((e) => e.featured);
+---
+
+<Page title="What’s new" description="Entries in the order they were added to the list, newest first, grouped by month." current="whats-new">
+  <div class="col">
+    <header class="page-head">
+      <h1 class="page-title">What’s new</h1>
+    </header>
+
+    {
+      hasPicks && (
+        <p class="legend label">
+          <span class="pick" aria-hidden="true" />
+          Editor’s pick
+        </p>
+      )
+    }
+
+    {
+      [...months.entries()].map(([ym, entries]) => (
+        <section class="part month" id={ym} aria-labelledby={`h-${ym}`}>
+          <h2 class="part-h hang">
+            <span class="mn label">{ym}</span>
+            <span class="h" id={`h-${ym}`}>
+              {monthLabel(ym)} <span class="count">{entries.length}</span>
+            </span>
+          </h2>
+          <ol class="entries">
+            {entries.map((e) => (
+              <Entry entry={e} showSection />
+            ))}
+          </ol>
+        </section>
+      ))
+    }
+  </div>
+</Page>
+
+<style>
+  .legend {
+    margin-top: 40px;
+  }
+
+  .month {
+    margin-top: 72px;
+  }
+
+  .legend + .month {
+    margin-top: 16px;
+  }
+</style>

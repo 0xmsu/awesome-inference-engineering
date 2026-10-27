@@ -1,0 +1,141 @@
+# Core vocabulary of inference engineering. Rendered on the site at /glossary.
+
+- term: Prefill
+  aka: [prompt processing]
+  definition: >-
+    The first phase of generation, where the model processes all prompt tokens in parallel and writes their keys and values into the KV cache. Usually compute-bound.
+
+- term: Decode
+  aka: [generation phase]
+  definition: >-
+    The phase after prefill, where the model produces one token per sequence per step while reading the whole KV cache and all weights. Usually memory-bandwidth-bound at small batch sizes.
+
+- term: KV cache
+  definition: >-
+    Stored attention keys and values for every previous token, so each decode step only computes attention for the new token. Its size grows with sequence length, batch size, layers, and KV heads, and it usually limits batch size.
+
+- term: TTFT
+  aka: [time to first token]
+  definition: >-
+    Time from a request's arrival to its first output token. Dominated by queueing and prefill; the main latency metric for interactive use.
+
+- term: TPOT
+  aka: [time per output token, ITL, inter-token latency]
+  definition: >-
+    Average time between consecutive output tokens of one request after the first. Determines perceived streaming speed; ITL usually refers to the per-gap distribution rather than the mean.
+
+- term: End-to-end latency
+  definition: >-
+    Total time from request arrival to the last output token, roughly TTFT plus TPOT times the number of output tokens.
+
+- term: Throughput
+  definition: >-
+    Tokens (or requests) completed per second across all users of a deployment. Trades off against per-request latency through batch size.
+
+- term: Goodput
+  definition: >-
+    Throughput counting only requests that meet their latency SLOs (for example TTFT and TPOT targets). A better objective than raw throughput for interactive serving.
+
+- term: SLO
+  aka: [service-level objective]
+  definition: >-
+    A latency or availability target, such as P99 TTFT under 500 ms, that a serving system is configured and scaled to meet.
+
+- term: Continuous batching
+  aka: [in-flight batching, iteration-level scheduling]
+  definition: >-
+    Scheduling at the granularity of decode steps, so finished sequences leave the batch and new ones join without waiting for the whole batch to complete. Introduced by Orca.
+
+- term: Chunked prefill
+  definition: >-
+    Splitting a long prefill into chunks that are batched together with ongoing decode steps, which limits decode stalls and smooths latency.
+
+- term: PagedAttention
+  definition: >-
+    Storing the KV cache in fixed-size blocks addressed through a block table, like virtual memory pages, which removes fragmentation and enables sharing. Introduced by vLLM.
+
+- term: Prefix caching
+  aka: [prompt caching, RadixAttention]
+  definition: >-
+    Reusing the KV cache of a shared prompt prefix (system prompts, few-shot examples, previous turns) across requests instead of recomputing it.
+
+- term: Prefill–decode disaggregation
+  aka: [P/D disaggregation]
+  definition: >-
+    Running prefill and decode on separate GPU pools and transferring the KV cache between them, so each phase can use its own batching, parallelism, and hardware.
+
+- term: Speculative decoding
+  definition: >-
+    A cheap drafter proposes several tokens that the target model verifies in one forward pass. Exact sampling is preserved; speedup depends on the acceptance rate and drafter cost.
+
+- term: Acceptance length
+  aka: [acceptance rate]
+  definition: >-
+    The average number of drafted tokens accepted per verification step in speculative decoding; the main quality metric for a drafter.
+
+- term: Tensor parallelism
+  aka: [TP]
+  definition: >-
+    Splitting each layer's weight matrices across GPUs, with collective communication inside every layer. Lowers latency but needs fast interconnect.
+
+- term: Pipeline parallelism
+  aka: [PP]
+  definition: >-
+    Placing consecutive groups of layers on different GPUs and passing activations between them. Cheap in communication but adds pipeline bubbles.
+
+- term: Expert parallelism
+  aka: [EP, wide-EP]
+  definition: >-
+    Distributing the experts of a mixture-of-experts layer across GPUs, with all-to-all dispatch and combine of tokens. Wide-EP spreads experts over many nodes.
+
+- term: Mixture of experts
+  aka: [MoE]
+  definition: >-
+    A layer with many expert feed-forward networks of which a router activates only a few per token, so compute per token is much smaller than the total parameter count.
+
+- term: GQA
+  aka: [grouped-query attention]
+  definition: >-
+    Attention where groups of query heads share one key/value head, which shrinks the KV cache proportionally.
+
+- term: MLA
+  aka: [multi-head latent attention]
+  definition: >-
+    Attention that caches a low-rank latent vector instead of full keys and values and reconstructs them on the fly. Introduced in DeepSeek-V2.
+
+- term: Arithmetic intensity
+  definition: >-
+    FLOPs performed per byte moved from memory. Compared with a chip's FLOPs-to-bandwidth ratio, it tells whether a kernel is compute-bound or memory-bound.
+
+- term: Roofline model
+  definition: >-
+    A plot of attainable performance against arithmetic intensity, bounded by peak memory bandwidth and peak compute; the standard first model for reasoning about kernel performance.
+
+- term: MFU
+  aka: [model FLOPs utilization]
+  definition: >-
+    Achieved model FLOPs per second divided by the hardware's peak FLOPs. Most relevant to compute-bound phases such as prefill.
+
+- term: MBU
+  aka: [model bandwidth utilization]
+  definition: >-
+    Achieved memory bandwidth (weights plus KV cache read per step) divided by peak bandwidth. Most relevant to decode.
+
+- term: Weight-only quantization
+  aka: [W4A16, W8A16]
+  definition: >-
+    Storing weights in low precision (for example 4-bit) while computing in 16-bit, which mainly speeds up memory-bound decode.
+
+- term: FP8
+  aka: [E4M3, E5M2]
+  definition: >-
+    8-bit floating-point formats standardized by OCP and supported by Hopper-class and newer accelerators, commonly used for weights, activations, and KV cache.
+
+- term: Microscaling formats
+  aka: [MXFP4, MXFP8, NVFP4]
+  definition: >-
+    Low-precision formats where small blocks of values share a scale factor. MX formats are an OCP standard; NVFP4 is NVIDIA's 4-bit variant with finer-grained scales on Blackwell.
+
+- term: CUDA graphs
+  definition: >-
+    Recording a sequence of GPU kernel launches once and replaying it, which removes CPU launch overhead; important for small-batch decode.

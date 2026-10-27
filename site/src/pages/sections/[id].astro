@@ -1,0 +1,265 @@
+---
+import Page from '../../layouts/Page.astro';
+import Entry from '../../components/Entry.astro';
+import { withBase } from '../../lib/base.ts';
+import { entriesInSection, isListed, isOrdered, sectionNumeral, site, subsectionNumeral } from '../../lib/data.ts';
+import { plainText } from '../../lib/format.ts';
+import type { CatalogEntry, SectionInfo } from '../../lib/types.ts';
+
+export function getStaticPaths() {
+  return site.sections.map((section) => ({ params: { id: section.id }, props: { section } }));
+}
+
+interface Props {
+  section: SectionInfo;
+}
+
+const { section } = Astro.props;
+const numeral = sectionNumeral(section.id);
+const all = entriesInSection(section.id);
+const ordered = isOrdered(section.id);
+const definition = plainText(section.description);
+
+// Listed entries in curated order, then archived and deprecated ones at the end of their subsection.
+const arrange = (list: CatalogEntry[]) => [...list.filter(isListed), ...list.filter((e) => !isListed(e))];
+
+const groups = section.subsections.length
+  ? section.subsections
+      .map((sub) => ({
+        slug: sub.id.split('/')[1] ?? sub.id,
+        numeral: subsectionNumeral(sub.id),
+        title: sub.title,
+        entries: arrange(all.filter((e) => e.section === sub.id)),
+      }))
+      .filter((g) => g.entries.length > 0)
+  : [];
+const flat = section.subsections.length ? [] : arrange(all);
+const listedCount = all.filter(isListed).length;
+const hasPicks = all.some((e) => e.featured);
+
+const idx = site.sections.findIndex((s) => s.id === section.id);
+const prev = site.sections[idx - 1];
+const next = site.sections[idx + 1];
+---
+
+<Page title={`${numeral}. ${section.title}`} description={definition} current="sections">
+  <div class="col">
+  <header class="chapter hang">
+    <span class="mn chapter-num" data-len={numeral.length} aria-hidden="true">{numeral}</span>
+    <div>
+      <h1 class="chapter-title"><span class="vh">{numeral}. </span>{section.title}</h1>
+      <p class="chapter-def">{definition}</p>
+      <p class="label chapter-count">
+        {listedCount} entries{groups.length > 0 && ` · ${groups.length} subsections`}
+      </p>
+    </div>
+  </header>
+    {
+      groups.length > 0 && (
+        <nav class="contents" aria-label="Subsections">
+          <ol>
+            {groups.map((g) => (
+              <li class="hang">
+                <span class="mn label">{g.numeral}</span>
+                <span>
+                  <a href={`#${g.slug}`}>{g.title}</a> <span class="count">{g.entries.filter(isListed).length}</span>
+                </span>
+              </li>
+            ))}
+          </ol>
+        </nav>
+      )
+    }
+
+    {
+      hasPicks && (
+        <p class="legend label">
+          <span class="pick" aria-hidden="true" />
+          Editor’s pick
+        </p>
+      )
+    }
+
+    {
+      groups.map((g) => (
+        <section class="part sub" id={g.slug} aria-labelledby={`h-${g.slug}`}>
+          <h2 class="part-h hang">
+            <span class="mn sub-num">{g.numeral}</span>
+            <span class="h" id={`h-${g.slug}`}>
+              {g.title} <span class="count">{g.entries.filter(isListed).length}</span>
+            </span>
+          </h2>
+          <ol class="entries">
+            {g.entries.map((e) => (
+              <Entry entry={e} />
+            ))}
+          </ol>
+        </section>
+      ))
+    }
+
+    {
+      flat.length > 0 && (
+        <ol class="entries flat">
+          {flat.map((e, i) => (
+            <Entry entry={e} num={ordered ? i + 1 : undefined} />
+          ))}
+        </ol>
+      )
+    }
+
+    <nav class="chapters" aria-label="Chapters">
+      {
+        prev && (
+          <p>
+            <span class="label">Previous</span>{' '}
+            <a href={withBase(`sections/${prev.id}/`)}>
+              {sectionNumeral(prev.id)}. {prev.title}
+            </a>
+          </p>
+        )
+      }
+      {
+        next && (
+          <p>
+            <span class="label">Next</span>{' '}
+            <a href={withBase(`sections/${next.id}/`)}>
+              {sectionNumeral(next.id)}. {next.title}
+            </a>
+          </p>
+        )
+      }
+      <p>
+        <a class="label" href={withBase('sections/')}>All sections</a>
+      </p>
+    </nav>
+  </div>
+</Page>
+
+<style>
+  .chapter {
+    padding-top: 72px;
+  }
+
+  .chapter-num {
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.01em;
+  }
+
+  .chapter-num[data-len='3'] {
+    font-size: 4.25rem;
+  }
+
+  .chapter-num[data-len='4'] {
+    font-size: 3.5rem;
+  }
+
+  .chapter-num[data-len='5'] {
+    font-size: 3rem;
+  }
+
+  .chapter-title {
+    font-size: var(--fs-h1);
+    line-height: 1.04;
+    letter-spacing: -0.01em;
+  }
+
+  .chapter-def {
+    margin-top: 20px;
+    font-size: 1.375rem;
+    line-height: 1.45;
+  }
+
+  .chapter-count {
+    margin-top: 14px;
+  }
+
+  .contents {
+    margin-top: 36px;
+    padding-top: 12px;
+    border-top: 1px solid var(--ink);
+  }
+
+  .contents li {
+    padding: 3px 0;
+    font-size: var(--fs-small);
+  }
+
+  .contents .count {
+    margin-left: 0.25em;
+  }
+
+  .legend {
+    margin-top: 40px;
+  }
+
+  .sub {
+    margin-top: 72px;
+  }
+
+  .legend + .sub {
+    margin-top: 16px;
+  }
+
+  .sub-num {
+    padding-top: 14px;
+    font-size: var(--fs-h2);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--muted);
+  }
+
+  .flat {
+    margin-top: 40px;
+  }
+
+  .legend + .flat {
+    margin-top: 16px;
+  }
+
+  .chapters {
+    margin-top: 96px;
+    padding-top: 16px;
+    border-top: 1px solid var(--ink);
+    font-size: var(--fs-small);
+  }
+
+  .chapters p + p {
+    margin-top: 6px;
+  }
+
+  .chapters .label {
+    display: inline-block;
+    min-width: 6.5em;
+  }
+
+  @media (max-width: 759px) {
+    .chapter {
+      padding-top: 40px;
+    }
+
+    .chapter-num,
+    .chapter-num[data-len] {
+      font-size: 2.5rem;
+      margin-bottom: 8px;
+    }
+
+    .chapter-def {
+      font-size: 1.25rem;
+    }
+
+    .contents .mn {
+      display: inline;
+      margin-right: 0.6em;
+    }
+
+    .sub-num {
+      font-size: var(--fs-mono);
+      font-family: var(--mono);
+      font-weight: 400;
+      letter-spacing: var(--track);
+    }
+  }
+</style>

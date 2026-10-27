@@ -1,0 +1,387 @@
+# KV Cache & Attention: storing, moving, compressing, and reusing the KV cache, plus attention variants that shrink it.
+
+# --- kv-cache/management ---
+
+- id: pagedattention
+  name: PagedAttention
+  url: https://arxiv.org/abs/2309.06180
+  description: Stores the KV cache in fixed-size blocks mapped through a block table, nearly removing fragmentation and allowing copy-on-write sharing between sequences.
+  section: kv-cache/management
+  type: paper
+  tags: [llm]
+  paper:
+    venue: SOSP
+    year: 2023
+    code: https://github.com/vllm-project/vllm
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: lmcache
+  name: LMCache
+  url: https://github.com/LMCache/LMCache
+  description: KV cache layer that stores, moves, and reuses KV data across GPU, CPU, disk, and remote tiers, attached to vLLM and SGLang through connectors.
+  section: kv-cache/management
+  type: library
+  tags: [llm, nvidia, amd, datacenter, python]
+  featured: true
+  added: 2026-10-27
+
+- id: mooncake
+  name: Mooncake
+  url: https://github.com/kvcache-ai/Mooncake
+  description: Moonshot AI's KV-centric infrastructure, an RDMA transfer engine plus a distributed KV store, used as a backend by vLLM, SGLang, and TensorRT-LLM.
+  section: kv-cache/management
+  type: library
+  tags: [llm, nvidia, amd, datacenter, cpp, python]
+  added: 2026-10-27
+
+- id: lmcache-paper
+  name: "LMCache: An Efficient KV Cache Layer for Enterprise-Scale LLM Inference"
+  url: https://arxiv.org/abs/2510.09665
+  description: Design paper behind LMCache, covering the engine connector interface, batched KV movement between tiers, and support for both prefix reuse and P/D transfer.
+  section: kv-cache/management
+  type: paper
+  tags: [llm]
+  paper:
+    year: 2025
+    code: https://github.com/LMCache/LMCache
+  added: 2026-10-27
+
+- id: vllm-kv-offloading
+  name: vLLM KV Offloading Connector
+  url: https://docs.vllm.ai/en/latest/features/kv_offloading_usage/
+  description: Configures vLLM's built-in connector that copies finished KV blocks to pinned CPU memory and optional secondary tiers with asynchronous DMA.
+  section: kv-cache/management
+  type: docs
+  tags: [llm, nvidia, amd]
+  added: 2026-10-27
+
+- id: sglang-hicache
+  name: SGLang HiCache
+  url: https://docs.sglang.io/docs/advanced_features/hicache_design
+  description: Design of SGLang's hierarchical cache, which extends the radix-tree prefix cache from GPU memory to host memory and storage backends like Mooncake and 3FS.
+  section: kv-cache/management
+  type: docs
+  tags: [llm, nvidia]
+  added: 2026-10-27
+
+- id: kvcached
+  name: kvcached
+  url: https://github.com/ovg-project/kvcached
+  description: Elastic KV cache allocator built on GPU virtual memory, so several vLLM or SGLang models can share one GPU and resize their caches with load.
+  section: kv-cache/management
+  type: library
+  tags: [llm, nvidia, amd, python]
+  added: 2026-10-27
+
+- id: flexkv
+  name: FlexKV
+  url: https://github.com/taco-project/FlexKV
+  description: Tencent Cloud's tiered KV cache manager for CPU, SSD, and remote storage, integrated with vLLM, SGLang, TensorRT-LLM, and Dynamo.
+  section: kv-cache/management
+  type: library
+  tags: [llm, nvidia, datacenter, python]
+  added: 2026-10-27
+
+# --- kv-cache/compression ---
+
+- id: kvpress
+  name: KVPress
+  url: https://github.com/NVIDIA/kvpress
+  description: Library of pluggable KV cache pruning methods, called presses, for Hugging Face transformers, with benchmarks to compare them on long-context tasks.
+  section: kv-cache/compression
+  type: library
+  tags: [llm, nvidia, python]
+  featured: true
+  added: 2026-10-27
+
+- id: kivi
+  name: KIVI
+  url: https://arxiv.org/abs/2402.02750
+  description: Tuning-free 2-bit KV quantization that quantizes keys per channel and values per token, keeping a small full-precision window of recent tokens.
+  section: kv-cache/compression
+  type: paper
+  tags: [llm]
+  paper:
+    venue: ICML
+    year: 2024
+    code: https://github.com/jy-yuan/KIVI
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: streamingllm
+  name: StreamingLLM (Attention Sinks)
+  url: https://arxiv.org/abs/2309.17453
+  description: Shows that the first tokens act as attention sinks; keeping them plus a sliding window lets models stream past their training length without retraining.
+  section: kv-cache/compression
+  type: paper
+  tags: [llm]
+  paper:
+    venue: ICLR
+    year: 2024
+    code: https://github.com/mit-han-lab/streaming-llm
+  added: 2026-10-27
+
+- id: h2o-heavy-hitter-oracle
+  name: H2O (Heavy-Hitter Oracle)
+  url: https://arxiv.org/abs/2306.14048
+  description: Evicts KV entries except recent tokens and heavy hitters, the tokens with the largest accumulated attention scores, to cap cache size during generation.
+  section: kv-cache/compression
+  type: paper
+  tags: [llm]
+  paper:
+    venue: NeurIPS
+    year: 2023
+    code: https://github.com/FMInference/H2O
+  added: 2026-10-27
+
+- id: snapkv
+  name: SnapKV
+  url: https://arxiv.org/abs/2404.14469
+  description: Chooses which prompt positions each attention head keeps by looking at attention from a window at the end of the prompt, compressing the cache before decoding.
+  section: kv-cache/compression
+  type: paper
+  tags: [llm]
+  paper:
+    venue: NeurIPS
+    year: 2024
+    code: https://github.com/FasterDecoding/SnapKV
+  added: 2026-10-27
+
+- id: kvquant
+  name: KVQuant
+  url: https://arxiv.org/abs/2401.18079
+  description: Sub-4-bit KV quantization using per-channel keys taken before RoPE, non-uniform datatypes, and a sparse side matrix for outliers.
+  section: kv-cache/compression
+  type: paper
+  tags: [llm]
+  paper:
+    venue: NeurIPS
+    year: 2024
+    code: https://github.com/SqueezeAILab/KVQuant
+  added: 2026-10-27
+
+- id: turboquant
+  name: TurboQuant
+  url: https://arxiv.org/abs/2504.19874
+  description: Data-oblivious online vector quantizer, a random rotation plus scalar quantizers and a 1-bit residual sketch, applied to low-bit KV caches.
+  section: kv-cache/compression
+  type: paper
+  tags: [llm]
+  paper:
+    venue: ICLR
+    year: 2026
+  added: 2026-10-27
+
+- id: cachegen
+  name: CacheGen
+  url: https://arxiv.org/abs/2310.07240
+  description: Encodes KV caches into compact bitstreams and adapts their quality to available bandwidth, cutting the time to load long contexts over the network.
+  section: kv-cache/compression
+  type: paper
+  tags: [llm]
+  paper:
+    venue: SIGCOMM
+    year: 2024
+    code: https://github.com/UChi-JCL/CacheGen
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: vllm-quantized-kv-cache
+  name: vLLM Quantized KV Cache
+  url: https://docs.vllm.ai/en/latest/features/quantization/quantized_kvcache/
+  description: Explains FP8 KV cache in vLLM, including per-tensor and per-head scales and how to calibrate them with llm-compressor.
+  section: kv-cache/compression
+  type: docs
+  tags: [llm, nvidia, amd]
+  added: 2026-10-27
+
+# --- kv-cache/prefix-caching ---
+
+- id: sglang-radixattention-paper
+  name: "SGLang: Efficient Execution of Structured Language Model Programs"
+  url: https://arxiv.org/abs/2312.07104
+  description: Introduces RadixAttention, which keeps KV caches in a radix tree for automatic prefix reuse across requests, with LRU eviction and cache-aware scheduling.
+  section: kv-cache/prefix-caching
+  type: paper
+  tags: [llm]
+  paper:
+    venue: NeurIPS
+    year: 2024
+    code: https://github.com/sgl-project/sglang
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: vllm-automatic-prefix-caching
+  name: vLLM Automatic Prefix Caching
+  url: https://docs.vllm.ai/en/latest/design/prefix_caching/
+  description: Design notes on vLLM's hash-based prefix cache, where each block's key chains its own tokens with its prefix and free blocks are evicted in LRU order.
+  section: kv-cache/prefix-caching
+  type: docs
+  tags: [llm]
+  added: 2026-10-27
+
+- id: cacheblend
+  name: CacheBlend
+  url: https://arxiv.org/abs/2405.16444
+  description: Reuses precomputed KV caches for non-prefix chunks such as RAG documents, recomputing a small set of tokens to restore cross-chunk attention.
+  section: kv-cache/prefix-caching
+  type: paper
+  tags: [llm, embeddings]
+  paper:
+    venue: EuroSys
+    year: 2025
+    code: https://github.com/YaoJiayi/CacheBlend
+  added: 2026-10-27
+
+- id: prompt-cache
+  name: Prompt Cache
+  url: https://arxiv.org/abs/2311.04934
+  description: Precomputes attention states for prompt modules declared in a schema and reuses them across prompts, even when the modules are not a shared prefix.
+  section: kv-cache/prefix-caching
+  type: paper
+  tags: [llm]
+  paper:
+    venue: MLSys
+    year: 2024
+    code: https://github.com/yale-sys/prompt-cache
+  added: 2026-10-27
+
+- id: marconi
+  name: Marconi
+  url: https://arxiv.org/abs/2411.19379
+  description: Prefix caching for hybrid attention and state-space models, with admission and eviction policies that weigh recurrent-state reuse against memory cost.
+  section: kv-cache/prefix-caching
+  type: paper
+  tags: [llm]
+  paper:
+    venue: MLSys
+    year: 2025
+    code: https://github.com/ruipeterpan/marconi
+  added: 2026-10-27
+
+# --- kv-cache/attention ---
+
+- id: grouped-query-attention
+  name: Grouped-Query Attention (GQA)
+  url: https://arxiv.org/abs/2305.13245
+  description: Lets groups of query heads share key-value heads, sitting between multi-head and multi-query attention, and uptrains existing checkpoints to use it.
+  section: kv-cache/attention
+  type: paper
+  tags: [llm]
+  paper:
+    venue: EMNLP
+    year: 2023
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: deepseek-v2-mla
+  name: DeepSeek-V2 (Multi-head Latent Attention)
+  url: https://arxiv.org/abs/2405.04434
+  description: Introduced multi-head latent attention, which caches one compressed latent vector per token instead of separate keys and values for every head.
+  section: kv-cache/attention
+  type: paper
+  tags: [llm, moe]
+  paper:
+    year: 2024
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: flash-linear-attention
+  name: flash-linear-attention
+  url: https://github.com/fla-org/flash-linear-attention
+  description: Triton kernels and layers for linear attention, state-space, and sparse attention variants such as Gated DeltaNet, KDA, and Mamba2.
+  section: kv-cache/attention
+  type: library
+  tags: [llm, nvidia, amd, python]
+  added: 2026-10-27
+
+- id: multi-query-attention
+  name: Multi-Query Attention (MQA)
+  url: https://arxiv.org/abs/1911.02150
+  description: Shares a single key and value head across all query heads, shrinking the KV cache and the memory traffic of incremental decoding.
+  section: kv-cache/attention
+  type: paper
+  tags: [llm]
+  paper:
+    year: 2019
+  added: 2026-10-27
+
+- id: native-sparse-attention
+  name: Native Sparse Attention (NSA)
+  url: https://arxiv.org/abs/2502.11089
+  description: Trainable sparse attention with compressed, selected, and sliding-window branches whose block layout is designed for efficient GPU kernels.
+  section: kv-cache/attention
+  type: paper
+  tags: [llm]
+  paper:
+    venue: ACL
+    year: 2025
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: deepseek-v3-2-dsa
+  name: DeepSeek-V3.2 (DeepSeek Sparse Attention)
+  url: https://arxiv.org/abs/2512.02556
+  description: Adds DeepSeek Sparse Attention on top of MLA, where a cheap indexer ranks past tokens and attention runs only over the selected subset.
+  section: kv-cache/attention
+  type: paper
+  tags: [llm, moe]
+  paper:
+    year: 2025
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: deepseek-v4-hybrid-attention
+  name: DeepSeek-V4 (Compressed Sparse Attention)
+  url: https://arxiv.org/abs/2606.19348
+  description: Preview report on interleaving Compressed Sparse Attention and Heavily Compressed Attention layers to make million-token contexts affordable to serve.
+  section: kv-cache/attention
+  type: paper
+  tags: [llm, moe]
+  paper:
+    year: 2026
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: gated-deltanet
+  name: Gated DeltaNet
+  url: https://arxiv.org/abs/2412.06464
+  description: Linear-attention layer combining Mamba2-style gating with the delta rule, used for the linear layers of hybrid models from Qwen3-Next onward.
+  section: kv-cache/attention
+  type: paper
+  tags: [llm]
+  paper:
+    venue: ICLR
+    year: 2025
+    code: https://github.com/NVlabs/GatedDeltaNet
+  added: 2026-10-27
+
+- id: kimi-linear
+  name: Kimi Linear
+  url: https://arxiv.org/abs/2510.26692
+  description: Hybrid architecture that interleaves Kimi Delta Attention, a gated linear attention, with MLA layers to cut KV cache size for long contexts.
+  section: kv-cache/attention
+  type: paper
+  tags: [llm, moe]
+  paper:
+    year: 2025
+    code: https://github.com/MoonshotAI/Kimi-Linear
+  added: 2026-10-27
+
+- id: jenga
+  name: Jenga
+  url: https://arxiv.org/abs/2503.18292
+  description: Two-level allocator, built on vLLM, that sizes pages by the LCM of layer embedding sizes and lets each layer type set its own caching and eviction.
+  section: kv-cache/attention
+  type: paper
+  tags: [llm, vlm]
+  paper:
+    venue: SOSP
+    year: 2025
+  via: [wafer-ai]
+  added: 2026-10-27

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://0xmsu.github.io/awesome-inference-engineering/schema/glossary.schema.json",
+  "title": "Glossary",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["term", "definition"],
+    "properties": {
+      "term": { "type": "string" },
+      "aka": { "type": "array", "items": { "type": "string" } },
+      "definition": { "type": "string", "minLength": 20 },
+      "see": { "description": "Entry ids for further reading.", "type": "array", "items": { "type": "string" } }
+    }
+  }
+}

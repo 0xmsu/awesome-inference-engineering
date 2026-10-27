@@ -1,0 +1,20 @@
+---
+// One entry block. The markup comes from lib/entry-html.ts, which the catalog script also uses, so the
+// entries rendered at build time and those the catalog renders in the browser are identical.
+import { entryCtx } from '../lib/data.ts';
+import { entryHtml } from '../lib/entry-html.ts';
+import type { CatalogEntry } from '../lib/types.ts';
+
+interface Props {
+  entry: CatalogEntry;
+  /** Show where the entry lives (catalog, tag pages, recently added). */
+  showSection?: boolean;
+  /** Reading-order number, set in the margin. */
+  num?: number;
+  hidden?: boolean;
+}
+
+const { entry, showSection = false, num, hidden = false } = Astro.props;
+---
+
+<Fragment set:html={entryHtml(entry, entryCtx, { showSection, num, hidden })} />

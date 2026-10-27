@@ -1,0 +1,376 @@
+# Scheduling & Parallelism: how requests are batched and scheduled, and how models are split across GPUs and nodes.
+
+# --- scheduling/batching ---
+
+- id: orca
+  name: Orca
+  url: https://www.usenix.org/conference/osdi22/presentation/yu
+  description: Schedules one model iteration at a time, so finished requests leave and new ones join the batch every step; the origin of continuous batching.
+  section: scheduling/batching
+  type: paper
+  tags: [llm]
+  paper:
+    venue: OSDI
+    year: 2022
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: sarathi-serve
+  name: Sarathi-Serve
+  url: https://arxiv.org/abs/2403.02310
+  description: Splits prompts into chunks and mixes them with ongoing decodes under a fixed token budget, so admitting new requests does not stall running ones.
+  section: scheduling/batching
+  type: paper
+  tags: [llm]
+  paper:
+    venue: OSDI
+    year: 2024
+    code: https://github.com/microsoft/sarathi-serve
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: vtc-fairness
+  name: Fairness in Serving Large Language Models (VTC)
+  url: https://arxiv.org/abs/2401.00588
+  description: Defines fairness over weighted input and output token counts and enforces it with a work-conserving Virtual Token Counter scheduler.
+  section: scheduling/batching
+  type: paper
+  tags: [llm]
+  paper:
+    venue: OSDI
+    year: 2024
+    code: https://github.com/Ying1123/VTC-artifact
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: deepspeed-fastgen
+  name: DeepSpeed-FastGen
+  url: https://arxiv.org/abs/2401.08671
+  description: Introduced Dynamic SplitFuse, which builds each forward pass from prompt chunks and decode tokens to keep the batch at a steady token count.
+  section: scheduling/batching
+  type: paper
+  tags: [llm]
+  paper:
+    year: 2024
+    code: https://github.com/deepspeedai/DeepSpeed-MII
+  added: 2026-10-27
+
+- id: nanoflow
+  name: NanoFlow
+  url: https://arxiv.org/abs/2408.12757
+  description: Splits batches into nano-batches and overlaps compute-, memory-, and network-bound operations inside one GPU to raise serving throughput.
+  section: scheduling/batching
+  type: paper
+  tags: [llm, nvidia]
+  paper:
+    venue: OSDI
+    year: 2025
+    code: https://github.com/efeslab/Nanoflow
+  added: 2026-10-27
+
+- id: vllm-optimization-tuning
+  name: vLLM Optimization and Tuning
+  url: https://docs.vllm.ai/en/latest/configuration/optimization/
+  description: Covers vLLM preemption, chunked-prefill token budgets, and parallelism choices that trade throughput against latency.
+  section: scheduling/batching
+  type: docs
+  tags: [llm]
+  added: 2026-10-27
+
+# --- scheduling/disaggregation ---
+
+- id: distserve
+  name: DistServe
+  url: https://arxiv.org/abs/2401.09670
+  description: Removes prefill-decode interference by giving each phase its own GPUs, then tunes resources and parallelism per phase against TTFT and TPOT targets.
+  section: scheduling/disaggregation
+  type: paper
+  tags: [llm]
+  paper:
+    venue: OSDI
+    year: 2024
+    code: https://github.com/LLMServe/DistServe
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: splitwise
+  name: Splitwise
+  url: https://arxiv.org/abs/2311.18677
+  description: Runs prompt and token-generation phases on separate machine pools, possibly of different GPU generations, and ships KV state between them.
+  section: scheduling/disaggregation
+  type: paper
+  tags: [llm, nvidia]
+  paper:
+    venue: ISCA
+    year: 2024
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: nixl
+  name: NIXL
+  url: https://github.com/ai-dynamo/nixl
+  description: Transfer library with one API over GPU, CPU, file, and object memory, used by engines to move KV blocks through UCX, libfabric, GDS, and other plugins.
+  section: scheduling/disaggregation
+  type: library
+  tags: [llm, nvidia, datacenter, cpp, python]
+  license: Apache-2.0
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: mooncake-paper
+  name: "Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving"
+  url: https://arxiv.org/abs/2407.00079
+  description: Kimi's serving design, with separate prefill and decode clusters around a KV pool in spare CPU memory and SSD, plus prediction-based rejection under overload.
+  section: scheduling/disaggregation
+  type: paper
+  tags: [llm]
+  paper:
+    venue: FAST
+    year: 2025
+    code: https://github.com/kvcache-ai/Mooncake
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: vllm-disaggregated-prefill
+  name: vLLM Disaggregated Prefilling
+  url: https://docs.vllm.ai/en/latest/features/disagg_prefill/
+  description: Experimental vLLM mode that runs prefill and decode in separate instances linked by KV connectors such as NIXL, LMCache, and Mooncake.
+  section: scheduling/disaggregation
+  type: docs
+  tags: [llm]
+  added: 2026-10-27
+
+- id: sglang-pd-disaggregation
+  name: SGLang PD Disaggregation
+  url: https://docs.sglang.io/docs/advanced_features/pd_disaggregation
+  description: Guide to running SGLang prefill and decode servers separately, with Mooncake, NIXL, or Ascend transfer backends and a router in front.
+  section: scheduling/disaggregation
+  type: docs
+  tags: [llm, nvidia, ascend]
+  added: 2026-10-27
+
+# --- scheduling/parallelism-moe ---
+
+- id: megatron-lm-paper
+  name: Megatron-LM
+  url: https://arxiv.org/abs/1909.08053
+  description: Splits attention heads and MLP weights across GPUs so each transformer layer needs only two all-reduces; the tensor parallelism engines still use.
+  section: scheduling/parallelism-moe
+  type: paper
+  tags: [llm, nvidia]
+  paper:
+    year: 2019
+    code: https://github.com/NVIDIA/Megatron-LM
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: deepseek-v3-report
+  name: DeepSeek-V3 Technical Report
+  url: https://arxiv.org/abs/2412.19437
+  description: Covers MLA, auxiliary-loss-free expert balancing, and multi-token prediction, plus prefill and decode deployment with expert parallelism and redundant experts.
+  section: scheduling/parallelism-moe
+  type: paper
+  tags: [llm, moe]
+  paper:
+    year: 2024
+    code: https://github.com/deepseek-ai/DeepSeek-V3
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: llm-d-wide-ep
+  name: llm-d Wide Expert Parallelism Guide
+  url: https://llm-d.ai/docs/well-lit-paths/foundations/wide-expert-parallelism
+  description: Deploys a large MoE across nodes with DP/EP, prefill/decode disaggregation, and a router that targets individual data-parallel ranks.
+  section: scheduling/parallelism-moe
+  type: docs
+  tags: [llm, moe, kubernetes, nvidia, amd]
+  added: 2026-10-27
+
+- id: gshard
+  name: GShard
+  url: https://arxiv.org/abs/2006.16668
+  description: Scaled sparsely gated MoE transformers across thousands of TPU cores using top-2 routing, expert capacity limits, and XLA sharding annotations.
+  section: scheduling/parallelism-moe
+  type: paper
+  tags: [llm, moe, tpu]
+  paper:
+    venue: ICLR
+    year: 2021
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: megascale-infer
+  name: MegaScale-Infer
+  url: https://arxiv.org/abs/2504.02263
+  description: Puts attention and expert layers on separate GPU pools and pipelines micro-batches between them over a custom M2N communication library.
+  section: scheduling/parallelism-moe
+  type: paper
+  tags: [llm, moe, nvidia]
+  paper:
+    venue: SIGCOMM
+    year: 2025
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: step-3-afd
+  name: Step-3 (Attention-FFN Disaggregation)
+  url: https://arxiv.org/abs/2507.19427
+  description: Model-system co-design report pairing a factorized attention design with attention-FFN disaggregation to lower decoding cost.
+  section: scheduling/parallelism-moe
+  type: paper
+  tags: [llm, moe]
+  paper:
+    year: 2025
+    code: https://github.com/stepfun-ai/Step3
+  added: 2026-10-27
+
+- id: vllm-afd-plugin
+  name: vLLM AFD Plugin
+  url: https://github.com/vllm-project/afd-plugin
+  description: External vLLM plugin that runs attention and FFN of DeepSeek-family MoE models as separately scaled services on NVIDIA GPUs and Ascend NPUs.
+  section: scheduling/parallelism-moe
+  type: library
+  tags: [llm, moe, nvidia, ascend, python]
+  maturity: experimental
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: eplb
+  name: EPLB
+  url: https://github.com/deepseek-ai/EPLB
+  description: DeepSeek's reference algorithm for replicating heavily loaded experts and packing replicas across GPUs and nodes, with hierarchical and global policies.
+  section: scheduling/parallelism-moe
+  type: library
+  tags: [llm, moe, python]
+  status: maintenance
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: vllm-expert-parallel
+  name: vLLM Expert Parallel Deployment
+  url: https://docs.vllm.ai/en/latest/serving/expert_parallel_deployment/
+  description: How to serve MoE models in vLLM with expert parallelism over data-parallel attention, including DeepEP backends and EPLB settings.
+  section: scheduling/parallelism-moe
+  type: docs
+  tags: [llm, moe, nvidia]
+  added: 2026-10-27
+
+- id: vllm-parallelism-scaling
+  name: vLLM Parallelism and Scaling
+  url: https://docs.vllm.ai/en/latest/serving/parallelism_scaling/
+  description: Decision guide for tensor, pipeline, and data parallelism in vLLM on one node or many, including Ray-based multi-node setup.
+  section: scheduling/parallelism-moe
+  type: docs
+  tags: [llm]
+  added: 2026-10-27
+
+# --- scheduling/long-context ---
+
+- id: ring-attention
+  name: Ring Attention
+  url: https://arxiv.org/abs/2310.01889
+  description: Splits a long sequence across devices, each computing blockwise attention while passing key-value blocks to its neighbor and hiding the transfer behind compute.
+  section: scheduling/long-context
+  type: paper
+  tags: [llm]
+  paper:
+    venue: ICLR
+    year: 2024
+    code: https://github.com/haoliuhl/ringattention
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: vllm-context-parallel
+  name: vLLM Context Parallel Deployment
+  url: https://docs.vllm.ai/en/latest/serving/context_parallel_deployment/
+  description: How vLLM spreads long-context prefill and decode across GPUs, covering partial-query and partial-KV strategies and decode context parallelism.
+  section: scheduling/long-context
+  type: docs
+  tags: [llm]
+  added: 2026-10-27
+
+- id: context-parallelism-million-token
+  name: Context Parallelism for Scalable Million-Token Inference
+  url: https://arxiv.org/abs/2411.01783
+  description: Meta's pass-KV and pass-Q ring-attention variants for inference, scaling long-context prefill across many nodes over RDMA or TCP.
+  section: scheduling/long-context
+  type: paper
+  tags: [llm, nvidia]
+  paper:
+    venue: MLSys
+    year: 2025
+  added: 2026-10-27
+
+- id: minference
+  name: MInference
+  url: https://github.com/microsoft/MInference
+  description: Speeds up long-context prefill by assigning each head a sparse attention pattern offline and building its index online; the kernels now live in vLLM and SGLang.
+  section: scheduling/long-context
+  type: library
+  tags: [llm, nvidia, python]
+  status: maintenance
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: star-attention
+  name: Star Attention
+  url: https://arxiv.org/abs/2411.17116
+  description: Two-phase long-sequence inference where hosts encode context blocks with local attention, then query and output tokens attend globally across hosts.
+  section: scheduling/long-context
+  type: paper
+  tags: [llm, nvidia]
+  paper:
+    venue: ICML
+    year: 2025
+    code: https://github.com/NVIDIA/Star-Attention
+  added: 2026-10-27
+
+# --- scheduling/multi-lora ---
+
+- id: s-lora
+  name: S-LoRA
+  url: https://arxiv.org/abs/2311.03285
+  description: Serves thousands of adapters by keeping them in host memory, paging active ones into a GPU pool shared with the KV cache, and batching them with custom kernels.
+  section: scheduling/multi-lora
+  type: paper
+  tags: [llm]
+  paper:
+    venue: MLSys
+    year: 2024
+  featured: true
+  added: 2026-10-27
+
+- id: vllm-lora
+  name: vLLM LoRA Adapters
+  url: https://docs.vllm.ai/en/latest/features/lora/
+  description: Per-request LoRA serving in vLLM, with multi-adapter batches, runtime loading through API endpoints, and resolver plugins.
+  section: scheduling/multi-lora
+  type: docs
+  tags: [llm]
+  added: 2026-10-27
+
+- id: punica
+  name: Punica
+  url: https://arxiv.org/abs/2310.18547
+  description: Introduced the SGMV kernel, which batches requests for different LoRA adapters of one base model into a single GPU pass.
+  section: scheduling/multi-lora
+  type: paper
+  tags: [llm, nvidia]
+  paper:
+    venue: MLSys
+    year: 2024
+  added: 2026-10-27
+
+- id: sglang-lora
+  name: SGLang LoRA Serving
+  url: https://docs.sglang.io/docs/advanced_features/lora
+  description: Covers multi-adapter batches, dynamic adapter loading, GPU pinning, and kernel backend choice for LoRA serving in SGLang.
+  section: scheduling/multi-lora
+  type: docs
+  tags: [llm]
+  added: 2026-10-27

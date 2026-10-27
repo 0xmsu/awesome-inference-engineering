@@ -1,0 +1,19 @@
+---
+import { withBase } from '../lib/base.ts';
+import { site } from '../lib/data.ts';
+
+const repo = 'https://github.com/0xmsu/awesome-inference-engineering';
+---
+
+<footer class="footer wrap">
+  <div class="col">
+    <p class="label">
+      Content {site.contentLicense} · Code MIT
+    </p>
+    <p class="label">
+      <a href={withBase('tags/')}>Tags</a> · <a href={withBase('api/entries.json')}>entries.json</a> · <a href={withBase('llms.txt')}>llms.txt</a> ·
+      <a href={withBase('llms-full.txt')}>llms-full.txt</a> · <a href={repo} rel="noopener">Source</a> ·
+      <a href={`${repo}/issues/new/choose`} rel="noopener">Suggest an entry</a>
+    </p>
+  </div>
+</footer>

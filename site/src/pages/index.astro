@@ -1,0 +1,114 @@
+---
+import Page from '../layouts/Page.astro';
+import Stack from '../components/Stack.astro';
+import Entry from '../components/Entry.astro';
+import Toc from '../components/Toc.astro';
+import { entriesInSection, isListed, newestFirst, site } from '../lib/data.ts';
+import { topSectionOf } from '../lib/filter.ts';
+import type { CatalogEntry } from '../lib/types.ts';
+
+const dek = 'A curated atlas of the inference stack, from the API request down to the GPU kernel.';
+
+const readingPath = entriesInSection('start-here').filter(isListed);
+
+// Recently added: newest `added` date first; entries added on the same day by when the project itself
+// appeared (repository creation date), so a bulk import still surfaces new work.
+function recentlyAdded(limit: number): CatalogEntry[] {
+  return site.entries
+    .filter((e) => isListed(e) && topSectionOf(e.section) !== 'start-here')
+    .sort(newestFirst)
+    .slice(0, limit);
+}
+const recent = recentlyAdded(10);
+const newestDate = recent[0]?.added ?? '';
+---
+
+<Page title="Inference Engineering" description={dek} home>
+  <header class="mast">
+    <h1 class="mast-title"><span>Inference</span> <span>Engineering.</span></h1>
+    <div class="col mast-body">
+      <p class="dek">{dek}</p>
+    </div>
+  </header>
+
+  <div class="col">
+    <Stack />
+
+    <section class="part" aria-labelledby="index-h">
+      <h2 class="part-h hang">
+        <span class="mn"></span>
+        <span class="h" id="index-h">Index</span>
+      </h2>
+      <Toc />
+    </section>
+
+    <section class="part" aria-labelledby="start-h">
+      <h2 class="part-h hang">
+        <span class="mn"></span>
+        <span class="h" id="start-h">Start here</span>
+      </h2>
+      <ol class="entries">
+        {readingPath.map((e, i) => <Entry entry={e} num={i + 1} />)}
+      </ol>
+    </section>
+
+    <section class="part" aria-labelledby="recent-h">
+      <h2 class="part-h hang">
+        <span class="mn label">{newestDate}</span>
+        <span class="h" id="recent-h">Recently added</span>
+      </h2>
+      {
+        recent.some((e) => e.featured) && (
+          <p class="legend label">
+            <span class="pick" aria-hidden="true" />
+            Editor’s pick
+          </p>
+        )
+      }
+      <ol class="entries">
+        {recent.map((e) => <Entry entry={e} showSection />)}
+      </ol>
+    </section>
+  </div>
+</Page>
+
+<style>
+  .mast {
+    padding-top: 64px;
+  }
+
+  .mast-title {
+    font-size: var(--fs-mast);
+    font-weight: 500;
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+    padding-bottom: 22px;
+    border-bottom: 2px solid var(--accent);
+  }
+
+  .mast-title span {
+    display: block;
+  }
+
+  .mast-body {
+    padding-top: 22px;
+  }
+
+  .dek {
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.35;
+    max-width: 34rem;
+  }
+
+  .legend {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  @media (max-width: 759px) {
+    .mast {
+      padding-top: 36px;
+    }
+  }
+</style>

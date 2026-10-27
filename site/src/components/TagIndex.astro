@@ -1,0 +1,75 @@
+---
+// Every tag, grouped as in data/tags.yml: the group in the margin, its tags run in with their counts.
+import { withBase } from '../lib/base.ts';
+import { entriesWithTag, isListed, site } from '../lib/data.ts';
+
+const groups = Object.entries(site.tags).map(([id, group]) => ({
+  id,
+  label: group.label,
+  tags: Object.entries(group.tags)
+    .map(([tag, label]) => ({ tag, label, count: entriesWithTag(tag).filter(isListed).length }))
+    .filter((t) => t.count > 0),
+}));
+---
+
+<dl class="tags">
+  {
+    groups.map((g) => (
+      <div class="tg hang">
+        <dt class="mn label">{g.label}</dt>
+        <dd>
+          {g.tags.map((t, i) => (
+            <>{i > 0 && <span class="sep">&nbsp;· </span>}<span class="t"><a href={withBase(`tags/${t.tag}/`)}>{t.label}</a> <span class="count">{t.count}</span></span></>
+          ))}
+        </dd>
+      </div>
+    ))
+  }
+</dl>
+
+<style>
+  .tg > dt,
+  .tg > dd {
+    padding: 14px 0 15px;
+  }
+
+  .tg > dd {
+    border-top: 1px solid var(--rule);
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+
+  .tg:last-child > dd {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .t {
+    white-space: nowrap;
+  }
+
+  .sep {
+    color: var(--muted);
+  }
+
+  @media (max-width: 759px) {
+    .tg {
+      padding: 12px 0 13px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .tg:last-child {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .tg > dt,
+    .tg > dd,
+    .tg:last-child > dd {
+      padding: 0;
+      border: 0;
+    }
+
+    .tg > dt {
+      margin-bottom: 2px;
+    }
+  }
+</style>

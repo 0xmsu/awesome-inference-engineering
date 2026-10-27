@@ -1,0 +1,20 @@
+{
+  "name": "@awesome-inference-engineering/site",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The website for awesome-inference-engineering: an atlas of the inference stack.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "@fontsource-variable/newsreader": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "astro": "^7.4.2",
+    "satteri": "^0.11.5"
+  }
+}

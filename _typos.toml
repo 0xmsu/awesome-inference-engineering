@@ -1,0 +1,10 @@
+[files]
+extend-exclude = ["data/generated/", ".research/", "pnpm-lock.yaml", "LICENSE*", "CODE_OF_CONDUCT.md"]
+
+[default.extend-words]
+# Project and product names that look like misspellings.
+ome = "ome"         # OME, SGLang's Kubernetes operator
+nd = "nd"           # Azure ND-series VMs
+ue = "ue"           # Ultra Ethernet (UE)
+speaches = "speaches"
+cann = "cann"       # Huawei Ascend CANN

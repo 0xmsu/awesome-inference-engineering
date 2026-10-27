@@ -1,0 +1,96 @@
+/* Metric-matched local fallbacks: while Newsreader loads, Georgia is scaled to Newsreader's average glyph
+   width and line metrics (computed from the font files), so the swap barely reflows the page. */
+@font-face {
+  font-family: "Newsreader Fallback";
+  font-style: normal;
+  src: local("Georgia");
+  size-adjust: 91.47%;
+  ascent-override: 80.36%;
+  descent-override: 28.97%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Newsreader Fallback";
+  font-style: italic;
+  src: local("Georgia Italic"), local("Georgia-Italic");
+  size-adjust: 82.53%;
+  ascent-override: 89.05%;
+  descent-override: 32.11%;
+  line-gap-override: 0%;
+}
+
+/* Design tokens. Two themes: day (warm paper) and night paper.
+   The theme follows prefers-color-scheme unless the reader picks one, which sets html[data-theme]. */
+
+:root {
+  color-scheme: light;
+
+  /* Day */
+  --paper: #f4efe6;
+  --ink: #1b1814;
+  --muted: #5d554a;
+  --rule: #cfc5b2;
+  --accent: #9b1c1c;
+  /* Link underlines: ink at reduced strength, so the line reads as a line and the word stays the word. */
+  --underline: color-mix(in srgb, var(--ink) 32%, var(--paper));
+
+  /* Type */
+  --serif: "Newsreader Variable", "Newsreader Fallback", Georgia, "Times New Roman", serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --fs-body: 1.1875rem; /* 19px */
+  --fs-desc: 1.125rem; /* 18px: entry descriptions */
+  --fs-small: 1rem; /* 16px: secondary serif */
+  --fs-mono: 0.8125rem; /* 13px: labels and metadata, never smaller */
+  --fs-name: 1.25rem; /* 20px: entry names */
+  --fs-h2: 1.875rem; /* 30px */
+  --fs-h1: clamp(2.5rem, 2rem + 2.5vw, 3.75rem);
+  --fs-mast: clamp(3.25rem, 8vw, 7rem);
+  --lh: 1.55;
+  --track: 0.06em; /* tracking for uppercase mono */
+
+  /* Page geometry: one 720px column with a 140px margin to its left, inside a 980px container. */
+  --container: 980px;
+  --pad: 36px; /* 980 - 2 x 36 = 908 = margin + gutter + main */
+  --margin: 140px;
+  --gutter: 48px;
+  --main: 720px;
+  --fig: 860px;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #15130f;
+  --ink: #e9e2d3;
+  --muted: #a69c8a;
+  --rule: #3d372e;
+  --accent: #e0675b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper: #15130f;
+    --ink: #e9e2d3;
+    --muted: #a69c8a;
+    --rule: #3d372e;
+    --accent: #e0675b;
+  }
+}
+
+@media (max-width: 999px) {
+  :root {
+    --pad: 24px;
+  }
+}
+
+@media (max-width: 759px) {
+  :root {
+    --pad: 16px;
+    --margin: 0px;
+    --gutter: 0px;
+    --fs-body: 1.125rem; /* 18px */
+    --fs-h2: 1.625rem;
+  }
+}

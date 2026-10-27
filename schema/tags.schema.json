@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://0xmsu.github.io/awesome-inference-engineering/schema/tags.schema.json",
+  "title": "Tag vocabulary",
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["label", "tags"],
+    "properties": {
+      "label": { "type": "string" },
+      "tags": {
+        "type": "object",
+        "propertyNames": { "pattern": "^[a-z0-9-]+$" },
+        "additionalProperties": { "type": "string" }
+      }
+    }
+  }
+}

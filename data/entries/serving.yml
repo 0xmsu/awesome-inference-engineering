@@ -1,0 +1,476 @@
+# Distributed Serving & Orchestration: everything above a single engine instance.
+
+# --- serving/distributed ---
+
+- id: nvidia-dynamo
+  name: NVIDIA Dynamo
+  url: https://github.com/ai-dynamo/dynamo
+  description: Datacenter-scale serving layer over vLLM, SGLang, and TensorRT-LLM with prefill/decode disaggregation, KV-aware routing, and tiered KV cache.
+  section: serving/distributed
+  type: tool
+  tags: [llm, moe, nvidia, datacenter, kubernetes, rust, python]
+  license: Apache-2.0
+  featured: true
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: llm-d
+  name: llm-d
+  url: https://github.com/llm-d/llm-d
+  description: Kubernetes-native distributed inference stack for vLLM and SGLang with prefix-cache-aware routing, prefill/decode disaggregation, and wide expert parallelism.
+  section: serving/distributed
+  type: tool
+  tags: [llm, moe, nvidia, amd, tpu, datacenter, kubernetes]
+  featured: true
+  via: [wafer-ai]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: aibrix
+  name: AIBrix
+  url: https://github.com/vllm-project/aibrix
+  description: Kubernetes control plane that routes on live engine state and adds LoRA packing, metric-driven autoscaling, and distributed KV cache for vLLM and SGLang.
+  section: serving/distributed
+  type: tool
+  tags: [llm, nvidia, datacenter, kubernetes, go, python]
+  added: 2026-10-27
+
+- id: vllm-production-stack
+  name: vLLM Production Stack
+  url: https://github.com/vllm-project/production-stack
+  description: Helm-based reference deployment for vLLM clusters with a session-aware router, LMCache KV offloading, and Grafana dashboards.
+  section: serving/distributed
+  type: tool
+  tags: [llm, nvidia, datacenter, kubernetes, python]
+  added: 2026-10-27
+
+- id: ray-serve-llm
+  name: Ray Serve LLM
+  url: https://docs.ray.io/en/latest/serve/llm/index.html
+  description: LLM layer of Ray Serve for multi-node, multi-model deployments over vLLM or SGLang, with prefill/decode disaggregation and prefix-aware routing.
+  section: serving/distributed
+  type: library
+  tags: [llm, nvidia, datacenter, python]
+  repo: ray-project/ray
+  added: 2026-10-27
+
+- id: llumnix
+  name: Llumnix
+  url: https://github.com/llumnix-project/llumnix
+  description: Cluster scheduler for vLLM and SGLang instances that live-migrates requests between engines, with KV-aware, SLO-driven, and adaptive disaggregation policies.
+  section: serving/distributed
+  type: tool
+  tags: [llm, datacenter, kubernetes, go, python]
+  paper:
+    venue: OSDI
+    year: 2024
+  notes: Reference implementation of the OSDI'24 paper (arXiv 2406.03243), used in Alibaba Cloud PAI-EAS. v1 rewrite released 2026-04; Ray-based v0 lives at llumnix-project/llumnix-ray. Last commit 2026-05-26.
+  added: 2026-10-27
+
+- id: xllm-service
+  name: xLLM Service
+  url: https://github.com/xLLM-AI/xllm-service
+  description: Cluster service layer for JD's xLLM engine that co-schedules online and offline traffic and shifts instances between prefill and decode roles at runtime.
+  section: serving/distributed
+  type: tool
+  tags: [llm, ascend, datacenter, cpp]
+  license: Apache-2.0
+  added: 2026-10-27
+
+# --- serving/kubernetes ---
+
+- id: kserve
+  name: KServe
+  url: https://github.com/kserve/kserve
+  description: CNCF platform for generative and predictive model serving on Kubernetes, with vLLM and llm-d backends, model caching, and autoscaling.
+  section: serving/kubernetes
+  type: tool
+  tags: [llm, kubernetes, go, python]
+  featured: true
+  added: 2026-10-27
+
+- id: gateway-api-inference-extension
+  name: Gateway API Inference Extension
+  url: https://github.com/kubernetes-sigs/gateway-api-inference-extension
+  description: Kubernetes Gateway API extension that defines InferencePool, letting any ext-proc-capable gateway route to model servers through an endpoint picker.
+  section: serving/kubernetes
+  type: spec
+  tags: [llm, kubernetes, go]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: leaderworkerset
+  name: LeaderWorkerSet
+  url: https://github.com/kubernetes-sigs/lws
+  description: Kubernetes API that deploys a leader pod and its workers as one replica for multi-host inference, plus DisaggregatedSet for prefill/decode roles.
+  section: serving/kubernetes
+  type: tool
+  tags: [llm, kubernetes, go]
+  added: 2026-10-27
+
+- id: kaito
+  name: KAITO
+  url: https://github.com/kaito-project/kaito
+  description: Operator that provisions GPU nodes and deploys vLLM-served models from a Hugging Face ID, with preset parallelism settings and KEDA-based scaling.
+  section: serving/kubernetes
+  type: tool
+  tags: [llm, nvidia, kubernetes, go]
+  license: Apache-2.0
+  added: 2026-10-27
+
+- id: grove
+  name: Grove
+  url: https://github.com/ai-dynamo/grove
+  description: Kubernetes API for multi-component inference workloads with hierarchical gang scheduling, topology-aware placement, and per-role scaling.
+  section: serving/kubernetes
+  type: tool
+  tags: [llm, nvidia, kubernetes, go]
+  added: 2026-10-27
+
+- id: ome
+  name: OME
+  url: https://github.com/ome-projects/ome
+  description: Operator that treats models as resources, matches each to a runtime config, and deploys SGLang or vLLM in multi-node or prefill/decode layouts.
+  section: serving/kubernetes
+  type: tool
+  tags: [llm, kubernetes, go]
+  added: 2026-10-27
+
+- id: rolebasedgroup
+  name: RoleBasedGroup (RBG)
+  url: https://github.com/sgl-project/rbg
+  description: Kubernetes workload API that groups router, prefill, and decode roles into one unit with coordinated scaling, rollouts, and service discovery.
+  section: serving/kubernetes
+  type: tool
+  tags: [llm, kubernetes, go]
+  added: 2026-10-27
+
+- id: kthena
+  name: Kthena
+  url: https://github.com/volcano-sh/kthena
+  description: Volcano subproject with CRDs for model lifecycle and a model-aware router, covering prefill/decode disaggregation and topology-aware gang scheduling.
+  section: serving/kubernetes
+  type: tool
+  tags: [llm, kubernetes, go]
+  added: 2026-10-27
+
+- id: kubeai
+  name: KubeAI
+  url: https://github.com/kubeai-project/kubeai
+  description: Lightweight operator that runs vLLM, Ollama, FasterWhisper, and Infinity servers with scale from zero, prefix-hash load balancing, and model caching.
+  section: serving/kubernetes
+  type: tool
+  tags: [llm, speech, embeddings, kubernetes, go]
+  added: 2026-10-27
+
+- id: kuberay
+  name: KubeRay
+  url: https://github.com/kuberay-project/kuberay
+  description: Kubernetes operator for Ray clusters whose RayService resource runs Ray Serve applications with zero-downtime upgrades.
+  section: serving/kubernetes
+  type: tool
+  tags: [kubernetes, go]
+  added: 2026-10-27
+
+- id: k8s-ai-conformance
+  name: Kubernetes AI Conformance
+  url: https://github.com/cncf/k8s-ai-conformance
+  description: CNCF certification program listing the accelerator, scheduling, networking, and observability capabilities a Kubernetes platform needs for AI workloads.
+  section: serving/kubernetes
+  type: spec
+  tags: [kubernetes]
+  added: 2026-10-27
+
+- id: kubernetes-dra
+  name: Dynamic Resource Allocation
+  url: https://kubernetes.io/docs/concepts/resource-management/dynamic-resource-allocation/
+  description: Kubernetes docs for requesting GPUs and other devices through claims and device classes, beyond the count-based device-plugin model.
+  section: serving/kubernetes
+  type: docs
+  tags: [nvidia, kubernetes]
+  added: 2026-10-27
+
+# --- serving/frameworks ---
+
+- id: dynamo-triton
+  name: Dynamo-Triton (Triton Inference Server)
+  url: https://github.com/triton-inference-server/server
+  description: Multi-framework model server with dynamic batching, model ensembles, and TensorRT, PyTorch, ONNX, OpenVINO, and Python backends.
+  section: serving/frameworks
+  type: tool
+  tags: [llm, classical-ml, nvidia, cpu, datacenter, cpp, python]
+  verified: 2026-10-27
+  notes: NVIDIA renamed Triton Inference Server to Dynamo-Triton in March 2025; the GitHub repo name is unchanged.
+  added: 2026-10-27
+
+- id: ray-serve
+  name: Ray Serve
+  url: https://docs.ray.io/en/latest/serve/index.html
+  description: Python serving library on Ray for composing multi-model pipelines, with per-deployment autoscaling, request batching, and fractional GPUs.
+  section: serving/frameworks
+  type: library
+  tags: [llm, datacenter, python]
+  repo: ray-project/ray
+  featured: true
+  added: 2026-10-27
+
+- id: bentoml
+  name: BentoML
+  url: https://github.com/bentoml/BentoML
+  description: Python framework for turning models into versioned API services, with adaptive batching, task queues, multi-model pipelines, and container builds.
+  section: serving/frameworks
+  type: library
+  tags: [llm, python]
+  added: 2026-10-27
+
+- id: gpustack
+  name: GPUStack
+  url: https://github.com/gpustack/gpustack
+  description: GPU cluster manager that schedules vLLM, SGLang, or TensorRT-LLM deployments across on-prem, Kubernetes, and cloud GPUs behind a model-as-a-service UI.
+  section: serving/frameworks
+  type: tool
+  tags: [llm, nvidia, amd, ascend, datacenter, python]
+  added: 2026-10-27
+
+- id: xinference
+  name: Xinference
+  url: https://github.com/xorbitsai/inference
+  description: Self-hosted platform serving LLM, embedding, image, and speech models behind an OpenAI-compatible API, with vLLM, SGLang, and llama.cpp backends.
+  section: serving/frameworks
+  type: tool
+  tags: [llm, embeddings, speech, diffusion, python]
+  added: 2026-10-27
+
+- id: litserve
+  name: LitServe
+  url: https://github.com/Lightning-AI/LitServe
+  description: Minimal FastAPI-based framework for writing custom inference servers in Python, with batching, streaming, and multi-worker GPU scaling.
+  section: serving/frameworks
+  type: library
+  tags: [llm, python]
+  added: 2026-10-27
+
+- id: truss
+  name: Truss
+  url: https://github.com/basetenlabs/truss
+  description: CLI and packaging convention for Python model servers that deploy to Baseten or your own containers, with presets for vLLM, SGLang, and TensorRT-LLM.
+  section: serving/frameworks
+  type: tool
+  tags: [llm, python]
+  added: 2026-10-27
+
+- id: cog
+  name: Cog
+  url: https://github.com/replicate/cog
+  description: Packages a model and its CUDA and Python environment into a standard container with a typed HTTP prediction API, as used by Replicate.
+  section: serving/frameworks
+  type: tool
+  tags: [diffusion, llm, nvidia, go]
+  added: 2026-10-27
+
+- id: openvino-model-server
+  name: OpenVINO Model Server
+  url: https://github.com/openvinotoolkit/model_server
+  description: C++ model server for OpenVINO with OpenAI-compatible endpoints for LLMs and KServe APIs for classic models, on Intel CPUs, GPUs, and NPUs.
+  section: serving/frameworks
+  type: tool
+  tags: [llm, intel, cpu, npu, cpp]
+  added: 2026-10-27
+
+# --- serving/autoscaling ---
+
+- id: skypilot
+  name: SkyPilot
+  url: https://github.com/skypilot-org/skypilot
+  description: Runs and scales AI jobs and inference endpoints across clouds, Kubernetes, and on-prem clusters, placing work wherever GPUs are available and cheaper.
+  section: serving/autoscaling
+  type: tool
+  tags: [llm, nvidia, tpu, kubernetes, python]
+  featured: true
+  added: 2026-10-27
+
+- id: kai-scheduler
+  name: KAI Scheduler
+  url: https://github.com/kai-scheduler/KAI-Scheduler
+  description: Kubernetes scheduler for large GPU clusters with fair-share queues, gang and topology-aware scheduling, and GPU sharing between workloads.
+  section: serving/autoscaling
+  type: tool
+  tags: [nvidia, kubernetes, go]
+  added: 2026-10-27
+
+- id: run-ai
+  name: NVIDIA Run:ai
+  url: https://github.com/dsx-ai-factory/run-ai
+  description: GPU orchestration platform for Kubernetes with quota-based fair sharing, fractional GPUs, and a multi-cluster control plane for training and inference.
+  section: serving/autoscaling
+  type: tool
+  tags: [nvidia, kubernetes, go]
+  verified: 2026-10-27
+  notes: Open-sourced in October 2026 as a monorepo under dsx-ai-factory.
+  added: 2026-10-27
+
+- id: dstack
+  name: dstack
+  url: https://github.com/dstackai/dstack
+  description: Orchestration layer for GPU clouds, Kubernetes, and bare metal that provisions fleets and runs autoscaled inference services alongside training.
+  section: serving/autoscaling
+  type: tool
+  tags: [llm, nvidia, amd, tpu, python]
+  added: 2026-10-27
+
+- id: keda
+  name: KEDA
+  url: https://github.com/kedacore/keda
+  description: Event-driven Kubernetes autoscaler that llm-d, KAITO, and OME use to scale model servers on Prometheus signals such as queue depth or KV-cache use.
+  section: serving/autoscaling
+  type: tool
+  tags: [kubernetes, go]
+  added: 2026-10-27
+
+- id: llm-d-autoscaling
+  name: llm-d Autoscaling
+  url: https://github.com/llm-d/llm-d-autoscaling
+  description: Reviewed KEDA scaling blueprints for prefill and decode roles, plus a test bed for tuning triggers on queue depth and KV-cache utilization.
+  section: serving/autoscaling
+  type: tool
+  tags: [llm, kubernetes]
+  notes: The custom Workload-Variant-Autoscaler controller is deprecated (last on release-0.9); main now holds KEDA blueprints.
+  added: 2026-10-27
+
+- id: hami
+  name: HAMi
+  url: https://github.com/Project-HAMi/HAMi
+  description: CNCF project for sharing and isolating GPUs and NPUs across Kubernetes pods by memory and compute slices, with device-aware scheduling.
+  section: serving/autoscaling
+  type: tool
+  tags: [nvidia, ascend, npu, kubernetes, go]
+  added: 2026-10-27
+
+# --- serving/packaging-loading ---
+
+- id: safetensors
+  name: safetensors
+  url: https://github.com/safetensors/safetensors
+  description: Pickle-free tensor file format with zero-copy, lazy loading, and the Rust library behind it; the standard checkpoint format for Hugging Face models.
+  section: serving/packaging-loading
+  type: library
+  tags: [rust, python]
+  featured: true
+  added: 2026-10-27
+
+- id: gguf-spec
+  name: GGUF
+  url: https://github.com/ggml-org/ggml/blob/master/docs/gguf.md
+  description: Single-file binary format for ggml models that stores quantized tensors with tokenizer and architecture metadata; used by llama.cpp and Ollama.
+  section: serving/packaging-loading
+  type: spec
+  tags: [llm, local, cpu]
+  repo: ggml-org/ggml
+  featured: true
+  added: 2026-10-27
+
+- id: onnx
+  name: ONNX
+  url: https://github.com/onnx/onnx
+  description: Open graph format and operator set for moving models from training frameworks to runtimes such as ONNX Runtime, TensorRT, and OpenVINO.
+  section: serving/packaging-loading
+  type: spec
+  tags: [classical-ml, python, cpp]
+  added: 2026-10-27
+
+- id: runai-model-streamer
+  name: Model Streamer
+  url: https://github.com/dsx-ai-factory/model-streamer
+  description: Streams safetensors tensors from local disk or object storage into GPU memory with concurrent reads; vLLM exposes it as a load format.
+  section: serving/packaging-loading
+  type: library
+  tags: [llm, nvidia, cpp, python]
+  verified: 2026-10-27
+  notes: Formerly Run:ai Model Streamer (run-ai/runai-model-streamer); renamed and moved on 2026-09-13. PyPI package name unchanged.
+  added: 2026-10-27
+
+- id: modelexpress
+  name: ModelExpress
+  url: https://github.com/ai-dynamo/modelexpress
+  description: Finds the quickest source of model weights, including GPU-to-GPU copies from running replicas over NIXL, and shares JIT kernel caches between replicas.
+  section: serving/packaging-loading
+  type: tool
+  tags: [llm, nvidia, datacenter, kubernetes, rust, python]
+  added: 2026-10-27
+
+- id: fastsafetensors
+  name: fastsafetensors
+  url: https://github.com/foundation-model-stack/fastsafetensors
+  description: Safetensors loader that reads files in parallel, optionally via GPUDirect Storage, and shards tensors across GPUs; a load format in vLLM and SGLang.
+  section: serving/packaging-loading
+  type: library
+  tags: [llm, nvidia, amd, python]
+  added: 2026-10-27
+
+- id: serverlessllm
+  name: ServerlessLLM
+  url: https://github.com/ServerlessLLM/ServerlessLLM
+  description: Multi-model serving system with a loading-optimized checkpoint format, GPU multiplexing, and locality-aware scheduling to cut cold starts.
+  section: serving/packaging-loading
+  type: tool
+  tags: [llm, nvidia, serverless, python]
+  paper:
+    venue: OSDI
+    year: 2024
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: tensorizer
+  name: Tensorizer
+  url: https://github.com/coreweave/tensorizer
+  description: Serializes PyTorch modules for streaming loads from HTTP, S3, or local disk straight into GPU memory, with optional tensor encryption.
+  section: serving/packaging-loading
+  type: library
+  tags: [llm, nvidia, python]
+  added: 2026-10-27
+
+- id: cuda-checkpoint
+  name: cuda-checkpoint
+  url: https://github.com/NVIDIA/cuda-checkpoint
+  description: Command-line utility that suspends and restores CUDA state in a running process; paired with CRIU it snapshots GPU processes for faster restarts.
+  section: serving/packaging-loading
+  type: tool
+  tags: [nvidia, cuda]
+  license: proprietary
+  added: 2026-10-27
+
+- id: vllm-sleep-mode
+  name: vLLM Sleep Mode
+  url: https://docs.vllm.ai/en/latest/features/sleep_mode/
+  description: Frees GPU memory on an idle vLLM engine by offloading or discarding weights and the KV cache, then wakes it without restarting the server process.
+  section: serving/packaging-loading
+  type: docs
+  tags: [llm, rl, nvidia]
+  added: 2026-10-27
+
+- id: modelpack
+  name: ModelPack
+  url: https://github.com/modelpack/model-spec
+  description: CNCF specification for packaging model weights, configs, and metadata as OCI artifacts so registries and Kubernetes can distribute them.
+  section: serving/packaging-loading
+  type: spec
+  tags: [kubernetes]
+  added: 2026-10-27
+
+- id: kitops
+  name: KitOps
+  url: https://github.com/kitops-ml/kitops
+  description: CLI that packages models, datasets, code, and configs into versioned OCI artifacts (ModelKits) stored in existing container registries.
+  section: serving/packaging-loading
+  type: tool
+  tags: [kubernetes, go]
+  added: 2026-10-27
+
+- id: xet-core
+  name: Xet (xet-core)
+  url: https://github.com/huggingface/xet-core
+  description: Client for Hugging Face's Xet storage backend that deduplicates model files in chunks to speed uploads and downloads from the Hub.
+  section: serving/packaging-loading
+  type: library
+  tags: [rust, python]
+  added: 2026-10-27

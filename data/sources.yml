@@ -1,0 +1,16 @@
+# Upstream lists we draw candidates from. We take links and facts, never descriptions or ordering,
+# and credit each source through the `via` field on entries. See CONTRIBUTING.md.
+
+- id: wafer-ai
+  name: AI Performance Engineering (wafer-ai)
+  repo: wafer-ai/gpu-perf-engineering-resources
+  license: MIT (stated in README)
+  description: An ordered, primary-source learning path from a single request down to GPU kernels and distributed systems.
+  watch: true
+
+- id: fregly
+  name: AI Systems Performance Engineering (Chris Fregly)
+  repo: cfregly/ai-performance-engineering
+  license: Apache-2.0
+  description: Code, labs, and a 200+ item checklist accompanying the O'Reilly book.
+  watch: true

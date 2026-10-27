@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this list in your work, please cite it as below."
+title: "Awesome Inference Engineering"
+type: dataset
+authors:
+  - name: "0xmsu and contributors"
+repository-code: "https://github.com/0xmsu/awesome-inference-engineering"
+url: "https://0xmsu.github.io/awesome-inference-engineering/"
+license: CC0-1.0
+abstract: >-
+  A curated, continuously verified map of inference engineering: the tools, techniques, hardware, and knowledge
+  for serving AI models fast, cheaply, and reliably.
+keywords:
+  - inference
+  - llm-inference
+  - llm-serving
+  - mlsys
+  - gpu

@@ -1,0 +1,107 @@
+---
+import Page from '../../layouts/Page.astro';
+import Entry from '../../components/Entry.astro';
+import { withBase } from '../../lib/base.ts';
+import { entriesWithTag, isListed, sectionNumeral, site, tagGroup, tagLabel } from '../../lib/data.ts';
+import { topSectionOf } from '../../lib/filter.ts';
+
+export function getStaticPaths() {
+  return Object.values(site.tags)
+    .flatMap((g) => Object.keys(g.tags))
+    .filter((tag) => entriesWithTag(tag).length > 0)
+    .map((tag) => ({ params: { tag } }));
+}
+
+const { tag } = Astro.params as { tag: string };
+const label = tagLabel(tag);
+const group = site.tags[tagGroup(tag) ?? '']?.label ?? '';
+const all = entriesWithTag(tag);
+
+// Grouped by section in taxonomy order; listed entries first, archived ones at the end of their group.
+const groups = site.sections
+  .map((s) => {
+    const inSection = all.filter((e) => topSectionOf(e.section) === s.id);
+    return { section: s, entries: [...inSection.filter(isListed), ...inSection.filter((e) => !isListed(e))] };
+  })
+  .filter((g) => g.entries.length > 0);
+const listed = all.filter(isListed).length;
+const hasPicks = all.some((e) => e.featured);
+---
+
+<Page title={label} description={`${label}: ${listed} entries on inference engineering, by section.`} current="sections">
+  <div class="col">
+    <header class="page-head hang">
+      <a class="mn label" href={withBase('tags/')}>{group}</a>
+      <div>
+        <h1 class="page-title">{label}</h1>
+        <p class="label page-count">{listed} entries · {groups.length} {groups.length === 1 ? 'section' : 'sections'}</p>
+      </div>
+    </header>
+
+    {
+      hasPicks && (
+        <p class="legend label">
+          <span class="pick" aria-hidden="true" />
+          Editor’s pick
+        </p>
+      )
+    }
+
+    {
+      groups.map((g) => (
+        <section class="part grp" aria-labelledby={`h-${g.section.id}`}>
+          <h2 class="part-h hang">
+            <span class="mn sec-num">{sectionNumeral(g.section.id)}</span>
+            <span class="h" id={`h-${g.section.id}`}>
+              <a href={withBase(`sections/${g.section.id}/`)}>{g.section.title}</a> <span class="count">{g.entries.filter(isListed).length}</span>
+            </span>
+          </h2>
+          <ol class="entries">
+            {g.entries.map((e) => (
+              <Entry entry={e} showSection />
+            ))}
+          </ol>
+        </section>
+      ))
+    }
+  </div>
+</Page>
+
+<style>
+  .legend {
+    margin-top: 40px;
+  }
+
+  .grp {
+    margin-top: 72px;
+  }
+
+  .legend + .grp {
+    margin-top: 16px;
+  }
+
+  .sec-num {
+    padding-top: 14px;
+    font-size: var(--fs-h2);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--muted);
+  }
+
+  .part-h .h a {
+    text-decoration-color: var(--rule);
+  }
+
+  .part-h .h a:hover {
+    text-decoration-color: currentColor;
+  }
+
+  @media (max-width: 759px) {
+    .sec-num {
+      font-size: var(--fs-mono);
+      font-family: var(--mono);
+      font-weight: 400;
+      letter-spacing: var(--track);
+    }
+  }
+</style>

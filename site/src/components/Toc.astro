@@ -1,0 +1,106 @@
+---
+// The book-style table of contents: Roman numerals in the margin, chapter titles with counts, and
+// their subsections run in underneath. Used on the home page and on /sections/.
+import { withBase } from '../lib/base.ts';
+import { sectionNumeral, site } from '../lib/data.ts';
+
+// Subsections without entries yet have no anchor on their section page, so they are left out here too.
+const filled = new Set(site.entries.map((e) => e.section));
+const sections = site.sections.map((s) => ({ ...s, subsections: s.subsections.filter((sub) => filled.has(sub.id)) }));
+---
+
+<ol class="toc">
+  {
+    sections.map((s) => (
+      <li class="toc-item hang">
+        <span class="mn toc-num">{sectionNumeral(s.id)}</span>
+        <div class="toc-body">
+          <p class="toc-title">
+            <a href={withBase(`sections/${s.id}/`)}>{s.title}</a> <span class="count">{site.listedBySection[s.id] ?? 0}</span>
+          </p>
+          {s.subsections.length > 0 && (
+            <p class="toc-subs">
+              {s.subsections.map((sub, i) => (
+                <>{i > 0 && <span class="sep">&nbsp;· </span>}<a class="sub" href={withBase(`sections/${s.id}/#${sub.id.split('/')[1]}`)}>{sub.title}</a></>
+              ))}
+            </p>
+          )}
+        </div>
+      </li>
+    ))
+  }
+</ol>
+
+<style>
+  .toc-item > .mn,
+  .toc-body {
+    padding: 14px 0 15px;
+  }
+
+  .toc-body {
+    border-top: 1px solid var(--rule);
+  }
+
+  .toc-item:last-child .toc-body {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .toc-subs .sub {
+    white-space: nowrap;
+    text-decoration-color: var(--rule);
+  }
+
+  .toc-subs .sub:hover {
+    text-decoration-color: currentColor;
+  }
+
+  .toc-num {
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: var(--muted);
+  }
+
+  .toc-title {
+    font-size: 1.375rem;
+    line-height: 1.3;
+    font-weight: 500;
+  }
+
+  .toc-title .count {
+    margin-left: 0.3em;
+  }
+
+  .toc-subs {
+    margin-top: 5px;
+    font-size: var(--fs-small);
+    line-height: 1.6;
+  }
+
+  .toc-subs .sep {
+    color: var(--muted);
+  }
+
+  @media (max-width: 759px) {
+    .toc-item {
+      padding: 12px 0 13px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .toc-item:last-child {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .toc-item > .mn,
+    .toc-body,
+    .toc-item:last-child .toc-body {
+      padding: 0;
+      border: 0;
+    }
+
+    .toc-num {
+      font-size: var(--fs-mono);
+      font-family: var(--mono);
+      letter-spacing: var(--track);
+    }
+  }
+</style>

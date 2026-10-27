@@ -1,0 +1,456 @@
+# --- NVIDIA ---
+
+- id: blackwell-tuning-guide
+  name: Blackwell Tuning Guide
+  url: https://docs.nvidia.com/cuda/blackwell-tuning-guide/
+  description: NVIDIA's guide to Blackwell-specific features, limits, and optimization advice for CUDA developers.
+  section: hardware/nvidia
+  type: docs
+  tags: [nvidia]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: hopper-tuning-guide
+  name: Hopper Tuning Guide
+  url: https://docs.nvidia.com/cuda/hopper-tuning-guide/
+  description: NVIDIA's guide to Hopper-specific CUDA features, including TMA, thread block clusters, and FP8 tuning advice.
+  section: hardware/nvidia
+  type: docs
+  tags: [nvidia]
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: blackwell-architecture-brief
+  name: Blackwell Architecture Technical Brief
+  url: https://resources.nvidia.com/en-us-blackwell-architecture/blackwell-architecture-technical-brief
+  description: NVIDIA's technical overview of the Blackwell GPU, covering the dual-die design, fifth-generation NVLink, and the decompression engine.
+  section: hardware/nvidia
+  type: docs
+  tags: [nvidia]
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: cutlass-blackwell-docs
+  name: CUTLASS Blackwell Documentation
+  url: https://docs.nvidia.com/cutlass/latest/media/docs/cpp/blackwell.html
+  description: CUTLASS reference for Blackwell SM100/SM120 GEMM layouts, tcgen05 MMA instructions, and warp-specialized kernel schedules.
+  section: hardware/nvidia
+  type: docs
+  tags: [nvidia, cuda]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: multi-node-nvlink-tuning-guide
+  name: Multi-Node NVLink Systems Tuning Guide
+  url: https://docs.nvidia.com/multi-node-nvlink-systems/multi-node-tuning-guide/
+  description: NVIDIA's performance tuning guide for GB200 NVL multi-node racks, covering topology, collectives, and scaling LLM inference.
+  section: hardware/nvidia
+  type: docs
+  tags: [nvidia]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: dgx-spark-docs
+  name: DGX Spark User Guide
+  url: https://docs.nvidia.com/dgx/dgx-spark/
+  description: NVIDIA's documentation for the DGX Spark desktop system built on the GB10 Grace Blackwell Superchip.
+  section: hardware/nvidia
+  type: docs
+  tags: [nvidia]
+  added: 2026-10-27
+
+- id: nvidia-vera-rubin-architecture
+  name: Inside NVIDIA Rubin GPU Architecture
+  url: https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/
+  description: NVIDIA developer blog on the pre-release Rubin GPU's dual-die design, HBM4, NVLink 6, and MoE-oriented tensor core features.
+  section: hardware/nvidia
+  type: article
+  tags: [nvidia]
+  via: [wafer-ai]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+# --- AMD ---
+
+- id: cdna4-architecture-whitepaper
+  name: AMD CDNA 4 Architecture Whitepaper
+  url: https://www.amd.com/content/dam/amd/en/documents/instinct-tech-docs/white-papers/amd-cdna-4-architecture-whitepaper.pdf
+  description: AMD's whitepaper on the CDNA 4 architecture behind the Instinct MI350 series, covering compute units, precision formats, and memory.
+  section: hardware/amd
+  type: docs
+  tags: [amd]
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: cdna4-instruction-set-architecture
+  name: AMD CDNA 4 Instruction Set Architecture
+  url: https://www.amd.com/content/dam/amd/en/documents/instinct-tech-docs/instruction-set-architectures/amd-instinct-cdna4-instruction-set-architecture.pdf
+  description: Reference manual for the CDNA 4 instruction set, documenting registers, the memory model, and matrix instruction encodings.
+  section: hardware/amd
+  type: spec
+  tags: [amd]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: cdna5-whitepaper
+  name: AMD CDNA 5 Architecture Whitepaper
+  url: https://www.amd.com/content/dam/amd/en/documents/products/technologies/cdna/amd-cdna5-whitepaper.pdf
+  description: AMD's pre-shipping whitepaper on the CDNA 5 architecture and Instinct MI455X GPU behind the Helios rack-scale system.
+  section: hardware/amd
+  type: docs
+  tags: [amd]
+  via: [wafer-ai]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: hip-hardware-implementation
+  name: HIP Hardware Implementation
+  url: https://rocm.docs.amd.com/projects/HIP/en/latest/understand/hardware_implementation.html
+  description: ROCm documentation on how AMD GPU hardware blocks map to the HIP programming model's threads, warps, and memory.
+  section: hardware/amd
+  type: docs
+  tags: [amd]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: mi350-performance-counters
+  name: MI350 Series Performance Counters
+  url: https://rocm.docs.amd.com/en/latest/reference/gpu-arch/mi350-performance-counters.html
+  description: ROCm reference listing the hardware performance counters and derived metrics available on MI350 and MI355 GPUs.
+  section: hardware/amd
+  type: docs
+  tags: [amd]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: rocm-therock
+  name: TheRock
+  url: https://github.com/ROCm/TheRock
+  description: Open-source build system that assembles ROCm from source into redistributable SDKs for AMD GPUs.
+  section: hardware/amd
+  type: tool
+  tags: [amd, python]
+  added: 2026-10-27
+
+# --- Google TPU ---
+
+- id: tpu7x-ironwood-docs
+  name: TPU7x (Ironwood) Documentation
+  url: https://docs.cloud.google.com/tpu/docs/tpu7x
+  description: Google Cloud's reference for Ironwood TPU chip specs, pod topologies, VM configurations, and supported frameworks.
+  section: hardware/tpu
+  type: docs
+  tags: [tpu]
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: tpu-8t-8i-deep-dive
+  name: TPU 8t and TPU 8i Technical Deep Dive
+  url: https://cloud.google.com/blog/products/compute/tpu-8t-and-tpu-8i-technical-deep-dive
+  description: Google Cloud blog detailing the eighth-generation TPU 8t training chip and TPU 8i inference chip, including the Boardfly topology.
+  section: hardware/tpu
+  type: article
+  tags: [tpu]
+  via: [wafer-ai]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: pallas-tpu-hardware-model
+  name: Pallas TPU Hardware Model
+  url: https://docs.jax.dev/en/latest/pallas/tpu/hardware.html
+  description: JAX documentation on the TPU memory spaces, core structure, and pipelining that Pallas kernels must account for.
+  section: hardware/tpu
+  type: docs
+  tags: [tpu]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: tpu-v4-paper
+  name: "TPU v4"
+  url: https://arxiv.org/abs/2304.01433
+  description: Google's paper on the TPU v4 supercomputer, its optical circuit-switched interconnect, and embedding-accelerating SparseCores.
+  section: hardware/tpu
+  type: paper
+  tags: [tpu]
+  paper:
+    venue: ISCA
+    year: 2023
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: vllm-jax
+  name: vLLM JAX (tpu-inference)
+  url: https://github.com/vllm-project/tpu-inference
+  description: Hardware plugin that serves JAX and PyTorch models on TPUs through vLLM, moving to the vllm-project/vllm-jax repository.
+  section: hardware/tpu
+  type: tool
+  tags: [tpu, python]
+  maturity: experimental
+  added: 2026-10-27
+
+# --- AWS Trainium & Inferentia ---
+
+- id: trainium-inferentia2-architecture
+  name: Trainium and Inferentia2 Architecture Guide
+  url: https://awsdocs-neuron.readthedocs-hosted.com/en/latest/nki/guides/architecture/trainium_inferentia2_arch.html
+  description: AWS Neuron documentation on the NeuronCore-v2 architecture shared by Trainium and Inferentia2 chips, written for NKI kernel authors.
+  section: hardware/trainium
+  type: docs
+  tags: [trainium]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: trainium2-architecture
+  name: Trainium2 Architecture Guide
+  url: https://awsdocs-neuron.readthedocs-hosted.com/en/latest/nki/guides/architecture/trainium2_arch.html
+  description: AWS Neuron documentation on Trainium2's NeuronCore-v3 updates versus Trainium and Inferentia2, for NKI kernel development.
+  section: hardware/trainium
+  type: docs
+  tags: [trainium]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: trainium3-architecture
+  name: Trainium3 Architecture Guide
+  url: https://awsdocs-neuron.readthedocs-hosted.com/en/latest/nki/guides/architecture/trainium3_arch.html
+  description: AWS Neuron documentation on the fourth-generation NeuronDevice architecture updates in Trainium3 over Trainium2.
+  section: hardware/trainium
+  type: docs
+  tags: [trainium]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: nki-performance-guide
+  name: NKI Performance Optimizations Guide
+  url: https://awsdocs-neuron.readthedocs-hosted.com/en/latest/nki/deep-dives/nki_perf_guide.html
+  description: AWS guide to profiling NKI kernels with Neuron Explorer and applying common fixes for Trainium performance bottlenecks.
+  section: hardware/trainium
+  type: docs
+  tags: [trainium]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: aws-neuron-sdk-docs
+  name: AWS Neuron Documentation
+  url: https://awsdocs-neuron.readthedocs-hosted.com/en/latest/
+  description: Index for AWS's SDK for Trainium and Inferentia, covering vLLM serving, PyTorch and JAX training, and the Neuron compiler and runtime.
+  section: hardware/trainium
+  type: docs
+  tags: [trainium, python]
+  featured: true
+  added: 2026-10-27
+
+# --- Other Accelerators & ASICs ---
+
+- id: groq-tsp-paper
+  name: "Think Fast: A Tensor Streaming Processor (TSP) for Accelerating Deep Learning Workloads"
+  url: https://doi.org/10.1109/ISCA45697.2020.00023
+  description: Groq's ISCA 2020 paper on the deterministic, compiler-scheduled Tensor Streaming Processor behind its LPU accelerators.
+  section: hardware/other-accelerators
+  type: paper
+  tags: [other-asic]
+  paper:
+    venue: ISCA
+    year: 2020
+  added: 2026-10-27
+
+- id: cerebras-sdk
+  name: Cerebras SDK
+  url: https://sdk.cerebras.ai/
+  description: Documentation for writing custom CSL kernels on the Cerebras Wafer-Scale Engine, with the host runtime and hardware model.
+  section: hardware/other-accelerators
+  type: docs
+  tags: [other-asic, python]
+  added: 2026-10-27
+
+- id: sambanova-sn50
+  name: SambaNova SN50 RDU
+  url: https://sambanova.ai/hubfs/SambaNova%20SN50%20RDU.pdf
+  description: SambaNova's datasheet for the pre-shipping SN50 Reconfigurable Dataflow Unit, built for the memory-bound decode phase of inference.
+  section: hardware/other-accelerators
+  type: docs
+  tags: [other-asic]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: dmatrix-dmx-compressor
+  name: d-Matrix DMX Compressor
+  url: https://github.com/d-matrix-ai/dmx-compressor
+  description: PyTorch toolkit for quantization, sparsity, and operator approximation that targets deployment on d-Matrix Corsair hardware.
+  section: hardware/other-accelerators
+  type: tool
+  tags: [other-asic, python]
+  added: 2026-10-27
+
+- id: tenstorrent-tt-metal
+  name: TT-Metalium
+  url: https://github.com/tenstorrent/tt-metal
+  description: Tenstorrent's low-level kernel programming model and TT-NN operator library for its Wormhole and Blackhole accelerators.
+  section: hardware/other-accelerators
+  type: tool
+  tags: [other-asic, python, cpp]
+  featured: true
+  added: 2026-10-27
+
+- id: qualcomm-cloud-ai-sdk
+  name: Qualcomm Cloud AI SDK
+  url: https://github.com/qualcomm/cloud-ai-sdk
+  description: Qualcomm's compiler, runtime, and model recipes for deploying vision and generative AI models on Cloud AI 100 accelerators.
+  section: hardware/other-accelerators
+  type: tool
+  tags: [qualcomm, python]
+  license: BSD-3-Clause-Clear
+  added: 2026-10-27
+
+- id: qualcomm-vllm-qaic
+  name: vLLM QAIC Plugin
+  url: https://github.com/qualcomm/vllm-qaic
+  description: Hardware plugin that serves inference through the Qualcomm Cloud AI Compiler on Cloud AI 100 and 100 Ultra accelerators.
+  section: hardware/other-accelerators
+  type: tool
+  tags: [qualcomm, python]
+  license: Apache-2.0
+  added: 2026-10-27
+
+- id: huawei-ascend-cann
+  name: CANN (Compute Architecture for Neural Networks)
+  url: https://www.hiascend.com/document/detail/en/CANNCommunityEdition/900/index/index.html
+  description: Huawei's heterogeneous computing software stack for Ascend NPUs, covering operator libraries, the graph engine, and Ascend C.
+  section: hardware/other-accelerators
+  type: docs
+  tags: [ascend]
+  added: 2026-10-27
+
+- id: vllm-ascend
+  name: vLLM Ascend
+  url: https://github.com/vllm-project/vllm-ascend
+  description: Community-maintained vLLM hardware plugin for running inference on Huawei Ascend NPUs.
+  section: hardware/other-accelerators
+  type: tool
+  tags: [ascend, python]
+  added: 2026-10-27
+
+- id: intel-gaudi-docs
+  name: Intel Gaudi Documentation
+  url: https://docs.habana.ai/en/latest/
+  description: Intel's documentation for the Gaudi 2 and Gaudi 3 accelerators, covering model migration, PyTorch integration, and optimization.
+  section: hardware/other-accelerators
+  type: docs
+  tags: [intel]
+  added: 2026-10-27
+
+- id: vllm-gaudi
+  name: vLLM Gaudi
+  url: https://github.com/vllm-project/vllm-gaudi
+  description: Community-maintained vLLM hardware plugin that targets Intel Gaudi accelerators.
+  section: hardware/other-accelerators
+  type: tool
+  tags: [intel, python]
+  added: 2026-10-27
+
+- id: intel-crescent-island
+  name: Intel GPU D-Series (Crescent Island)
+  url: https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html
+  description: Intel's pre-release product page for the Crescent Island inference GPU, built on Xe3P with up to 480GB of LPDDR5X and no HBM.
+  section: hardware/other-accelerators
+  type: article
+  tags: [intel]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: microsoft-maia-200
+  name: Maia 200
+  url: https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/
+  description: Microsoft's announcement of the Maia 200 inference accelerator, covering its HBM3e memory, FP4/FP8 tensor cores, and scale-up network.
+  section: hardware/other-accelerators
+  type: article
+  tags: [other-asic]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: meta-mtia
+  name: Meta MTIA
+  url: https://about.fb.com/news/2026/03/expanding-metas-custom-silicon-to-power-our-ai-workloads/
+  description: Meta's roadmap post on its MTIA chip family, covering the MTIA 300 through 500 generations and their PyTorch-based software stack.
+  section: hardware/other-accelerators
+  type: article
+  tags: [other-asic]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+# --- Interconnects & Networking ---
+
+- id: nvlink-imex-guide
+  name: Multi-Node NVLink IMEX Guide
+  url: https://docs.nvidia.com/multi-node-nvlink-systems/imex-guide/overview.html
+  description: NVIDIA's overview of the IMEX service that exports GPU memory across NVLink-connected nodes in multi-node systems.
+  section: hardware/interconnects
+  type: docs
+  tags: [nvidia]
+  added: 2026-10-27
+
+- id: ualink-2-0-specification
+  name: UALink Common 2.0 Specification
+  url: https://ualinkconsortium.org/specification/
+  description: UALink Consortium's open specification for scale-up accelerator interconnects, adding in-network compute in version 2.0.
+  section: hardware/interconnects
+  type: spec
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: ultra-ethernet-1-0-3-specification
+  name: Ultra Ethernet Specification v1.0.3
+  url: https://ultraethernet.org/wp-content/uploads/sites/20/2026/08/UE-Specification-1.0.3.pdf
+  description: The Ultra Ethernet Consortium's open specification for high-performance Ethernet transport, congestion control, and RDMA semantics.
+  section: hardware/interconnects
+  type: spec
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: infiniband-rdma-kernel-docs
+  name: InfiniBand and RDMA (Linux Kernel Documentation)
+  url: https://docs.kernel.org/infiniband/index.html
+  description: Linux kernel documentation for the InfiniBand subsystem, covering the verbs API, RDMA transports, and driver interfaces.
+  section: hardware/interconnects
+  type: docs
+  added: 2026-10-27
+
+# --- Hardware Analysis ---
+
+- id: semianalysis-newsletter
+  name: SemiAnalysis
+  url: https://newsletter.semianalysis.com/
+  description: Semiconductor and AI infrastructure newsletter covering accelerator architecture, supply chains, and data center economics.
+  section: hardware/analysis
+  type: article
+  featured: true
+  added: 2026-10-27
+
+- id: chips-and-cheese
+  name: Chips and Cheese
+  url: https://chipsandcheese.com/
+  description: Independent site publishing microarchitecture deep dives and microbenchmarks of GPUs, CPUs, and AI accelerators.
+  section: hardware/analysis
+  type: article
+  added: 2026-10-27
+
+- id: epoch-ai-ml-hardware
+  name: Epoch AI Machine Learning Hardware Database
+  url: https://epoch.ai/data/machine-learning-hardware
+  description: Dataset of specifications, release dates, and prices for GPUs and TPUs used in notable AI models, downloadable as CSV.
+  section: hardware/analysis
+  type: dataset
+  added: 2026-10-27
+
+- id: techpowerup-gpu-database
+  name: TechPowerUp GPU Database
+  url: https://www.techpowerup.com/gpu-specs/
+  description: Searchable database of GPU specifications, including datacenter accelerators, compiled from vendor datasheets.
+  section: hardware/analysis
+  type: tool
+  added: 2026-10-27

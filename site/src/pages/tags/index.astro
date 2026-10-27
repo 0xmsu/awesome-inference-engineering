@@ -1,0 +1,17 @@
+---
+import Page from '../../layouts/Page.astro';
+import TagIndex from '../../components/TagIndex.astro';
+import { entriesWithTag, site } from '../../lib/data.ts';
+
+const tagCount = Object.values(site.tags).reduce((n, g) => n + Object.keys(g.tags).filter((t) => entriesWithTag(t).length > 0).length, 0);
+---
+
+<Page title="Tags" description="Every entry by model type, hardware, deployment target and language, across all sections." current="sections">
+  <div class="col">
+    <header class="page-head">
+      <h1 class="page-title">Tags</h1>
+      <p class="label page-count">{tagCount} tags in {Object.keys(site.tags).length} groups</p>
+    </header>
+    <TagIndex />
+  </div>
+</Page>

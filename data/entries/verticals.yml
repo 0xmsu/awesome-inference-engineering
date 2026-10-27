@@ -1,0 +1,863 @@
+# ---------------------------------------------------------------------------
+# verticals/reasoning
+# ---------------------------------------------------------------------------
+
+- id: test-time-compute-scaling
+  name: Scaling LLM Test-Time Compute Optimally
+  url: https://arxiv.org/abs/2408.03314
+  description: Studies how to spend extra inference compute per prompt, comparing verifier-guided search with sequential revision, and when that beats a larger model.
+  section: verticals/reasoning
+  type: paper
+  tags: [llm, reasoning]
+  paper:
+    venue: ICLR
+    year: 2025
+  featured: true
+  added: 2026-10-27
+
+- id: deepseek-r1
+  name: DeepSeek-R1
+  url: https://arxiv.org/abs/2501.12948
+  description: Report on training reasoning models with large-scale reinforcement learning, the source of the long thinking traces that reasoning-aware serving has to handle.
+  section: verticals/reasoning
+  type: paper
+  tags: [llm, reasoning, moe]
+  paper:
+    venue: Nature
+    year: 2025
+  added: 2026-10-27
+
+- id: vllm-reasoning-outputs
+  name: vLLM Reasoning Outputs
+  url: https://docs.vllm.ai/en/latest/features/reasoning_outputs/
+  description: Explains the reasoning-parser flag that returns a model's thinking text in its own response field, and which API endpoints expose it.
+  section: verticals/reasoning
+  type: docs
+  tags: [llm, reasoning, python]
+  added: 2026-10-27
+
+- id: sglang-reasoning-parser
+  name: SGLang Reasoning Parser
+  url: https://docs.sglang.io/docs/advanced_features/separate_reasoning
+  description: Documents SGLang's per-model reasoning parsers that split chain-of-thought from the answer, with streaming behavior and how to add a parser for a new model.
+  section: verticals/reasoning
+  type: docs
+  tags: [llm, reasoning, python]
+  added: 2026-10-27
+
+- id: sglang-thinking-budget
+  name: SGLang Thinking Budget
+  url: https://docs.sglang.io/docs/advanced_features/thinking_budget
+  description: Shows three ways to cap the tokens a reasoning model spends thinking, using chat-template hints, a strict grammar-level limit, or a custom logit processor.
+  section: verticals/reasoning
+  type: docs
+  tags: [llm, reasoning, python]
+  added: 2026-10-27
+
+- id: certaindex
+  name: Certaindex (Dynasor)
+  url: https://arxiv.org/abs/2412.20993
+  description: Measures when a reasoning program's answer has stopped changing and uses that signal in a scheduler to cut wasted tokens across concurrent requests.
+  section: verticals/reasoning
+  type: paper
+  tags: [llm, reasoning]
+  paper:
+    venue: NeurIPS
+    year: 2025
+    code: https://github.com/hao-ai-lab/Dynasor
+  added: 2026-10-27
+
+# ---------------------------------------------------------------------------
+# verticals/multimodal
+# ---------------------------------------------------------------------------
+
+- id: vllm-omni
+  name: vLLM-Omni
+  url: https://github.com/vllm-project/vllm-omni
+  description: Extends vLLM to any-to-any models by running autoregressive, diffusion, and audio components as separate stages linked by a connector layer.
+  section: verticals/multimodal
+  type: tool
+  tags: [omni, vlm, diffusion, speech, python, nvidia, amd, ascend]
+  featured: true
+  added: 2026-10-27
+
+- id: sglang-omni
+  name: SGLang-Omni
+  url: https://github.com/sgl-project/sglang-omni
+  description: Multi-stage runtime for omni, speech, and TTS models that splits generation into encoder, autoregressive, and vocoder stages behind OpenAI-style APIs.
+  section: verticals/multimodal
+  type: tool
+  tags: [omni, speech, python]
+  maturity: experimental
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: vllm-epd-encoder-disaggregation
+  name: Encoder Disaggregation for Scalable Multimodal Model Serving
+  url: https://vllm.ai/blog/2025-12-15-vllm-epd
+  description: Explains how moving the vision encoder to its own workers, with a connector and an encoder-output cache, removes its interference with text generation.
+  section: verticals/multimodal
+  type: article
+  tags: [vlm, python, datacenter]
+  added: 2026-10-27
+
+- id: epd-disaggregation
+  name: Efficiently Serving Large Multimodal Models Using EPD Disaggregation
+  url: https://arxiv.org/abs/2501.05460
+  description: Places encoding, prefill, and decode of multimodal requests on separate resources to reduce encoder interference and memory pressure in serving.
+  section: verticals/multimodal
+  type: paper
+  tags: [vlm, datacenter]
+  paper:
+    venue: ICML
+    year: 2025
+    code: https://github.com/vbdi/epdserve
+  added: 2026-10-27
+
+- id: vllm-omni-paper
+  name: "vLLM-Omni: Fully Disaggregated Serving for Any-to-Any Multimodal Models"
+  url: https://arxiv.org/abs/2602.02204
+  description: Describes the stage abstraction that decomposes any-to-any pipelines into components which are scheduled and scaled independently.
+  section: verticals/multimodal
+  type: paper
+  tags: [omni, vlm, diffusion]
+  paper:
+    venue: arXiv
+    year: 2026
+    code: https://github.com/vllm-project/vllm-omni
+  added: 2026-10-27
+
+- id: vllm-multimodal-inputs
+  name: vLLM Multimodal Inputs
+  url: https://docs.vllm.ai/en/latest/features/multimodal_inputs/
+  description: Reference for passing images, video, audio, and precomputed embeddings to vLLM, with per-prompt media limits, media caching, and domain restrictions.
+  section: verticals/multimodal
+  type: docs
+  tags: [vlm, omni, python]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: sglang-multimodal-models
+  name: SGLang Multimodal Language Models
+  url: https://docs.sglang.io/docs/supported-models/multimodal_language_models
+  description: Supported vision, video, and audio-input models in SGLang with launch commands and flags for feature transport and media preprocessing.
+  section: verticals/multimodal
+  type: docs
+  tags: [vlm, omni, python]
+  added: 2026-10-27
+
+# ---------------------------------------------------------------------------
+# verticals/image-video
+# ---------------------------------------------------------------------------
+
+- id: diffusers
+  name: Diffusers
+  url: https://github.com/huggingface/diffusers
+  description: PyTorch library of pipelines, schedulers, and model classes for image, video, and audio diffusion, with offloading and quantization backends for smaller GPUs.
+  section: verticals/image-video
+  type: library
+  tags: [diffusion, python]
+  featured: true
+  added: 2026-10-27
+
+- id: comfyui
+  name: ComfyUI
+  url: https://github.com/Comfy-Org/ComfyUI
+  description: Node-graph application and API backend for composing diffusion workflows locally, with a large ecosystem of community custom nodes.
+  section: verticals/image-video
+  type: tool
+  tags: [diffusion, python, local]
+  added: 2026-10-27
+
+- id: sglang-diffusion
+  name: SGLang Diffusion
+  url: https://docs.sglang.io/docs/sglang-diffusion
+  description: Image and video generation inside SGLang, with native pipelines, an OpenAI-compatible API, several parallelism modes, and cache-based acceleration.
+  section: verticals/image-video
+  type: docs
+  tags: [diffusion, python, nvidia, amd]
+  added: 2026-10-27
+
+- id: xdit
+  name: xDiT
+  url: https://github.com/xdit-project/xDiT
+  description: Parallel inference engine for diffusion transformers that combines unified sequence parallelism, PipeFusion, CFG parallelism, and parallel VAE across GPUs.
+  section: verticals/image-video
+  type: library
+  tags: [diffusion, python]
+  added: 2026-10-27
+
+- id: fastvideo
+  name: FastVideo
+  url: https://github.com/hao-ai-lab/FastVideo
+  description: Video generation framework that pairs optimized inference with post-training, with recent support for consumer GPUs and Apple silicon.
+  section: verticals/image-video
+  type: library
+  tags: [diffusion, python, nvidia, apple]
+  added: 2026-10-27
+
+- id: lightx2v
+  name: LightX2V
+  url: https://github.com/ModelTC/LightX2V
+  description: Unified inference framework for text-to-video, image-to-video, text-to-image, and image-editing models, built for low-overhead execution.
+  section: verticals/image-video
+  type: library
+  tags: [diffusion, python]
+  added: 2026-10-27
+
+- id: nunchaku
+  name: Nunchaku
+  url: https://github.com/nunchux-ai/nunchaku
+  description: Inference engine for 4-bit diffusion transformers that runs SVDQuant-quantized models and ships native ComfyUI nodes.
+  section: verticals/image-video
+  type: library
+  tags: [diffusion, python, nvidia]
+  added: 2026-10-27
+
+- id: cache-dit
+  name: cache-dit
+  url: https://github.com/vipshop/cache-dit
+  description: Toolkit on top of Diffusers that adds block-level caching, parallelism, quantization, and CPU offload for diffusion transformers, also wired into other engines.
+  section: verticals/image-video
+  type: library
+  tags: [diffusion, python, nvidia, ascend]
+  added: 2026-10-27
+
+- id: stable-diffusion-cpp
+  name: stable-diffusion.cpp
+  url: https://github.com/leejet/stable-diffusion.cpp
+  description: Pure C/C++ inference for Stable Diffusion, Flux, Wan, and similar models on ggml, with GGUF weights and CPU, CUDA, Vulkan, and Metal backends.
+  section: verticals/image-video
+  type: tool
+  tags: [diffusion, cpp, local, cpu, nvidia, apple]
+  added: 2026-10-27
+
+- id: svdquant
+  name: SVDQuant
+  url: https://arxiv.org/abs/2411.05007
+  description: Quantizes diffusion-model weights and activations to 4 bits by moving outliers into a low-rank branch that stays in higher precision.
+  section: verticals/image-video
+  type: paper
+  tags: [diffusion, nvidia]
+  paper:
+    venue: ICLR
+    year: 2025
+    code: https://github.com/nunchux-ai/nunchaku
+  added: 2026-10-27
+
+- id: distrifusion
+  name: DistriFusion
+  url: https://arxiv.org/abs/2402.19481
+  description: Splits a high-resolution image across GPUs and reuses the previous step's feature maps as context, so communication overlaps with computation.
+  section: verticals/image-video
+  type: paper
+  tags: [diffusion, nvidia]
+  paper:
+    venue: CVPR
+    year: 2024
+    code: https://github.com/mit-han-lab/distrifuser
+  added: 2026-10-27
+
+- id: teacache
+  name: TeaCache
+  url: https://github.com/ali-vilab/TeaCache
+  description: Training-free cache that reuses transformer outputs across denoising steps when timestep-embedding changes predict small differences in the result.
+  section: verticals/image-video
+  type: tool
+  tags: [diffusion, python]
+  status: maintenance
+  successor: cache-dit
+  added: 2026-10-27
+
+# ---------------------------------------------------------------------------
+# verticals/speech
+# ---------------------------------------------------------------------------
+
+- id: whisper-cpp
+  name: whisper.cpp
+  url: https://github.com/ggml-org/whisper.cpp
+  description: Port of OpenAI's Whisper speech recognition to C/C++ on ggml, for CPUs, GPUs, and mobile devices.
+  section: verticals/speech
+  type: tool
+  tags: [speech, cpu, apple, nvidia, local, mobile, cpp]
+  featured: true
+  added: 2026-10-27
+
+- id: faster-whisper
+  name: faster-whisper
+  url: https://github.com/SYSTRAN/faster-whisper
+  description: Reimplements Whisper on CTranslate2 with 8-bit quantization for CPU and GPU, and serves as the transcription backend of servers such as Speaches.
+  section: verticals/speech
+  type: library
+  tags: [speech, python, cpu, nvidia]
+  status: maintenance
+  added: 2026-10-27
+
+- id: argmax-oss-swift
+  name: Argmax Open-Source SDK
+  url: https://github.com/argmaxinc/argmax-oss-swift
+  description: Swift packages for on-device speech on Apple silicon, covering WhisperKit transcription, SpeakerKit diarization, and TTSKit speech synthesis.
+  section: verticals/speech
+  type: library
+  tags: [speech, apple, swift, mobile, local]
+  added: 2026-10-27
+
+- id: sherpa-onnx
+  name: sherpa-onnx
+  url: https://github.com/k2-fsa/sherpa-onnx
+  description: Offline speech toolkit for recognition, synthesis, diarization, voice activity detection, and enhancement on ONNX Runtime, from servers to phones and boards.
+  section: verticals/speech
+  type: library
+  tags: [speech, cpp, cpu, npu, mobile, embedded]
+  added: 2026-10-27
+
+- id: kyutai-delayed-streams-modeling
+  name: Kyutai Delayed Streams Modeling
+  url: https://github.com/kyutai-labs/delayed-streams-modeling
+  description: Runnable Kyutai streaming speech-to-text and text-to-speech models built on delayed streams modeling, with batching for real-time use.
+  section: verticals/speech
+  type: tool
+  tags: [speech, python]
+  added: 2026-10-27
+
+- id: pipecat
+  name: Pipecat
+  url: https://github.com/pipecat-ai/pipecat
+  description: Python framework for real-time voice and multimodal agents that chains transports, speech services, and language models into streaming pipelines.
+  section: verticals/speech
+  type: library
+  tags: [speech, agents, python]
+  added: 2026-10-27
+
+- id: livekit-agents
+  name: LiveKit Agents
+  url: https://github.com/livekit/agents
+  description: Server-side framework for realtime voice and video agents that plugs speech-to-text, LLM, and text-to-speech services into WebRTC sessions with job dispatch.
+  section: verticals/speech
+  type: library
+  tags: [speech, agents, python]
+  added: 2026-10-27
+
+- id: speaches
+  name: Speaches
+  url: https://github.com/speaches-ai/speaches
+  description: OpenAI API-compatible server for streaming transcription, translation, and speech generation, using faster-whisper for STT and Piper or Kokoro for TTS.
+  section: verticals/speech
+  type: tool
+  tags: [speech, python, local]
+  maturity: experimental
+  added: 2026-10-27
+
+- id: nvidia-riva-docs
+  name: NVIDIA Riva Speech Documentation
+  url: https://docs.nvidia.com/deeplearning/riva/user-guide/docs/index.html
+  description: Guides for NVIDIA's gRPC speech stack covering streaming recognition and synthesis, Docker and Kubernetes deployment, and performance tuning.
+  section: verticals/speech
+  type: docs
+  tags: [speech, nvidia, datacenter, kubernetes]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+# ---------------------------------------------------------------------------
+# verticals/embeddings
+# ---------------------------------------------------------------------------
+
+- id: text-embeddings-inference
+  name: Text Embeddings Inference
+  url: https://github.com/huggingface/text-embeddings-inference
+  description: Rust server for embedding, reranker, and sequence-classification models with token-based dynamic batching and no graph-compilation step.
+  section: verticals/embeddings
+  type: tool
+  tags: [embeddings, rust, nvidia, cpu]
+  featured: true
+  added: 2026-10-27
+
+- id: infinity
+  name: Infinity
+  url: https://github.com/michaelfeil/infinity
+  description: REST server for embedding, reranking, and classification models whose v3 line rewrites the Python server as a native Rust service on LibTorch.
+  section: verticals/embeddings
+  type: tool
+  tags: [embeddings, rust, python, nvidia]
+  added: 2026-10-27
+
+- id: fastembed
+  name: FastEmbed
+  url: https://github.com/qdrant/fastembed
+  description: Light Python library that produces dense and sparse text embeddings through ONNX Runtime, with no PyTorch dependency and no GPU requirement.
+  section: verticals/embeddings
+  type: library
+  tags: [embeddings, python, cpu]
+  added: 2026-10-27
+
+- id: sentence-transformers
+  name: Sentence Transformers
+  url: https://github.com/huggingface/sentence-transformers
+  description: Python library with one API for computing embeddings and reranking, and PyTorch, ONNX, and OpenVINO backends for faster inference.
+  section: verticals/embeddings
+  type: library
+  tags: [embeddings, python, cpu]
+  added: 2026-10-27
+
+- id: vllm-pooling-models
+  name: vLLM Pooling Models
+  url: https://docs.vllm.ai/en/latest/models/pooling_models/
+  description: How vLLM serves embedding, classification, and scoring or reranking models through its pooling runner, both offline and over online endpoints.
+  section: verticals/embeddings
+  type: docs
+  tags: [embeddings, python]
+  added: 2026-10-27
+
+- id: sglang-embedding-models
+  name: SGLang Embedding Models
+  url: https://docs.sglang.io/docs/supported-models/embedding_models
+  description: Shows how to serve dense embedding models in SGLang through the embeddings endpoint, with Matryoshka and multimodal examples and a supported-model table.
+  section: verticals/embeddings
+  type: docs
+  tags: [embeddings, python]
+  added: 2026-10-27
+
+# ---------------------------------------------------------------------------
+# verticals/agents
+# ---------------------------------------------------------------------------
+
+- id: parrot
+  name: Parrot
+  url: https://arxiv.org/abs/2405.19888
+  description: Introduces semantic variables that expose data flow between an application's LLM calls, so the serving layer can optimize the whole workflow end to end.
+  section: verticals/agents
+  type: paper
+  tags: [llm, agents]
+  paper:
+    venue: OSDI
+    year: 2024
+    code: https://github.com/microsoft/ParrotServe
+  featured: true
+  added: 2026-10-27
+
+- id: autellix
+  name: Autellix (Agentix)
+  url: https://arxiv.org/abs/2502.13965
+  description: Schedules whole agent programs rather than single calls, preempting LLM calls by the history of their program to reduce head-of-line blocking.
+  section: verticals/agents
+  type: paper
+  tags: [llm, agents]
+  paper:
+    venue: NSDI
+    year: 2026
+  added: 2026-10-27
+
+- id: continuum
+  name: Continuum
+  url: https://arxiv.org/abs/2511.02230
+  description: Pins a finished request's KV cache in GPU memory for a time-to-live based on expected tool-call duration, so multi-turn agents skip re-prefilling.
+  section: verticals/agents
+  type: paper
+  tags: [llm, agents]
+  paper:
+    venue: ICLR
+    year: 2026
+    code: https://github.com/Hanchenli/vllm-continuum
+  added: 2026-10-27
+
+- id: cachewise
+  name: CacheWise
+  url: https://arxiv.org/abs/2606.16824
+  description: Analyzes real coding-agent traces and pairs prefix-aware scheduling with KV eviction guided by tool-call metadata, implemented in vLLM.
+  section: verticals/agents
+  type: paper
+  tags: [llm, agents]
+  paper:
+    venue: arXiv
+    year: 2026
+  added: 2026-10-27
+
+- id: agentic-ai-workload-characteristics
+  name: Agentic AI Workload Characteristics
+  url: https://arxiv.org/abs/2605.26297
+  description: Traces ReAct-style agents on Gemma and Qwen models and finds decode-dominated execution with long-lived KV state once context caching is on.
+  section: verticals/agents
+  type: paper
+  tags: [llm, agents, reasoning]
+  paper:
+    venue: IISWC
+    year: 2026
+  added: 2026-10-27
+
+- id: vllm-tool-calling
+  name: vLLM Tool Calling
+  url: https://docs.vllm.ai/en/latest/features/tool_calling/
+  description: Documents vLLM's auto tool choice flags, per-model tool-call parsers, and the plugin interface for writing a custom parser.
+  section: verticals/agents
+  type: docs
+  tags: [llm, agents, python]
+  added: 2026-10-27
+
+- id: sglang-tool-parser
+  name: SGLang Tool Parser
+  url: https://docs.sglang.io/docs/advanced_features/tool_parser
+  description: Maps SGLang's tool parsers to model families and covers forced tool choice, streaming, and adding a parser for a new function-call format.
+  section: verticals/agents
+  type: docs
+  tags: [llm, agents, python]
+  added: 2026-10-27
+
+# ---------------------------------------------------------------------------
+# verticals/rl-rollouts
+# ---------------------------------------------------------------------------
+
+- id: verl
+  name: verl
+  url: https://github.com/verl-project/verl
+  description: RL post-training library from the HybridFlow paper that places actor, rollout, and reward workers on GPUs and plugs into FSDP, Megatron-LM, vLLM, or SGLang.
+  section: verticals/rl-rollouts
+  type: library
+  tags: [rl, llm, python]
+  featured: true
+  added: 2026-10-27
+
+- id: slime
+  name: slime
+  url: https://github.com/THUDM/slime
+  description: RL scaling framework that links Megatron training to SGLang rollouts through a data buffer and customizable data-generation functions.
+  section: verticals/rl-rollouts
+  type: library
+  tags: [rl, llm, python]
+  added: 2026-10-27
+
+- id: miles
+  name: Miles
+  url: https://github.com/radixark/miles
+  description: Fork of slime for production post-training of large LLMs and VLMs on SGLang rollouts, with low-precision RL and on-policy distillation.
+  section: verticals/rl-rollouts
+  type: library
+  tags: [rl, llm, vlm, python]
+  added: 2026-10-27
+
+- id: areal
+  name: AReaL
+  url: https://github.com/areal-project/AReaL
+  description: Fully asynchronous RL system from Tsinghua and Ant Group that decouples generation from training, aimed at reasoning and agentic models.
+  section: verticals/rl-rollouts
+  type: library
+  tags: [rl, llm, agents, python]
+  added: 2026-10-27
+
+- id: skyrl
+  name: SkyRL
+  url: https://github.com/NovaSky-AI/SkyRL
+  description: Full-stack RL library with a trainer, an agent layer, and a tool-use gym, plus a backend that implements the Tinker API on your own hardware.
+  section: verticals/rl-rollouts
+  type: library
+  tags: [rl, llm, agents, python]
+  added: 2026-10-27
+
+- id: prime-rl
+  name: prime-rl
+  url: https://github.com/PrimeIntellect-ai/prime-rl
+  description: Asynchronous RL framework using FSDP2 for training and vLLM for inference, with Slurm deployment and prefill-decode disaggregation for large MoE models.
+  section: verticals/rl-rollouts
+  type: library
+  tags: [rl, llm, moe, python]
+  added: 2026-10-27
+
+- id: nemo-rl
+  name: NeMo RL
+  url: https://github.com/NVIDIA-NeMo/RL
+  description: NVIDIA post-training toolkit with GRPO and SFT recipes, vLLM generation, and delta-compressed weight refit between training and rollout clusters.
+  section: verticals/rl-rollouts
+  type: library
+  tags: [rl, llm, nvidia, python]
+  added: 2026-10-27
+
+- id: checkpoint-engine
+  name: checkpoint-engine
+  url: https://github.com/MoonshotAI/checkpoint-engine
+  description: Middleware that updates weights in running inference engines in place, using broadcast or peer-to-peer transfer, for the refit step of RL loops.
+  section: verticals/rl-rollouts
+  type: library
+  tags: [rl, llm, python]
+  added: 2026-10-27
+
+- id: tinker
+  name: Tinker
+  url: https://thinkingmachines.ai/tinker/
+  description: Managed post-training service where your code drives the loop with sample, forward_backward, and optimizer calls while the provider runs the GPUs.
+  section: verticals/rl-rollouts
+  type: service
+  tags: [rl, llm, python]
+  pricing: commercial
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: sglang-for-rl
+  name: SGLang for RL Systems
+  url: https://docs.sglang.io/docs/advanced_features/sglang_for_rl
+  description: Covers SGLang's rollout features for RL, including memory release and resume, pause and continue, weight-refit paths, and deterministic mode.
+  section: verticals/rl-rollouts
+  type: docs
+  tags: [rl, llm, python]
+  added: 2026-10-27
+
+- id: vllm-rlhf
+  name: vLLM RLHF Documentation
+  url: https://docs.vllm.ai/en/latest/training/rlhf/
+  description: Overview of vLLM's RL-facing features, from NCCL and IPC weight transfer and a weight checker to routed-experts return for MoE and async pause and resume.
+  section: verticals/rl-rollouts
+  type: docs
+  tags: [rl, llm, python]
+  added: 2026-10-27
+
+# ---------------------------------------------------------------------------
+# verticals/robotics
+# ---------------------------------------------------------------------------
+
+- id: openpi
+  name: openpi
+  url: https://github.com/Physical-Intelligence/openpi
+  description: Open pi-0, pi-0-FAST, and pi-0.5 vision-language-action models with base checkpoints, fine-tuning recipes, and a websocket policy server for remote inference.
+  section: verticals/robotics
+  type: library
+  tags: [robotics, python, nvidia]
+  maturity: experimental
+  verified: 2026-10-27
+  featured: true
+  added: 2026-10-27
+
+- id: lerobot-async-inference
+  name: LeRobot Asynchronous Inference
+  url: https://huggingface.co/docs/lerobot/async
+  description: Tutorial on decoupling action prediction from execution with a policy server and robot client, plus tuning of chunk size and the refill threshold.
+  section: verticals/robotics
+  type: docs
+  tags: [robotics, python]
+  added: 2026-10-27
+
+- id: isaac-gr00t
+  name: Isaac GR00T
+  url: https://github.com/NVIDIA/Isaac-GR00T
+  description: NVIDIA's open foundation model for generalist robots, with fine-tuning code and an ONNX and TensorRT deployment path for desktop GPUs and Jetson.
+  section: verticals/robotics
+  type: library
+  tags: [robotics, nvidia, python]
+  added: 2026-10-27
+
+- id: real-time-chunking
+  name: Real-Time Execution of Action Chunking Flow Policies
+  url: https://arxiv.org/abs/2506.07339
+  description: Computes the next action chunk while the current one executes and inpaints around committed actions, keeping motion smooth despite inference delay.
+  section: verticals/robotics
+  type: paper
+  tags: [robotics]
+  paper:
+    venue: NeurIPS
+    year: 2025
+  added: 2026-10-27
+
+# ---------------------------------------------------------------------------
+# verticals/diffusion-llms
+# ---------------------------------------------------------------------------
+
+- id: fast-dllm
+  name: Fast-dLLM
+  url: https://github.com/NVlabs/Fast-dLLM
+  description: Acceleration techniques for diffusion LLMs, pairing a block-wise approximate KV cache with confidence-based parallel decoding, plus block-diffusion variants.
+  section: verticals/diffusion-llms
+  type: tool
+  tags: [dllm, llm, python]
+  featured: true
+  added: 2026-10-27
+
+- id: dinfer
+  name: dInfer
+  url: https://github.com/inclusionAI/dInfer
+  description: Inference framework for diffusion LLMs that splits the pipeline into model, iteration manager, decoder, and KV-cache manager components.
+  section: verticals/diffusion-llms
+  type: tool
+  tags: [dllm, llm, python]
+  added: 2026-10-27
+
+- id: vllm-diffusion-gemma
+  name: DiffusionGemma in vLLM
+  url: https://vllm.ai/blog/2026-06-10-diffusion-gemma
+  description: Walks through adding a diffusion LLM to vLLM with the ModelState abstraction, covering the denoising loop, sampler, and attention changes.
+  section: verticals/diffusion-llms
+  type: article
+  tags: [dllm, llm, python]
+  added: 2026-10-27
+
+- id: sglang-llada2
+  name: SGLang Day-0 Support for LLaDA 2.0
+  url: https://www.lmsys.org/blog/2025-12-19-diffusion-llm
+  description: Shows how SGLang reuses its chunked-prefill pipeline to batch diffusion blocks, with a pluggable decoding-algorithm layer between worker and model runner.
+  section: verticals/diffusion-llms
+  type: article
+  tags: [dllm, llm, python]
+  added: 2026-10-27
+
+- id: sglang-diffusion-llms
+  name: SGLang Diffusion Language Models
+  url: https://docs.sglang.io/docs/supported-models/diffusion_language_models
+  description: Explains how to serve LLaDA2.0, SDAR, and DiffusionGemma in SGLang, with selectable decoding algorithms configured through YAML.
+  section: verticals/diffusion-llms
+  type: docs
+  tags: [dllm, llm, python]
+  added: 2026-10-27
+
+# ---------------------------------------------------------------------------
+# verticals/classical-ml
+# ---------------------------------------------------------------------------
+
+- id: triton-fil-backend
+  name: Triton FIL Backend
+  url: https://github.com/triton-inference-server/fil_backend
+  description: Triton backend that serves XGBoost, LightGBM, scikit-learn, and cuML tree ensembles with GPU or CPU forest inference.
+  section: verticals/classical-ml
+  type: tool
+  tags: [classical-ml, nvidia, cpp, datacenter]
+  added: 2026-10-27
+
+- id: treelite
+  name: Treelite
+  url: https://github.com/dmlc/treelite
+  description: Library and file format for decision-tree forests that lets C++ applications load, exchange, and persist models from several tree-training frameworks.
+  section: verticals/classical-ml
+  type: library
+  tags: [classical-ml, cpp, python, cpu]
+  added: 2026-10-27
+
+- id: torchrec
+  name: TorchRec
+  url: https://github.com/meta-pytorch/torchrec
+  description: PyTorch domain library with sharding and parallelism primitives for recommender models whose embedding tables span many GPUs, for training and inference.
+  section: verticals/classical-ml
+  type: library
+  tags: [recsys, python]
+  featured: true
+  added: 2026-10-27
+
+- id: generative-recommenders
+  name: Generative Recommenders (HSTU)
+  url: https://github.com/meta-recsys/generative-recommenders
+  description: Reference code for HSTU and M-FALCON, which recast recommendation as sequence generation and speed up large sequential recommender training and inference.
+  section: verticals/classical-ml
+  type: library
+  tags: [recsys, python]
+  added: 2026-10-27
+
+- id: nvidia-recsys-examples
+  name: NVIDIA RecSys Examples
+  url: https://github.com/NVIDIA/recsys-examples
+  description: NVIDIA's HSTU and semantic-ID recommender examples, including inference with a paged GPU KV cache, Triton Inference Server, and AOTInductor C++ deployment.
+  section: verticals/classical-ml
+  type: library
+  tags: [recsys, nvidia, python, cuda]
+  license: BSD-3-Clause
+  added: 2026-10-27
+
+# ---------------------------------------------------------------------------
+# verticals/decision-models
+# ---------------------------------------------------------------------------
+
+- id: typesafe-jev
+  name: TypeSafe Jev
+  url: https://docs.typesafe.ai/introduction
+  description: Proprietary decision model behind TypeSafe's System One API that answers choice, score, and yes/no questions about a state with probabilities.
+  section: verticals/decision-models
+  type: service
+  tags: [decision, vlm]
+  pricing: commercial
+  verified: 2026-10-27
+  notes: API-only; no official weights. The autotrust/JEV-* Hugging Face repos are third-party distillations, not TypeSafe releases.
+  added: 2026-10-27
+
+- id: openai-decisions-api
+  name: OpenAI Decisions API
+  url: https://developers.openai.com/api/docs/guides/decisions
+  description: OpenAI endpoint that answers predicate, choice, and score questions about text, images, or JSON with probabilities instead of generated text.
+  section: verticals/decision-models
+  type: service
+  tags: [decision, vlm]
+  pricing: commercial
+  verified: 2026-10-27
+  notes: GA; POST /v1/decisions with gpt-6-luna as the only supported model on 2026-10-27.
+  added: 2026-10-27
+
+- id: pydantic-ai-decision-models
+  name: Pydantic AI Decision Models
+  url: https://pydantic.dev/docs/ai/models/decision/
+  description: Guide to running agents on decision models, where each output field becomes a typed question and low-confidence answers can fall back to an LLM.
+  section: verticals/decision-models
+  type: docs
+  tags: [decision, agents, python]
+  repo: pydantic/pydantic-ai
+  notes: Covers TypeSafe Jev, any /v1/systemone backend (CLM, Laya, Ollama), and the OpenAI Decisions API. Link kept free of tracking parameters.
+  added: 2026-10-27
+
+- id: vllm-sr-d3
+  name: vLLM-SR d3
+  url: https://huggingface.co/vllm-sr/d3
+  description: Open-weight 27B multimodal decision model from the vLLM Semantic Router project for choice, yes/no, and score questions over text, images, and video.
+  section: verticals/decision-models
+  type: tool
+  tags: [decision, vlm, python]
+  license: Apache-2.0
+  verified: 2026-10-27
+  notes: Published by the vllm-sr Hugging Face org, linked from the vllm-project/semantic-router README; the router itself is in gateways/routing.
+  added: 2026-10-27
+
+- id: perplexity-decider
+  name: Perplexity Decider
+  url: https://huggingface.co/perplexity-ai/pplx-decider-v1.2
+  description: Open-weight 27B decision model from Perplexity that reads a state and all its questions in one sequence, with a separate readout per question.
+  section: verticals/decision-models
+  type: tool
+  tags: [decision, vlm, nvidia, python]
+  license: Apache-2.0
+  verified: 2026-10-27
+  notes: Repo is public per the HF API although the model card still says private; v1.1-27b and a flash variant are also published.
+  added: 2026-10-27
+
+- id: laya
+  name: Laya
+  url: https://huggingface.co/convaiinnovations/laya
+  description: Non-autoregressive multilingual decision models with a Python runtime that routes each request to a checkpoint and can run on CPU, GPU, or ONNX Runtime.
+  section: verticals/decision-models
+  type: tool
+  tags: [decision, python, cpu, local]
+  repo: NandhaKishorM/laya
+  added: 2026-10-27
+
+- id: contrastive-lm
+  name: Contrastive Language Model (CLM)
+  url: https://huggingface.co/Contrastive-LM/CLM-v0.1-8B
+  description: Decision model that trains state and action heads on frozen Qwen3-8B embeddings, so candidate actions are encoded once and ranked against each new state.
+  section: verticals/decision-models
+  type: tool
+  tags: [decision, agents, python]
+  repo: Contrastive-LM/CLM
+  maturity: experimental
+  added: 2026-10-27
+
+- id: jevbench
+  name: JevBench
+  url: https://benchmarkheaven.com/jev-models
+  description: Leaderboard that scores decision models on accuracy, calibration, latency, and cost; run by the same company that operates the Decision Models API.
+  section: verticals/decision-models
+  type: benchmark
+  tags: [decision]
+  verified: 2026-10-27
+  notes: Benchmark Heaven and decisionmodels.io share one operator (productivity-boost.com Betriebs UG & Co. KG, Passau) per both imprints; decisionmodels.io names the shared founder.
+  added: 2026-10-27
+
+- id: decision-models-io
+  name: Decision Models
+  url: https://decisionmodels.io/
+  description: Hosted Jev-compatible API for open-weight decision models, with an EU-only tier and a peer-to-peer tier that can run on independent GPU providers.
+  section: verticals/decision-models
+  type: service
+  tags: [decision]
+  pricing: commercial
+  verified: 2026-10-27
+  notes: German operator; states it is not affiliated with TypeSafe. Peer-to-peer providers see request content in clear text. Same operator as JevBench and reaxlabs/reax-engine.
+  added: 2026-10-27

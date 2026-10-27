@@ -1,0 +1,51 @@
+---
+import { withBase } from '../lib/base.ts';
+
+interface Props {
+  /** Nav key of the current page. */
+  current?: string;
+  /** The catalog has its own query field; a second search box there would compete with it. */
+  noSearch?: boolean;
+}
+
+const { current, noSearch = false } = Astro.props;
+const nav = [
+  { key: 'catalog', label: 'Catalog', href: withBase('catalog/') },
+  { key: 'sections', label: 'Sections', href: withBase('sections/') },
+  { key: 'glossary', label: 'Glossary', href: withBase('glossary/') },
+  { key: 'whats-new', label: 'What’s new', href: withBase('whats-new/') },
+  { key: 'policy', label: 'Policy', href: withBase('policy/') },
+  { key: 'github', label: 'GitHub', href: 'https://github.com/0xmsu/awesome-inference-engineering' },
+];
+---
+
+<header class="wrap">
+  <div class="topbar">
+    <a class="brand" href={withBase('')}>Inference Engineering</a>
+    <nav class="topnav" aria-label="Site">
+      <ul class="nav">
+        {
+          nav.map((item) => (
+            <li>
+              <a href={item.href} aria-current={item.key === current ? 'page' : undefined} rel={item.href.startsWith('http') ? 'noopener' : undefined}>{item.label}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+    {
+      !noSearch && (
+        <form class="site-search" role="search" action={withBase('catalog/')} method="get">
+          <label class="vh" for="site-q">
+            Search the catalog
+          </label>
+          <input id="site-q" name="q" type="search" placeholder="Search" autocomplete="off" spellcheck="false" data-search />
+        </form>
+      )
+    }
+    <div class="topbar-tools">
+      <button class="theme label" type="button" data-theme-toggle aria-label="Switch to dark theme">Dark</button>
+    </div>
+  </div>
+  <hr class="topbar-rule" />
+</header>

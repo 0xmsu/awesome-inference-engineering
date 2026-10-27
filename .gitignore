@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.research/
+.lycheecache
+.DS_Store
+*.log
+# Generated exports (built in CI)
+site/public/api/
+site/public/llms*.txt
+
+# Astro
+.astro/
+
+# Browser automation output
+.playwright-mcp/

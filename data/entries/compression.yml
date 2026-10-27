@@ -1,0 +1,299 @@
+- id: llm-compressor
+  name: LLM Compressor
+  url: https://github.com/vllm-project/llm-compressor
+  description: Applies GPTQ, AWQ, SmoothQuant, and FP8 or NVFP4 recipes to Hugging Face models and saves compressed-tensors checkpoints that vLLM loads directly.
+  section: compression/quantization
+  type: library
+  tags: [llm, vlm, moe, python]
+  featured: true
+  added: 2026-10-27
+
+- id: nvidia-model-optimizer
+  name: NVIDIA Model Optimizer
+  url: https://github.com/NVIDIA/Model-Optimizer
+  description: Formerly TensorRT Model Optimizer; FP8, NVFP4, and INT4 quantization plus pruning and distillation, exporting checkpoints to TensorRT-LLM, vLLM, and SGLang.
+  section: compression/quantization
+  type: library
+  tags: [llm, vlm, moe, nvidia, python]
+  added: 2026-10-27
+
+- id: bitsandbytes
+  name: bitsandbytes
+  url: https://github.com/bitsandbytes-foundation/bitsandbytes
+  description: Reference code for LLM.int8() outlier-aware 8-bit matmul and the NF4 4-bit format from QLoRA, applied at load time in Transformers without calibration.
+  section: compression/quantization
+  type: library
+  tags: [llm, nvidia, amd, intel, cpu, python, cuda]
+  added: 2026-10-27
+
+- id: gptqmodel
+  name: GPTQModel
+  url: https://github.com/ModelCloud/GPTQModel
+  description: Toolkit centered on GPTQ that also produces AWQ, GGUF, FP8, and EXL3 checkpoints, with kernels for NVIDIA, AMD, Intel, Ascend, and Apple hardware.
+  section: compression/quantization
+  type: library
+  tags: [llm, vlm, nvidia, amd, intel, ascend, apple, cpu, python]
+  license: Apache-2.0
+  added: 2026-10-27
+
+- id: auto-round
+  name: AutoRound
+  url: https://github.com/intel/auto-round
+  description: Intel's sign-gradient rounding method for low-bit post-training quantization, exporting GPTQ and AWQ layouts, GGUF, MXFP4, and NVFP4 checkpoints.
+  section: compression/quantization
+  type: library
+  tags: [llm, vlm, intel, nvidia, cpu, python]
+  added: 2026-10-27
+
+- id: amd-quark
+  name: AMD Quark
+  url: https://github.com/amd/Quark
+  description: AMD's quantization and pruning toolkit for PyTorch and ONNX models, with OCP FP8 and MX data types and FP8 KV-cache quantization.
+  section: compression/quantization
+  type: library
+  tags: [llm, amd, python]
+  added: 2026-10-27
+
+- id: torchao
+  name: TorchAO
+  url: https://github.com/pytorch/ao
+  description: PyTorch-native int4, int8, float8, and MX quantization and QAT used by Transformers and Diffusers; new feature work is moving into PyTorch core.
+  section: compression/quantization
+  type: library
+  tags: [llm, nvidia, python]
+  license: BSD-3-Clause
+  status: maintenance
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: hqq
+  name: HQQ
+  url: https://github.com/dropbox/hqq
+  description: Calibration-free half-quadratic weight quantization from 8 down to 1 bit, with a linear dequantization step that works with torch.compile and fused kernels.
+  section: compression/quantization
+  type: library
+  tags: [llm, nvidia, python]
+  status: maintenance
+  added: 2026-10-27
+
+- id: gptq
+  name: GPTQ
+  url: https://arxiv.org/abs/2210.17323
+  description: One-shot 3- and 4-bit weight quantization that uses approximate second-order information to correct error layer by layer, with no retraining.
+  section: compression/quantization
+  type: paper
+  tags: [llm]
+  paper:
+    venue: ICLR
+    year: 2023
+    code: https://github.com/IST-DASLab/gptq
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: smoothquant
+  name: SmoothQuant
+  url: https://arxiv.org/abs/2211.10438
+  description: Moves activation outliers into the weights with a per-channel scale so both can be quantized to INT8 (W8A8) without retraining.
+  section: compression/quantization
+  type: paper
+  tags: [llm]
+  paper:
+    venue: ICML
+    year: 2023
+    code: https://github.com/mit-han-lab/smoothquant
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: awq
+  name: AWQ
+  url: https://arxiv.org/abs/2306.00978
+  description: Rescales the weight channels that matter most, chosen from activation magnitudes, before 4-bit weight-only quantization; MLSys 2024 Best Paper.
+  section: compression/quantization
+  type: paper
+  tags: [llm]
+  paper:
+    venue: MLSys
+    year: 2024
+    code: https://github.com/mit-han-lab/llm-awq
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: quarot
+  name: QuaRot
+  url: https://arxiv.org/abs/2404.00456
+  description: Hadamard rotations that remove outliers without changing model outputs, so weights, activations, and KV cache can all run in 4 bits.
+  section: compression/quantization
+  type: paper
+  tags: [llm]
+  paper:
+    venue: NeurIPS
+    year: 2024
+    code: https://github.com/spcl/QuaRot
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: spinquant
+  name: SpinQuant
+  url: https://arxiv.org/abs/2405.16406
+  description: Learns the rotation matrices applied before quantization instead of fixing them, improving W4A4KV4 accuracy over random Hadamard rotations.
+  section: compression/quantization
+  type: paper
+  tags: [llm]
+  paper:
+    venue: ICLR
+    year: 2025
+    code: https://github.com/facebookresearch/SpinQuant
+  added: 2026-10-27
+
+- id: qserve
+  name: QServe
+  url: https://arxiv.org/abs/2405.04532
+  description: W4A8KV4 quantization co-designed with GPU kernels so that 4-bit weights and KV cache speed up large-batch serving, not only single-user decode.
+  section: compression/quantization
+  type: paper
+  tags: [llm, nvidia]
+  paper:
+    venue: MLSys
+    year: 2025
+    code: https://github.com/mit-han-lab/omniserve
+  added: 2026-10-27
+
+- id: ocp-ofp8-spec
+  name: OCP 8-bit Floating Point Specification (OFP8)
+  url: https://www.opencompute.org/documents/ocp-8-bit-floating-point-specification-ofp8-revision-1-1-final-pdf
+  description: Cross-vendor standard for the E4M3 and E5M2 FP8 encodings, covering special values, saturation, and conversion rules; revision 1.1 took effect in 2026.
+  section: compression/formats
+  type: spec
+  tags: [nvidia, amd, intel]
+  via: [wafer-ai]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: ocp-mx-spec
+  name: OCP MicroXcaling (MX) Specification
+  url: https://www.opencompute.org/wp-content/uploads/2026/10/OCP_MicroXcaling_Spec_v1.1.0-1.pdf
+  description: Block formats in which 32 FP8, FP6, FP4, or INT8 elements share one power-of-two UE8M0 scale, defining MXFP8, MXFP6, MXFP4, and MXINT8.
+  section: compression/formats
+  type: spec
+  tags: [nvidia, amd, intel]
+  via: [wafer-ai]
+  verified: 2026-10-27
+  featured: true
+  added: 2026-10-27
+
+- id: nvfp4-introduction
+  name: Introducing NVFP4 for Efficient and Accurate Low-Precision Inference
+  url: https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/
+  description: Defines NVFP4, Blackwell's E2M1 format with an FP8 E4M3 scale per 16 values plus a per-tensor FP32 scale, and contrasts it with MXFP4.
+  section: compression/formats
+  type: article
+  tags: [llm, nvidia]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: fp8-formats-for-deep-learning
+  name: FP8 Formats for Deep Learning
+  url: https://arxiv.org/abs/2209.05433
+  description: Joint NVIDIA, Arm, and Intel proposal of the E4M3 and E5M2 encodings later standardized by OCP, with training and inference accuracy results.
+  section: compression/formats
+  type: paper
+  tags: [nvidia]
+  paper:
+    venue: arXiv
+    year: 2022
+  added: 2026-10-27
+
+- id: gguf-quantization-types
+  name: GGUF Quantization Types
+  url: https://huggingface.co/docs/hub/gguf#quantization-types
+  description: Reference table of llama.cpp block formats, from legacy Q4_0 to k-quants, i-quants, ternary TQ, and MXFP4, with block layout and bits per weight.
+  section: compression/formats
+  type: docs
+  tags: [llm, local, cpu]
+  added: 2026-10-27
+
+- id: bitnet
+  name: BitNet b1.58 and bitnet.cpp
+  url: https://github.com/microsoft/BitNet
+  description: Ternary (1.58-bit) weights trained from scratch, with bitnet.cpp lookup-table kernels for running such models on CPUs and GPUs.
+  section: compression/formats
+  type: tool
+  tags: [llm, cpu, nvidia, local, cpp]
+  added: 2026-10-27
+
+- id: sparsegpt
+  name: SparseGPT
+  url: https://arxiv.org/abs/2301.00774
+  description: One-shot pruning of GPT-scale models to 50% unstructured or 2:4 sparsity by solving a layer-wise reconstruction problem, without retraining.
+  section: compression/pruning-distillation
+  type: paper
+  tags: [llm]
+  paper:
+    venue: ICML
+    year: 2023
+    code: https://github.com/IST-DASLab/sparsegpt
+  featured: true
+  added: 2026-10-27
+
+- id: wanda
+  name: Wanda
+  url: https://arxiv.org/abs/2306.11695
+  description: Prunes by weight magnitude times input activation norm, with no weight updates or second-order solves, for both unstructured and N:M sparsity.
+  section: compression/pruning-distillation
+  type: paper
+  tags: [llm]
+  paper:
+    venue: ICLR
+    year: 2024
+    code: https://github.com/locuslab/wanda
+  added: 2026-10-27
+
+- id: minitron
+  name: Minitron
+  url: https://arxiv.org/abs/2407.14679
+  description: NVIDIA recipe that prunes depth, width, attention heads, and MLP channels, then recovers accuracy with distillation; now part of Model Optimizer.
+  section: compression/pruning-distillation
+  type: paper
+  tags: [llm, nvidia]
+  paper:
+    venue: NeurIPS
+    year: 2024
+    code: https://github.com/NVlabs/Minitron
+  added: 2026-10-27
+
+- id: nvidia-2-4-sparsity
+  name: Accelerating Sparse Deep Neural Networks (2:4 sparsity)
+  url: https://arxiv.org/abs/2104.08378
+  description: NVIDIA's account of 2:4 structured sparsity on Sparse Tensor Cores and the prune-then-retrain workflow that keeps dense accuracy.
+  section: compression/pruning-distillation
+  type: paper
+  tags: [nvidia]
+  paper:
+    venue: arXiv
+    year: 2021
+    code: https://github.com/NVIDIA/apex/tree/master/apex/contrib/sparsity
+  added: 2026-10-27
+
+- id: deja-vu
+  name: Deja Vu
+  url: https://arxiv.org/abs/2310.17157
+  description: Predicts which attention heads and MLP neurons each input needs and skips the rest at decode time, the contextual-sparsity idea behind later engines.
+  section: compression/pruning-distillation
+  type: paper
+  tags: [llm, nvidia]
+  paper:
+    venue: ICML
+    year: 2023
+    code: https://github.com/FMInference/DejaVu
+  added: 2026-10-27
+
+- id: knowledge-distillation
+  name: Distilling the Knowledge in a Neural Network
+  url: https://arxiv.org/abs/1503.02531
+  description: Introduced training a small student on a large teacher's temperature-softened output distribution, the basis of most model distillation.
+  section: compression/pruning-distillation
+  type: paper
+  paper:
+    venue: NIPS Deep Learning Workshop
+    year: 2014
+  added: 2026-10-27

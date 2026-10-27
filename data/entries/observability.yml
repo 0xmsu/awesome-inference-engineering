@@ -1,0 +1,321 @@
+# Observability & Operations: profiling, telemetry, correctness, cost and energy, and security.
+
+# --- Profiling & Debugging ---
+
+- id: nsight-systems
+  name: Nsight Systems
+  url: https://docs.nvidia.com/nsight-systems/UserGuide/
+  description: System-wide timeline profiler that lines up CPU threads, OS runtime, CUDA API calls, kernels, memory copies, and NVTX ranges to expose idle GPU time.
+  section: observability/profiling
+  type: tool
+  tags: [nvidia, cuda]
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: nsight-compute
+  name: Nsight Compute
+  url: https://docs.nvidia.com/nsight-compute/ProfilingGuide/
+  description: Kernel profiler that reads hardware counters to report roofline position, memory-hierarchy throughput, occupancy, and warp stall reasons per CUDA kernel.
+  section: observability/profiling
+  type: tool
+  tags: [nvidia, cuda]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: compute-sanitizer
+  name: Compute Sanitizer
+  url: https://docs.nvidia.com/compute-sanitizer/ComputeSanitizer/
+  description: CUDA toolkit checkers (memcheck, racecheck, initcheck, synccheck) that catch out-of-bounds accesses, shared-memory races, and synchronization misuse.
+  section: observability/profiling
+  type: tool
+  tags: [nvidia, cuda]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: pytorch-profiler
+  name: PyTorch Profiler
+  url: https://docs.pytorch.org/docs/stable/profiler.html
+  description: Captures operator, GPU kernel, and memory events from PyTorch programs and exports Chrome-format traces for viewing in Perfetto or analysis with HTA.
+  section: observability/profiling
+  type: tool
+  tags: [python, nvidia, amd]
+  added: 2026-10-27
+
+- id: holistic-trace-analysis
+  name: Holistic Trace Analysis
+  url: https://github.com/facebookresearch/HolisticTraceAnalysis
+  description: Analyzes PyTorch profiler traces across ranks, splitting GPU time into compute, communication, and idle, with overlap and critical-path reports.
+  section: observability/profiling
+  type: tool
+  tags: [python]
+  added: 2026-10-27
+
+- id: perfetto
+  name: Perfetto
+  url: https://github.com/google/perfetto
+  description: Browser-based trace viewer with a SQL trace processor, used to inspect PyTorch, Chrome-format, and Linux system traces without uploading them.
+  section: observability/profiling
+  type: tool
+  tags: [cpp]
+  added: 2026-10-27
+
+- id: rocm-compute-profiler
+  name: ROCm Compute Profiler
+  url: https://rocm.docs.amd.com/projects/rocprofiler-compute/en/latest/
+  description: Kernel-level profiler for AMD Instinct GPUs that turns hardware counters into speed-of-light, memory-chart, and roofline analyses.
+  section: observability/profiling
+  type: tool
+  tags: [amd]
+  repo: ROCm/rocm-systems
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: rocprofiler-sdk
+  name: ROCprofiler-SDK and rocprofv3
+  url: https://rocm.docs.amd.com/projects/rocprofiler-sdk/en/latest/
+  description: ROCm tracing and counter-collection library whose rocprofv3 CLI records HIP API, kernel, and memory-copy timelines; supersedes rocprof and rocprofv2.
+  section: observability/profiling
+  type: tool
+  tags: [amd]
+  repo: ROCm/rocm-systems
+  added: 2026-10-27
+
+# --- Monitoring & Telemetry ---
+
+- id: dcgm-exporter
+  name: DCGM Exporter
+  url: https://github.com/NVIDIA/dcgm-exporter
+  description: Exposes GPU utilization, memory, power, clocks, and XID errors from DCGM as Prometheus metrics, typically deployed as a Kubernetes DaemonSet.
+  section: observability/monitoring
+  type: tool
+  tags: [nvidia, kubernetes, go]
+  featured: true
+  added: 2026-10-27
+
+- id: dcgm
+  name: NVIDIA DCGM
+  url: https://github.com/NVIDIA/DCGM
+  description: Data Center GPU Manager library and dcgmi CLI for fleet health checks, active diagnostics, and policy alerts; the telemetry source behind dcgm-exporter.
+  section: observability/monitoring
+  type: tool
+  tags: [nvidia, datacenter, cpp]
+  added: 2026-10-27
+
+- id: amd-device-metrics-exporter
+  name: AMD Device Metrics Exporter
+  url: https://github.com/ROCm/device-metrics-exporter
+  description: Prometheus exporter for AMD GPU temperature, utilization, memory, power, and PCIe metrics, deployable with Helm on Kubernetes or alongside Slurm.
+  section: observability/monitoring
+  type: tool
+  tags: [amd, kubernetes, go]
+  added: 2026-10-27
+
+- id: vllm-production-metrics
+  name: vLLM Production Metrics
+  url: https://docs.vllm.ai/en/latest/usage/metrics/
+  description: Reference for the Prometheus metrics vLLM serves, including TTFT and inter-token latency histograms, KV cache usage, prefix-cache hits, and deprecations.
+  section: observability/monitoring
+  type: docs
+  tags: [llm]
+  repo: vllm-project/vllm
+  added: 2026-10-27
+
+- id: sglang-production-metrics
+  name: SGLang Production Metrics
+  url: https://docs.sglang.io/docs/references/production_metrics
+  description: Lists the Prometheus metrics SGLang exposes with --enable-metrics, from TTFT and TPOT histograms to cache hit rate, plus a ready Grafana stack.
+  section: observability/monitoring
+  type: docs
+  tags: [llm]
+  repo: sgl-project/sglang
+  added: 2026-10-27
+
+- id: otel-genai-semconv
+  name: OpenTelemetry GenAI Semantic Conventions
+  url: https://github.com/open-telemetry/semantic-conventions-genai
+  description: Draft span, metric, and event names for GenAI clients, servers, agents, and MCP, including server-side time-to-first-token and time-per-output-token metrics.
+  section: observability/monitoring
+  type: spec
+  tags: [llm, agents]
+  maturity: experimental
+  verified: 2026-10-27
+  added: 2026-10-27
+
+# --- Correctness & Determinism ---
+
+- id: batch-invariant-ops
+  name: batch_invariant_ops
+  url: https://github.com/thinking-machines-lab/batch_invariant_ops
+  description: Triton matmul, log-softmax, and mean kernels swapped in through torch.Library so results do not depend on batch size; includes a deterministic vLLM example.
+  section: observability/correctness
+  type: library
+  tags: [llm, python]
+  featured: true
+  added: 2026-10-27
+
+- id: vllm-batch-invariance
+  name: vLLM Batch Invariance
+  url: https://docs.vllm.ai/en/latest/features/batch_invariance/
+  description: Explains the beta VLLM_BATCH_INVARIANT mode, its supported NVIDIA, AMD, and Intel GPUs, validated models, and the tensor-parallel all-reduce caveat.
+  section: observability/correctness
+  type: docs
+  tags: [llm, nvidia, amd, intel]
+  repo: vllm-project/vllm
+  maturity: experimental
+  added: 2026-10-27
+
+- id: sglang-deterministic-inference
+  name: SGLang Deterministic Inference
+  url: https://docs.sglang.io/docs/advanced_features/deterministic_inference
+  description: Covers the --enable-deterministic-inference flag, which attention backends keep radix caching and CUDA graphs, and seeded sampling for repeatable rollouts.
+  section: observability/correctness
+  type: docs
+  tags: [llm, rl]
+  repo: sgl-project/sglang
+  added: 2026-10-27
+
+- id: tbik
+  name: "TBIK: Deterministic Inference across Tensor Parallel Sizes"
+  url: https://arxiv.org/abs/2511.17826
+  description: Tree-based invariant matmul and reduction kernels that give bit-identical results across tensor-parallel sizes, aligning vLLM rollouts with FSDP training.
+  section: observability/correctness
+  type: paper
+  tags: [llm, rl]
+  paper:
+    venue: ICML
+    year: 2026
+    code: https://github.com/nanomaoli/llm_reproducibility
+  added: 2026-10-27
+
+- id: llm-numerical-nondeterminism
+  name: Understanding and Mitigating Numerical Sources of Nondeterminism in LLM Inference
+  url: https://arxiv.org/abs/2506.09501
+  description: Shows how GPU count, GPU type, and batch size change reasoning-model outputs under BF16 greedy decoding, and proposes computing in FP32 over 16-bit weights.
+  section: observability/correctness
+  type: paper
+  tags: [llm, reasoning]
+  paper:
+    venue: NeurIPS
+    year: 2025
+    code: https://github.com/nanomaoli/llm_reproducibility
+  added: 2026-10-27
+
+- id: kimi-vendor-verifier
+  name: Kimi Vendor Verifier
+  url: https://github.com/MoonshotAI/Kimi-Vendor-Verifier
+  description: Moonshot's test suite and public scoreboard checking that third-party Kimi API providers match reference accuracy, tool-call validity, and token accounting.
+  section: observability/correctness
+  type: tool
+  tags: [llm, agents]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+# --- Cost & Energy Efficiency ---
+
+- id: zeus
+  name: Zeus
+  url: https://github.com/ml-energy/zeus
+  description: Measures energy of code regions on NVIDIA and AMD GPUs, CPUs, DRAM, Apple silicon, and Jetson, and ships optimizers for GPU power limits and batch size.
+  section: observability/cost-energy
+  type: library
+  tags: [nvidia, amd, apple, python]
+  featured: true
+  added: 2026-10-27
+
+- id: kepler
+  name: Kepler
+  url: https://github.com/sustainable-computing-io/kepler
+  description: CNCF Sandbox Prometheus exporter that estimates CPU, DRAM, and GPU energy and attributes it to Kubernetes nodes, pods, and containers.
+  section: observability/cost-energy
+  type: tool
+  tags: [kubernetes, nvidia, go]
+  added: 2026-10-27
+
+- id: ai-energy-score
+  name: AI Energy Score
+  url: https://huggingface.github.io/AIEnergyScore/
+  description: Relative star ratings for model energy efficiency, based on H100 GPU energy per 1,000 queries across standard tasks, with an open Docker harness.
+  section: observability/cost-energy
+  type: benchmark
+  tags: [llm, nvidia]
+  repo: huggingface/AIEnergyScore
+  added: 2026-10-27
+
+- id: silicon-index
+  name: Silicon Index
+  url: https://www.silicondata.com/products/silicon-index
+  description: Daily GPU rental price indices for H100, H200, B200, B300, A100, and MI300X across neoclouds and hyperscalers, plus a blended LLM token price index.
+  section: observability/cost-energy
+  type: service
+  tags: [nvidia, amd]
+  pricing: freemium
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: llm-prices
+  name: LLM Prices
+  url: https://www.llm-prices.com/
+  description: Calculator and price table for hosted model APIs that totals input, cached-input, and output token costs for a given request mix.
+  section: observability/cost-energy
+  type: tool
+  tags: [llm]
+  repo: simonw/llm-prices
+  added: 2026-10-27
+
+# --- Security & Confidential Inference ---
+
+- id: nvidia-confidential-computing
+  name: NVIDIA Confidential Computing Documentation
+  url: https://docs.nvidia.com/confidential-computing/
+  description: Guides for running AI workloads inside GPU trusted execution environments as bare metal, confidential VMs, or confidential containers, with attestation.
+  section: observability/security
+  type: docs
+  tags: [nvidia, datacenter, kubernetes]
+  added: 2026-10-27
+
+- id: apple-private-cloud-compute
+  name: Apple Private Cloud Compute Security Guide
+  url: https://security.apple.com/documentation/private-cloud-compute
+  description: Design of Apple's server-side inference service, covering stateless processing, hardware-rooted attestation, a transparency log, and a research VM.
+  section: observability/security
+  type: docs
+  tags: [apple, llm]
+  added: 2026-10-27
+
+- id: litellm-supply-chain-advisory
+  name: LiteLLM PyPI Supply-Chain Compromise Advisory (March 2026)
+  url: https://docs.litellm.ai/blog/security-update-march-2026
+  description: Maintainer advisory on two trojaned PyPI releases that stole cloud, SSH, and Kubernetes credentials via a compromised CI scanner, with indicators and fixes.
+  section: observability/security
+  type: article
+  tags: [llm, python]
+  added: 2026-10-27
+
+- id: hf-pickle-scanning
+  name: Hugging Face Pickle Scanning
+  url: https://huggingface.co/docs/hub/security-pickle
+  description: Explains why pickle-based checkpoints can run code on load, how the Hub flags risky imports in uploads, and why safetensors avoids the problem.
+  section: observability/security
+  type: docs
+  tags: [python]
+  added: 2026-10-27
+
+- id: fickling
+  name: Fickling
+  url: https://github.com/trailofbits/fickling
+  description: Trail of Bits decompiler and static analyzer for pickle and PyTorch files that flags code-executing payloads before a model is loaded.
+  section: observability/security
+  type: tool
+  tags: [python]
+  added: 2026-10-27
+
+- id: vllm-security-guide
+  name: vLLM Security Guide
+  url: https://docs.vllm.ai/en/latest/usage/security/
+  description: Hardening notes for vLLM deployments covering unauthenticated inter-node traffic, endpoints that --api-key leaves open, and trusted cache directories.
+  section: observability/security
+  type: docs
+  tags: [llm]
+  repo: vllm-project/vllm
+  added: 2026-10-27

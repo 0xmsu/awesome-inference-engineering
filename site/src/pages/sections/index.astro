@@ -1,0 +1,29 @@
+---
+import Page from '../../layouts/Page.astro';
+import Toc from '../../components/Toc.astro';
+import TagIndex from '../../components/TagIndex.astro';
+import { withBase } from '../../lib/base.ts';
+import { site } from '../../lib/data.ts';
+
+const filled = new Set(site.entries.map((e) => e.section));
+const subsections = site.sections.reduce((n, s) => n + s.subsections.filter((sub) => filled.has(sub.id)).length, 0);
+---
+
+<Page title="Sections" description="The sections of the list, from applications down to hardware, with their subsections and the tags that cut across them." current="sections">
+  <div class="col">
+    <header class="page-head">
+      <h1 class="page-title">Sections</h1>
+      <p class="label page-count">{site.sections.length} sections · {subsections} subsections</p>
+    </header>
+
+    <Toc />
+
+    <section class="part" aria-labelledby="tags-h">
+      <h2 class="part-h hang">
+        <span class="mn"></span>
+        <span class="h" id="tags-h"><a href={withBase('tags/')}>Tags</a></span>
+      </h2>
+      <TagIndex />
+    </section>
+  </div>
+</Page>

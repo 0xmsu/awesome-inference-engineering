@@ -1,0 +1,31 @@
+name: Update or remove an entry
+description: Report a renamed, archived, moved, or inaccurate entry.
+title: "Update: "
+labels: [update]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Entry name or URL
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What changed?
+      options:
+        - Renamed or moved
+        - Archived, deprecated, or unmaintained
+        - Description is inaccurate
+        - Wrong section or tags
+        - Should be removed
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details and evidence
+      description: Links to announcements, release notes, or the new location.
+    validations:
+      required: true

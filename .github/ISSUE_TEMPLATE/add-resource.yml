@@ -1,0 +1,90 @@
+name: Add a resource
+description: Suggest a tool, paper, article, course, or service for the list.
+title: "Add: "
+labels: [suggestion]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Please check [CONTRIBUTING.md](https://github.com/0xmsu/awesome-inference-engineering/blob/main/CONTRIBUTING.md) first. We prefer primary sources and actively maintained projects.
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Canonical link (repository root, paper abstract page, or official docs).
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      options:
+        - Start Here
+        - Inference Engines
+        - Distributed Serving & Orchestration
+        - Gateways & Routing
+        - Model Compression
+        - Decoding Acceleration
+        - KV Cache & Attention
+        - Scheduling & Parallelism
+        - Kernels & GPU Programming
+        - Compilers & Graph Runtimes
+        - Hardware & Accelerators
+        - Benchmarking & Capacity Planning
+        - Observability & Operations
+        - Edge, Mobile & Browser
+        - Verticals
+        - Providers & Clouds
+        - Case Studies & Engineering Blogs
+        - Learning Resources
+    validations:
+      required: true
+  - type: input
+    id: subsection
+    attributes:
+      label: Subsection (optional)
+      description: See data/taxonomy.yml, e.g. "Datacenter Engines".
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options: [tool, library, service, paper, book, course, article, docs, spec, video, podcast, benchmark, dataset, hardware, community, event, list]
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: One-sentence description
+      description: Neutral, in your own words, 20–160 characters, no superlatives.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it belong here?
+      description: What does it do that existing entries don't? Evidence of adoption or production use helps.
+    validations:
+      required: true
+  - type: dropdown
+    id: affiliation
+    attributes:
+      label: Are you affiliated with this project or company?
+      options: ["No", "Yes (explain above)"]
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched the list and this is not already included.
+          required: true
+        - label: The link works and the description is accurate as of today.
+          required: true

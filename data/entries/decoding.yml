@@ -1,0 +1,251 @@
+- id: speculative-decoding-leviathan
+  name: Fast Inference from Transformers via Speculative Decoding
+  url: https://arxiv.org/abs/2211.17192
+  description: Introduced draft-then-verify decoding with an acceptance rule that leaves the target model's output distribution unchanged.
+  section: decoding/speculative
+  type: paper
+  tags: [llm]
+  paper:
+    venue: ICML
+    year: 2023
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: speculative-sampling-chen
+  name: Accelerating Large Language Model Decoding with Speculative Sampling
+  url: https://arxiv.org/abs/2302.01318
+  description: Concurrent DeepMind derivation of draft-and-verify decoding with a modified rejection sampler, evaluated on Chinchilla 70B.
+  section: decoding/speculative
+  type: paper
+  tags: [llm]
+  paper:
+    venue: arXiv
+    year: 2023
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: specinfer
+  name: SpecInfer
+  url: https://arxiv.org/abs/2305.09781
+  description: Organizes draft candidates into a token tree and verifies all branches in one pass with tree attention, the basis of tree-based speculation.
+  section: decoding/speculative
+  type: paper
+  tags: [llm]
+  paper:
+    venue: ASPLOS
+    year: 2024
+    code: https://github.com/flexflow/flexflow-serve
+  added: 2026-10-27
+
+- id: medusa
+  name: Medusa
+  url: https://arxiv.org/abs/2401.10774
+  description: Adds extra decoding heads to the target model that propose several future tokens, checked together with tree attention, with no separate drafter.
+  section: decoding/speculative
+  type: paper
+  tags: [llm]
+  paper:
+    venue: ICML
+    year: 2024
+    code: https://github.com/FasterDecoding/Medusa
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: eagle
+  name: EAGLE
+  url: https://arxiv.org/abs/2401.15077
+  description: Drafts at the feature level, with a light head that extrapolates the target's second-to-top-layer hidden states given the sampled token.
+  section: decoding/speculative
+  type: paper
+  tags: [llm]
+  paper:
+    venue: ICML
+    year: 2024
+    code: https://github.com/SafeAILab/EAGLE
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: eagle-3
+  name: EAGLE-3
+  url: https://arxiv.org/abs/2503.01840
+  description: Predicts tokens instead of features and fuses low-, mid-, and high-layer target features via training-time test, so drafters keep improving with more data.
+  section: decoding/speculative
+  type: paper
+  tags: [llm]
+  paper:
+    venue: NeurIPS
+    year: 2025
+    code: https://github.com/SafeAILab/EAGLE
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: multi-token-prediction
+  name: Better & Faster Large Language Models via Multi-token Prediction
+  url: https://arxiv.org/abs/2404.19737
+  description: Trains several output heads on a shared trunk to predict future tokens at once; the extra heads double as self-speculative drafters.
+  section: decoding/speculative
+  type: paper
+  tags: [llm]
+  paper:
+    venue: ICML
+    year: 2024
+  added: 2026-10-27
+
+- id: suffix-decoding
+  name: SuffixDecoding
+  url: https://arxiv.org/abs/2411.04975
+  description: Model-free drafting from suffix trees over prompts and earlier outputs, aimed at repetitive agent workloads; vLLM's suffix method calls this code.
+  section: decoding/speculative
+  type: paper
+  tags: [llm, agents]
+  paper:
+    venue: NeurIPS
+    year: 2025
+    code: https://github.com/snowflakedb/ArcticInference
+  added: 2026-10-27
+
+- id: p-eagle
+  name: P-EAGLE
+  url: https://arxiv.org/abs/2602.01469
+  description: Turns EAGLE into a parallel drafter that proposes several tokens per forward pass, with a training scheme that scales to long reasoning sequences.
+  section: decoding/speculative
+  type: paper
+  tags: [llm, reasoning]
+  paper:
+    venue: NeurIPS
+    year: 2026
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: dflash
+  name: DFlash
+  url: https://arxiv.org/abs/2602.06036
+  description: Uses a small block-diffusion model, conditioned on target-model features, to draft a whole block of tokens in one pass; DFlash 2 followed.
+  section: decoding/speculative
+  type: paper
+  tags: [llm]
+  paper:
+    venue: ICML
+    year: 2026
+    code: https://github.com/z-lab/dflash
+  added: 2026-10-27
+
+- id: spec-bench
+  name: Spec-Bench
+  url: https://github.com/hemingkx/Spec-Bench
+  description: Shared harness that compares speculative decoding methods on the same model and GPU across chat, translation, summarization, QA, math, and RAG.
+  section: decoding/speculative
+  type: benchmark
+  tags: [llm, nvidia, python]
+  status: maintenance
+  added: 2026-10-27
+
+- id: specforge
+  name: SpecForge
+  url: https://github.com/sgl-project/SpecForge
+  description: SGLang team's framework for training EAGLE-3, P-EAGLE, and DFlash drafters online or offline, producing checkpoints that SGLang serves directly.
+  section: decoding/drafter-training
+  type: library
+  tags: [llm, moe, nvidia, python]
+  featured: true
+  added: 2026-10-27
+
+- id: speculators
+  name: Speculators
+  url: https://github.com/vllm-project/speculators
+  description: Generates target hidden states with vLLM, trains EAGLE-3, P-EAGLE, DFlash, and DSpark drafters, and stores them in a format vLLM loads as-is.
+  section: decoding/drafter-training
+  type: library
+  tags: [llm, moe, vlm, nvidia, python]
+  added: 2026-10-27
+
+- id: torchspec
+  name: TorchSpec
+  url: https://github.com/lightseekorg/TorchSpec
+  description: Disaggregated drafter training that streams target hidden states from inference engines to trainers through Mooncake instead of writing them to disk.
+  section: decoding/drafter-training
+  type: library
+  tags: [llm, moe, nvidia, python]
+  added: 2026-10-27
+
+- id: eagle-code
+  name: EAGLE (official code)
+  url: https://github.com/SafeAILab/EAGLE
+  description: Authors' training and inference code with released draft weights for EAGLE-1, EAGLE-2 dynamic draft trees, and EAGLE-3.
+  section: decoding/drafter-training
+  type: library
+  tags: [llm, nvidia, python]
+  license: Apache-2.0
+  added: 2026-10-27
+
+- id: xgrammar
+  name: XGrammar
+  url: https://github.com/mlc-ai/xgrammar
+  description: Grammar engine that prechecks context-independent tokens to build masks cheaply; XGrammar-2 adds tag-triggered structures for tool calls.
+  section: decoding/structured-outputs
+  type: library
+  tags: [llm, agents, cpp, python]
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: llguidance
+  name: llguidance
+  url: https://github.com/guidance-ai/llguidance
+  description: Rust engine pairing a regex-derivative lexer with an Earley parser to compute token masks per step; a backend in vLLM, SGLang, and llama.cpp.
+  section: decoding/structured-outputs
+  type: library
+  tags: [llm, rust, python]
+  added: 2026-10-27
+
+- id: outlines
+  name: Outlines
+  url: https://github.com/dottxt-ai/outlines
+  description: Python library that constrains generation to JSON Schema, regex, or grammars across local models and hosted APIs.
+  section: decoding/structured-outputs
+  type: library
+  tags: [llm, python]
+  added: 2026-10-27
+
+- id: efficient-guided-generation
+  name: Efficient Guided Generation for Large Language Models
+  url: https://arxiv.org/abs/2307.09702
+  description: Compiles regexes and grammars into finite-state machines and precomputes an index over the vocabulary so each masking step is cheap.
+  section: decoding/structured-outputs
+  type: paper
+  tags: [llm]
+  paper:
+    venue: arXiv
+    year: 2023
+    code: https://github.com/dottxt-ai/outlines-core
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: guidance
+  name: Guidance
+  url: https://github.com/guidance-ai/guidance
+  description: Python programming model that interleaves prompts, generation, and grammar constraints in one program, with llguidance as its engine.
+  section: decoding/structured-outputs
+  type: library
+  tags: [llm, python]
+  added: 2026-10-27
+
+- id: lm-format-enforcer
+  name: LM Format Enforcer
+  url: https://github.com/noamgat/lm-format-enforcer
+  description: Enforces JSON Schema or regex output by walking a character-level parser alongside the tokenizer prefix tree; also a vLLM backend.
+  section: decoding/structured-outputs
+  type: library
+  tags: [llm, python]
+  added: 2026-10-27
+
+- id: jsonschemabench
+  name: JSONSchemaBench
+  url: https://github.com/guidance-ai/jsonschemabench
+  description: Real-world JSON Schemas for comparing constrained-decoding engines on coverage, speed, and output quality, plus MaskBench for mask latency.
+  section: decoding/structured-outputs
+  type: benchmark
+  tags: [llm]
+  added: 2026-10-27

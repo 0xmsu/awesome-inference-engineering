@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://0xmsu.github.io/awesome-inference-engineering/schema/entry.schema.json",
+  "title": "Entry file",
+  "description": "A list of curated entries. Each file in data/entries/ holds the entries of one top-level section.",
+  "type": "array",
+  "items": { "$ref": "#/$defs/entry" },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "url", "description", "section", "type", "added"],
+      "properties": {
+        "id": {
+          "description": "Stable, unique slug.",
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+          "maxLength": 64
+        },
+        "name": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "url": {
+          "description": "Canonical URL (https). GitHub repo roots are enriched with metadata automatically.",
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "description": {
+          "description": "Neutral one-sentence description in our own words, 20-160 characters, ending with a period.",
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 160
+        },
+        "section": {
+          "description": "Primary placement: <h2-id>/<h3-id>, or <h2-id> for sections without subsections.",
+          "type": "string",
+          "pattern": "^[a-z0-9-]+(/[a-z0-9-]+)?$"
+        },
+        "type": {
+          "enum": [
+            "tool",
+            "library",
+            "service",
+            "paper",
+            "book",
+            "course",
+            "article",
+            "docs",
+            "spec",
+            "video",
+            "podcast",
+            "benchmark",
+            "dataset",
+            "hardware",
+            "community",
+            "event",
+            "list"
+          ]
+        },
+        "tags": {
+          "description": "Controlled vocabulary from data/tags.yml.",
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "repo": {
+          "description": "GitHub owner/name when the URL is not the repository itself (e.g. a website or a paper with code).",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+        },
+        "license": {
+          "description": "SPDX identifier, or 'proprietary'. Overrides the license reported by GitHub.",
+          "type": "string"
+        },
+        "featured": { "description": "Editor's pick (at most 3 per subsection).", "type": "boolean" },
+        "pricing": { "enum": ["oss", "freemium", "commercial"] },
+        "status": { "enum": ["active", "maintenance", "archived", "deprecated"] },
+        "successor": { "description": "id of the entry that replaces this one.", "type": "string" },
+        "maturity": { "enum": ["experimental", "stable"] },
+        "paper": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["year"],
+          "properties": {
+            "venue": { "type": "string" },
+            "year": { "type": "integer", "minimum": 1950, "maximum": 2100 },
+            "code": { "type": "string", "format": "uri", "pattern": "^https://" }
+          }
+        },
+        "via": {
+          "description": "ids from data/sources.yml where this entry was discovered (credit).",
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "verified": {
+          "description": "Date a fast-moving claim was last verified.",
+          "type": "string",
+          "format": "date"
+        },
+        "added": { "type": "string", "format": "date" },
+        "notes": { "description": "Internal curator notes; never rendered.", "type": "string" }
+      }
+    }
+  }
+}

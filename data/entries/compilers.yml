@@ -1,0 +1,189 @@
+# --- compilers/pytorch ---
+
+- id: torch-compile
+  name: torch.compile
+  url: https://docs.pytorch.org/docs/stable/torch.compiler.html
+  description: PyTorch's JIT compiler entry point, where TorchDynamo captures Python bytecode into FX graphs and TorchInductor emits Triton or C++.
+  section: compilers/pytorch
+  type: docs
+  tags: [nvidia, amd, cpu, python]
+  featured: true
+  added: 2026-10-27
+
+- id: pytorch-2-paper
+  name: "PyTorch 2: Dynamic Python Bytecode Transformation and Graph Compilation"
+  url: https://dl.acm.org/doi/10.1145/3620665.3640366
+  description: Design paper for TorchDynamo and TorchInductor, covering guarded graph capture and the code generation behind torch.compile.
+  section: compilers/pytorch
+  type: paper
+  tags: [python]
+  paper: { venue: ASPLOS, year: 2024, code: https://github.com/pytorch/pytorch }
+  added: 2026-10-27
+
+- id: torch-export
+  name: torch.export
+  url: https://docs.pytorch.org/docs/stable/export.html
+  description: Ahead-of-time capture of a PyTorch program into one sound graph with symbolic shapes, the input format for AOTInductor and other backends.
+  section: compilers/pytorch
+  type: docs
+  tags: [python]
+  added: 2026-10-27
+
+- id: aotinductor
+  name: AOTInductor
+  url: https://docs.pytorch.org/docs/stable/torch.compiler_aot_inductor.html
+  description: Compiles exported PyTorch programs into a shared library and package that load and run from C++ or Python without recompiling.
+  section: compilers/pytorch
+  type: docs
+  tags: [nvidia, cpu, cpp, python]
+  added: 2026-10-27
+
+- id: torch-tensorrt
+  name: Torch-TensorRT
+  url: https://github.com/pytorch/TensorRT
+  description: Compiler backend that lowers torch.compile or torch.export graphs to TensorRT engines and falls back to PyTorch for unsupported ops.
+  section: compilers/pytorch
+  type: tool
+  tags: [nvidia, python, cpp]
+  added: 2026-10-27
+
+- id: lightning-thunder
+  name: Lightning Thunder
+  url: https://github.com/Lightning-AI/lightning-thunder
+  description: Source-to-source PyTorch compiler that traces programs and hands regions to executors such as nvFuser, cuDNN, and torch.compile.
+  section: compilers/pytorch
+  type: tool
+  tags: [nvidia, python]
+  added: 2026-10-27
+
+# --- compilers/vendor-runtimes ---
+
+- id: tensorrt
+  name: TensorRT
+  url: https://docs.nvidia.com/deeplearning/tensorrt/latest/
+  description: NVIDIA's inference optimizer and runtime; version 11 removed weakly typed networks, implicit quantization, and IPluginV2.
+  section: compilers/vendor-runtimes
+  type: tool
+  tags: [nvidia, cuda, cpp, python]
+  repo: NVIDIA/TensorRT
+  license: proprietary
+  featured: true
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: tensorrt-rtx
+  name: TensorRT for RTX
+  url: https://docs.nvidia.com/deeplearning/tensorrt-rtx/latest/
+  description: Lightweight TensorRT variant for RTX PCs and workstations that finishes engine optimization just-in-time on the end user's GPU.
+  section: compilers/vendor-runtimes
+  type: tool
+  tags: [nvidia, local, cpp]
+  repo: NVIDIA/TensorRT-RTX
+  license: proprietary
+  added: 2026-10-27
+
+- id: onnxruntime
+  name: ONNX Runtime
+  url: https://github.com/microsoft/onnxruntime
+  description: Cross-platform runtime for ONNX graphs that applies graph optimizations and dispatches to execution providers like CUDA, TensorRT, and QNN.
+  section: compilers/vendor-runtimes
+  type: tool
+  tags: [nvidia, amd, intel, qualcomm, cpu, npu, cpp, python]
+  featured: true
+  added: 2026-10-27
+
+- id: onnxruntime-genai
+  name: ONNX Runtime GenAI
+  url: https://github.com/microsoft/onnxruntime-genai
+  description: Generation loop on top of ONNX Runtime with KV cache handling, sampling, and a model builder that exports LLMs to optimized ONNX.
+  section: compilers/vendor-runtimes
+  type: library
+  tags: [llm, npu, cpu, nvidia, local, cpp, python]
+  added: 2026-10-27
+
+- id: openvino
+  name: OpenVINO
+  url: https://github.com/openvinotoolkit/openvino
+  description: Intel's toolkit for converting, optimizing, and running models on Intel CPUs, integrated and discrete GPUs, and NPUs.
+  section: compilers/vendor-runtimes
+  type: tool
+  tags: [intel, cpu, npu, cpp, python]
+  added: 2026-10-27
+
+- id: openvino-genai
+  name: OpenVINO GenAI
+  url: https://github.com/openvinotoolkit/openvino.genai
+  description: C++ and Python pipelines for LLMs, VLMs, Whisper, and image generation on OpenVINO, with continuous batching and speculative decoding.
+  section: compilers/vendor-runtimes
+  type: library
+  tags: [llm, vlm, speech, diffusion, intel, cpu, npu, cpp, python]
+  added: 2026-10-27
+
+- id: migraphx
+  name: MIGraphX
+  url: https://github.com/ROCm/AMDMIGraphX
+  description: AMD's graph compiler for ROCm that imports ONNX models, fuses operators, and tunes kernels for Instinct and Radeon GPUs.
+  section: compilers/vendor-runtimes
+  type: tool
+  tags: [amd, cpp, python]
+  added: 2026-10-27
+
+# --- compilers/open-compilers ---
+
+- id: xla
+  name: XLA
+  url: https://github.com/openxla/xla
+  description: Compiler behind JAX and TensorFlow, also usable from PyTorch, that turns StableHLO graphs into fused code for TPUs, GPUs, and CPUs.
+  section: compilers/open-compilers
+  type: tool
+  tags: [tpu, nvidia, amd, cpu, cpp]
+  featured: true
+  added: 2026-10-27
+
+- id: apache-tvm
+  name: Apache TVM
+  url: https://github.com/apache/tvm
+  description: Python-first ML compilation framework with the Relax graph IR and a tensor-level IR, used underneath MLC LLM and WebLLM.
+  section: compilers/open-compilers
+  type: tool
+  tags: [nvidia, amd, apple, cpu, webgpu, python, cpp]
+  added: 2026-10-27
+
+- id: iree
+  name: IREE
+  url: https://github.com/iree-org/iree
+  description: MLIR-based compiler and runtime that lowers models to one IR and deploys them from datacenter GPUs down to mobile and edge devices.
+  section: compilers/open-compilers
+  type: tool
+  tags: [amd, nvidia, cpu, mobile, embedded, cpp]
+  added: 2026-10-27
+
+- id: mlir
+  name: MLIR
+  url: https://mlir.llvm.org
+  description: LLVM subproject providing reusable IR dialects and pass infrastructure that many ML compilers, Triton and IREE included, are built on.
+  section: compilers/open-compilers
+  type: library
+  tags: [cpp]
+  repo: llvm/llvm-project
+  license: Apache-2.0 WITH LLVM-exception
+  added: 2026-10-27
+
+- id: stablehlo
+  name: StableHLO
+  url: https://github.com/openxla/stablehlo
+  description: Versioned operation set that acts as the portability layer between JAX, PyTorch, and TensorFlow and compilers such as XLA and IREE.
+  section: compilers/open-compilers
+  type: spec
+  tags: [tpu, cpp]
+  added: 2026-10-27
+
+- id: luminal
+  name: Luminal
+  url: https://github.com/luminal-ai/luminal
+  description: Rust inference compiler that reduces models to a small set of primitive ops and searches over rewrites to discover fused kernels.
+  section: compilers/open-compilers
+  type: tool
+  tags: [nvidia, apple, rust]
+  maturity: experimental
+  added: 2026-10-27

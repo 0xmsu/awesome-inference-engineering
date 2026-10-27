@@ -1,0 +1,72 @@
+---
+import Page from '../layouts/Page.astro';
+import { withBase } from '../lib/base.ts';
+
+const links = [
+  { label: 'Home', href: withBase('') },
+  { label: 'Catalog', href: withBase('catalog/') },
+  { label: 'Sections', href: withBase('sections/') },
+  { label: 'Glossary', href: withBase('glossary/') },
+];
+---
+
+<Page title="Not found" description="This page does not exist." noindex>
+  <div class="col">
+    <header class="page-head hang">
+      <span class="mn nf">404</span>
+      <h1 class="page-title">Not found.</h1>
+    </header>
+    <nav class="nf-links" aria-label="Pages">
+      <ul class="nav">
+        {links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+      </ul>
+    </nav>
+    <form class="nf-search" role="search" action={withBase('catalog/')} method="get">
+      <label class="vh" for="nf-q">Search the catalog</label>
+      <input id="nf-q" name="q" type="search" placeholder="Search the catalog" autocomplete="off" spellcheck="false" />
+    </form>
+  </div>
+</Page>
+
+<style>
+  .nf {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: var(--muted);
+  }
+
+  .nf-links {
+    padding-top: 14px;
+    border-top: 1px solid var(--ink);
+  }
+
+  .nf-links .nav {
+    font-size: 1.25rem;
+  }
+
+  .nf-search {
+    margin-top: 28px;
+  }
+
+  .nf-search input {
+    width: min(100%, 24rem);
+    padding: 4px 0 6px;
+    border: 0;
+    border-bottom: 1px solid var(--muted);
+    border-radius: 0;
+    background: transparent;
+    font-size: 1.25rem;
+    font-style: italic;
+    appearance: none;
+  }
+
+  .nf-search input::placeholder {
+    color: var(--muted);
+    opacity: 1;
+  }
+
+  .nf-search input:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+  }
+</style>

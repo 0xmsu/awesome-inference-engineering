@@ -1,0 +1,458 @@
+# --- engines/datacenter ---
+
+- id: vllm
+  name: vLLM
+  url: https://github.com/vllm-project/vllm
+  description: High-throughput serving engine built on paged KV cache management, continuous batching, and a broad hardware plugin ecosystem.
+  section: engines/datacenter
+  type: tool
+  tags: [llm, vlm, nvidia, amd, tpu, cpu, datacenter, python]
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: sglang
+  name: SGLang
+  url: https://github.com/sgl-project/sglang
+  description: Serving engine with RadixAttention prefix reuse, fast constrained decoding, and large-scale expert-parallel deployments.
+  section: engines/datacenter
+  type: tool
+  tags: [llm, vlm, rl, nvidia, amd, datacenter, python]
+  via: [wafer-ai]
+  featured: true
+  added: 2026-10-27
+
+- id: tensorrt-llm
+  name: TensorRT-LLM
+  url: https://github.com/NVIDIA/TensorRT-LLM
+  description: NVIDIA's engine with a PyTorch-based runtime, in-flight batching, and kernels tuned for Hopper and Blackwell GPUs.
+  section: engines/datacenter
+  type: tool
+  tags: [llm, nvidia, datacenter, python, cpp]
+  license: Apache-2.0
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: lmdeploy
+  name: LMDeploy
+  url: https://github.com/InternLM/lmdeploy
+  description: Toolkit pairing the C++ TurboMind engine with a PyTorch engine, with weight and KV-cache quantization and Ascend support.
+  section: engines/datacenter
+  type: tool
+  tags: [llm, vlm, moe, nvidia, ascend, datacenter, python, cpp, cuda]
+  added: 2026-10-27
+
+- id: modular-max
+  name: Modular MAX
+  url: https://github.com/modular/modular
+  description: Graph compiler, Mojo kernel library, and OpenAI-compatible serving stack that targets NVIDIA and AMD GPUs from one codebase.
+  section: engines/datacenter
+  type: tool
+  tags: [llm, nvidia, amd, datacenter, mojo, python]
+  license: Apache-2.0 WITH LLVM-exception AND LicenseRef-MAX
+  added: 2026-10-27
+
+- id: deepinfer
+  name: DeepInfer
+  url: https://github.com/deepseek-ai/DeepInfer
+  description: DeepSeek's production engine, released for offline inference with expert parallelism, batch invariance, and Blackwell and Ascend support.
+  section: engines/datacenter
+  type: tool
+  tags: [llm, moe, nvidia, ascend, datacenter, python, cuda]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: tokenspeed
+  name: TokenSpeed
+  url: https://github.com/lightseekorg/tokenspeed
+  description: Engine for agentic workloads that splits a C++ state-machine control plane from a Python execution plane, with pluggable kernels.
+  section: engines/datacenter
+  type: tool
+  tags: [llm, moe, agents, nvidia, amd, datacenter, cpp, python]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: lightllm
+  name: LightLLM
+  url: https://github.com/ModelTC/LightLLM
+  description: Pure-Python serving framework with token-level KV cache management, often used as the base for serving research prototypes.
+  section: engines/datacenter
+  type: tool
+  tags: [llm, vlm, nvidia, datacenter, python]
+  added: 2026-10-27
+
+- id: rtp-llm
+  name: RTP-LLM
+  url: https://github.com/alibaba/rtp-llm
+  description: Alibaba's in-house engine behind Taobao and other services, with a C++ scheduler and prefill-decode separation.
+  section: engines/datacenter
+  type: tool
+  tags: [llm, nvidia, datacenter, cpp, python]
+  added: 2026-10-27
+
+- id: xllm
+  name: xLLM
+  url: https://github.com/xLLM-AI/xllm
+  description: Engine built at JD.com for Chinese accelerators such as Ascend, Cambricon, and Hygon, with a service layer decoupled from compute.
+  section: engines/datacenter
+  type: tool
+  tags: [llm, vlm, recsys, ascend, other-asic, datacenter, cpp]
+  added: 2026-10-27
+
+- id: fastdeploy
+  name: FastDeploy
+  url: https://github.com/PaddlePaddle/FastDeploy
+  description: PaddlePaddle-based LLM and VLM deployment toolkit from Baidu, with prefill-decode disaggregation and many Chinese accelerator backends.
+  section: engines/datacenter
+  type: tool
+  tags: [llm, vlm, moe, nvidia, other-asic, datacenter, python]
+  added: 2026-10-27
+
+- id: chitu
+  name: Chitu
+  url: https://github.com/thu-pacman/chitu
+  description: Engine from Tsinghua's PACMAN group for NVIDIA and Chinese accelerators that scales from CPU+GPU hybrid boxes to clusters.
+  section: engines/datacenter
+  type: tool
+  tags: [llm, moe, nvidia, ascend, other-asic, cpu, datacenter, python]
+  added: 2026-10-27
+
+- id: atom
+  name: ATOM
+  url: https://github.com/ROCm/ATOM
+  description: AMD's lightweight vLLM-style engine built on AITER kernels for Instinct GPUs, also usable as a vLLM plugin.
+  section: engines/datacenter
+  type: tool
+  tags: [llm, moe, amd, datacenter, python]
+  verified: 2026-10-27
+  added: 2026-10-27
+
+- id: text-generation-inference
+  name: Text Generation Inference
+  url: https://github.com/huggingface/text-generation-inference
+  description: Hugging Face's Rust and Python LLM server; archived in 2026 in favour of vLLM and SGLang.
+  section: engines/datacenter
+  type: tool
+  tags: [llm, nvidia, datacenter, rust]
+  status: archived
+  successor: vllm
+  added: 2026-10-27
+
+# --- engines/local ---
+
+- id: llama-cpp
+  name: llama.cpp
+  url: https://github.com/ggml-org/llama.cpp
+  description: Dependency-free C/C++ inference with GGUF quantization, running on CPUs, GPUs, and Apple silicon.
+  section: engines/local
+  type: tool
+  tags: [llm, vlm, cpu, nvidia, amd, apple, local, cpp]
+  featured: true
+  added: 2026-10-27
+
+- id: ollama
+  name: Ollama
+  url: https://github.com/ollama/ollama
+  description: Go tool that pulls, manages, and serves local models through a CLI and REST API, with ggml- and MLX-based backends.
+  section: engines/local
+  type: tool
+  tags: [llm, vlm, cpu, nvidia, amd, apple, local, go]
+  featured: true
+  added: 2026-10-27
+
+- id: mlx-lm
+  name: MLX LM
+  url: https://github.com/ml-explore/mlx-lm
+  description: Python package for running, quantizing, and fine-tuning LLMs on Apple silicon with MLX, including a local OpenAI-style server.
+  section: engines/local
+  type: tool
+  tags: [llm, apple, local, python]
+  featured: true
+  added: 2026-10-27
+
+- id: lm-studio
+  name: LM Studio
+  url: https://lmstudio.ai
+  description: Closed-source desktop app and local API server for Mac, Windows, and Linux that runs models on llama.cpp and MLX engines.
+  section: engines/local
+  type: tool
+  tags: [llm, vlm, apple, nvidia, amd, cpu, local]
+  repo: lmstudio-ai/lms
+  license: proprietary
+  added: 2026-10-27
+
+- id: vllm-metal
+  name: vLLM Metal
+  url: https://github.com/vllm-project/vllm-metal
+  description: Hardware plugin that runs vLLM on Apple silicon Macs, using MLX for compute and a paged varlen Metal attention kernel.
+  section: engines/local
+  type: tool
+  tags: [llm, apple, local, python]
+  added: 2026-10-27
+
+- id: exo
+  name: exo
+  url: https://github.com/exo-explore/exo
+  description: Pools Macs and other devices into one inference cluster with automatic discovery, tensor parallelism, and RDMA over Thunderbolt.
+  section: engines/local
+  type: tool
+  tags: [llm, apple, local, python]
+  added: 2026-10-27
+
+- id: jan
+  name: Jan
+  url: https://github.com/janhq/jan
+  description: Open-source desktop chat app with a bundled llama.cpp engine that runs models offline and exposes a local OpenAI-compatible server.
+  section: engines/local
+  type: tool
+  tags: [llm, cpu, nvidia, apple, local, typescript, rust]
+  license: Apache-2.0
+  added: 2026-10-27
+
+- id: localai
+  name: LocalAI
+  url: https://github.com/mudler/LocalAI
+  description: Self-hosted OpenAI-compatible API server that routes text, image, audio, and embedding requests to pluggable CPU or GPU backends.
+  section: engines/local
+  type: tool
+  tags: [llm, speech, diffusion, embeddings, cpu, nvidia, local, go]
+  added: 2026-10-27
+
+- id: llamafile
+  name: llamafile
+  url: https://github.com/mozilla-ai/llamafile
+  description: Packs model weights and a llama.cpp server into one executable that runs across operating systems and CPUs via Cosmopolitan Libc.
+  section: engines/local
+  type: tool
+  tags: [llm, cpu, local, cpp]
+  license: Apache-2.0
+  added: 2026-10-27
+
+- id: docker-model-runner
+  name: Docker Model Runner
+  url: https://github.com/docker/model-runner
+  description: Pulls models as OCI artifacts and serves them through llama.cpp, vLLM, or SGLang, inside Docker or as a standalone binary.
+  section: engines/local
+  type: tool
+  tags: [llm, nvidia, amd, apple, local, go]
+  added: 2026-10-27
+
+- id: ramalama
+  name: RamaLama
+  url: https://github.com/containers/ramalama
+  description: Runs and serves models inside rootless containers, picking a GPU-specific image for the host and treating models like images.
+  section: engines/local
+  type: tool
+  tags: [llm, nvidia, amd, apple, local, python]
+  added: 2026-10-27
+
+- id: exllamav3
+  name: ExLlamaV3
+  url: https://github.com/turboderp-org/exllamav3
+  description: Inference library for consumer NVIDIA GPUs built around the QTIP-based EXL3 format, with tensor parallelism and TabbyAPI as its server.
+  section: engines/local
+  type: library
+  tags: [llm, nvidia, local, python, cuda]
+  added: 2026-10-27
+
+- id: koboldcpp
+  name: KoboldCpp
+  url: https://github.com/LostRuins/koboldcpp
+  description: Single-executable llama.cpp distribution with a bundled web UI and compatible APIs, plus image, speech, and music generation.
+  section: engines/local
+  type: tool
+  tags: [llm, diffusion, speech, cpu, nvidia, amd, local, cpp]
+  added: 2026-10-27
+
+- id: textgen
+  name: TextGen (text-generation-webui)
+  url: https://github.com/oobabooga/textgen
+  description: Desktop app and API for local models that switches between llama.cpp, ExLlamaV3, and Transformers backends, with portable builds.
+  section: engines/local
+  type: tool
+  tags: [llm, vlm, cpu, nvidia, amd, local, python]
+  added: 2026-10-27
+
+- id: foundry-local
+  name: Foundry Local
+  url: https://github.com/microsoft/foundry-local
+  description: Microsoft's on-device runtime and SDKs that pick NPU, GPU, or CPU execution through ONNX Runtime for apps that embed local models.
+  section: engines/local
+  type: tool
+  tags: [llm, speech, npu, cpu, nvidia, local, cpp]
+  license: MIT AND LicenseRef-Proprietary
+  added: 2026-10-27
+
+- id: lemonade
+  name: Lemonade
+  url: https://github.com/lemonade-sdk/lemonade
+  description: Local server with OpenAI-, Anthropic-, and Ollama-compatible APIs, tuned by AMD engineers for Ryzen AI NPUs and Radeon GPUs.
+  section: engines/local
+  type: tool
+  tags: [llm, speech, diffusion, amd, npu, local, cpp]
+  added: 2026-10-27
+
+# --- engines/hybrid-offloading ---
+
+- id: ktransformers
+  name: KTransformers
+  url: https://github.com/kvcache-ai/ktransformers
+  description: CPU–GPU heterogeneous runtime that keeps MoE experts on AMX/AVX-512 CPU kernels and plugs into SGLang; also supports MoE fine-tuning.
+  section: engines/hybrid-offloading
+  type: tool
+  tags: [llm, moe, cpu, nvidia, local, python, cpp]
+  featured: true
+  added: 2026-10-27
+
+- id: ik-llama-cpp
+  name: ik_llama.cpp
+  url: https://github.com/ikawrakow/ik_llama.cpp
+  description: Fork of llama.cpp with extra quantization types and faster CPU and hybrid CPU/GPU paths, widely used to run large MoE models at home.
+  section: engines/hybrid-offloading
+  type: tool
+  tags: [llm, moe, cpu, nvidia, local, cpp]
+  added: 2026-10-27
+
+- id: fastllm
+  name: FastLLM
+  url: https://github.com/ztxz16/fastllm
+  description: C++ engine without a PyTorch dependency that splits dense and MoE models across GPUs, CPU NUMA nodes, and disk.
+  section: engines/hybrid-offloading
+  type: tool
+  tags: [llm, moe, cpu, nvidia, amd, local, cpp]
+  added: 2026-10-27
+
+- id: airllm
+  name: AirLLM
+  url: https://github.com/lyogavin/airllm
+  description: Streams weights layer by layer, or expert by expert for MoE, so very large models run on GPUs with only a few gigabytes of memory.
+  section: engines/hybrid-offloading
+  type: library
+  tags: [llm, moe, nvidia, apple, local, python]
+  added: 2026-10-27
+
+- id: powerinfer
+  name: PowerInfer
+  url: https://github.com/Tiiny-AI/PowerInfer
+  description: Exploits activation sparsity by keeping frequently firing neurons on the GPU and computing the rest on the CPU, from the SOSP 2024 paper.
+  section: engines/hybrid-offloading
+  type: tool
+  tags: [llm, cpu, nvidia, local, cpp]
+  status: maintenance
+  added: 2026-10-27
+
+- id: flexgen
+  name: "FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU"
+  url: https://arxiv.org/abs/2303.06865
+  description: Offloading scheduler that searches placements of weights, activations, and KV cache across GPU, CPU, and disk for batch throughput.
+  section: engines/hybrid-offloading
+  type: paper
+  tags: [llm, nvidia, cpu]
+  paper: { venue: ICML, year: 2023, code: https://github.com/FMInference/FlexLLMGen }
+  added: 2026-10-27
+
+# --- engines/language-native ---
+
+- id: mistral-rs
+  name: mistral.rs
+  url: https://github.com/EricLBuehler/mistral.rs
+  description: Rust engine with paged attention, in-situ quantization, multimodal models, and OpenAI- and Anthropic-compatible servers on CUDA and Metal.
+  section: engines/language-native
+  type: tool
+  tags: [llm, vlm, nvidia, apple, cpu, rust]
+  featured: true
+  added: 2026-10-27
+
+- id: candle
+  name: Candle
+  url: https://github.com/huggingface/candle
+  description: Hugging Face's minimalist Rust ML framework with CPU, CUDA, Metal, and WebAssembly backends and many ready-made model ports.
+  section: engines/language-native
+  type: library
+  tags: [llm, nvidia, apple, cpu, browser, rust]
+  added: 2026-10-27
+
+- id: burn
+  name: Burn
+  url: https://github.com/tracel-ai/burn
+  description: Rust deep learning framework that JIT-compiles tensor op streams with automatic fusion across CUDA, ROCm, Metal, Vulkan, and WebGPU.
+  section: engines/language-native
+  type: library
+  tags: [nvidia, amd, apple, webgpu, cpu, rust]
+  added: 2026-10-27
+
+- id: zml
+  name: ZML
+  url: https://github.com/zml/zml
+  description: Zig inference stack that compiles models through MLIR and OpenXLA for NVIDIA, AMD, Intel, TPU, and Trainium from one codebase.
+  section: engines/language-native
+  type: tool
+  tags: [llm, nvidia, amd, intel, tpu, trainium, datacenter, zig]
+  added: 2026-10-27
+
+- id: gemma-cpp
+  name: gemma.cpp
+  url: https://github.com/google/gemma.cpp
+  description: Google's compact C++ CPU engine for Gemma models, built on Highway portable SIMD and aimed at research and experimentation.
+  section: engines/language-native
+  type: tool
+  tags: [llm, vlm, cpu, cpp]
+  added: 2026-10-27
+
+- id: llama3-java
+  name: llama3.java
+  url: https://github.com/mukel/llama3.java
+  description: Single-file, dependency-free Java inference for Llama-family GGUF models, also used to test JVM and GraalVM compiler optimizations.
+  section: engines/language-native
+  type: tool
+  tags: [llm, cpu]
+  added: 2026-10-27
+
+# --- engines/minimal ---
+
+- id: nano-vllm
+  name: Nano-vLLM
+  url: https://github.com/GeeeekExplorer/nano-vllm
+  description: Readable re-implementation of a vLLM-style engine in about a thousand lines of Python, with prefix caching and CUDA graphs.
+  section: engines/minimal
+  type: tool
+  tags: [llm, nvidia, python]
+  featured: true
+  added: 2026-10-27
+
+- id: mini-sglang
+  name: Mini-SGLang
+  url: https://github.com/sgl-project/mini-sglang
+  description: Compact, type-annotated rewrite of SGLang in about 5,000 lines of Python, with radix cache, chunked prefill, and overlap scheduling.
+  section: engines/minimal
+  type: tool
+  tags: [llm, nvidia, python]
+  added: 2026-10-27
+
+- id: tiny-vllm
+  name: tiny-vllm
+  url: https://github.com/jmaczan/tiny-vllm
+  description: Course plus C++/CUDA codebase that builds a small vLLM-style server step by step, from safetensors loading to paged attention.
+  section: engines/minimal
+  type: tool
+  tags: [llm, nvidia, cpp, cuda]
+  added: 2026-10-27
+
+- id: tiny-llm
+  name: tiny-llm
+  url: https://github.com/skyzh/tiny-llm
+  description: Course that builds a Qwen serving stack on MLX from array ops up, adding KV cache, batching, and hand-written Metal kernels.
+  section: engines/minimal
+  type: course
+  tags: [llm, apple, python]
+  added: 2026-10-27
+
+- id: gpt-fast
+  name: gpt-fast
+  url: https://github.com/meta-pytorch/gpt-fast
+  description: Under 1,000 lines of PyTorch showing how torch.compile, int8/int4 weight quantization, and speculative decoding speed up generation.
+  section: engines/minimal
+  type: tool
+  tags: [llm, nvidia, python]
+  status: maintenance
+  added: 2026-10-27

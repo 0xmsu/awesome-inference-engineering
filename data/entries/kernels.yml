@@ -1,0 +1,497 @@
+# kernels/libraries
+
+- id: flash-attention
+  name: FlashAttention
+  url: https://github.com/Dao-AILab/flash-attention
+  description: IO-aware exact attention kernels; FA3 targets Hopper and FA4, written in CuTe DSL, targets Blackwell.
+  section: kernels/libraries
+  type: library
+  tags: [llm, nvidia, cuda, python]
+  featured: true
+  added: 2026-10-27
+
+- id: flashinfer
+  name: FlashInfer
+  url: https://github.com/flashinfer-ai/flashinfer
+  description: Attention, sampling, MoE, and GEMM kernels built for LLM serving, with JIT-compiled variants used as backends by vLLM and SGLang.
+  section: kernels/libraries
+  type: library
+  tags: [llm, moe, nvidia, cuda, python]
+  featured: true
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: cutlass
+  name: CUTLASS
+  url: https://github.com/NVIDIA/cutlass
+  description: NVIDIA's C++ templates and CuTe layout abstractions for GEMM-class kernels, plus the Python CuTe DSL, from Ampere through Blackwell.
+  section: kernels/libraries
+  type: library
+  tags: [nvidia, cuda, cpp, python]
+  license: BSD-3-Clause
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: deepgemm
+  name: DeepGEMM
+  url: https://github.com/deepseek-ai/DeepGEMM
+  description: DeepSeek's JIT-compiled tensor-core kernels for FP8, FP4, and BF16 GEMMs, grouped MoE GEMMs, and MoE fused with communication.
+  section: kernels/libraries
+  type: library
+  tags: [llm, moe, nvidia, cuda]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: flashmla
+  name: FlashMLA
+  url: https://github.com/deepseek-ai/FlashMLA
+  description: DeepSeek's sparse and dense MLA attention kernels with FP8 or FP4 KV cache, for Blackwell GPUs and Ascend NPUs (Hopper in older releases).
+  section: kernels/libraries
+  type: library
+  tags: [llm, nvidia, ascend, cuda]
+  added: 2026-10-27
+
+- id: transformer-engine
+  name: Transformer Engine
+  url: https://github.com/NVIDIA/TransformerEngine
+  description: Transformer layers and scaling recipes for FP8, MXFP8, and NVFP4 execution on Hopper and Blackwell, with PyTorch and JAX bindings.
+  section: kernels/libraries
+  type: library
+  tags: [llm, nvidia, cuda, python]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: thunderkittens
+  name: ThunderKittens
+  url: https://github.com/HazyResearch/ThunderKittens
+  description: Tile primitives embedded in CUDA C++ for writing attention and GEMM kernels; version 2.0 adds Blackwell, MXFP8, and NVFP4 support.
+  section: kernels/libraries
+  type: library
+  tags: [nvidia, cuda, cpp]
+  added: 2026-10-27
+
+- id: quack
+  name: QuACK
+  url: https://github.com/Dao-AILab/quack
+  description: Norm, softmax, cross-entropy, and GEMM-with-epilogue kernels written in CuTe DSL by the FlashAttention authors, for Hopper and Blackwell.
+  section: kernels/libraries
+  type: library
+  tags: [nvidia, python]
+  added: 2026-10-27
+
+- id: aiter
+  name: AITER
+  url: https://github.com/ROCm/aiter
+  description: AMD's operator library for inference and training on ROCm, combining Triton, Composable Kernel, and hand-written assembly backends.
+  section: kernels/libraries
+  type: library
+  tags: [llm, moe, amd, python, cpp]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: composable-kernel
+  name: Composable Kernel
+  url: https://rocm.docs.amd.com/projects/composable_kernel/en/latest/
+  description: AMD's C++ templates for tiled GEMM, attention, and fused operators on Instinct GPUs; the source now lives in the rocm-libraries monorepo.
+  section: kernels/libraries
+  type: library
+  tags: [amd, cpp]
+  repo: ROCm/rocm-libraries
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: hipkittens
+  name: HipKittens
+  url: https://github.com/HazyResearch/HipKittens
+  description: ThunderKittens-style tile primitives for AMD CDNA 3 and CDNA 4 GPUs, also shipped as a kernel backend inside AITER.
+  section: kernels/libraries
+  type: library
+  tags: [amd, cpp]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: sageattention
+  name: SageAttention
+  url: https://github.com/thu-ml/SageAttention
+  description: Quantized attention kernels (INT8 QK, FP8 PV, FP4 on Blackwell) that replace FlashAttention without retraining, common in video diffusion.
+  section: kernels/libraries
+  type: library
+  tags: [llm, diffusion, nvidia, cuda, python]
+  added: 2026-10-27
+
+- id: hf-kernels
+  name: Kernels (Hugging Face)
+  url: https://github.com/huggingface/kernels
+  description: Loader and build tooling that fetches precompiled, version-pinned compute kernels from the Hugging Face Hub at runtime.
+  section: kernels/libraries
+  type: library
+  tags: [python]
+  added: 2026-10-27
+
+- id: tilekernels
+  name: TileKernels
+  url: https://github.com/deepseek-ai/TileKernels
+  description: DeepSeek's TileLang kernels for MoE routing, FP8 and FP4 quantization, Engram gating, and hyper-connections on NVIDIA GPUs and Ascend NPUs.
+  section: kernels/libraries
+  type: library
+  tags: [llm, moe, nvidia, ascend, python]
+  added: 2026-10-27
+
+- id: deepselect
+  name: DeepSelect
+  url: https://github.com/deepseek-ai/DeepSelect
+  description: Top-k selection kernels for the lightning indexer in DeepSeek Sparse Attention and for token samplers, on CUDA and Ascend.
+  section: kernels/libraries
+  type: library
+  tags: [llm, nvidia, ascend, cuda]
+  added: 2026-10-27
+
+- id: marlin
+  name: Marlin
+  url: https://github.com/IST-DASLab/marlin
+  description: Reference FP16xINT4 mixed-precision GEMM kernel for small-batch decoding; maintained Marlin variants now ship inside vLLM.
+  section: kernels/libraries
+  type: library
+  tags: [llm, nvidia, cuda]
+  status: maintenance
+  added: 2026-10-27
+
+# kernels/languages
+
+- id: triton
+  name: Triton
+  url: https://github.com/triton-lang/triton
+  description: Python-embedded language and compiler for writing tiled GPU kernels, with Gluon as a lower-level layer.
+  section: kernels/languages
+  type: tool
+  tags: [nvidia, amd, python]
+  featured: true
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: cuda-programming-guide
+  name: CUDA Programming Guide
+  url: https://docs.nvidia.com/cuda/cuda-programming-guide/
+  description: NVIDIA's normative reference for the CUDA execution model, memory hierarchy, C++ language extensions, and per-architecture features.
+  section: kernels/languages
+  type: docs
+  tags: [nvidia, cuda, cpp]
+  featured: true
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: ptx-isa
+  name: PTX ISA
+  url: https://docs.nvidia.com/cuda/parallel-thread-execution/
+  description: Specification of NVIDIA's virtual instruction set and memory model, including async-copy, TMA, wgmma, and tcgen05 instructions.
+  section: kernels/languages
+  type: spec
+  tags: [nvidia, cuda]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: cuda-best-practices-guide
+  name: CUDA C++ Best Practices Guide
+  url: https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/
+  description: Official optimization workflow for CUDA C++ covering memory coalescing, shared memory, occupancy, and the assess-parallelize-optimize cycle.
+  section: kernels/languages
+  type: docs
+  tags: [nvidia, cuda, cpp]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: cute-dsl
+  name: CuTe DSL
+  url: https://docs.nvidia.com/cutlass/latest/media/docs/pythonDSL/overview.html
+  description: Python DSL exposing CUTLASS's CuTe layouts and tensor-core atoms with JIT compilation; FlashAttention-4 and QuACK are written in it.
+  section: kernels/languages
+  type: docs
+  tags: [nvidia, python]
+  repo: NVIDIA/cutlass
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: triton-tutorials
+  name: Triton Tutorials
+  url: https://triton-lang.org/main/getting-started/tutorials/index.html
+  description: Official worked kernels from vector add through fused softmax, grouped matmul, fused attention, persistent and block-scaled matmul.
+  section: kernels/languages
+  type: docs
+  tags: [nvidia, amd, python]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: gluon
+  name: Gluon
+  url: https://triton-lang.org/main/gluon/index.html
+  description: Lower-level Triton programming model that makes layouts, warp specialization, and target-specific features explicit to the kernel author.
+  section: kernels/languages
+  type: docs
+  tags: [nvidia, amd, python]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: cutile-python
+  name: cuTile Python
+  url: https://github.com/NVIDIA/cutile-python
+  description: NVIDIA's tile-level Python kernel language, compiled through the MLIR-based CUDA Tile IR rather than written as per-thread SIMT code.
+  section: kernels/languages
+  type: tool
+  tags: [nvidia, python]
+  license: Apache-2.0
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: tilelang
+  name: TileLang
+  url: https://github.com/tile-ai/tilelang
+  description: Python tile DSL built on TVM for writing GPU and accelerator kernels with explicit pipelining, used by DeepSeek's TileKernels.
+  section: kernels/languages
+  type: tool
+  tags: [nvidia, amd, python]
+  license: MIT
+  added: 2026-10-27
+
+- id: helion
+  name: Helion
+  url: https://github.com/pytorch/helion
+  description: PyTorch-native kernel DSL that lowers tiled Python code to Triton and autotunes across many implementation choices.
+  section: kernels/languages
+  type: tool
+  tags: [nvidia, amd, python]
+  added: 2026-10-27
+
+- id: pallas
+  name: Pallas
+  url: https://docs.jax.dev/en/latest/pallas/index.html
+  description: JAX extension for writing custom kernels that lower through Mosaic on TPUs and through Triton or Mosaic GPU on NVIDIA GPUs.
+  section: kernels/languages
+  type: docs
+  tags: [tpu, nvidia, python]
+  repo: jax-ml/jax
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: nki
+  name: NKI (Neuron Kernel Interface)
+  url: https://awsdocs-neuron.readthedocs-hosted.com/en/latest/nki/get-started/nki-language-guide.html
+  description: Tile-level Python kernel language for AWS Trainium and Inferentia NeuronCores with explicit control over on-chip memory and engines.
+  section: kernels/languages
+  type: docs
+  tags: [trainium, python]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: mojo-gpu
+  name: Mojo GPU Programming
+  url: https://max.modular.com/gpu/fundamentals/
+  description: Guide to writing GPU kernels in Mojo, a Python-syntax systems language that targets NVIDIA, AMD, and Apple GPUs from one codebase.
+  section: kernels/languages
+  type: docs
+  tags: [nvidia, amd, apple, mojo]
+  repo: modular/modular
+  added: 2026-10-27
+
+# kernels/megakernels
+
+- id: mirage-mpk
+  name: Mirage Persistent Kernel (MPK)
+  url: https://github.com/mirage-project/mirage
+  description: Compiler and runtime that turns a multi-GPU LLM forward pass into one persistent megakernel with SM-level task scheduling.
+  section: kernels/megakernels
+  type: tool
+  tags: [llm, nvidia, cuda, python]
+  featured: true
+  added: 2026-10-27
+
+- id: mirage-superoptimizer
+  name: "Mirage: A Multi-Level Superoptimizer for Tensor Programs"
+  url: https://arxiv.org/abs/2405.05751
+  description: Searches kernel, thread-block, and thread-level program transformations to discover fused GPU kernels that hand-written rules miss.
+  section: kernels/megakernels
+  type: paper
+  tags: [nvidia]
+  paper: { venue: OSDI, year: 2025, code: https://github.com/mirage-project/mirage }
+  added: 2026-10-27
+
+- id: hazy-megakernels
+  name: Megakernels (Hazy Research)
+  url: https://github.com/HazyResearch/Megakernels
+  description: ThunderKittens-based research megakernels that run a full Llama forward pass in a single launch to eliminate kernel-boundary stalls.
+  section: kernels/megakernels
+  type: tool
+  tags: [llm, nvidia, cuda]
+  maturity: experimental
+  added: 2026-10-27
+
+- id: tilert
+  name: TileRT
+  url: https://github.com/tile-ai/TileRT
+  description: Tile-level runtime that splits LLM operators into fine-grained tasks and overlaps compute, I/O, and communication for low-latency decoding.
+  section: kernels/megakernels
+  type: tool
+  tags: [llm, moe, nvidia, amd, python]
+  maturity: experimental
+  added: 2026-10-27
+
+# kernels/communication
+
+- id: nccl
+  name: NCCL
+  url: https://github.com/NVIDIA/nccl
+  description: NVIDIA's collective and point-to-point communication library over NVLink, PCIe, InfiniBand, and RoCE; the default PyTorch GPU backend.
+  section: kernels/communication
+  type: library
+  tags: [nvidia, cuda, cpp]
+  license: Apache-2.0 AND BSD-3-Clause
+  featured: true
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: nccl-device-api
+  name: NCCL Device API
+  url: https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/usage/deviceapi.html
+  description: Docs for NCCL's device-side API, which lets kernels issue communication over NVLink load/store, multicast, and GPU-initiated RDMA.
+  section: kernels/communication
+  type: docs
+  tags: [nvidia, cuda]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: nvshmem
+  name: NVSHMEM
+  url: https://github.com/NVIDIA/nvshmem
+  description: OpenSHMEM-style global address space for NVIDIA GPUs with one-sided puts, gets, atomics, and signals issued from inside kernels.
+  section: kernels/communication
+  type: library
+  tags: [nvidia, cuda, cpp]
+  added: 2026-10-27
+
+- id: deepep
+  name: DeepEP
+  url: https://github.com/deepseek-ai/DeepEP
+  description: Expert-parallel dispatch and combine kernels with high-throughput NVLink/RDMA modes for prefill and low-latency modes for decoding.
+  section: kernels/communication
+  type: library
+  tags: [llm, moe, nvidia, cuda]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: rccl
+  name: RCCL
+  url: https://rocm.docs.amd.com/projects/rccl/en/latest/
+  description: AMD's NCCL-compatible collective library for Instinct GPUs over Infinity Fabric and RDMA; its source now lives in the rocm-systems monorepo.
+  section: kernels/communication
+  type: library
+  tags: [amd, cpp]
+  repo: ROCm/rocm-systems
+  added: 2026-10-27
+
+- id: uccl
+  name: UCCL
+  url: https://github.com/uccl-project/uccl
+  description: GPU communication library with an NCCL/RCCL-compatible collective layer, P2P transfers for KV cache and weights, and GPU-driven EP.
+  section: kernels/communication
+  type: library
+  tags: [moe, nvidia, amd]
+  added: 2026-10-27
+
+- id: pplx-garden
+  name: pplx-garden
+  url: https://github.com/perplexityai/pplx-garden
+  description: Perplexity's RDMA transfer engine and point-to-point MoE dispatch/combine kernels for ConnectX and AWS EFA; supersedes pplx-kernels.
+  section: kernels/communication
+  type: library
+  tags: [llm, moe, nvidia, rust]
+  added: 2026-10-27
+
+- id: moonep
+  name: MoonEP
+  url: https://github.com/MoonshotAI/MoonEP
+  description: Expert-parallel communication library that equalizes per-rank token load by planning redundant experts online from router outputs.
+  section: kernels/communication
+  type: library
+  tags: [llm, moe, nvidia]
+  added: 2026-10-27
+
+- id: triton-distributed
+  name: Triton-distributed
+  url: https://github.com/ByteDance-Seed/Triton-distributed
+  description: Triton extended with communication primitives for writing kernels that overlap computation with intra- and inter-node transfers.
+  section: kernels/communication
+  type: tool
+  tags: [nvidia, amd, python]
+  added: 2026-10-27
+
+- id: mscclpp
+  name: MSCCL++
+  url: https://github.com/microsoft/mscclpp
+  description: GPU-driven communication stack with one-sided put, get, and signal primitives over NVLink, xGMI, and InfiniBand for custom collectives.
+  section: kernels/communication
+  type: library
+  tags: [nvidia, amd, cpp]
+  added: 2026-10-27
+
+# kernels/ai-generated
+
+- id: kernelbench
+  name: KernelBench
+  url: https://github.com/ScalingIntelligence/KernelBench
+  description: Stanford benchmark of PyTorch operators and models that LLMs must rewrite as correct, faster GPU kernels; introduced at ICML 2025.
+  section: kernels/ai-generated
+  type: benchmark
+  tags: [nvidia, python]
+  license: MIT
+  featured: true
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: kernelbench-verified
+  name: KernelBench-Verified
+  url: https://arxiv.org/abs/2607.16241
+  description: Shows how reward hacking inflates KernelBench speedups and adds TF32 baselines, hidden multi-distribution tests, and memory metrics.
+  section: kernels/ai-generated
+  type: paper
+  tags: [nvidia]
+  paper: { venue: arXiv, year: 2026 }
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: flashinfer-bench
+  name: FlashInfer-Bench
+  url: https://github.com/flashinfer-ai/flashinfer-bench
+  description: Kernel tasks and workloads captured from LLM serving, with tooling to swap verified AI-written kernels into SGLang and vLLM.
+  section: kernels/ai-generated
+  type: benchmark
+  tags: [llm, nvidia, python]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: sol-execbench
+  name: SOL-ExecBench
+  url: https://github.com/NVIDIA/SOL-ExecBench
+  description: Scores AI-written kernels in several DSLs against an analytical B200 speed-of-light bound, with correctness and reward-hack checks.
+  section: kernels/ai-generated
+  type: benchmark
+  tags: [nvidia, python]
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: kernelguard
+  name: KernelGuard
+  url: https://icml.cc/virtual/2026/67922
+  description: Integrity layer of static rules, physics-floor timing checks, and an LLM judge that catches reward-hacked submissions in kernel competitions.
+  section: kernels/ai-generated
+  type: paper
+  paper: { venue: ICML, year: 2026 }
+  via: [wafer-ai]
+  added: 2026-10-27
+
+- id: tritonbench
+  name: TritonBench
+  url: https://github.com/meta-pytorch/tritonbench
+  description: Operator benchmark suite that times Triton kernels against PyTorch eager, vendor libraries, and other baselines on standard inputs.
+  section: kernels/ai-generated
+  type: benchmark
+  tags: [nvidia, amd, python]
+  added: 2026-10-27

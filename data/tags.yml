@@ -1,0 +1,60 @@
+# Controlled vocabulary for the `tags` field. Groups become filters on the site.
+
+vertical:
+  label: Vertical
+  tags:
+    llm: LLM
+    reasoning: Reasoning
+    vlm: Vision-language
+    omni: Omni-modal
+    diffusion: Image & video generation
+    speech: Speech & audio
+    embeddings: Embeddings & retrieval
+    decision: Decision models
+    agents: Agents
+    rl: RL & post-training
+    robotics: Robotics
+    dllm: Diffusion LLMs
+    recsys: Recommender systems
+    classical-ml: Classical ML
+    moe: Mixture of experts
+
+hardware:
+  label: Hardware
+  tags:
+    nvidia: NVIDIA GPU
+    amd: AMD GPU
+    intel: Intel
+    tpu: Google TPU
+    trainium: AWS Trainium/Inferentia
+    apple: Apple silicon
+    qualcomm: Qualcomm
+    ascend: Huawei Ascend
+    cpu: CPU
+    npu: NPU
+    webgpu: WebGPU
+    other-asic: Other accelerators
+
+deployment:
+  label: Deployment
+  tags:
+    datacenter: Datacenter
+    kubernetes: Kubernetes
+    serverless: Serverless
+    local: Local & desktop
+    mobile: Mobile
+    browser: Browser
+    embedded: Embedded
+
+language:
+  label: Language
+  tags:
+    python: Python
+    cpp: C++
+    cuda: CUDA
+    rust: Rust
+    go: Go
+    zig: Zig
+    mojo: Mojo
+    typescript: TypeScript
+    swift: Swift
