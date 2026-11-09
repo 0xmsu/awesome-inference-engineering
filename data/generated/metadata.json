@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-02T13:28:37.600Z",
+  "generatedAt": "2026-11-09T13:52:53.102Z",
   "repos": {
     "a2aproject/a2a": {
       "nameWithOwner": "a2aproject/A2A",
-      "stars": 26392,
-      "pushedAt": "2026-11-02T10:02:27Z",
+      "stars": 26461,
+      "pushedAt": "2026-11-05T14:47:57Z",
       "createdAt": "2025-03-25T18:44:21Z",
       "archived": false,
       "isFork": false,
@@ -17,8 +17,8 @@
     },
     "agentgateway/agentgateway": {
       "nameWithOwner": "agentgateway/agentgateway",
-      "stars": 5873,
-      "pushedAt": "2026-11-02T13:16:09Z",
+      "stars": 6058,
+      "pushedAt": "2026-11-09T13:23:53Z",
       "createdAt": "2025-03-18T20:55:22Z",
       "archived": false,
       "isFork": false,
@@ -31,7 +31,7 @@
     },
     "ai-dynamo/aiconfigurator": {
       "nameWithOwner": "ai-dynamo/aiconfigurator",
-      "stars": 463,
+      "stars": 466,
       "pushedAt": "2026-10-29T04:17:46Z",
       "createdAt": "2025-07-22T04:28:47Z",
       "archived": false,
@@ -45,8 +45,8 @@
     },
     "ai-dynamo/aiperf": {
       "nameWithOwner": "ai-dynamo/aiperf",
-      "stars": 843,
-      "pushedAt": "2026-10-31T03:48:02Z",
+      "stars": 862,
+      "pushedAt": "2026-11-08T20:44:17Z",
       "createdAt": "2025-04-16T22:51:08Z",
       "archived": false,
       "isFork": false,
@@ -59,8 +59,8 @@
     },
     "ai-dynamo/aisimulate": {
       "nameWithOwner": "ai-dynamo/aisimulate",
-      "stars": 116,
-      "pushedAt": "2026-11-02T08:08:01Z",
+      "stars": 124,
+      "pushedAt": "2026-11-09T10:45:51Z",
       "createdAt": "2026-08-11T00:17:42Z",
       "archived": false,
       "isFork": false,
@@ -73,22 +73,22 @@
     },
     "ai-dynamo/dynamo": {
       "nameWithOwner": "ai-dynamo/dynamo",
-      "stars": 8424,
-      "pushedAt": "2026-11-02T13:00:00Z",
+      "stars": 8461,
+      "pushedAt": "2026-11-09T13:46:14Z",
       "createdAt": "2025-03-03T18:40:07Z",
       "archived": false,
       "isFork": false,
       "license": "NOASSERTION",
       "latestRelease": {
-        "tag": "v1.6.1",
-        "publishedAt": "2026-10-27T20:24:42Z"
+        "tag": "v1.6.2",
+        "publishedAt": "2026-11-05T22:11:38Z"
       },
       "description": "A Datacenter Scale Distributed Inference Serving Framework"
     },
     "ai-dynamo/grove": {
       "nameWithOwner": "ai-dynamo/grove",
-      "stars": 286,
-      "pushedAt": "2026-11-01T04:45:35Z",
+      "stars": 291,
+      "pushedAt": "2026-11-08T17:06:54Z",
       "createdAt": "2024-09-25T16:54:47Z",
       "archived": false,
       "isFork": false,
@@ -101,8 +101,8 @@
     },
     "ai-dynamo/modelexpress": {
       "nameWithOwner": "ai-dynamo/modelexpress",
-      "stars": 198,
-      "pushedAt": "2026-10-30T20:51:49Z",
+      "stars": 203,
+      "pushedAt": "2026-11-09T13:12:44Z",
       "createdAt": "2025-05-13T17:45:18Z",
       "archived": false,
       "isFork": false,
@@ -115,8 +115,8 @@
     },
     "ai-dynamo/nixl": {
       "nameWithOwner": "ai-dynamo/nixl",
-      "stars": 1356,
-      "pushedAt": "2026-11-02T13:00:31Z",
+      "stars": 1360,
+      "pushedAt": "2026-11-09T12:54:01Z",
       "createdAt": "2025-03-05T17:20:28Z",
       "archived": false,
       "isFork": false,
@@ -129,7 +129,7 @@
     },
     "ali-vilab/teacache": {
       "nameWithOwner": "ali-vilab/TeaCache",
-      "stars": 1387,
+      "stars": 1388,
       "pushedAt": "2025-06-08T14:29:09Z",
       "createdAt": "2024-11-27T09:34:58Z",
       "archived": false,
@@ -140,7 +140,7 @@
     },
     "alibaba/clusterdata": {
       "nameWithOwner": "alibaba/clusterdata",
-      "stars": 2248,
+      "stars": 2253,
       "pushedAt": "2026-10-13T09:47:22Z",
       "createdAt": "2017-09-05T03:16:34Z",
       "archived": false,
@@ -151,8 +151,8 @@
     },
     "alibaba/mnn": {
       "nameWithOwner": "alibaba/MNN",
-      "stars": 16337,
-      "pushedAt": "2026-11-02T07:55:11Z",
+      "stars": 16459,
+      "pushedAt": "2026-11-09T13:24:21Z",
       "createdAt": "2019-04-15T07:40:18Z",
       "archived": false,
       "isFork": false,
@@ -165,8 +165,8 @@
     },
     "alibaba/rtp-llm": {
       "nameWithOwner": "alibaba/rtp-llm",
-      "stars": 1386,
-      "pushedAt": "2026-11-02T13:04:13Z",
+      "stars": 1394,
+      "pushedAt": "2026-11-09T13:49:08Z",
       "createdAt": "2023-12-27T08:22:59Z",
       "archived": false,
       "isFork": false,
@@ -179,7 +179,7 @@
     },
     "alibaba/servegen": {
       "nameWithOwner": "alibaba/ServeGen",
-      "stars": 191,
+      "stars": 192,
       "pushedAt": "2026-08-27T03:39:15Z",
       "createdAt": "2025-06-05T01:46:38Z",
       "archived": false,
@@ -190,7 +190,7 @@
     },
     "amd/quark": {
       "nameWithOwner": "amd/Quark",
-      "stars": 187,
+      "stars": 189,
       "pushedAt": "2026-09-28T02:28:07Z",
       "createdAt": "2024-06-19T10:27:17Z",
       "archived": false,
@@ -204,7 +204,7 @@
     },
     "amd/ryzenai-sw": {
       "nameWithOwner": "amd/RyzenAI-SW",
-      "stars": 893,
+      "stars": 897,
       "pushedAt": "2026-10-31T01:28:12Z",
       "createdAt": "2023-05-12T00:10:59Z",
       "archived": false,
@@ -218,8 +218,8 @@
     },
     "apache/tvm": {
       "nameWithOwner": "apache/tvm",
-      "stars": 13887,
-      "pushedAt": "2026-10-30T14:18:26Z",
+      "stars": 13893,
+      "pushedAt": "2026-11-07T18:01:25Z",
       "createdAt": "2016-10-12T22:20:28Z",
       "archived": false,
       "isFork": false,
@@ -232,7 +232,7 @@
     },
     "apple/coremltools": {
       "nameWithOwner": "apple/coremltools",
-      "stars": 5441,
+      "stars": 5450,
       "pushedAt": "2026-09-30T16:18:33Z",
       "createdAt": "2017-06-30T07:39:02Z",
       "archived": false,
@@ -246,21 +246,21 @@
     },
     "areal-project/areal": {
       "nameWithOwner": "areal-project/AReaL",
-      "stars": 5889,
-      "pushedAt": "2026-11-02T11:55:50Z",
+      "stars": 5903,
+      "pushedAt": "2026-11-09T13:52:00Z",
       "createdAt": "2025-02-24T07:23:43Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v2.1.0",
-        "publishedAt": "2026-08-25T10:23:59Z"
+        "tag": "v2.1.1",
+        "publishedAt": "2026-11-04T06:25:40Z"
       },
       "description": "The RL Bridge for LLM-based Agent Applications. Made Simple & Flexible."
     },
     "argmaxinc/argmax-oss-swift": {
       "nameWithOwner": "argmaxinc/argmax-oss-swift",
-      "stars": 6441,
+      "stars": 6447,
       "pushedAt": "2026-10-27T23:59:52Z",
       "createdAt": "2024-01-26T07:11:52Z",
       "archived": false,
@@ -274,7 +274,7 @@
     },
     "azure/azurepublicdataset": {
       "nameWithOwner": "Azure/AzurePublicDataset",
-      "stars": 1220,
+      "stars": 1225,
       "pushedAt": "2026-10-01T21:03:50Z",
       "createdAt": "2017-08-18T17:37:45Z",
       "archived": false,
@@ -288,22 +288,22 @@
     },
     "basetenlabs/truss": {
       "nameWithOwner": "basetenlabs/truss",
-      "stars": 1227,
-      "pushedAt": "2026-10-30T00:53:13Z",
+      "stars": 1231,
+      "pushedAt": "2026-11-09T05:58:38Z",
       "createdAt": "2022-07-06T05:39:37Z",
       "archived": false,
       "isFork": false,
       "license": "MIT",
       "latestRelease": {
-        "tag": "v0.18.37",
-        "publishedAt": "2026-10-29T20:12:26Z"
+        "tag": "v0.18.38",
+        "publishedAt": "2026-11-05T16:57:12Z"
       },
       "description": "The simplest way to serve AI/ML models in production"
     },
     "bentoml/bentoml": {
       "nameWithOwner": "bentoml/BentoML",
-      "stars": 8933,
-      "pushedAt": "2026-10-29T11:04:15Z",
+      "stars": 8935,
+      "pushedAt": "2026-11-02T17:14:27Z",
       "createdAt": "2019-04-02T01:39:27Z",
       "archived": false,
       "isFork": false,
@@ -327,22 +327,22 @@
     },
     "berriai/litellm": {
       "nameWithOwner": "BerriAI/litellm",
-      "stars": 62550,
-      "pushedAt": "2026-11-02T13:25:53Z",
+      "stars": 62965,
+      "pushedAt": "2026-11-09T13:22:38Z",
       "createdAt": "2023-07-27T00:09:52Z",
       "archived": false,
       "isFork": false,
       "license": "NOASSERTION",
       "latestRelease": {
-        "tag": "v1.106.6",
-        "publishedAt": "2026-10-28T23:03:09Z"
+        "tag": "v1.108.3",
+        "publishedAt": "2026-11-07T22:29:58Z"
       },
       "description": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]"
     },
     "bitsandbytes-foundation/bitsandbytes": {
       "nameWithOwner": "bitsandbytes-foundation/bitsandbytes",
-      "stars": 8535,
-      "pushedAt": "2026-10-27T21:28:24Z",
+      "stars": 8536,
+      "pushedAt": "2026-11-02T14:36:37Z",
       "createdAt": "2021-06-04T00:10:34Z",
       "archived": false,
       "isFork": false,
@@ -355,7 +355,7 @@
     },
     "bytedance-seed/triton-distributed": {
       "nameWithOwner": "ByteDance-Seed/Triton-distributed",
-      "stars": 1576,
+      "stars": 1578,
       "pushedAt": "2026-09-18T07:07:53Z",
       "createdAt": "2025-04-02T06:57:03Z",
       "archived": false,
@@ -366,22 +366,19 @@
     },
     "cactus-compute/cactus": {
       "nameWithOwner": "cactus-compute/cactus",
-      "stars": 6171,
-      "pushedAt": "2026-09-26T03:14:00Z",
-      "createdAt": "2025-04-23T14:33:43Z",
+      "stars": 14615,
+      "pushedAt": "2026-11-07T20:40:33Z",
+      "createdAt": "2026-02-24T04:50:47Z",
       "archived": false,
       "isFork": false,
-      "license": "NOASSERTION",
-      "latestRelease": {
-        "tag": "v2.2.2",
-        "publishedAt": "2026-09-26T03:13:21Z"
-      },
-      "description": "Quantization, kernels, runtime and inference engine for mobiles, wearables, smart home and robots. "
+      "license": "Apache-2.0",
+      "latestRelease": null,
+      "description": "Sub-50mb agentic, voice and vision intelligence for consumer devices."
     },
     "cfregly/ai-performance-engineering": {
       "nameWithOwner": "cfregly/ai-performance-engineering",
-      "stars": 2134,
-      "pushedAt": "2026-11-01T23:02:59Z",
+      "stars": 2156,
+      "pushedAt": "2026-11-03T07:34:20Z",
       "createdAt": "2025-04-21T13:16:52Z",
       "archived": false,
       "isFork": false,
@@ -391,7 +388,7 @@
     },
     "cncf/k8s-ai-conformance": {
       "nameWithOwner": "cncf/k8s-ai-conformance",
-      "stars": 312,
+      "stars": 316,
       "pushedAt": "2026-10-29T21:37:33Z",
       "createdAt": "2025-05-08T19:35:33Z",
       "archived": false,
@@ -402,35 +399,35 @@
     },
     "comfy-org/comfyui": {
       "nameWithOwner": "Comfy-Org/ComfyUI",
-      "stars": 144594,
-      "pushedAt": "2026-11-02T06:18:14Z",
+      "stars": 145913,
+      "pushedAt": "2026-11-09T12:01:54Z",
       "createdAt": "2023-01-17T03:15:56Z",
       "archived": false,
       "isFork": false,
       "license": "GPL-3.0",
       "latestRelease": {
-        "tag": "v0.43.0",
-        "publishedAt": "2026-10-27T02:40:46Z"
+        "tag": "v0.44.0",
+        "publishedAt": "2026-11-04T01:12:27Z"
       },
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world."
     },
     "containers/ramalama": {
       "nameWithOwner": "containers/ramalama",
-      "stars": 3101,
-      "pushedAt": "2026-11-02T12:21:37Z",
+      "stars": 3112,
+      "pushedAt": "2026-11-09T00:05:43Z",
       "createdAt": "2024-07-24T19:09:58Z",
       "archived": false,
       "isFork": false,
       "license": "MIT",
       "latestRelease": {
-        "tag": "v0.25.0",
-        "publishedAt": "2026-09-25T12:23:34Z"
+        "tag": "v0.26.0",
+        "publishedAt": "2026-11-04T09:56:18Z"
       },
       "description": "RamaLama is an open-source developer tool that simplifies the local serving of AI models from any source and facilitates their use for inference in production, all through the familiar language of containers."
     },
     "contrastive-lm/clm": {
       "nameWithOwner": "Contrastive-LM/CLM",
-      "stars": 3145,
+      "stars": 3181,
       "pushedAt": "2026-10-05T21:13:17Z",
       "createdAt": "2026-09-23T19:29:56Z",
       "archived": false,
@@ -466,8 +463,8 @@
     },
     "dao-ailab/flash-attention": {
       "nameWithOwner": "Dao-AILab/flash-attention",
-      "stars": 25236,
-      "pushedAt": "2026-11-02T06:00:03Z",
+      "stars": 25260,
+      "pushedAt": "2026-11-09T03:16:51Z",
       "createdAt": "2022-05-19T21:22:06Z",
       "archived": false,
       "isFork": false,
@@ -480,7 +477,7 @@
     },
     "dao-ailab/quack": {
       "nameWithOwner": "Dao-AILab/quack",
-      "stars": 1189,
+      "stars": 1190,
       "pushedAt": "2026-10-30T02:52:05Z",
       "createdAt": "2025-05-20T18:34:37Z",
       "archived": false,
@@ -494,7 +491,7 @@
     },
     "deepseek-ai/deepep": {
       "nameWithOwner": "deepseek-ai/DeepEP",
-      "stars": 10402,
+      "stars": 10423,
       "pushedAt": "2026-10-21T03:50:43Z",
       "createdAt": "2025-02-17T01:33:04Z",
       "archived": false,
@@ -508,7 +505,7 @@
     },
     "deepseek-ai/deepgemm": {
       "nameWithOwner": "deepseek-ai/DeepGEMM",
-      "stars": 9142,
+      "stars": 9177,
       "pushedAt": "2026-10-20T05:07:07Z",
       "createdAt": "2025-02-13T09:09:21Z",
       "archived": false,
@@ -522,8 +519,8 @@
     },
     "deepseek-ai/deepinfer": {
       "nameWithOwner": "deepseek-ai/DeepInfer",
-      "stars": 24976,
-      "pushedAt": "2026-10-26T05:30:52Z",
+      "stars": 25723,
+      "pushedAt": "2026-11-03T07:31:59Z",
       "createdAt": "2026-10-16T07:47:23Z",
       "archived": false,
       "isFork": false,
@@ -533,7 +530,7 @@
     },
     "deepseek-ai/deepselect": {
       "nameWithOwner": "deepseek-ai/DeepSelect",
-      "stars": 527,
+      "stars": 535,
       "pushedAt": "2026-09-30T01:54:54Z",
       "createdAt": "2026-09-09T14:38:04Z",
       "archived": false,
@@ -544,7 +541,7 @@
     },
     "deepseek-ai/eplb": {
       "nameWithOwner": "deepseek-ai/EPLB",
-      "stars": 1467,
+      "stars": 1471,
       "pushedAt": "2025-03-24T09:17:10Z",
       "createdAt": "2025-02-26T10:41:00Z",
       "archived": false,
@@ -555,7 +552,7 @@
     },
     "deepseek-ai/flashmla": {
       "nameWithOwner": "deepseek-ai/FlashMLA",
-      "stars": 13234,
+      "stars": 13258,
       "pushedAt": "2026-10-27T02:50:40Z",
       "createdAt": "2025-02-21T06:31:27Z",
       "archived": false,
@@ -566,7 +563,7 @@
     },
     "deepseek-ai/open-infra-index": {
       "nameWithOwner": "deepseek-ai/open-infra-index",
-      "stars": 8121,
+      "stars": 8135,
       "pushedAt": "2025-05-15T02:00:43Z",
       "createdAt": "2025-02-21T02:29:19Z",
       "archived": false,
@@ -577,7 +574,7 @@
     },
     "deepseek-ai/tilekernels": {
       "nameWithOwner": "deepseek-ai/TileKernels",
-      "stars": 2025,
+      "stars": 2035,
       "pushedAt": "2026-10-14T05:49:06Z",
       "createdAt": "2026-04-22T05:38:31Z",
       "archived": false,
@@ -589,7 +586,7 @@
     "dmlc/treelite": {
       "nameWithOwner": "dmlc/treelite",
       "stars": 833,
-      "pushedAt": "2026-10-28T04:30:19Z",
+      "pushedAt": "2026-11-03T02:01:14Z",
       "createdAt": "2017-06-28T23:39:47Z",
       "archived": false,
       "isFork": false,
@@ -602,7 +599,7 @@
     },
     "docker/mcp-gateway": {
       "nameWithOwner": "docker/mcp-gateway",
-      "stars": 1620,
+      "stars": 1628,
       "pushedAt": "2026-10-26T18:57:04Z",
       "createdAt": "2025-04-22T09:02:03Z",
       "archived": false,
@@ -614,7 +611,7 @@
     "docker/model-runner": {
       "nameWithOwner": "docker/model-runner",
       "stars": 659,
-      "pushedAt": "2026-11-02T09:06:11Z",
+      "pushedAt": "2026-11-09T09:05:21Z",
       "createdAt": "2025-03-28T20:51:37Z",
       "archived": false,
       "isFork": false,
@@ -627,7 +624,7 @@
     },
     "dottxt-ai/outlines": {
       "nameWithOwner": "dottxt-ai/outlines",
-      "stars": 15995,
+      "stars": 16007,
       "pushedAt": "2026-09-21T17:58:05Z",
       "createdAt": "2023-03-17T16:01:18Z",
       "archived": false,
@@ -655,36 +652,36 @@
     },
     "dstackai/dstack": {
       "nameWithOwner": "dstackai/dstack",
-      "stars": 2299,
-      "pushedAt": "2026-11-02T07:46:45Z",
+      "stars": 2310,
+      "pushedAt": "2026-11-09T13:30:43Z",
       "createdAt": "2022-01-04T10:29:46Z",
       "archived": false,
       "isFork": false,
       "license": "MPL-2.0",
       "latestRelease": {
-        "tag": "0.22.6",
-        "publishedAt": "2026-10-29T12:45:30Z"
+        "tag": "0.22.7",
+        "publishedAt": "2026-11-04T10:52:05Z"
       },
       "description": "A unified orchestration layer for heterogeneous AI compute. It standardizes how to manage compute and run training and inference on GPU clouds, Kubernetes, VMs, or bare-metal clusters."
     },
     "dsx-ai-factory/model-streamer": {
       "nameWithOwner": "dsx-ai-factory/model-streamer",
-      "stars": 401,
-      "pushedAt": "2026-11-02T13:18:51Z",
+      "stars": 407,
+      "pushedAt": "2026-11-09T13:31:02Z",
       "createdAt": "2024-07-28T13:29:46Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "0.17.1",
-        "publishedAt": "2026-10-29T12:50:17Z"
+        "tag": "0.17.2",
+        "publishedAt": "2026-11-09T08:35:18Z"
       },
       "description": null
     },
     "dsx-ai-factory/run-ai": {
       "nameWithOwner": "dsx-ai-factory/run-ai",
-      "stars": 691,
-      "pushedAt": "2026-11-02T13:04:48Z",
+      "stars": 723,
+      "pushedAt": "2026-11-09T12:52:04Z",
       "createdAt": "2026-08-25T14:43:10Z",
       "archived": false,
       "isFork": false,
@@ -697,7 +694,7 @@
     },
     "dusty-nv/jetson-containers": {
       "nameWithOwner": "dusty-nv/jetson-containers",
-      "stars": 4896,
+      "stars": 4898,
       "pushedAt": "2026-11-02T06:49:44Z",
       "createdAt": "2020-04-29T19:50:58Z",
       "archived": false,
@@ -708,8 +705,8 @@
     },
     "ericlbuehler/mistral.rs": {
       "nameWithOwner": "EricLBuehler/mistral.rs",
-      "stars": 7793,
-      "pushedAt": "2026-11-02T12:21:14Z",
+      "stars": 7820,
+      "pushedAt": "2026-11-09T02:43:20Z",
       "createdAt": "2024-02-26T22:30:06Z",
       "archived": false,
       "isFork": false,
@@ -722,8 +719,8 @@
     },
     "exo-explore/exo": {
       "nameWithOwner": "exo-explore/exo",
-      "stars": 48151,
-      "pushedAt": "2026-11-02T08:33:41Z",
+      "stars": 48264,
+      "pushedAt": "2026-11-06T22:00:57Z",
       "createdAt": "2024-06-24T18:36:22Z",
       "archived": false,
       "isFork": false,
@@ -736,7 +733,7 @@
     },
     "facebookresearch/holistictraceanalysis": {
       "nameWithOwner": "facebookresearch/HolisticTraceAnalysis",
-      "stars": 564,
+      "stars": 566,
       "pushedAt": "2026-10-30T06:36:02Z",
       "createdAt": "2022-11-29T20:55:25Z",
       "archived": false,
@@ -750,8 +747,8 @@
     },
     "fla-org/flash-linear-attention": {
       "nameWithOwner": "fla-org/flash-linear-attention",
-      "stars": 6013,
-      "pushedAt": "2026-11-02T05:04:47Z",
+      "stars": 6029,
+      "pushedAt": "2026-11-07T22:15:45Z",
       "createdAt": "2023-12-20T06:50:18Z",
       "archived": false,
       "isFork": false,
@@ -764,21 +761,21 @@
     },
     "flashinfer-ai/flashinfer": {
       "nameWithOwner": "flashinfer-ai/flashinfer",
-      "stars": 6838,
-      "pushedAt": "2026-11-02T13:26:08Z",
+      "stars": 6882,
+      "pushedAt": "2026-11-09T13:50:46Z",
       "createdAt": "2023-07-22T00:29:04Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v0.7.2.post1",
-        "publishedAt": "2026-10-23T18:38:46Z"
+        "tag": "v0.7.3",
+        "publishedAt": "2026-11-04T05:57:12Z"
       },
       "description": "FlashInfer: Kernel Library for LLM Serving"
     },
     "flashinfer-ai/flashinfer-bench": {
       "nameWithOwner": "flashinfer-ai/flashinfer-bench",
-      "stars": 301,
+      "stars": 305,
       "pushedAt": "2026-09-25T20:05:00Z",
       "createdAt": "2025-06-30T23:55:54Z",
       "archived": false,
@@ -806,7 +803,7 @@
     },
     "geeeekexplorer/nano-vllm": {
       "nameWithOwner": "GeeeekExplorer/nano-vllm",
-      "stars": 16262,
+      "stars": 16374,
       "pushedAt": "2026-04-26T05:10:12Z",
       "createdAt": "2025-06-09T16:22:14Z",
       "archived": false,
@@ -817,36 +814,36 @@
     },
     "ggml-org/ggml": {
       "nameWithOwner": "ggml-org/ggml",
-      "stars": 15575,
-      "pushedAt": "2026-10-28T10:32:37Z",
+      "stars": 15600,
+      "pushedAt": "2026-11-08T13:56:26Z",
       "createdAt": "2022-09-18T17:07:19Z",
       "archived": false,
       "isFork": false,
       "license": "MIT",
       "latestRelease": {
-        "tag": "v0.28.0",
-        "publishedAt": "2026-10-28T10:32:39Z"
+        "tag": "v0.29.0",
+        "publishedAt": "2026-11-04T09:56:09Z"
       },
       "description": "Tensor library for machine learning"
     },
     "ggml-org/llama.cpp": {
       "nameWithOwner": "ggml-org/llama.cpp",
-      "stars": 133144,
-      "pushedAt": "2026-11-02T13:20:02Z",
+      "stars": 133812,
+      "pushedAt": "2026-11-09T13:48:33Z",
       "createdAt": "2023-03-10T18:58:00Z",
       "archived": false,
       "isFork": false,
       "license": "MIT",
       "latestRelease": {
-        "tag": "v0.8.0",
-        "publishedAt": "2026-10-28T12:47:51Z"
+        "tag": "v0.9.0",
+        "publishedAt": "2026-11-04T13:08:06Z"
       },
       "description": "LLM inference in C/C++"
     },
     "ggml-org/whisper.cpp": {
       "nameWithOwner": "ggml-org/whisper.cpp",
-      "stars": 54863,
-      "pushedAt": "2026-10-30T05:51:01Z",
+      "stars": 55039,
+      "pushedAt": "2026-11-09T13:02:33Z",
       "createdAt": "2022-09-25T18:26:37Z",
       "archived": false,
       "isFork": false,
@@ -859,8 +856,8 @@
     },
     "google-ai-edge/litert": {
       "nameWithOwner": "google-ai-edge/LiteRT",
-      "stars": 3558,
-      "pushedAt": "2026-11-02T12:47:53Z",
+      "stars": 3578,
+      "pushedAt": "2026-11-09T07:19:13Z",
       "createdAt": "2024-09-04T03:33:35Z",
       "archived": false,
       "isFork": false,
@@ -873,36 +870,36 @@
     },
     "google-ai-edge/litert-lm": {
       "nameWithOwner": "google-ai-edge/LiteRT-LM",
-      "stars": 6802,
-      "pushedAt": "2026-11-02T05:08:40Z",
+      "stars": 6844,
+      "pushedAt": "2026-11-09T00:13:06Z",
       "createdAt": "2025-04-14T21:00:20Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v0.19.0",
-        "publishedAt": "2026-10-30T18:27:31Z"
+        "tag": "v0.19.1",
+        "publishedAt": "2026-11-05T21:57:29Z"
       },
       "description": "LiteRT-LM is Google's production-ready, high-performance, open-source inference framework for deploying Large Language Models on edge devices."
     },
     "google-ai-edge/mediapipe": {
       "nameWithOwner": "google-ai-edge/mediapipe",
-      "stars": 37519,
-      "pushedAt": "2026-10-31T03:49:05Z",
+      "stars": 37620,
+      "pushedAt": "2026-11-07T04:30:54Z",
       "createdAt": "2019-06-13T19:16:41Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v1.2.0",
-        "publishedAt": "2026-10-28T16:05:44Z"
+        "tag": "v1.2.2",
+        "publishedAt": "2026-11-03T22:08:41Z"
       },
       "description": "Cross-platform, customizable ML solutions for live and streaming media."
     },
     "google/gemma.cpp": {
       "nameWithOwner": "google/gemma.cpp",
-      "stars": 7075,
-      "pushedAt": "2026-11-02T10:59:47Z",
+      "stars": 7081,
+      "pushedAt": "2026-11-09T10:28:14Z",
       "createdAt": "2024-02-13T04:36:03Z",
       "archived": false,
       "isFork": false,
@@ -915,8 +912,8 @@
     },
     "google/perfetto": {
       "nameWithOwner": "google/perfetto",
-      "stars": 6734,
-      "pushedAt": "2026-11-02T12:59:11Z",
+      "stars": 6774,
+      "pushedAt": "2026-11-09T13:08:37Z",
       "createdAt": "2019-12-10T10:32:44Z",
       "archived": false,
       "isFork": false,
@@ -929,7 +926,7 @@
     },
     "gpu-mode/awesomemlsys": {
       "nameWithOwner": "gpu-mode/awesomeMLSys",
-      "stars": 1149,
+      "stars": 1151,
       "pushedAt": "2026-02-19T06:25:40Z",
       "createdAt": "2024-05-06T02:54:42Z",
       "archived": false,
@@ -940,7 +937,7 @@
     },
     "gpu-mode/lectures": {
       "nameWithOwner": "gpu-mode/lectures",
-      "stars": 6945,
+      "stars": 6967,
       "pushedAt": "2026-09-09T00:33:47Z",
       "createdAt": "2024-01-20T19:28:02Z",
       "archived": false,
@@ -951,7 +948,7 @@
     },
     "gpu-mode/triton-puzzles": {
       "nameWithOwner": "gpu-mode/Triton-Puzzles",
-      "stars": 2656,
+      "stars": 2666,
       "pushedAt": "2026-04-01T04:01:16Z",
       "createdAt": "2024-03-19T00:40:03Z",
       "archived": false,
@@ -962,8 +959,8 @@
     },
     "gpustack/gpustack": {
       "nameWithOwner": "gpustack/gpustack",
-      "stars": 5947,
-      "pushedAt": "2026-11-02T09:51:25Z",
+      "stars": 6004,
+      "pushedAt": "2026-11-09T09:49:10Z",
       "createdAt": "2024-05-11T03:41:58Z",
       "archived": false,
       "isFork": false,
@@ -976,8 +973,8 @@
     },
     "gpuweb/gpuweb": {
       "nameWithOwner": "gpuweb/gpuweb",
-      "stars": 5526,
-      "pushedAt": "2026-10-30T20:49:55Z",
+      "stars": 5528,
+      "pushedAt": "2026-11-06T17:52:51Z",
       "createdAt": "2017-02-10T01:17:35Z",
       "archived": false,
       "isFork": false,
@@ -987,7 +984,7 @@
     },
     "guidance-ai/guidance": {
       "nameWithOwner": "guidance-ai/guidance",
-      "stars": 21813,
+      "stars": 21821,
       "pushedAt": "2026-05-21T17:08:04Z",
       "createdAt": "2022-11-10T18:21:45Z",
       "archived": false,
@@ -1012,8 +1009,8 @@
     },
     "guidance-ai/llguidance": {
       "nameWithOwner": "guidance-ai/llguidance",
-      "stars": 906,
-      "pushedAt": "2026-10-29T22:07:17Z",
+      "stars": 909,
+      "pushedAt": "2026-11-06T18:50:10Z",
       "createdAt": "2024-07-25T23:34:06Z",
       "archived": false,
       "isFork": false,
@@ -1023,7 +1020,7 @@
     },
     "hahnyuan/llm-viewer": {
       "nameWithOwner": "hahnyuan/LLM-Viewer",
-      "stars": 690,
+      "stars": 691,
       "pushedAt": "2024-09-11T05:51:47Z",
       "createdAt": "2024-01-07T15:43:24Z",
       "archived": false,
@@ -1034,7 +1031,7 @@
     },
     "hailo-ai/hailort": {
       "nameWithOwner": "hailo-ai/hailort",
-      "stars": 230,
+      "stars": 231,
       "pushedAt": "2026-10-28T14:20:51Z",
       "createdAt": "2022-03-02T08:59:43Z",
       "archived": false,
@@ -1048,8 +1045,8 @@
     },
     "hao-ai-lab/fastvideo": {
       "nameWithOwner": "hao-ai-lab/FastVideo",
-      "stars": 4771,
-      "pushedAt": "2026-11-02T11:44:38Z",
+      "stars": 4799,
+      "pushedAt": "2026-11-08T23:08:42Z",
       "createdAt": "2024-10-24T02:11:32Z",
       "archived": false,
       "isFork": false,
@@ -1062,8 +1059,8 @@
     },
     "harvard-edge/cs249r_book": {
       "nameWithOwner": "harvard-edge/cs249r_book",
-      "stars": 29780,
-      "pushedAt": "2026-11-02T12:32:17Z",
+      "stars": 30084,
+      "pushedAt": "2026-11-09T12:34:35Z",
       "createdAt": "2023-09-06T19:31:06Z",
       "archived": false,
       "isFork": false,
@@ -1076,7 +1073,7 @@
     },
     "hazyresearch/hipkittens": {
       "nameWithOwner": "HazyResearch/HipKittens",
-      "stars": 481,
+      "stars": 483,
       "pushedAt": "2026-10-15T08:16:07Z",
       "createdAt": "2025-10-31T19:15:23Z",
       "archived": false,
@@ -1087,7 +1084,7 @@
     },
     "hazyresearch/megakernels": {
       "nameWithOwner": "HazyResearch/Megakernels",
-      "stars": 875,
+      "stars": 878,
       "pushedAt": "2026-05-26T20:37:19Z",
       "createdAt": "2025-05-27T18:25:49Z",
       "archived": false,
@@ -1098,7 +1095,7 @@
     },
     "hazyresearch/thunderkittens": {
       "nameWithOwner": "HazyResearch/ThunderKittens",
-      "stars": 3790,
+      "stars": 3796,
       "pushedAt": "2026-09-12T19:29:53Z",
       "createdAt": "2024-03-04T13:27:35Z",
       "archived": false,
@@ -1109,7 +1106,7 @@
     },
     "hemingkx/spec-bench": {
       "nameWithOwner": "hemingkx/Spec-Bench",
-      "stars": 415,
+      "stars": 414,
       "pushedAt": "2025-04-22T02:56:41Z",
       "createdAt": "2024-02-21T01:56:26Z",
       "archived": false,
@@ -1120,8 +1117,8 @@
     },
     "higress-group/higress": {
       "nameWithOwner": "higress-group/higress",
-      "stars": 9695,
-      "pushedAt": "2026-11-02T08:43:16Z",
+      "stars": 9734,
+      "pushedAt": "2026-11-09T03:08:34Z",
       "createdAt": "2022-10-27T03:53:00Z",
       "archived": false,
       "isFork": false,
@@ -1134,7 +1131,7 @@
     },
     "hpmll/burstgpt": {
       "nameWithOwner": "HPMLL/BurstGPT",
-      "stars": 292,
+      "stars": 294,
       "pushedAt": "2026-06-30T07:03:47Z",
       "createdAt": "2024-01-30T06:27:21Z",
       "archived": false,
@@ -1148,7 +1145,7 @@
     },
     "huggingface/aienergyscore": {
       "nameWithOwner": "huggingface/AIEnergyScore",
-      "stars": 43,
+      "stars": 44,
       "pushedAt": "2025-12-02T22:01:48Z",
       "createdAt": "2024-07-22T15:11:30Z",
       "archived": false,
@@ -1159,7 +1156,7 @@
     },
     "huggingface/candle": {
       "nameWithOwner": "huggingface/candle",
-      "stars": 21266,
+      "stars": 21292,
       "pushedAt": "2026-11-02T12:05:47Z",
       "createdAt": "2023-06-19T16:06:31Z",
       "archived": false,
@@ -1170,8 +1167,8 @@
     },
     "huggingface/diffusers": {
       "nameWithOwner": "huggingface/diffusers",
-      "stars": 34851,
-      "pushedAt": "2026-11-02T06:04:58Z",
+      "stars": 34889,
+      "pushedAt": "2026-11-09T13:28:08Z",
       "createdAt": "2022-05-30T16:04:02Z",
       "archived": false,
       "isFork": false,
@@ -1199,21 +1196,21 @@
     "huggingface/kernels": {
       "nameWithOwner": "huggingface/kernels",
       "stars": 783,
-      "pushedAt": "2026-11-02T12:23:05Z",
+      "pushedAt": "2026-11-09T13:15:47Z",
       "createdAt": "2024-11-29T15:46:13Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v0.18.0",
-        "publishedAt": "2026-10-28T14:10:56Z"
+        "tag": "v0.18.2",
+        "publishedAt": "2026-11-09T13:14:56Z"
       },
       "description": "Build compute kernels and load them from the Hub."
     },
     "huggingface/sentence-transformers": {
       "nameWithOwner": "huggingface/sentence-transformers",
-      "stars": 19247,
-      "pushedAt": "2026-11-02T10:54:28Z",
+      "stars": 19269,
+      "pushedAt": "2026-11-09T11:15:21Z",
       "createdAt": "2019-07-24T10:53:51Z",
       "archived": false,
       "isFork": false,
@@ -1226,8 +1223,8 @@
     },
     "huggingface/text-embeddings-inference": {
       "nameWithOwner": "huggingface/text-embeddings-inference",
-      "stars": 5097,
-      "pushedAt": "2026-10-13T14:33:07Z",
+      "stars": 5116,
+      "pushedAt": "2026-11-06T12:14:04Z",
       "createdAt": "2023-10-13T13:36:51Z",
       "archived": false,
       "isFork": false,
@@ -1240,7 +1237,7 @@
     },
     "huggingface/text-generation-inference": {
       "nameWithOwner": "huggingface/text-generation-inference",
-      "stars": 10883,
+      "stars": 10879,
       "pushedAt": "2026-03-21T11:34:22Z",
       "createdAt": "2022-10-08T10:26:28Z",
       "archived": true,
@@ -1254,7 +1251,7 @@
     },
     "huggingface/transformers.js": {
       "nameWithOwner": "huggingface/transformers.js",
-      "stars": 16397,
+      "stars": 16409,
       "pushedAt": "2026-10-30T06:30:43Z",
       "createdAt": "2023-02-13T13:51:45Z",
       "archived": false,
@@ -1268,8 +1265,8 @@
     },
     "huggingface/xet-core": {
       "nameWithOwner": "huggingface/xet-core",
-      "stars": 624,
-      "pushedAt": "2026-10-30T16:00:20Z",
+      "stars": 626,
+      "pushedAt": "2026-11-09T13:40:06Z",
       "createdAt": "2024-09-10T20:57:29Z",
       "archived": false,
       "isFork": false,
@@ -1282,8 +1279,8 @@
     },
     "ibm/mcp-context-forge": {
       "nameWithOwner": "IBM/mcp-context-forge",
-      "stars": 4740,
-      "pushedAt": "2026-11-02T13:04:58Z",
+      "stars": 4779,
+      "pushedAt": "2026-11-09T13:48:50Z",
       "createdAt": "2025-05-08T08:16:59Z",
       "archived": false,
       "isFork": false,
@@ -1296,8 +1293,8 @@
     },
     "ikawrakow/ik_llama.cpp": {
       "nameWithOwner": "ikawrakow/ik_llama.cpp",
-      "stars": 3364,
-      "pushedAt": "2026-11-02T11:39:16Z",
+      "stars": 3379,
+      "pushedAt": "2026-11-09T10:54:53Z",
       "createdAt": "2024-06-27T06:01:47Z",
       "archived": false,
       "isFork": false,
@@ -1307,8 +1304,8 @@
     },
     "inclusionai/dinfer": {
       "nameWithOwner": "inclusionAI/dInfer",
-      "stars": 490,
-      "pushedAt": "2026-02-11T03:10:42Z",
+      "stars": 491,
+      "pushedAt": "2026-11-05T07:55:26Z",
       "createdAt": "2025-09-29T08:07:23Z",
       "archived": false,
       "isFork": false,
@@ -1321,8 +1318,8 @@
     },
     "intel/auto-round": {
       "nameWithOwner": "intel/auto-round",
-      "stars": 1697,
-      "pushedAt": "2026-11-02T10:18:03Z",
+      "stars": 1700,
+      "pushedAt": "2026-11-09T09:32:39Z",
       "createdAt": "2024-01-04T02:41:51Z",
       "archived": false,
       "isFork": false,
@@ -1335,8 +1332,8 @@
     },
     "internlm/lmdeploy": {
       "nameWithOwner": "InternLM/lmdeploy",
-      "stars": 8128,
-      "pushedAt": "2026-10-30T13:22:28Z",
+      "stars": 8136,
+      "pushedAt": "2026-11-09T13:15:17Z",
       "createdAt": "2023-06-15T12:38:06Z",
       "archived": false,
       "isFork": false,
@@ -1349,8 +1346,8 @@
     },
     "iree-org/iree": {
       "nameWithOwner": "iree-org/iree",
-      "stars": 4001,
-      "pushedAt": "2026-11-02T10:41:11Z",
+      "stars": 4009,
+      "pushedAt": "2026-11-09T13:50:35Z",
       "createdAt": "2019-09-12T20:57:39Z",
       "archived": false,
       "isFork": false,
@@ -1374,8 +1371,8 @@
     },
     "janhq/jan": {
       "nameWithOwner": "janhq/jan",
-      "stars": 45321,
-      "pushedAt": "2026-11-02T13:26:51Z",
+      "stars": 45626,
+      "pushedAt": "2026-11-09T09:11:31Z",
       "createdAt": "2023-08-17T02:17:10Z",
       "archived": false,
       "isFork": false,
@@ -1388,8 +1385,8 @@
     },
     "jax-ml/jax": {
       "nameWithOwner": "jax-ml/jax",
-      "stars": 36567,
-      "pushedAt": "2026-11-02T13:28:21Z",
+      "stars": 36586,
+      "pushedAt": "2026-11-09T13:39:39Z",
       "createdAt": "2018-10-25T21:25:02Z",
       "archived": false,
       "isFork": false,
@@ -1402,7 +1399,7 @@
     },
     "jax-ml/scaling-book": {
       "nameWithOwner": "jax-ml/scaling-book",
-      "stars": 1517,
+      "stars": 1525,
       "pushedAt": "2026-10-19T19:48:39Z",
       "createdAt": "2025-02-03T01:38:25Z",
       "archived": false,
@@ -1413,7 +1410,7 @@
     },
     "jmaczan/tiny-vllm": {
       "nameWithOwner": "jmaczan/tiny-vllm",
-      "stars": 1181,
+      "stars": 1185,
       "pushedAt": "2026-11-01T16:07:53Z",
       "createdAt": "2026-02-09T16:40:15Z",
       "archived": false,
@@ -1424,8 +1421,8 @@
     },
     "k2-fsa/sherpa-onnx": {
       "nameWithOwner": "k2-fsa/sherpa-onnx",
-      "stars": 15679,
-      "pushedAt": "2026-10-29T12:00:57Z",
+      "stars": 15841,
+      "pushedAt": "2026-11-07T05:49:03Z",
       "createdAt": "2022-09-01T05:47:33Z",
       "archived": false,
       "isFork": false,
@@ -1438,8 +1435,8 @@
     },
     "kai-scheduler/kai-scheduler": {
       "nameWithOwner": "kai-scheduler/KAI-Scheduler",
-      "stars": 1626,
-      "pushedAt": "2026-11-02T13:23:39Z",
+      "stars": 1636,
+      "pushedAt": "2026-11-09T13:50:51Z",
       "createdAt": "2025-02-26T20:39:42Z",
       "archived": false,
       "isFork": false,
@@ -1452,8 +1449,8 @@
     },
     "kaito-project/kaito": {
       "nameWithOwner": "kaito-project/kaito",
-      "stars": 1033,
-      "pushedAt": "2026-11-02T06:20:55Z",
+      "stars": 1038,
+      "pushedAt": "2026-11-09T06:09:45Z",
       "createdAt": "2023-09-09T01:53:38Z",
       "archived": false,
       "isFork": false,
@@ -1466,7 +1463,7 @@
     },
     "katanemo/plano": {
       "nameWithOwner": "katanemo/plano",
-      "stars": 7104,
+      "stars": 7113,
       "pushedAt": "2026-10-24T19:03:25Z",
       "createdAt": "2024-07-09T20:25:56Z",
       "archived": false,
@@ -1480,8 +1477,8 @@
     },
     "kedacore/keda": {
       "nameWithOwner": "kedacore/keda",
-      "stars": 10687,
-      "pushedAt": "2026-11-02T12:59:52Z",
+      "stars": 10707,
+      "pushedAt": "2026-11-09T03:52:42Z",
       "createdAt": "2019-02-13T00:12:33Z",
       "archived": false,
       "isFork": false,
@@ -1494,21 +1491,21 @@
     },
     "kitops-ml/kitops": {
       "nameWithOwner": "kitops-ml/kitops",
-      "stars": 1438,
-      "pushedAt": "2026-10-26T20:05:38Z",
+      "stars": 1440,
+      "pushedAt": "2026-11-06T21:51:59Z",
       "createdAt": "2024-02-02T18:53:31Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v1.16.0",
-        "publishedAt": "2026-09-29T17:59:11Z"
+        "tag": "v1.17.0",
+        "publishedAt": "2026-11-06T21:38:24Z"
       },
       "description": "An open source DevOps tool from the CNCF for packaging and versioning AI/ML models, datasets, code, and configuration into an OCI Artifact."
     },
     "kong/kong": {
       "nameWithOwner": "Kong/kong",
-      "stars": 44346,
+      "stars": 44368,
       "pushedAt": "2026-10-19T02:45:09Z",
       "createdAt": "2014-11-17T23:56:08Z",
       "archived": false,
@@ -1522,8 +1519,8 @@
     },
     "kserve/kserve": {
       "nameWithOwner": "kserve/kserve",
-      "stars": 6182,
-      "pushedAt": "2026-10-31T01:35:15Z",
+      "stars": 6204,
+      "pushedAt": "2026-11-06T18:36:41Z",
       "createdAt": "2019-03-27T21:14:14Z",
       "archived": false,
       "isFork": false,
@@ -1548,7 +1545,7 @@
     "kubeai-project/kubeai": {
       "nameWithOwner": "kubeai-project/kubeai",
       "stars": 1289,
-      "pushedAt": "2026-11-02T01:05:30Z",
+      "pushedAt": "2026-11-03T01:04:40Z",
       "createdAt": "2023-10-21T00:59:51Z",
       "archived": false,
       "isFork": false,
@@ -1561,22 +1558,22 @@
     },
     "kuberay-project/kuberay": {
       "nameWithOwner": "kuberay-project/kuberay",
-      "stars": 2755,
-      "pushedAt": "2026-11-02T05:55:19Z",
+      "stars": 2761,
+      "pushedAt": "2026-11-09T07:35:03Z",
       "createdAt": "2020-10-29T20:42:00Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v1.7.1",
-        "publishedAt": "2026-09-21T06:42:58Z"
+        "tag": "v1.7.2",
+        "publishedAt": "2026-11-06T02:13:23Z"
       },
       "description": "A toolkit to run Ray applications on Kubernetes"
     },
     "kubernetes-sigs/gateway-api-inference-extension": {
       "nameWithOwner": "kubernetes-sigs/gateway-api-inference-extension",
-      "stars": 799,
-      "pushedAt": "2026-10-19T21:43:43Z",
+      "stars": 801,
+      "pushedAt": "2026-11-07T13:19:46Z",
       "createdAt": "2024-08-28T20:04:10Z",
       "archived": false,
       "isFork": false,
@@ -1589,8 +1586,8 @@
     },
     "kubernetes-sigs/inference-perf": {
       "nameWithOwner": "kubernetes-sigs/inference-perf",
-      "stars": 266,
-      "pushedAt": "2026-10-30T18:17:47Z",
+      "stars": 271,
+      "pushedAt": "2026-11-06T22:43:36Z",
       "createdAt": "2025-01-14T22:26:31Z",
       "archived": false,
       "isFork": false,
@@ -1603,8 +1600,8 @@
     },
     "kubernetes-sigs/lws": {
       "nameWithOwner": "kubernetes-sigs/lws",
-      "stars": 899,
-      "pushedAt": "2026-11-02T12:41:50Z",
+      "stars": 903,
+      "pushedAt": "2026-11-07T20:57:38Z",
       "createdAt": "2024-02-22T05:07:17Z",
       "archived": false,
       "isFork": false,
@@ -1617,8 +1614,8 @@
     },
     "kvcache-ai/ktransformers": {
       "nameWithOwner": "kvcache-ai/ktransformers",
-      "stars": 19652,
-      "pushedAt": "2026-10-28T06:08:08Z",
+      "stars": 19659,
+      "pushedAt": "2026-11-06T04:49:27Z",
       "createdAt": "2024-07-26T07:18:28Z",
       "archived": false,
       "isFork": false,
@@ -1631,21 +1628,21 @@
     },
     "kvcache-ai/mooncake": {
       "nameWithOwner": "kvcache-ai/Mooncake",
-      "stars": 6952,
-      "pushedAt": "2026-11-02T12:42:41Z",
+      "stars": 7011,
+      "pushedAt": "2026-11-09T13:32:27Z",
       "createdAt": "2024-06-25T05:21:05Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v0.3.13.post1",
-        "publishedAt": "2026-08-31T09:52:42Z"
+        "tag": "v0.3.14",
+        "publishedAt": "2026-11-03T11:15:55Z"
       },
       "description": "Mooncake is the serving platform for Kimi, a leading LLM service provided by Moonshot AI."
     },
     "kyutai-labs/delayed-streams-modeling": {
       "nameWithOwner": "kyutai-labs/delayed-streams-modeling",
-      "stars": 3045,
+      "stars": 3052,
       "pushedAt": "2026-01-26T09:28:20Z",
       "createdAt": "2025-06-16T19:36:53Z",
       "archived": false,
@@ -1656,35 +1653,35 @@
     },
     "leejet/stable-diffusion.cpp": {
       "nameWithOwner": "leejet/stable-diffusion.cpp",
-      "stars": 7867,
-      "pushedAt": "2026-11-01T21:15:36Z",
+      "stars": 7954,
+      "pushedAt": "2026-11-08T19:59:12Z",
       "createdAt": "2023-08-13T07:36:51Z",
       "archived": false,
       "isFork": false,
       "license": "MIT",
       "latestRelease": {
-        "tag": "master-1039-290148d",
-        "publishedAt": "2026-11-01T21:15:36Z"
+        "tag": "master-1068-fc350be",
+        "publishedAt": "2026-11-08T19:59:12Z"
       },
       "description": "Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++"
     },
     "lemonade-sdk/lemonade": {
       "nameWithOwner": "lemonade-sdk/lemonade",
-      "stars": 6039,
-      "pushedAt": "2026-11-02T09:50:03Z",
+      "stars": 6158,
+      "pushedAt": "2026-11-09T11:55:30Z",
       "createdAt": "2025-05-15T19:17:39Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v2026.44.1",
-        "publishedAt": "2026-10-28T22:48:42Z"
+        "tag": "v2026.45.3",
+        "publishedAt": "2026-11-04T16:54:13Z"
       },
       "description": "Lemonade helps users discover and run local AI apps by serving optimized LLMs right from their own GPUs and NPUs. Join our discord: https://discord.gg/5xXzkMu8Zk"
     },
     "lightning-ai/lightning-thunder": {
       "nameWithOwner": "Lightning-AI/lightning-thunder",
-      "stars": 1476,
+      "stars": 1475,
       "pushedAt": "2026-10-12T22:06:56Z",
       "createdAt": "2024-03-18T15:30:56Z",
       "archived": false,
@@ -1698,7 +1695,7 @@
     },
     "lightning-ai/litserve": {
       "nameWithOwner": "Lightning-AI/LitServe",
-      "stars": 3980,
+      "stars": 3992,
       "pushedAt": "2026-11-01T21:03:30Z",
       "createdAt": "2023-12-12T14:45:03Z",
       "archived": false,
@@ -1712,8 +1709,8 @@
     },
     "lightseekorg/tokenspeed": {
       "nameWithOwner": "lightseekorg/tokenspeed",
-      "stars": 2848,
-      "pushedAt": "2026-11-02T13:04:17Z",
+      "stars": 2899,
+      "pushedAt": "2026-11-09T12:36:39Z",
       "createdAt": "2026-05-06T13:13:21Z",
       "archived": false,
       "isFork": false,
@@ -1726,8 +1723,8 @@
     },
     "lightseekorg/torchspec": {
       "nameWithOwner": "lightseekorg/TorchSpec",
-      "stars": 266,
-      "pushedAt": "2026-10-29T23:12:52Z",
+      "stars": 267,
+      "pushedAt": "2026-11-06T23:22:11Z",
       "createdAt": "2026-02-21T04:18:35Z",
       "archived": false,
       "isFork": false,
@@ -1737,22 +1734,22 @@
     },
     "livekit/agents": {
       "nameWithOwner": "livekit/agents",
-      "stars": 15056,
-      "pushedAt": "2026-11-02T12:00:34Z",
+      "stars": 15155,
+      "pushedAt": "2026-11-09T10:56:08Z",
       "createdAt": "2023-10-19T23:00:55Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "livekit-agents@1.8.10",
-        "publishedAt": "2026-10-29T17:00:12Z"
+        "tag": "livekit-agents@1.8.11",
+        "publishedAt": "2026-11-05T19:48:29Z"
       },
       "description": "A framework for building realtime voice AI agents 🤖🎙️📹 "
     },
     "llm-d/llm-d": {
       "nameWithOwner": "llm-d/llm-d",
-      "stars": 5127,
-      "pushedAt": "2026-11-02T13:24:05Z",
+      "stars": 5191,
+      "pushedAt": "2026-11-09T12:20:02Z",
       "createdAt": "2025-04-29T18:28:17Z",
       "archived": false,
       "isFork": false,
@@ -1766,7 +1763,7 @@
     "llm-d/llm-d-autoscaling": {
       "nameWithOwner": "llm-d/llm-d-autoscaling",
       "stars": 61,
-      "pushedAt": "2026-10-13T14:13:30Z",
+      "pushedAt": "2026-11-09T10:36:42Z",
       "createdAt": "2025-06-02T15:34:38Z",
       "archived": false,
       "isFork": false,
@@ -1779,8 +1776,8 @@
     },
     "llm-d/llm-d-router": {
       "nameWithOwner": "llm-d/llm-d-router",
-      "stars": 441,
-      "pushedAt": "2026-11-02T13:09:28Z",
+      "stars": 466,
+      "pushedAt": "2026-11-09T13:35:40Z",
       "createdAt": "2025-05-05T12:45:33Z",
       "archived": false,
       "isFork": false,
@@ -1807,35 +1804,35 @@
     },
     "llvm/llvm-project": {
       "nameWithOwner": "llvm/llvm-project",
-      "stars": 41298,
-      "pushedAt": "2026-11-02T13:27:52Z",
+      "stars": 41376,
+      "pushedAt": "2026-11-09T13:51:42Z",
       "createdAt": "2016-12-07T09:39:33Z",
       "archived": false,
       "isFork": false,
       "license": "NOASSERTION",
       "latestRelease": {
-        "tag": "llvmorg-23.1.4",
-        "publishedAt": "2026-10-20T13:03:13Z"
+        "tag": "llvmorg-23.1.5",
+        "publishedAt": "2026-11-03T21:35:47Z"
       },
       "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies."
     },
     "lmcache/lmcache": {
       "nameWithOwner": "LMCache/LMCache",
-      "stars": 12260,
-      "pushedAt": "2026-11-02T12:49:05Z",
+      "stars": 12312,
+      "pushedAt": "2026-11-09T12:32:14Z",
       "createdAt": "2024-05-28T21:06:04Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v0.5.6",
-        "publishedAt": "2026-10-14T22:21:42Z"
+        "tag": "v0.5.7",
+        "publishedAt": "2026-11-05T23:41:01Z"
       },
       "description": "LMCache: Supercharge Your LLM with the Fastest KV Cache Layer"
     },
     "lmstudio-ai/lms": {
       "nameWithOwner": "lmstudio-ai/lms",
-      "stars": 5400,
+      "stars": 5412,
       "pushedAt": "2026-10-14T20:50:03Z",
       "createdAt": "2024-04-15T15:04:41Z",
       "archived": false,
@@ -1846,8 +1843,8 @@
     },
     "lostruins/koboldcpp": {
       "nameWithOwner": "LostRuins/koboldcpp",
-      "stars": 12133,
-      "pushedAt": "2026-11-02T10:29:04Z",
+      "stars": 12198,
+      "pushedAt": "2026-11-09T10:17:56Z",
       "createdAt": "2023-03-16T02:07:02Z",
       "archived": false,
       "isFork": true,
@@ -1860,8 +1857,8 @@
     },
     "luminal-ai/luminal": {
       "nameWithOwner": "luminal-ai/luminal",
-      "stars": 3038,
-      "pushedAt": "2026-10-30T22:56:53Z",
+      "stars": 3046,
+      "pushedAt": "2026-11-09T13:51:15Z",
       "createdAt": "2023-07-18T22:02:51Z",
       "archived": false,
       "isFork": false,
@@ -1874,8 +1871,8 @@
     },
     "lyogavin/airllm": {
       "nameWithOwner": "lyogavin/airllm",
-      "stars": 41583,
-      "pushedAt": "2026-11-02T06:18:22Z",
+      "stars": 42043,
+      "pushedAt": "2026-11-09T06:18:21Z",
       "createdAt": "2023-06-12T16:28:41Z",
       "archived": false,
       "isFork": false,
@@ -1888,21 +1885,21 @@
     },
     "maximhq/bifrost": {
       "nameWithOwner": "maximhq/bifrost",
-      "stars": 9291,
-      "pushedAt": "2026-11-02T13:15:22Z",
+      "stars": 9448,
+      "pushedAt": "2026-11-09T13:47:56Z",
       "createdAt": "2025-03-19T07:21:26Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "helm-chart-v2.1.47",
-        "publishedAt": "2026-11-02T04:58:18Z"
+        "tag": "ent-v2.5.0-base",
+        "publishedAt": "2026-11-06T18:38:12Z"
       },
       "description": "Open-source, high-performance AI gateway that works as your LLM gateway, MCP gateway and agent gateway. One OpenAI-compatible API for 10,000+ models, with failover, load balancing, semantic caching, virtual keys, budgets and MCP Code Mode. Works with any SDK or agent and adds under 200µs of overhead at 5k RPS."
     },
     "meta-pytorch/gpt-fast": {
       "nameWithOwner": "meta-pytorch/gpt-fast",
-      "stars": 6267,
+      "stars": 6269,
       "pushedAt": "2025-08-22T23:37:14Z",
       "createdAt": "2023-10-17T05:30:32Z",
       "archived": false,
@@ -1913,8 +1910,8 @@
     },
     "meta-pytorch/torchrec": {
       "nameWithOwner": "meta-pytorch/torchrec",
-      "stars": 2623,
-      "pushedAt": "2026-11-02T10:41:28Z",
+      "stars": 2624,
+      "pushedAt": "2026-11-07T17:48:45Z",
       "createdAt": "2021-07-12T23:15:48Z",
       "archived": false,
       "isFork": false,
@@ -1928,7 +1925,7 @@
     "meta-pytorch/tritonbench": {
       "nameWithOwner": "meta-pytorch/tritonbench",
       "stars": 375,
-      "pushedAt": "2026-10-30T17:14:04Z",
+      "pushedAt": "2026-11-05T19:12:06Z",
       "createdAt": "2024-10-07T21:06:25Z",
       "archived": false,
       "isFork": false,
@@ -1938,8 +1935,8 @@
     },
     "meta-recsys/generative-recommenders": {
       "nameWithOwner": "meta-recsys/generative-recommenders",
-      "stars": 2018,
-      "pushedAt": "2026-10-31T08:20:11Z",
+      "stars": 2023,
+      "pushedAt": "2026-11-05T21:36:35Z",
       "createdAt": "2024-04-08T06:03:18Z",
       "archived": false,
       "isFork": false,
@@ -1949,8 +1946,8 @@
     },
     "michaelfeil/infinity": {
       "nameWithOwner": "michaelfeil/infinity",
-      "stars": 2981,
-      "pushedAt": "2026-11-02T12:58:14Z",
+      "stars": 2984,
+      "pushedAt": "2026-11-09T08:56:23Z",
       "createdAt": "2023-10-11T17:53:38Z",
       "archived": false,
       "isFork": false,
@@ -1963,7 +1960,7 @@
     },
     "microsoft/bitnet": {
       "nameWithOwner": "microsoft/BitNet",
-      "stars": 41444,
+      "stars": 41513,
       "pushedAt": "2026-07-27T05:52:06Z",
       "createdAt": "2024-08-05T09:07:38Z",
       "archived": false,
@@ -1974,22 +1971,22 @@
     },
     "microsoft/foundry-local": {
       "nameWithOwner": "microsoft/foundry-local",
-      "stars": 2605,
-      "pushedAt": "2026-11-02T08:03:08Z",
+      "stars": 2645,
+      "pushedAt": "2026-11-09T09:03:23Z",
       "createdAt": "2025-03-31T21:51:15Z",
       "archived": false,
       "isFork": false,
       "license": "NOASSERTION",
       "latestRelease": {
-        "tag": "v2.2.1",
-        "publishedAt": "2026-10-23T09:17:33Z"
+        "tag": "v2.3.1",
+        "publishedAt": "2026-11-03T00:07:20Z"
       },
       "description": null
     },
     "microsoft/mcp-gateway": {
       "nameWithOwner": "microsoft/mcp-gateway",
-      "stars": 903,
-      "pushedAt": "2026-10-30T12:44:49Z",
+      "stars": 913,
+      "pushedAt": "2026-11-04T22:50:05Z",
       "createdAt": "2025-05-14T18:16:35Z",
       "archived": false,
       "isFork": false,
@@ -1999,7 +1996,7 @@
     },
     "microsoft/minference": {
       "nameWithOwner": "microsoft/MInference",
-      "stars": 1231,
+      "stars": 1232,
       "pushedAt": "2026-10-10T03:06:32Z",
       "createdAt": "2024-05-22T12:59:47Z",
       "archived": false,
@@ -2013,8 +2010,8 @@
     },
     "microsoft/mscclpp": {
       "nameWithOwner": "microsoft/mscclpp",
-      "stars": 569,
-      "pushedAt": "2026-11-02T00:35:04Z",
+      "stars": 570,
+      "pushedAt": "2026-11-09T04:33:25Z",
       "createdAt": "2023-02-02T00:24:25Z",
       "archived": false,
       "isFork": false,
@@ -2027,8 +2024,8 @@
     },
     "microsoft/onnxruntime": {
       "nameWithOwner": "microsoft/onnxruntime",
-      "stars": 22206,
-      "pushedAt": "2026-11-02T10:12:11Z",
+      "stars": 22268,
+      "pushedAt": "2026-11-09T13:38:04Z",
       "createdAt": "2018-11-10T02:22:53Z",
       "archived": false,
       "isFork": false,
@@ -2041,21 +2038,21 @@
     },
     "microsoft/onnxruntime-genai": {
       "nameWithOwner": "microsoft/onnxruntime-genai",
-      "stars": 1148,
-      "pushedAt": "2026-11-02T11:35:12Z",
+      "stars": 1154,
+      "pushedAt": "2026-11-09T13:37:25Z",
       "createdAt": "2023-11-13T20:37:15Z",
       "archived": false,
       "isFork": false,
       "license": "MIT",
       "latestRelease": {
-        "tag": "v0.17.0",
-        "publishedAt": "2026-09-28T06:15:36Z"
+        "tag": "v0.19.0",
+        "publishedAt": "2026-11-04T05:46:06Z"
       },
       "description": "Generative AI with ONNX Runtime"
     },
     "microsoft/vidur": {
       "nameWithOwner": "microsoft/vidur",
-      "stars": 719,
+      "stars": 721,
       "pushedAt": "2026-08-24T12:47:47Z",
       "createdAt": "2023-11-02T10:05:21Z",
       "archived": false,
@@ -2066,8 +2063,8 @@
     },
     "mirage-project/mirage": {
       "nameWithOwner": "mirage-project/mirage",
-      "stars": 2590,
-      "pushedAt": "2026-10-31T22:50:39Z",
+      "stars": 2607,
+      "pushedAt": "2026-11-06T01:39:44Z",
       "createdAt": "2024-05-08T04:14:42Z",
       "archived": false,
       "isFork": false,
@@ -2094,8 +2091,8 @@
     },
     "ml-energy/zeus": {
       "nameWithOwner": "ml-energy/zeus",
-      "stars": 385,
-      "pushedAt": "2026-11-01T03:28:07Z",
+      "stars": 386,
+      "pushedAt": "2026-11-04T19:41:44Z",
       "createdAt": "2022-08-13T21:20:30Z",
       "archived": false,
       "isFork": false,
@@ -2108,8 +2105,8 @@
     },
     "ml-explore/mlx": {
       "nameWithOwner": "ml-explore/mlx",
-      "stars": 29024,
-      "pushedAt": "2026-11-02T10:31:39Z",
+      "stars": 29101,
+      "pushedAt": "2026-11-06T23:36:17Z",
       "createdAt": "2023-11-28T23:33:45Z",
       "archived": false,
       "isFork": false,
@@ -2122,8 +2119,8 @@
     },
     "ml-explore/mlx-lm": {
       "nameWithOwner": "ml-explore/mlx-lm",
-      "stars": 7533,
-      "pushedAt": "2026-10-30T09:28:48Z",
+      "stars": 7600,
+      "pushedAt": "2026-11-06T11:23:26Z",
       "createdAt": "2025-03-11T16:38:30Z",
       "archived": false,
       "isFork": false,
@@ -2136,8 +2133,8 @@
     },
     "ml-explore/mlx-swift": {
       "nameWithOwner": "ml-explore/mlx-swift",
-      "stars": 2075,
-      "pushedAt": "2026-10-30T22:24:46Z",
+      "stars": 2084,
+      "pushedAt": "2026-11-06T23:46:53Z",
       "createdAt": "2023-12-12T19:58:52Z",
       "archived": false,
       "isFork": false,
@@ -2150,8 +2147,8 @@
     },
     "ml-explore/mlx-swift-lm": {
       "nameWithOwner": "ml-explore/mlx-swift-lm",
-      "stars": 853,
-      "pushedAt": "2026-10-30T22:15:43Z",
+      "stars": 860,
+      "pushedAt": "2026-11-06T21:05:44Z",
       "createdAt": "2025-10-02T00:45:12Z",
       "archived": false,
       "isFork": false,
@@ -2164,7 +2161,7 @@
     },
     "mlc-ai/mlc-llm": {
       "nameWithOwner": "mlc-ai/mlc-llm",
-      "stars": 23294,
+      "stars": 23315,
       "pushedAt": "2026-10-30T09:07:12Z",
       "createdAt": "2023-04-29T01:59:25Z",
       "archived": false,
@@ -2175,8 +2172,8 @@
     },
     "mlc-ai/web-llm": {
       "nameWithOwner": "mlc-ai/web-llm",
-      "stars": 19348,
-      "pushedAt": "2026-11-02T11:13:46Z",
+      "stars": 19366,
+      "pushedAt": "2026-11-03T00:15:38Z",
       "createdAt": "2023-04-13T18:11:59Z",
       "archived": false,
       "isFork": false,
@@ -2189,8 +2186,8 @@
     },
     "mlc-ai/xgrammar": {
       "nameWithOwner": "mlc-ai/xgrammar",
-      "stars": 1988,
-      "pushedAt": "2026-10-29T14:45:55Z",
+      "stars": 1998,
+      "pushedAt": "2026-11-07T04:22:00Z",
       "createdAt": "2024-06-28T06:34:27Z",
       "archived": false,
       "isFork": false,
@@ -2204,7 +2201,7 @@
     "mlcommons/endpoints": {
       "nameWithOwner": "mlcommons/endpoints",
       "stars": 27,
-      "pushedAt": "2026-11-02T10:04:30Z",
+      "pushedAt": "2026-11-06T15:36:56Z",
       "createdAt": "2025-10-30T00:21:12Z",
       "archived": false,
       "isFork": false,
@@ -2214,8 +2211,8 @@
     },
     "mlcommons/inference": {
       "nameWithOwner": "mlcommons/inference",
-      "stars": 1656,
-      "pushedAt": "2026-09-16T13:09:34Z",
+      "stars": 1657,
+      "pushedAt": "2026-11-06T17:07:16Z",
       "createdAt": "2018-09-13T01:53:57Z",
       "archived": false,
       "isFork": false,
@@ -2228,7 +2225,7 @@
     },
     "mlcommons/mlperf_client": {
       "nameWithOwner": "mlcommons/mlperf_client",
-      "stars": 95,
+      "stars": 96,
       "pushedAt": "2026-09-24T15:18:33Z",
       "createdAt": "2024-12-10T23:29:41Z",
       "archived": false,
@@ -2242,22 +2239,22 @@
     },
     "modelcloud/gptqmodel": {
       "nameWithOwner": "ModelCloud/GPTQModel",
-      "stars": 1284,
-      "pushedAt": "2026-11-02T11:24:53Z",
+      "stars": 1289,
+      "pushedAt": "2026-11-09T13:35:35Z",
       "createdAt": "2024-06-17T06:45:30Z",
       "archived": false,
       "isFork": false,
       "license": "NOASSERTION",
       "latestRelease": {
-        "tag": "v7.7.0",
-        "publishedAt": "2026-10-23T10:42:30Z"
+        "tag": "v7.10.0",
+        "publishedAt": "2026-11-06T10:33:13Z"
       },
-      "description": "LLM model quantization (compression) toolkit with HW acceleration support for Nvidia, AMD, Intel GPU and Intel/AMD/Apple CPU via HF, vLLM, and SGLang."
+      "description": "LLM model quantization (compression) toolkit with HW acceleration support for Nvidia (CUDA), AMD (ROCm), Intel GPU (XPU), Huawei Ascent (NPU), and Intel/AMD/Apple CPU via HF, vLLM, and SGLang."
     },
     "modelcontextprotocol/modelcontextprotocol": {
       "nameWithOwner": "modelcontextprotocol/modelcontextprotocol",
-      "stars": 9589,
-      "pushedAt": "2026-11-02T08:09:46Z",
+      "stars": 9652,
+      "pushedAt": "2026-11-09T13:31:05Z",
       "createdAt": "2024-09-24T20:26:52Z",
       "archived": false,
       "isFork": false,
@@ -2270,7 +2267,7 @@
     },
     "modelpack/model-spec": {
       "nameWithOwner": "modelpack/model-spec",
-      "stars": 239,
+      "stars": 240,
       "pushedAt": "2026-10-13T19:39:17Z",
       "createdAt": "2024-08-28T12:14:18Z",
       "archived": false,
@@ -2281,8 +2278,8 @@
     },
     "modeltc/lightllm": {
       "nameWithOwner": "ModelTC/LightLLM",
-      "stars": 4349,
-      "pushedAt": "2026-11-02T12:22:59Z",
+      "stars": 4358,
+      "pushedAt": "2026-11-09T09:28:02Z",
       "createdAt": "2023-07-22T08:11:15Z",
       "archived": false,
       "isFork": false,
@@ -2295,22 +2292,22 @@
     },
     "modeltc/lightx2v": {
       "nameWithOwner": "ModelTC/LightX2V",
-      "stars": 2985,
-      "pushedAt": "2026-11-02T13:27:45Z",
+      "stars": 2996,
+      "pushedAt": "2026-11-09T11:29:51Z",
       "createdAt": "2025-03-24T10:27:56Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "0.6.0",
-        "publishedAt": "2026-10-12T09:13:16Z"
+        "tag": "0.6.1",
+        "publishedAt": "2026-11-09T08:50:47Z"
       },
       "description": "Lightweight Image Video Action Generation Inference Framework"
     },
     "modular/modular": {
       "nameWithOwner": "modular/modular",
-      "stars": 30090,
-      "pushedAt": "2026-11-02T07:35:16Z",
+      "stars": 30122,
+      "pushedAt": "2026-11-08T07:10:15Z",
       "createdAt": "2023-04-28T22:17:24Z",
       "archived": false,
       "isFork": false,
@@ -2323,8 +2320,8 @@
     },
     "modular/mojo-gpu-puzzles": {
       "nameWithOwner": "modular/mojo-gpu-puzzles",
-      "stars": 431,
-      "pushedAt": "2026-11-01T07:27:39Z",
+      "stars": 438,
+      "pushedAt": "2026-11-08T07:04:43Z",
       "createdAt": "2025-04-30T20:48:00Z",
       "archived": false,
       "isFork": false,
@@ -2348,8 +2345,8 @@
     },
     "moonshotai/kimi-vendor-verifier": {
       "nameWithOwner": "MoonshotAI/Kimi-Vendor-Verifier",
-      "stars": 191,
-      "pushedAt": "2026-09-17T09:09:22Z",
+      "stars": 200,
+      "pushedAt": "2026-11-07T13:16:29Z",
       "createdAt": "2026-01-02T05:43:58Z",
       "archived": false,
       "isFork": false,
@@ -2359,7 +2356,7 @@
     },
     "moonshotai/moonep": {
       "nameWithOwner": "MoonshotAI/MoonEP",
-      "stars": 1197,
+      "stars": 1204,
       "pushedAt": "2026-10-12T09:18:17Z",
       "createdAt": "2026-07-24T09:07:21Z",
       "archived": false,
@@ -2370,8 +2367,8 @@
     },
     "mozilla-ai/llamafile": {
       "nameWithOwner": "mozilla-ai/llamafile",
-      "stars": 26545,
-      "pushedAt": "2026-10-12T00:26:41Z",
+      "stars": 26590,
+      "pushedAt": "2026-11-09T00:15:20Z",
       "createdAt": "2023-09-10T21:12:32Z",
       "archived": false,
       "isFork": false,
@@ -2384,8 +2381,8 @@
     },
     "mudler/localai": {
       "nameWithOwner": "mudler/LocalAI",
-      "stars": 50133,
-      "pushedAt": "2026-11-02T13:22:37Z",
+      "stars": 50272,
+      "pushedAt": "2026-11-09T12:32:48Z",
       "createdAt": "2023-03-18T22:58:02Z",
       "archived": false,
       "isFork": false,
@@ -2398,7 +2395,7 @@
     },
     "mukel/llama3.java": {
       "nameWithOwner": "mukel/llama3.java",
-      "stars": 817,
+      "stars": 816,
       "pushedAt": "2026-04-24T16:38:39Z",
       "createdAt": "2024-04-25T09:09:02Z",
       "archived": false,
@@ -2409,29 +2406,29 @@
     },
     "nandhakishorm/laya": {
       "nameWithOwner": "NandhaKishorM/laya",
-      "stars": 34862,
-      "pushedAt": "2026-11-01T21:25:53Z",
+      "stars": 35275,
+      "pushedAt": "2026-11-09T06:53:58Z",
       "createdAt": "2026-09-18T04:46:33Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v0.4.21",
-        "publishedAt": "2026-11-01T20:50:28Z"
+        "tag": "v0.4.30",
+        "publishedAt": "2026-11-08T18:27:19Z"
       },
       "description": "Non-autoregressive System 1 decision engine. Typed choice, score and yes/no decisions over any text in a single forward pass, in 100+ languages, with a router that picks the right checkpoint per request."
     },
     "ngxson/wllama": {
       "nameWithOwner": "ngxson/wllama",
-      "stars": 1358,
-      "pushedAt": "2026-10-20T14:57:56Z",
+      "stars": 1373,
+      "pushedAt": "2026-11-08T22:00:11Z",
       "createdAt": "2024-03-13T23:18:27Z",
       "archived": false,
       "isFork": false,
       "license": "MIT",
       "latestRelease": {
-        "tag": "3.8.1",
-        "publishedAt": "2026-10-02T14:20:41Z"
+        "tag": "3.13.0",
+        "publishedAt": "2026-11-08T22:00:11Z"
       },
       "description": "WebAssembly binding for llama.cpp - Enabling on-browser LLM inference"
     },
@@ -2451,8 +2448,8 @@
     },
     "novasky-ai/skyrl": {
       "nameWithOwner": "NovaSky-AI/SkyRL",
-      "stars": 2488,
-      "pushedAt": "2026-11-01T06:23:07Z",
+      "stars": 2510,
+      "pushedAt": "2026-11-09T06:47:51Z",
       "createdAt": "2025-04-22T17:33:31Z",
       "archived": false,
       "isFork": false,
@@ -2465,7 +2462,7 @@
     },
     "nunchux-ai/nunchaku": {
       "nameWithOwner": "nunchux-ai/nunchaku",
-      "stars": 3963,
+      "stars": 3965,
       "pushedAt": "2026-09-06T23:07:26Z",
       "createdAt": "2024-11-06T07:24:40Z",
       "archived": false,
@@ -2479,22 +2476,22 @@
     },
     "nvidia-nemo/rl": {
       "nameWithOwner": "NVIDIA-NeMo/RL",
-      "stars": 2101,
-      "pushedAt": "2026-11-02T13:12:59Z",
+      "stars": 2119,
+      "pushedAt": "2026-11-09T13:47:40Z",
       "createdAt": "2025-03-16T17:43:21Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v0.7.0",
-        "publishedAt": "2026-07-29T04:31:13Z"
+        "tag": "v0.8.0",
+        "publishedAt": "2026-11-06T22:22:08Z"
       },
       "description": "Scalable toolkit for efficient model reinforcement"
     },
     "nvidia-nemo/switchyard": {
       "nameWithOwner": "NVIDIA-NeMo/Switchyard",
-      "stars": 3476,
-      "pushedAt": "2026-10-31T19:15:10Z",
+      "stars": 3502,
+      "pushedAt": "2026-11-07T18:53:11Z",
       "createdAt": "2026-05-19T19:06:33Z",
       "archived": false,
       "isFork": false,
@@ -2507,8 +2504,8 @@
     },
     "nvidia/accelerated-computing-hub": {
       "nameWithOwner": "NVIDIA/accelerated-computing-hub",
-      "stars": 2153,
-      "pushedAt": "2026-11-01T15:28:47Z",
+      "stars": 2209,
+      "pushedAt": "2026-11-05T19:10:03Z",
       "createdAt": "2024-06-14T21:57:48Z",
       "archived": false,
       "isFork": false,
@@ -2518,7 +2515,7 @@
     },
     "nvidia/cuda-checkpoint": {
       "nameWithOwner": "NVIDIA/cuda-checkpoint",
-      "stars": 505,
+      "stars": 506,
       "pushedAt": "2026-07-06T17:32:59Z",
       "createdAt": "2024-04-17T19:45:28Z",
       "archived": false,
@@ -2529,8 +2526,8 @@
     },
     "nvidia/cutile-python": {
       "nameWithOwner": "NVIDIA/cutile-python",
-      "stars": 2165,
-      "pushedAt": "2026-11-01T11:17:10Z",
+      "stars": 2167,
+      "pushedAt": "2026-11-07T12:13:32Z",
       "createdAt": "2025-06-13T22:07:17Z",
       "archived": false,
       "isFork": false,
@@ -2540,8 +2537,8 @@
     },
     "nvidia/cutlass": {
       "nameWithOwner": "NVIDIA/cutlass",
-      "stars": 10685,
-      "pushedAt": "2026-10-28T20:27:07Z",
+      "stars": 10714,
+      "pushedAt": "2026-11-06T09:43:14Z",
       "createdAt": "2017-11-30T00:11:24Z",
       "archived": false,
       "isFork": false,
@@ -2554,7 +2551,7 @@
     },
     "nvidia/dcgm": {
       "nameWithOwner": "NVIDIA/DCGM",
-      "stars": 812,
+      "stars": 813,
       "pushedAt": "2026-10-27T01:47:22Z",
       "createdAt": "2020-12-15T23:12:04Z",
       "archived": false,
@@ -2565,22 +2562,22 @@
     },
     "nvidia/dcgm-exporter": {
       "nameWithOwner": "NVIDIA/dcgm-exporter",
-      "stars": 1921,
-      "pushedAt": "2026-09-18T21:23:51Z",
+      "stars": 1924,
+      "pushedAt": "2026-11-06T18:51:30Z",
       "createdAt": "2021-08-11T15:40:37Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "4.8.4",
-        "publishedAt": "2026-09-18T20:35:04Z"
+        "tag": "4.9.0",
+        "publishedAt": "2026-11-06T18:50:01Z"
       },
-      "description": "NVIDIA GPU metrics exporter for Prometheus leveraging DCGM"
+      "description": "NVIDIA hardware telemetry for Prometheus."
     },
     "nvidia/isaac-gr00t": {
       "nameWithOwner": "NVIDIA/Isaac-GR00T",
-      "stars": 8303,
-      "pushedAt": "2026-10-29T23:46:21Z",
+      "stars": 8335,
+      "pushedAt": "2026-11-08T17:27:10Z",
       "createdAt": "2025-03-11T18:34:24Z",
       "archived": false,
       "isFork": false,
@@ -2593,8 +2590,8 @@
     },
     "nvidia/kvpress": {
       "nameWithOwner": "NVIDIA/kvpress",
-      "stars": 1241,
-      "pushedAt": "2026-10-27T12:56:37Z",
+      "stars": 1247,
+      "pushedAt": "2026-11-09T11:19:10Z",
       "createdAt": "2024-11-06T19:23:20Z",
       "archived": false,
       "isFork": false,
@@ -2607,8 +2604,8 @@
     },
     "nvidia/model-optimizer": {
       "nameWithOwner": "NVIDIA/Model-Optimizer",
-      "stars": 5493,
-      "pushedAt": "2026-11-02T11:06:47Z",
+      "stars": 5567,
+      "pushedAt": "2026-11-09T13:48:41Z",
       "createdAt": "2024-04-23T19:00:54Z",
       "archived": false,
       "isFork": false,
@@ -2621,8 +2618,8 @@
     },
     "nvidia/nccl": {
       "nameWithOwner": "NVIDIA/nccl",
-      "stars": 5201,
-      "pushedAt": "2026-11-02T03:26:49Z",
+      "stars": 5216,
+      "pushedAt": "2026-11-03T20:31:33Z",
       "createdAt": "2015-11-14T00:12:04Z",
       "archived": false,
       "isFork": false,
@@ -2650,7 +2647,7 @@
     "nvidia/recsys-examples": {
       "nameWithOwner": "NVIDIA/recsys-examples",
       "stars": 360,
-      "pushedAt": "2026-11-02T03:17:03Z",
+      "pushedAt": "2026-11-09T10:18:13Z",
       "createdAt": "2025-04-18T20:57:50Z",
       "archived": false,
       "isFork": false,
@@ -2663,7 +2660,7 @@
     },
     "nvidia/sol-execbench": {
       "nameWithOwner": "NVIDIA/SOL-ExecBench",
-      "stars": 330,
+      "stars": 336,
       "pushedAt": "2026-07-15T17:31:33Z",
       "createdAt": "2026-03-04T23:59:22Z",
       "archived": false,
@@ -2674,8 +2671,8 @@
     },
     "nvidia/tensorrt": {
       "nameWithOwner": "NVIDIA/TensorRT",
-      "stars": 13428,
-      "pushedAt": "2026-10-09T17:55:04Z",
+      "stars": 13437,
+      "pushedAt": "2026-11-05T18:43:29Z",
       "createdAt": "2019-05-02T22:02:08Z",
       "archived": false,
       "isFork": false,
@@ -2688,8 +2685,8 @@
     },
     "nvidia/tensorrt-edge-llm": {
       "nameWithOwner": "NVIDIA/TensorRT-Edge-LLM",
-      "stars": 607,
-      "pushedAt": "2026-10-31T00:01:49Z",
+      "stars": 625,
+      "pushedAt": "2026-11-06T19:26:32Z",
       "createdAt": "2025-10-02T17:40:17Z",
       "archived": false,
       "isFork": false,
@@ -2702,8 +2699,8 @@
     },
     "nvidia/tensorrt-llm": {
       "nameWithOwner": "NVIDIA/TensorRT-LLM",
-      "stars": 14991,
-      "pushedAt": "2026-11-02T12:39:52Z",
+      "stars": 15046,
+      "pushedAt": "2026-11-09T13:28:47Z",
       "createdAt": "2023-08-16T17:14:27Z",
       "archived": false,
       "isFork": false,
@@ -2731,7 +2728,7 @@
     "nvidia/transformerengine": {
       "nameWithOwner": "NVIDIA/TransformerEngine",
       "stars": 3599,
-      "pushedAt": "2026-10-31T07:27:31Z",
+      "pushedAt": "2026-11-07T06:29:44Z",
       "createdAt": "2022-09-20T15:20:26Z",
       "archived": false,
       "isFork": false,
@@ -2744,7 +2741,7 @@
     },
     "nvlabs/fast-dllm": {
       "nameWithOwner": "NVlabs/Fast-dLLM",
-      "stars": 1114,
+      "stars": 1116,
       "pushedAt": "2026-05-30T10:38:26Z",
       "createdAt": "2025-05-27T14:46:09Z",
       "archived": false,
@@ -2755,22 +2752,22 @@
     },
     "ollama/ollama": {
       "nameWithOwner": "ollama/ollama",
-      "stars": 185658,
-      "pushedAt": "2026-11-02T05:30:37Z",
+      "stars": 186449,
+      "pushedAt": "2026-11-08T00:36:55Z",
       "createdAt": "2023-06-26T19:39:32Z",
       "archived": false,
       "isFork": false,
       "license": "MIT",
       "latestRelease": {
-        "tag": "v0.40.13",
-        "publishedAt": "2026-10-28T19:55:04Z"
+        "tag": "v0.40.15",
+        "publishedAt": "2026-11-03T22:52:31Z"
       },
       "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
     },
     "ome-projects/ome": {
       "nameWithOwner": "ome-projects/ome",
-      "stars": 522,
-      "pushedAt": "2026-10-31T13:33:04Z",
+      "stars": 524,
+      "pushedAt": "2026-11-08T16:51:22Z",
       "createdAt": "2025-05-19T19:30:46Z",
       "archived": false,
       "isFork": false,
@@ -2783,8 +2780,8 @@
     },
     "onnx/onnx": {
       "nameWithOwner": "onnx/onnx",
-      "stars": 21638,
-      "pushedAt": "2026-11-02T00:38:55Z",
+      "stars": 21667,
+      "pushedAt": "2026-11-08T18:27:36Z",
       "createdAt": "2017-09-07T04:53:45Z",
       "archived": false,
       "isFork": false,
@@ -2797,7 +2794,7 @@
     },
     "oobabooga/textgen": {
       "nameWithOwner": "oobabooga/textgen",
-      "stars": 47730,
+      "stars": 47732,
       "pushedAt": "2026-08-17T17:38:16Z",
       "createdAt": "2022-12-21T04:17:37Z",
       "archived": false,
@@ -2811,8 +2808,8 @@
     },
     "open-telemetry/semantic-conventions-genai": {
       "nameWithOwner": "open-telemetry/semantic-conventions-genai",
-      "stars": 506,
-      "pushedAt": "2026-11-02T05:48:30Z",
+      "stars": 528,
+      "pushedAt": "2026-11-09T03:46:58Z",
       "createdAt": "2026-05-05T03:08:44Z",
       "archived": false,
       "isFork": false,
@@ -2833,8 +2830,8 @@
     },
     "openai/openai-openapi": {
       "nameWithOwner": "openai/openai-openapi",
-      "stars": 2565,
-      "pushedAt": "2026-10-31T17:43:08Z",
+      "stars": 2578,
+      "pushedAt": "2026-11-09T05:04:49Z",
       "createdAt": "2021-12-14T22:18:57Z",
       "archived": false,
       "isFork": false,
@@ -2847,7 +2844,7 @@
     },
     "openresponses/openresponses": {
       "nameWithOwner": "openresponses/openresponses",
-      "stars": 1188,
+      "stars": 1203,
       "pushedAt": "2026-10-29T17:17:06Z",
       "createdAt": "2026-01-15T01:53:57Z",
       "archived": false,
@@ -2858,8 +2855,8 @@
     },
     "openvinotoolkit/model_server": {
       "nameWithOwner": "openvinotoolkit/model_server",
-      "stars": 953,
-      "pushedAt": "2026-11-02T13:23:27Z",
+      "stars": 956,
+      "pushedAt": "2026-11-09T13:42:26Z",
       "createdAt": "2018-09-26T16:40:53Z",
       "archived": false,
       "isFork": false,
@@ -2872,8 +2869,8 @@
     },
     "openvinotoolkit/openvino": {
       "nameWithOwner": "openvinotoolkit/openvino",
-      "stars": 11105,
-      "pushedAt": "2026-11-02T12:14:39Z",
+      "stars": 11136,
+      "pushedAt": "2026-11-09T13:33:56Z",
       "createdAt": "2018-10-15T10:54:40Z",
       "archived": false,
       "isFork": false,
@@ -2886,8 +2883,8 @@
     },
     "openvinotoolkit/openvino.genai": {
       "nameWithOwner": "openvinotoolkit/openvino.genai",
-      "stars": 608,
-      "pushedAt": "2026-11-02T13:09:32Z",
+      "stars": 615,
+      "pushedAt": "2026-11-09T07:22:02Z",
       "createdAt": "2023-10-16T13:38:16Z",
       "archived": false,
       "isFork": false,
@@ -2900,8 +2897,8 @@
     },
     "openxla/stablehlo": {
       "nameWithOwner": "openxla/stablehlo",
-      "stars": 717,
-      "pushedAt": "2026-11-02T11:36:43Z",
+      "stars": 720,
+      "pushedAt": "2026-11-09T13:45:58Z",
       "createdAt": "2022-08-04T00:19:31Z",
       "archived": false,
       "isFork": false,
@@ -2914,8 +2911,8 @@
     },
     "openxla/xla": {
       "nameWithOwner": "openxla/xla",
-      "stars": 4645,
-      "pushedAt": "2026-11-02T13:15:36Z",
+      "stars": 4660,
+      "pushedAt": "2026-11-09T13:52:20Z",
       "createdAt": "2022-08-09T15:30:01Z",
       "archived": false,
       "isFork": false,
@@ -2925,8 +2922,8 @@
     },
     "ovg-project/kvcached": {
       "nameWithOwner": "ovg-project/kvcached",
-      "stars": 2019,
-      "pushedAt": "2026-10-30T18:21:13Z",
+      "stars": 2036,
+      "pushedAt": "2026-11-08T22:41:41Z",
       "createdAt": "2025-05-27T17:34:02Z",
       "archived": false,
       "isFork": false,
@@ -2939,7 +2936,7 @@
     },
     "paddlepaddle/fastdeploy": {
       "nameWithOwner": "PaddlePaddle/FastDeploy",
-      "stars": 3723,
+      "stars": 3725,
       "pushedAt": "2026-09-24T14:17:31Z",
       "createdAt": "2022-06-27T10:22:10Z",
       "archived": false,
@@ -2953,7 +2950,7 @@
     },
     "perplexityai/pplx-garden": {
       "nameWithOwner": "perplexityai/pplx-garden",
-      "stars": 954,
+      "stars": 953,
       "pushedAt": "2026-09-02T22:40:14Z",
       "createdAt": "2025-11-04T17:35:34Z",
       "archived": false,
@@ -2964,7 +2961,7 @@
     },
     "physical-intelligence/openpi": {
       "nameWithOwner": "Physical-Intelligence/openpi",
-      "stars": 14501,
+      "stars": 14595,
       "pushedAt": "2026-08-24T16:27:13Z",
       "createdAt": "2024-10-21T15:23:28Z",
       "archived": false,
@@ -2975,8 +2972,8 @@
     },
     "pipecat-ai/pipecat": {
       "nameWithOwner": "pipecat-ai/pipecat",
-      "stars": 16998,
-      "pushedAt": "2026-11-02T03:32:17Z",
+      "stars": 17150,
+      "pushedAt": "2026-11-09T02:57:16Z",
       "createdAt": "2023-12-27T12:59:00Z",
       "archived": false,
       "isFork": false,
@@ -2989,7 +2986,7 @@
     },
     "portkey-ai/gateway": {
       "nameWithOwner": "Portkey-AI/gateway",
-      "stars": 13301,
+      "stars": 13353,
       "pushedAt": "2026-05-25T13:54:51Z",
       "createdAt": "2023-08-23T11:52:47Z",
       "archived": false,
@@ -3003,8 +3000,8 @@
     },
     "primeintellect-ai/prime-rl": {
       "nameWithOwner": "PrimeIntellect-ai/prime-rl",
-      "stars": 2212,
-      "pushedAt": "2026-11-02T01:39:49Z",
+      "stars": 2229,
+      "pushedAt": "2026-11-09T13:39:53Z",
       "createdAt": "2025-02-18T02:56:56Z",
       "archived": false,
       "isFork": false,
@@ -3017,36 +3014,36 @@
     },
     "project-hami/hami": {
       "nameWithOwner": "Project-HAMi/HAMi",
-      "stars": 5087,
-      "pushedAt": "2026-10-31T16:59:16Z",
+      "stars": 4970,
+      "pushedAt": "2026-11-09T02:33:40Z",
       "createdAt": "2021-09-14T11:51:49Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v2.10.0",
-        "publishedAt": "2026-08-21T06:31:16Z"
+        "tag": "v2.11.0",
+        "publishedAt": "2026-11-04T03:39:14Z"
       },
       "description": "Heterogeneous GPU Sharing on Kubernetes"
     },
     "pydantic/pydantic-ai": {
       "nameWithOwner": "pydantic/pydantic-ai",
-      "stars": 20997,
-      "pushedAt": "2026-11-02T12:54:02Z",
+      "stars": 21102,
+      "pushedAt": "2026-11-09T13:52:42Z",
       "createdAt": "2024-06-21T15:55:04Z",
       "archived": false,
       "isFork": false,
       "license": "MIT",
       "latestRelease": {
-        "tag": "v2.64.0",
-        "publishedAt": "2026-10-30T23:27:24Z"
+        "tag": "v2.66.0",
+        "publishedAt": "2026-11-04T11:51:46Z"
       },
       "description": "How Python does AI. Agents, realtime voice, image generation, embeddings. Every model, every interface, typed end to end."
     },
     "pytorch/ao": {
       "nameWithOwner": "pytorch/ao",
-      "stars": 3019,
-      "pushedAt": "2026-11-02T10:12:13Z",
+      "stars": 3025,
+      "pushedAt": "2026-11-09T03:06:16Z",
       "createdAt": "2023-11-03T21:27:36Z",
       "archived": false,
       "isFork": false,
@@ -3059,8 +3056,8 @@
     },
     "pytorch/executorch": {
       "nameWithOwner": "pytorch/executorch",
-      "stars": 5150,
-      "pushedAt": "2026-11-02T13:13:33Z",
+      "stars": 5164,
+      "pushedAt": "2026-11-09T13:18:42Z",
       "createdAt": "2022-02-25T17:58:31Z",
       "archived": false,
       "isFork": false,
@@ -3073,8 +3070,8 @@
     },
     "pytorch/helion": {
       "nameWithOwner": "pytorch/helion",
-      "stars": 977,
-      "pushedAt": "2026-11-02T08:00:11Z",
+      "stars": 979,
+      "pushedAt": "2026-11-09T10:12:46Z",
       "createdAt": "2025-04-22T17:50:13Z",
       "archived": false,
       "isFork": false,
@@ -3087,8 +3084,8 @@
     },
     "pytorch/tensorrt": {
       "nameWithOwner": "pytorch/TensorRT",
-      "stars": 3019,
-      "pushedAt": "2026-11-02T13:15:11Z",
+      "stars": 3021,
+      "pushedAt": "2026-11-09T11:36:00Z",
       "createdAt": "2020-03-11T17:17:43Z",
       "archived": false,
       "isFork": false,
@@ -3101,8 +3098,8 @@
     },
     "qdrant/fastembed": {
       "nameWithOwner": "qdrant/fastembed",
-      "stars": 3275,
-      "pushedAt": "2026-10-28T19:08:40Z",
+      "stars": 3288,
+      "pushedAt": "2026-11-04T00:57:15Z",
       "createdAt": "2023-07-14T04:59:33Z",
       "archived": false,
       "isFork": false,
@@ -3126,8 +3123,8 @@
     },
     "qualcomm/geniex": {
       "nameWithOwner": "qualcomm/GenieX",
-      "stars": 8486,
-      "pushedAt": "2026-11-02T03:45:50Z",
+      "stars": 8508,
+      "pushedAt": "2026-11-09T00:28:33Z",
       "createdAt": "2024-08-16T20:13:07Z",
       "archived": false,
       "isFork": false,
@@ -3141,7 +3138,7 @@
     "qualcomm/vllm-qaic": {
       "nameWithOwner": "qualcomm/vllm-qaic",
       "stars": 13,
-      "pushedAt": "2026-10-30T21:57:32Z",
+      "pushedAt": "2026-11-07T01:06:55Z",
       "createdAt": "2026-06-19T18:31:46Z",
       "archived": false,
       "isFork": false,
@@ -3154,8 +3151,8 @@
     },
     "radixark/miles": {
       "nameWithOwner": "radixark/miles",
-      "stars": 3250,
-      "pushedAt": "2026-11-02T11:31:41Z",
+      "stars": 3282,
+      "pushedAt": "2026-11-09T11:51:16Z",
       "createdAt": "2025-10-09T06:04:57Z",
       "archived": false,
       "isFork": false,
@@ -3168,22 +3165,22 @@
     },
     "ray-project/ray": {
       "nameWithOwner": "ray-project/ray",
-      "stars": 44182,
-      "pushedAt": "2026-11-02T13:27:24Z",
+      "stars": 44240,
+      "pushedAt": "2026-11-09T10:17:51Z",
       "createdAt": "2016-10-25T19:38:30Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "ray-2.59.0",
-        "publishedAt": "2026-10-02T07:04:37Z"
+        "tag": "ray-2.60.0",
+        "publishedAt": "2026-11-04T02:08:53Z"
       },
       "description": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads."
     },
     "replicate/cog": {
       "nameWithOwner": "replicate/cog",
-      "stars": 9494,
-      "pushedAt": "2026-10-31T23:09:21Z",
+      "stars": 9497,
+      "pushedAt": "2026-11-07T18:43:08Z",
       "createdAt": "2021-02-26T23:43:09Z",
       "archived": false,
       "isFork": false,
@@ -3196,22 +3193,22 @@
     },
     "rocm/aiter": {
       "nameWithOwner": "ROCm/aiter",
-      "stars": 600,
-      "pushedAt": "2026-11-02T13:10:12Z",
+      "stars": 607,
+      "pushedAt": "2026-11-09T13:47:15Z",
       "createdAt": "2024-11-11T10:38:20Z",
       "archived": false,
       "isFork": false,
       "license": "MIT",
       "latestRelease": {
-        "tag": "v0.1.27",
-        "publishedAt": "2026-10-26T08:41:21Z"
+        "tag": "v0.1.29",
+        "publishedAt": "2026-11-09T10:52:09Z"
       },
       "description": "AI Tensor Engine for ROCm"
     },
     "rocm/amdmigraphx": {
       "nameWithOwner": "ROCm/AMDMIGraphX",
-      "stars": 338,
-      "pushedAt": "2026-11-02T13:20:31Z",
+      "stars": 337,
+      "pushedAt": "2026-11-09T10:11:27Z",
       "createdAt": "2018-04-23T15:29:10Z",
       "archived": false,
       "isFork": false,
@@ -3224,8 +3221,8 @@
     },
     "rocm/atom": {
       "nameWithOwner": "ROCm/ATOM",
-      "stars": 202,
-      "pushedAt": "2026-11-02T13:26:02Z",
+      "stars": 205,
+      "pushedAt": "2026-11-09T13:51:01Z",
       "createdAt": "2025-11-07T03:22:41Z",
       "archived": false,
       "isFork": false,
@@ -3238,8 +3235,8 @@
     },
     "rocm/device-metrics-exporter": {
       "nameWithOwner": "ROCm/device-metrics-exporter",
-      "stars": 69,
-      "pushedAt": "2026-10-30T18:08:33Z",
+      "stars": 71,
+      "pushedAt": "2026-11-06T20:22:09Z",
       "createdAt": "2024-11-14T21:27:56Z",
       "archived": false,
       "isFork": false,
@@ -3252,8 +3249,8 @@
     },
     "rocm/rocm-libraries": {
       "nameWithOwner": "ROCm/rocm-libraries",
-      "stars": 460,
-      "pushedAt": "2026-11-02T13:13:22Z",
+      "stars": 464,
+      "pushedAt": "2026-11-09T13:43:39Z",
       "createdAt": "2025-04-23T18:11:23Z",
       "archived": false,
       "isFork": false,
@@ -3266,8 +3263,8 @@
     },
     "rocm/rocm-systems": {
       "nameWithOwner": "ROCm/rocm-systems",
-      "stars": 550,
-      "pushedAt": "2026-11-02T13:28:36Z",
+      "stars": 555,
+      "pushedAt": "2026-11-09T13:51:39Z",
       "createdAt": "2025-04-07T16:23:38Z",
       "archived": false,
       "isFork": false,
@@ -3280,8 +3277,8 @@
     },
     "rocm/therock": {
       "nameWithOwner": "ROCm/TheRock",
-      "stars": 1421,
-      "pushedAt": "2026-11-02T12:42:40Z",
+      "stars": 1432,
+      "pushedAt": "2026-11-09T13:48:23Z",
       "createdAt": "2024-03-01T08:56:06Z",
       "archived": false,
       "isFork": false,
@@ -3294,7 +3291,7 @@
     },
     "safeailab/eagle": {
       "nameWithOwner": "SafeAILab/EAGLE",
-      "stars": 2568,
+      "stars": 2574,
       "pushedAt": "2026-02-20T02:53:29Z",
       "createdAt": "2023-12-07T19:08:39Z",
       "archived": false,
@@ -3305,8 +3302,8 @@
     },
     "safetensors/safetensors": {
       "nameWithOwner": "safetensors/safetensors",
-      "stars": 3940,
-      "pushedAt": "2026-10-06T17:33:11Z",
+      "stars": 3944,
+      "pushedAt": "2026-11-08T19:54:17Z",
       "createdAt": "2022-09-22T14:54:51Z",
       "archived": false,
       "isFork": false,
@@ -3319,7 +3316,7 @@
     },
     "scalingintelligence/kernelbench": {
       "nameWithOwner": "ScalingIntelligence/KernelBench",
-      "stars": 1311,
+      "stars": 1322,
       "pushedAt": "2026-03-24T04:29:13Z",
       "createdAt": "2024-10-25T00:08:19Z",
       "archived": false,
@@ -3330,13 +3327,16 @@
     },
     "semianalysisai/inferencex": {
       "nameWithOwner": "SemiAnalysisAI/InferenceX",
-      "stars": 1962,
-      "pushedAt": "2026-11-02T12:06:55Z",
+      "stars": 2012,
+      "pushedAt": "2026-11-09T13:52:54Z",
       "createdAt": "2025-07-12T20:07:46Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
-      "latestRelease": null,
+      "latestRelease": {
+        "tag": "h3-v2-release-v1-references",
+        "publishedAt": "2026-11-07T01:31:07Z"
+      },
       "description": "Open Source AI Accelerator Research Platform Standard / 开源推理研究平台"
     },
     "serverlessllm/serverlessllm": {
@@ -3355,7 +3355,7 @@
     },
     "sgl-project/genai-bench": {
       "nameWithOwner": "sgl-project/genai-bench",
-      "stars": 333,
+      "stars": 335,
       "pushedAt": "2026-10-14T22:01:03Z",
       "createdAt": "2025-06-19T18:44:38Z",
       "archived": false,
@@ -3369,7 +3369,7 @@
     },
     "sgl-project/mini-sglang": {
       "nameWithOwner": "sgl-project/mini-sglang",
-      "stars": 5496,
+      "stars": 5544,
       "pushedAt": "2026-05-17T12:37:42Z",
       "createdAt": "2025-09-01T22:31:45Z",
       "archived": false,
@@ -3380,8 +3380,8 @@
     },
     "sgl-project/rbg": {
       "nameWithOwner": "sgl-project/rbg",
-      "stars": 313,
-      "pushedAt": "2026-11-02T10:54:28Z",
+      "stars": 314,
+      "pushedAt": "2026-11-07T14:41:15Z",
       "createdAt": "2025-08-28T05:55:13Z",
       "archived": false,
       "isFork": false,
@@ -3394,7 +3394,7 @@
     },
     "sgl-project/sgl-learning-materials": {
       "nameWithOwner": "sgl-project/sgl-learning-materials",
-      "stars": 897,
+      "stars": 899,
       "pushedAt": "2026-01-05T04:55:34Z",
       "createdAt": "2024-09-10T16:04:05Z",
       "archived": false,
@@ -3405,36 +3405,36 @@
     },
     "sgl-project/sglang": {
       "nameWithOwner": "sgl-project/sglang",
-      "stars": 38371,
-      "pushedAt": "2026-11-02T13:27:50Z",
+      "stars": 38617,
+      "pushedAt": "2026-11-09T13:43:18Z",
       "createdAt": "2024-01-08T04:15:52Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v0.5.22",
-        "publishedAt": "2026-10-19T02:55:19Z"
+        "tag": "v0.5.23",
+        "publishedAt": "2026-11-02T22:14:10Z"
       },
       "description": "SGLang is a high-performance serving framework for large language models and multimodal models."
     },
     "sgl-project/sglang-omni": {
       "nameWithOwner": "sgl-project/sglang-omni",
-      "stars": 1674,
-      "pushedAt": "2026-11-02T13:00:11Z",
+      "stars": 1720,
+      "pushedAt": "2026-11-09T10:31:23Z",
       "createdAt": "2026-01-07T06:58:29Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v0.2.0",
-        "publishedAt": "2026-10-27T17:11:31Z"
+        "tag": "voxt-v2.0.1",
+        "publishedAt": "2026-11-07T17:16:49Z"
       },
       "description": "High Performance Serving Runtime For Interactive Super Intelligence System"
     },
     "sgl-project/specforge": {
       "nameWithOwner": "sgl-project/SpecForge",
-      "stars": 1254,
-      "pushedAt": "2026-11-02T08:00:20Z",
+      "stars": 1277,
+      "pushedAt": "2026-11-09T09:58:26Z",
       "createdAt": "2025-06-09T05:28:34Z",
       "archived": false,
       "isFork": false,
@@ -3444,7 +3444,7 @@
     },
     "simonw/llm-prices": {
       "nameWithOwner": "simonw/llm-prices",
-      "stars": 196,
+      "stars": 197,
       "pushedAt": "2026-10-26T18:18:47Z",
       "createdAt": "2025-04-24T00:58:54Z",
       "archived": false,
@@ -3455,8 +3455,8 @@
     },
     "skypilot-org/skypilot": {
       "nameWithOwner": "skypilot-org/skypilot",
-      "stars": 10782,
-      "pushedAt": "2026-11-02T12:25:41Z",
+      "stars": 10809,
+      "pushedAt": "2026-11-09T13:33:07Z",
       "createdAt": "2021-08-11T23:32:15Z",
       "archived": false,
       "isFork": false,
@@ -3469,8 +3469,8 @@
     },
     "skyzh/tiny-llm": {
       "nameWithOwner": "skyzh/tiny-llm",
-      "stars": 5518,
-      "pushedAt": "2026-10-31T20:04:57Z",
+      "stars": 5695,
+      "pushedAt": "2026-11-07T19:40:58Z",
       "createdAt": "2025-04-19T20:01:33Z",
       "archived": false,
       "isFork": false,
@@ -3480,8 +3480,8 @@
     },
     "speaches-ai/speaches": {
       "nameWithOwner": "speaches-ai/speaches",
-      "stars": 3752,
-      "pushedAt": "2026-11-01T04:36:43Z",
+      "stars": 3759,
+      "pushedAt": "2026-11-07T10:40:42Z",
       "createdAt": "2024-05-18T02:26:20Z",
       "archived": false,
       "isFork": false,
@@ -3494,8 +3494,8 @@
     },
     "stas00/ml-engineering": {
       "nameWithOwner": "stas00/ml-engineering",
-      "stars": 19650,
-      "pushedAt": "2026-11-02T02:23:24Z",
+      "stars": 19688,
+      "pushedAt": "2026-11-04T04:44:04Z",
       "createdAt": "2020-09-02T19:23:01Z",
       "archived": false,
       "isFork": false,
@@ -3505,22 +3505,22 @@
     },
     "sustainable-computing-io/kepler": {
       "nameWithOwner": "sustainable-computing-io/kepler",
-      "stars": 1596,
-      "pushedAt": "2026-11-01T23:54:24Z",
+      "stars": 1600,
+      "pushedAt": "2026-11-09T13:22:31Z",
       "createdAt": "2022-02-01T19:48:56Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v0.12.0",
-        "publishedAt": "2026-09-22T12:44:23Z"
+        "tag": "v0.13.0",
+        "publishedAt": "2026-11-06T14:45:45Z"
       },
-      "description": "Kepler is CNCF Sandbox project to attribute the energy use of Kubernetes workloads. Let's make every watt matter. ⚡"
+      "description": "Kepler (CNCF Sandbox project) is a power meter interface for Kubernetes: it lets you monitor the energy use of workloads. Let's make every watt matter. ⚡"
     },
     "systran/faster-whisper": {
       "nameWithOwner": "SYSTRAN/faster-whisper",
-      "stars": 26402,
-      "pushedAt": "2026-11-02T11:19:13Z",
+      "stars": 26615,
+      "pushedAt": "2026-11-06T17:24:51Z",
       "createdAt": "2023-02-11T09:17:27Z",
       "archived": false,
       "isFork": false,
@@ -3533,8 +3533,8 @@
     },
     "taco-project/flexkv": {
       "nameWithOwner": "taco-project/FlexKV",
-      "stars": 379,
-      "pushedAt": "2026-11-01T11:29:41Z",
+      "stars": 382,
+      "pushedAt": "2026-11-09T11:19:39Z",
       "createdAt": "2025-07-02T04:49:20Z",
       "archived": false,
       "isFork": false,
@@ -3544,8 +3544,8 @@
     },
     "tenstorrent/tt-metal": {
       "nameWithOwner": "tenstorrent/tt-metal",
-      "stars": 1738,
-      "pushedAt": "2026-11-02T13:27:23Z",
+      "stars": 118,
+      "pushedAt": "2026-11-09T13:44:04Z",
       "createdAt": "2023-02-13T15:30:05Z",
       "archived": false,
       "isFork": false,
@@ -3558,21 +3558,21 @@
     },
     "theagentrouter/agent-router": {
       "nameWithOwner": "theagentrouter/agent-router",
-      "stars": 2331,
-      "pushedAt": "2026-10-29T12:01:01Z",
+      "stars": 2372,
+      "pushedAt": "2026-11-08T19:39:01Z",
       "createdAt": "2024-10-21T02:59:59Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v1.2.0",
-        "publishedAt": "2026-10-07T11:58:00Z"
+        "tag": "v1.2.1",
+        "publishedAt": "2026-11-06T16:24:47Z"
       },
       "description": "Manages Unified Access to Generative AI Services built on Envoy Gateway"
     },
     "thinking-machines-lab/batch_invariant_ops": {
       "nameWithOwner": "thinking-machines-lab/batch_invariant_ops",
-      "stars": 1090,
+      "stars": 1092,
       "pushedAt": "2025-11-04T05:08:17Z",
       "createdAt": "2025-09-10T00:08:08Z",
       "archived": false,
@@ -3583,7 +3583,7 @@
     },
     "thu-ml/sageattention": {
       "nameWithOwner": "thu-ml/SageAttention",
-      "stars": 3987,
+      "stars": 4002,
       "pushedAt": "2026-01-17T17:43:28Z",
       "createdAt": "2024-10-03T09:33:18Z",
       "archived": false,
@@ -3594,8 +3594,8 @@
     },
     "thu-pacman/chitu": {
       "nameWithOwner": "thu-pacman/chitu",
-      "stars": 2996,
-      "pushedAt": "2026-11-02T03:31:14Z",
+      "stars": 2999,
+      "pushedAt": "2026-11-07T14:03:03Z",
       "createdAt": "2025-02-20T06:34:38Z",
       "archived": false,
       "isFork": false,
@@ -3608,8 +3608,8 @@
     },
     "thudm/slime": {
       "nameWithOwner": "THUDM/slime",
-      "stars": 8775,
-      "pushedAt": "2026-10-27T03:45:40Z",
+      "stars": 8808,
+      "pushedAt": "2026-11-05T23:42:16Z",
       "createdAt": "2025-06-18T07:15:54Z",
       "archived": false,
       "isFork": false,
@@ -3622,7 +3622,7 @@
     },
     "tiiny-ai/powerinfer": {
       "nameWithOwner": "Tiiny-AI/PowerInfer",
-      "stars": 9862,
+      "stars": 9874,
       "pushedAt": "2026-05-11T06:48:06Z",
       "createdAt": "2023-12-15T02:24:10Z",
       "archived": false,
@@ -3633,8 +3633,8 @@
     },
     "tile-ai/tilelang": {
       "nameWithOwner": "tile-ai/tilelang",
-      "stars": 8887,
-      "pushedAt": "2026-11-02T09:58:20Z",
+      "stars": 8933,
+      "pushedAt": "2026-11-09T08:39:39Z",
       "createdAt": "2024-10-03T09:25:45Z",
       "archived": false,
       "isFork": false,
@@ -3647,7 +3647,7 @@
     },
     "tile-ai/tilert": {
       "nameWithOwner": "tile-ai/TileRT",
-      "stars": 1883,
+      "stars": 1892,
       "pushedAt": "2026-09-24T15:33:21Z",
       "createdAt": "2025-11-12T02:21:07Z",
       "archived": false,
@@ -3661,8 +3661,8 @@
     },
     "tracel-ai/burn": {
       "nameWithOwner": "tracel-ai/burn",
-      "stars": 16212,
-      "pushedAt": "2026-11-01T16:40:43Z",
+      "stars": 16263,
+      "pushedAt": "2026-11-08T18:51:35Z",
       "createdAt": "2022-07-18T23:11:45Z",
       "archived": false,
       "isFork": false,
@@ -3676,21 +3676,21 @@
     "trailofbits/fickling": {
       "nameWithOwner": "trailofbits/fickling",
       "stars": 676,
-      "pushedAt": "2026-11-02T10:31:01Z",
+      "pushedAt": "2026-11-07T05:45:46Z",
       "createdAt": "2021-01-21T17:44:51Z",
       "archived": false,
       "isFork": false,
       "license": "LGPL-3.0",
       "latestRelease": {
-        "tag": "v0.1.12",
-        "publishedAt": "2026-06-26T23:55:21Z"
+        "tag": "v0.1.13",
+        "publishedAt": "2026-11-03T23:58:24Z"
       },
       "description": "A Python pickling decompiler and static analyzer"
     },
     "triton-inference-server/fil_backend": {
       "nameWithOwner": "triton-inference-server/fil_backend",
       "stars": 94,
-      "pushedAt": "2026-10-09T05:05:33Z",
+      "pushedAt": "2026-11-03T05:25:28Z",
       "createdAt": "2021-03-10T18:56:24Z",
       "archived": false,
       "isFork": false,
@@ -3700,22 +3700,22 @@
     },
     "triton-inference-server/server": {
       "nameWithOwner": "triton-inference-server/server",
-      "stars": 11125,
-      "pushedAt": "2026-11-02T08:18:51Z",
+      "stars": 11136,
+      "pushedAt": "2026-11-05T16:38:00Z",
       "createdAt": "2018-10-04T21:10:30Z",
       "archived": false,
       "isFork": false,
       "license": "BSD-3-Clause",
       "latestRelease": {
-        "tag": "v2.73.0",
-        "publishedAt": "2026-09-30T22:26:40Z"
+        "tag": "v2.74.0",
+        "publishedAt": "2026-11-02T17:26:31Z"
       },
       "description": "The Triton Inference Server provides an optimized cloud and edge inferencing solution. "
     },
     "triton-lang/triton": {
       "nameWithOwner": "triton-lang/triton",
-      "stars": 20510,
-      "pushedAt": "2026-11-02T02:50:01Z",
+      "stars": 20538,
+      "pushedAt": "2026-11-09T09:17:18Z",
       "createdAt": "2014-08-30T17:07:16Z",
       "archived": false,
       "isFork": false,
@@ -3728,8 +3728,8 @@
     },
     "turboderp-org/exllamav3": {
       "nameWithOwner": "turboderp-org/exllamav3",
-      "stars": 1779,
-      "pushedAt": "2026-11-02T01:07:15Z",
+      "stars": 1805,
+      "pushedAt": "2026-11-08T18:18:52Z",
       "createdAt": "2025-04-06T12:36:08Z",
       "archived": false,
       "isFork": false,
@@ -3742,8 +3742,8 @@
     },
     "uccl-project/uccl": {
       "nameWithOwner": "uccl-project/uccl",
-      "stars": 1561,
-      "pushedAt": "2026-11-01T06:52:44Z",
+      "stars": 1576,
+      "pushedAt": "2026-11-09T00:56:11Z",
       "createdAt": "2025-01-06T06:56:09Z",
       "archived": false,
       "isFork": false,
@@ -3756,7 +3756,7 @@
     },
     "ulab-uiuc/llmrouter": {
       "nameWithOwner": "ulab-uiuc/LLMRouter",
-      "stars": 3054,
+      "stars": 3074,
       "pushedAt": "2026-10-19T18:48:19Z",
       "createdAt": "2025-10-07T22:22:55Z",
       "archived": false,
@@ -3767,8 +3767,8 @@
     },
     "verl-project/verl": {
       "nameWithOwner": "verl-project/verl",
-      "stars": 24106,
-      "pushedAt": "2026-11-02T11:49:22Z",
+      "stars": 24173,
+      "pushedAt": "2026-11-09T12:09:38Z",
       "createdAt": "2024-10-31T06:11:15Z",
       "archived": false,
       "isFork": false,
@@ -3781,8 +3781,8 @@
     },
     "vipshop/cache-dit": {
       "nameWithOwner": "vipshop/cache-dit",
-      "stars": 1298,
-      "pushedAt": "2026-11-01T14:32:44Z",
+      "stars": 1302,
+      "pushedAt": "2026-11-09T11:20:46Z",
       "createdAt": "2025-06-12T07:54:30Z",
       "archived": false,
       "isFork": false,
@@ -3795,8 +3795,8 @@
     },
     "vllm-project/afd-plugin": {
       "nameWithOwner": "vllm-project/afd-plugin",
-      "stars": 242,
-      "pushedAt": "2026-11-02T09:00:15Z",
+      "stars": 245,
+      "pushedAt": "2026-11-09T11:15:44Z",
       "createdAt": "2026-05-14T06:44:20Z",
       "archived": false,
       "isFork": false,
@@ -3809,8 +3809,8 @@
     },
     "vllm-project/aibrix": {
       "nameWithOwner": "vllm-project/aibrix",
-      "stars": 5175,
-      "pushedAt": "2026-11-02T01:23:14Z",
+      "stars": 5182,
+      "pushedAt": "2026-11-09T06:39:20Z",
       "createdAt": "2024-06-10T23:06:10Z",
       "archived": false,
       "isFork": false,
@@ -3823,8 +3823,8 @@
     },
     "vllm-project/guidellm": {
       "nameWithOwner": "vllm-project/guidellm",
-      "stars": 1740,
-      "pushedAt": "2026-10-31T03:58:46Z",
+      "stars": 1768,
+      "pushedAt": "2026-11-09T05:22:47Z",
       "createdAt": "2024-05-29T21:54:22Z",
       "archived": false,
       "isFork": false,
@@ -3837,8 +3837,8 @@
     },
     "vllm-project/llm-compressor": {
       "nameWithOwner": "vllm-project/llm-compressor",
-      "stars": 3936,
-      "pushedAt": "2026-10-31T05:03:06Z",
+      "stars": 3957,
+      "pushedAt": "2026-11-08T01:40:47Z",
       "createdAt": "2024-06-20T20:13:34Z",
       "archived": false,
       "isFork": false,
@@ -3851,36 +3851,36 @@
     },
     "vllm-project/production-stack": {
       "nameWithOwner": "vllm-project/production-stack",
-      "stars": 2704,
-      "pushedAt": "2026-10-27T06:45:57Z",
+      "stars": 2722,
+      "pushedAt": "2026-11-07T01:46:35Z",
       "createdAt": "2025-01-21T23:09:11Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "vllm-stack-0.1.13",
-        "publishedAt": "2026-09-29T23:48:34Z"
+        "tag": "vllm-stack-0.1.14",
+        "publishedAt": "2026-11-07T01:46:31Z"
       },
       "description": "vLLM’s reference system for K8S-native cluster-wide deployment with community-driven performance optimization"
     },
     "vllm-project/router": {
       "nameWithOwner": "vllm-project/router",
-      "stars": 492,
-      "pushedAt": "2026-11-02T12:14:31Z",
+      "stars": 504,
+      "pushedAt": "2026-11-09T09:32:28Z",
       "createdAt": "2025-07-29T20:44:59Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v0.1.16",
-        "publishedAt": "2026-10-09T07:14:00Z"
+        "tag": "v0.1.17",
+        "publishedAt": "2026-11-04T02:25:30Z"
       },
       "description": "A high-performance and light-weight router for vLLM large scale deployment"
     },
     "vllm-project/semantic-router": {
       "nameWithOwner": "vllm-project/semantic-router",
-      "stars": 6374,
-      "pushedAt": "2026-11-02T13:20:35Z",
+      "stars": 6430,
+      "pushedAt": "2026-11-09T13:45:42Z",
       "createdAt": "2025-08-26T21:49:50Z",
       "archived": false,
       "isFork": false,
@@ -3893,8 +3893,8 @@
     },
     "vllm-project/speculators": {
       "nameWithOwner": "vllm-project/speculators",
-      "stars": 934,
-      "pushedAt": "2026-11-01T21:51:41Z",
+      "stars": 947,
+      "pushedAt": "2026-11-09T13:27:00Z",
       "createdAt": "2025-04-08T20:53:33Z",
       "archived": false,
       "isFork": false,
@@ -3907,8 +3907,8 @@
     },
     "vllm-project/tpu-inference": {
       "nameWithOwner": "vllm-project/tpu-inference",
-      "stars": 473,
-      "pushedAt": "2026-11-02T07:20:46Z",
+      "stars": 478,
+      "pushedAt": "2026-11-09T12:58:42Z",
       "createdAt": "2025-05-06T00:10:06Z",
       "archived": false,
       "isFork": false,
@@ -3921,8 +3921,8 @@
     },
     "vllm-project/vllm": {
       "nameWithOwner": "vllm-project/vllm",
-      "stars": 96129,
-      "pushedAt": "2026-11-02T13:24:47Z",
+      "stars": 96598,
+      "pushedAt": "2026-11-09T13:46:54Z",
       "createdAt": "2023-02-09T11:23:20Z",
       "archived": false,
       "isFork": false,
@@ -3935,8 +3935,8 @@
     },
     "vllm-project/vllm-ascend": {
       "nameWithOwner": "vllm-project/vllm-ascend",
-      "stars": 3039,
-      "pushedAt": "2026-11-02T13:25:55Z",
+      "stars": 3063,
+      "pushedAt": "2026-11-09T12:46:24Z",
       "createdAt": "2025-01-29T10:44:12Z",
       "archived": false,
       "isFork": false,
@@ -3949,8 +3949,8 @@
     },
     "vllm-project/vllm-gaudi": {
       "nameWithOwner": "vllm-project/vllm-gaudi",
-      "stars": 66,
-      "pushedAt": "2026-11-02T13:12:07Z",
+      "stars": 68,
+      "pushedAt": "2026-11-09T11:47:12Z",
       "createdAt": "2025-06-25T16:01:09Z",
       "archived": false,
       "isFork": false,
@@ -3963,22 +3963,22 @@
     },
     "vllm-project/vllm-metal": {
       "nameWithOwner": "vllm-project/vllm-metal",
-      "stars": 1945,
-      "pushedAt": "2026-11-02T12:26:34Z",
+      "stars": 1977,
+      "pushedAt": "2026-11-09T12:10:45Z",
       "createdAt": "2025-12-12T20:37:25Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v0.32.0",
-        "publishedAt": "2026-10-21T01:50:16Z"
+        "tag": "v0.33.0",
+        "publishedAt": "2026-11-04T09:20:18Z"
       },
       "description": "Community maintained hardware plugin for vLLM on Apple Silicon"
     },
     "vllm-project/vllm-omni": {
       "nameWithOwner": "vllm-project/vllm-omni",
-      "stars": 7487,
-      "pushedAt": "2026-11-02T12:00:24Z",
+      "stars": 7645,
+      "pushedAt": "2026-11-09T13:27:35Z",
       "createdAt": "2025-09-11T00:34:43Z",
       "archived": false,
       "isFork": false,
@@ -3991,8 +3991,8 @@
     },
     "volcano-sh/kthena": {
       "nameWithOwner": "volcano-sh/kthena",
-      "stars": 491,
-      "pushedAt": "2026-11-02T08:52:53Z",
+      "stars": 497,
+      "pushedAt": "2026-11-09T02:05:35Z",
       "createdAt": "2025-05-08T08:14:48Z",
       "archived": false,
       "isFork": false,
@@ -4005,8 +4005,8 @@
     },
     "webmachinelearning/webnn": {
       "nameWithOwner": "webmachinelearning/webnn",
-      "stars": 572,
-      "pushedAt": "2026-10-21T23:27:15Z",
+      "stars": 571,
+      "pushedAt": "2026-11-09T08:17:04Z",
       "createdAt": "2018-10-31T18:47:41Z",
       "archived": false,
       "isFork": false,
@@ -4016,8 +4016,8 @@
     },
     "xdit-project/xdit": {
       "nameWithOwner": "xdit-project/xDiT",
-      "stars": 2748,
-      "pushedAt": "2026-11-02T11:03:02Z",
+      "stars": 2751,
+      "pushedAt": "2026-11-09T13:26:57Z",
       "createdAt": "2024-03-19T06:19:55Z",
       "archived": false,
       "isFork": false,
@@ -4030,8 +4030,8 @@
     },
     "xllm-ai/xllm": {
       "nameWithOwner": "xLLM-AI/xllm",
-      "stars": 1615,
-      "pushedAt": "2026-11-02T13:25:34Z",
+      "stars": 1618,
+      "pushedAt": "2026-11-09T10:32:13Z",
       "createdAt": "2025-08-12T13:16:07Z",
       "archived": false,
       "isFork": false,
@@ -4040,7 +4040,7 @@
         "tag": "v0.12.0",
         "publishedAt": "2026-10-31T12:34:19Z"
       },
-      "description": "A high-performance inference engine for LLM, VLM, DiT and REC models, optimized for diverse AI accelerators. It is hosted in OpenAtom Foundation."
+      "description": "A high-performance inference engine for LLM, VLM and DiT models, optimized for diverse AI accelerators. It is hosted in OpenAtom Foundation."
     },
     "xllm-ai/xllm-service": {
       "nameWithOwner": "xLLM-AI/xllm-service",
@@ -4058,22 +4058,22 @@
     },
     "xorbitsai/inference": {
       "nameWithOwner": "xorbitsai/inference",
-      "stars": 9636,
-      "pushedAt": "2026-11-02T12:22:18Z",
+      "stars": 9649,
+      "pushedAt": "2026-11-09T12:44:07Z",
       "createdAt": "2023-06-14T07:05:04Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v4.1.0",
-        "publishedAt": "2026-10-25T07:33:58Z"
+        "tag": "v4.2.0",
+        "publishedAt": "2026-11-07T13:07:47Z"
       },
       "description": "Swap GPT for any LLM by changing a single line of code. Xinference lets you run open-source, speech, and multimodal models on cloud, on-prem, or your laptop — all through one unified, production-ready inference API."
     },
     "zml/zml": {
       "nameWithOwner": "zml/zml",
-      "stars": 4217,
-      "pushedAt": "2026-11-02T13:26:22Z",
+      "stars": 4238,
+      "pushedAt": "2026-11-09T13:10:48Z",
       "createdAt": "2024-09-17T09:13:32Z",
       "archived": false,
       "isFork": false,
@@ -4086,15 +4086,15 @@
     },
     "ztxz16/fastllm": {
       "nameWithOwner": "ztxz16/fastllm",
-      "stars": 5130,
-      "pushedAt": "2026-11-02T07:52:17Z",
+      "stars": 5131,
+      "pushedAt": "2026-11-07T04:47:07Z",
       "createdAt": "2023-05-13T08:32:51Z",
       "archived": false,
       "isFork": false,
       "license": "Apache-2.0",
       "latestRelease": {
-        "tag": "v1.9.0",
-        "publishedAt": "2026-10-25T20:04:52Z"
+        "tag": "v1.9.1",
+        "publishedAt": "2026-11-06T23:50:31Z"
       },
       "description": "fastllm是后端无依赖的高性能大模型推理库，帮助您在大部分设备上高效推理大模型！"
     }
