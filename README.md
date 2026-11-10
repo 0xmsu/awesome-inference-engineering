@@ -4,7 +4,7 @@
 
 A curated, continuously verified map of inference engineering: the tools, techniques, hardware, and knowledge for serving AI models fast, cheaply, and reliably, from GPU kernels to global fleets.
 
-[![Entries](https://img.shields.io/badge/entries-658-0a7e5c)](#contents) [![Last verified](https://img.shields.io/badge/verified-2026--11--02-0a7e5c)](data/generated/metadata.json) [![Content license: CC0-1.0](https://img.shields.io/badge/content-CC0--1.0-lightgrey)](LICENSE)
+[![Entries](https://img.shields.io/badge/entries-659-0a7e5c)](#contents) [![Last verified](https://img.shields.io/badge/verified-2026--11--02-0a7e5c)](data/generated/metadata.json) [![Content license: CC0-1.0](https://img.shields.io/badge/content-CC0--1.0-lightgrey)](LICENSE)
 
 **[Website](https://0xmsu.github.io/awesome-inference-engineering/)** · **[Catalog](https://0xmsu.github.io/awesome-inference-engineering/catalog/)** · **[Contributing](CONTRIBUTING.md)** · **[JSON](https://0xmsu.github.io/awesome-inference-engineering/api/entries.json)**
 
@@ -97,7 +97,7 @@ A curated, continuously verified map of inference engineering: the tools, techni
   - [Robotics & Embodied AI](#robotics--embodied-ai)
   - [Diffusion Language Models](#diffusion-language-models)
   - [Classical ML & RecSys](#classical-ml--recsys)
-- [Providers & Clouds](#providers--clouds) <sub>39</sub>
+- [Providers & Clouds](#providers--clouds) <sub>40</sub>
   - [Model APIs & Serverless Inference](#model-apis--serverless-inference)
   - [Serverless GPU Platforms](#serverless-gpu-platforms)
   - [GPU Clouds](#gpu-clouds)
@@ -955,6 +955,7 @@ Commercial places to run inference. Listed for completeness and marked 💲; no 
 - **[Vast.ai](https://vast.ai/)** 💲 — Marketplace where hosts list GPUs that users rent as instances, with a CLI and API and a serverless endpoint layer on the same inventory.
 - **[Verda](https://verda.com/)** 💲 — AI cloud formerly known as DataCrunch, with GPU instances, self-service InfiniBand clusters, and serverless containers for inference and batch jobs.
 - **[TensorWave](https://tensorwave.com/)** 💲 — Cloud built on AMD Instinct accelerators and ROCm, offering bare-metal access and inference services.
+- **[CloudGPU](https://cloudgpu.app)** 💲 — On-demand GPU rental with an OpenAI-compatible model API, billed from the same prepaid balance, for training, inference, and ComfyUI work.
 
 ### Hyperscaler AI Platforms
 
