@@ -201,7 +201,7 @@
 
 - id: aisimulate
   name: AISimulate
-  url: https://github.com/ai-dynamo/aisimulate
+  url: https://github.com/ai-dynamo/aisim
   description: Predicts serving latency and throughput from measured operator data and searches aggregated and disaggregated configs offline; succeeds AIConfigurator.
   section: benchmarking/simulators
   type: tool
