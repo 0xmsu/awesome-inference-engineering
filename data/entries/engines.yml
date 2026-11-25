@@ -322,6 +322,16 @@
   tags: [llm, moe, cpu, nvidia, amd, local, cpp]
   added: 2026-10-27
 
+- id: lucebox
+  name: Lucebox
+  url: https://github.com/Luce-Org/lucebox
+  description: C++ engine that splits MoE models across an AMD R9700 card and a Ryzen AI MAX+ iGPU, keeping hot experts on the card, with speculative drafts on every model.
+  section: engines/hybrid-offloading
+  type: tool
+  tags: [llm, vlm, moe, amd, nvidia, local, cpp]
+  license: Apache-2.0
+  added: 2026-11-25
+
 - id: airllm
   name: AirLLM
   url: https://github.com/lyogavin/airllm
