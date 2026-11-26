@@ -545,7 +545,7 @@
 
 - id: skyrl
   name: SkyRL
-  url: https://github.com/NovaSky-AI/SkyRL
+  url: https://github.com/skyrl-project/SkyRL
   description: Full-stack RL library with a trainer, an agent layer, and a tool-use gym, plus a backend that implements the Tinker API on your own hardware.
   section: verticals/rl-rollouts
   type: library

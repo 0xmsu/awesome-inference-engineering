@@ -242,6 +242,16 @@
   pricing: commercial
   added: 2026-10-27
 
+- id: cloudgpu
+  name: CloudGPU
+  url: https://cloudgpu.app
+  description: On-demand GPU rental with an OpenAI-compatible model API, billed from the same prepaid balance, for training, inference, and ComfyUI work.
+  section: providers/gpu-clouds
+  type: service
+  tags: [nvidia, datacenter]
+  pricing: commercial
+  added: 2026-11-10
+
 # Hyperscaler AI Platforms
 - id: amazon-bedrock
   name: Amazon Bedrock
