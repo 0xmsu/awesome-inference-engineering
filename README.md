@@ -13,7 +13,7 @@ A curated, continuously verified map of inference engineering: the tools, techni
 ## Contents
 
 - [Start Here](#start-here) <sub>10</sub>
-- [Inference Engines](#inference-engines) <sub>46</sub>
+- [Inference Engines](#inference-engines) <sub>47</sub>
   - [Datacenter Engines](#datacenter-engines)
   - [Local & Desktop Runtimes](#local--desktop-runtimes)
   - [Hybrid CPU–GPU & Offloading](#hybrid-cpugpu--offloading)
@@ -30,7 +30,7 @@ A curated, continuously verified map of inference engineering: the tools, techni
   - [Agent & MCP Gateways](#agent--mcp-gateways)
   - [Model Routing & Cascades](#model-routing--cascades)
   - [API Specs & Protocols](#api-specs--protocols)
-- [Model Compression](#model-compression) <sub>26</sub>
+- [Model Compression](#model-compression) <sub>27</sub>
   - [Quantization Toolkits](#quantization-toolkits)
   - [Number Formats & Specs](#number-formats--specs)
   - [Pruning, Sparsity & Distillation](#pruning-sparsity--distillation)
@@ -73,7 +73,7 @@ A curated, continuously verified map of inference engineering: the tools, techni
   - [Workload Traces & Datasets](#workload-traces--datasets)
   - [Simulators & Capacity Planners](#simulators--capacity-planners)
   - [Metrics & Methodology](#metrics--methodology)
-- [Observability & Operations](#observability--operations) <sub>31</sub>
+- [Observability & Operations](#observability--operations) <sub>32</sub>
   - [Profiling & Debugging](#profiling--debugging)
   - [Monitoring & Telemetry](#monitoring--telemetry)
   - [Correctness & Determinism](#correctness--determinism)
@@ -104,7 +104,7 @@ A curated, continuously verified map of inference engineering: the tools, techni
   - [Hyperscaler AI Platforms](#hyperscaler-ai-platforms)
   - [Aggregators & Marketplaces](#aggregators--marketplaces)
   - [Decentralized Networks](#decentralized-networks)
-- [Case Studies & Engineering Blogs](#case-studies--engineering-blogs) <sub>25</sub>
+- [Case Studies & Engineering Blogs](#case-studies--engineering-blogs) <sub>28</sub>
   - [Production Case Studies](#production-case-studies)
   - [Engineering Blogs](#engineering-blogs)
 - [Learning Resources](#learning-resources) <sub>68</sub>
@@ -172,11 +172,12 @@ The runtimes that actually execute models: batching requests, managing the KV ca
 
 ### Hybrid CPU–GPU & Offloading
 
-- **[KTransformers](https://github.com/kvcache-ai/ktransformers)** ⭐ — CPU–GPU heterogeneous runtime that keeps MoE experts on AMX/AVX-512 CPU kernels and plugs into SGLang; also supports MoE fine-tuning. <sub>Apache-2.0 · ★ 20k · updated 2026-11</sub>
-- **[ik_llama.cpp](https://github.com/ikawrakow/ik_llama.cpp)** — Fork of llama.cpp with extra quantization types and faster CPU and hybrid CPU/GPU paths, widely used to run large MoE models at home. <sub>MIT · ★ 3.4k · updated 2026-11</sub>
-- **[FastLLM](https://github.com/ztxz16/fastllm)** — C++ engine without a PyTorch dependency that splits dense and MoE models across GPUs, CPU NUMA nodes, and disk. <sub>Apache-2.0 · ★ 5.1k · updated 2026-11</sub>
-- **[AirLLM](https://github.com/lyogavin/airllm)** — Streams weights layer by layer, or expert by expert for MoE, so very large models run on GPUs with only a few gigabytes of memory. <sub>Apache-2.0 · ★ 43k · updated 2026-11</sub>
-- **[PowerInfer](https://github.com/Tiiny-AI/PowerInfer)** ⚠️ — Exploits activation sparsity by keeping frequently firing neurons on the GPU and computing the rest on the CPU, from the SOSP 2024 paper. <sub>MIT · ★ 9.9k · updated 2026-05</sub>
+- **[KTransformers](https://github.com/kvcache-ai/ktransformers)** ⭐ — CPU–GPU heterogeneous runtime that keeps MoE experts on AMX/AVX-512 CPU kernels and plugs into SGLang; also supports MoE fine-tuning. <sub>Apache-2.0 · ★ 20k · updated 2026-10</sub>
+- **[ik_llama.cpp](https://github.com/ikawrakow/ik_llama.cpp)** — Fork of llama.cpp with extra quantization types and faster CPU and hybrid CPU/GPU paths, widely used to run large MoE models at home. <sub>MIT · ★ 3.3k · updated 2026-10</sub>
+- **[FastLLM](https://github.com/ztxz16/fastllm)** — C++ engine without a PyTorch dependency that splits dense and MoE models across GPUs, CPU NUMA nodes, and disk. <sub>Apache-2.0 · ★ 5.1k · updated 2026-10</sub>
+- **[Lucebox](https://github.com/Luce-Org/lucebox)** — C++ engine that splits MoE models across an AMD R9700 card and a Ryzen AI MAX+ iGPU, keeping hot experts on the card, with speculative drafts on every model. <sub>Apache-2.0</sub>
+- **[AirLLM](https://github.com/lyogavin/airllm)** — Streams weights layer by layer, or expert by expert for MoE, so very large models run on GPUs with only a few gigabytes of memory. <sub>Apache-2.0 · ★ 41k · updated 2026-10</sub>
+- **[PowerInfer](https://github.com/Tiiny-AI/PowerInfer)** ⚠️ — Exploits activation sparsity by keeping frequently firing neurons on the GPU and computing the rest on the CPU, from the SOSP 2024 paper. <sub>MIT · ★ 9.8k · updated 2026-05</sub>
 - **[FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU](https://arxiv.org/abs/2303.06865)** 📄 — Offloading scheduler that searches placements of weights, activations, and KV cache across GPU, CPU, and disk for batch throughput. <sub>ICML 2023 · [code](https://github.com/FMInference/FlexLLMGen)</sub>
 
 ### Language-Native Runtimes
@@ -332,6 +333,7 @@ Making models smaller and cheaper to run: quantization toolkits, low-precision n
 - **[OCP MicroXcaling (MX) Specification](https://www.opencompute.org/wp-content/uploads/2026/10/OCP_MicroXcaling_Spec_v1.1.0-1.pdf)** ⭐ — Block formats in which 32 FP8, FP6, FP4, or INT8 elements share one power-of-two UE8M0 scale, defining MXFP8, MXFP6, MXFP4, and MXINT8.
 - **[OCP 8-bit Floating Point Specification (OFP8)](https://www.opencompute.org/documents/ocp-8-bit-floating-point-specification-ofp8-revision-1-1-final-pdf)** — Cross-vendor standard for the E4M3 and E5M2 FP8 encodings, covering special values, saturation, and conversion rules; revision 1.1 took effect in 2026.
 - **[Introducing NVFP4 for Efficient and Accurate Low-Precision Inference](https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/)** — Defines NVFP4, Blackwell's E2M1 format with an FP8 E4M3 scale per 16 values plus a per-tensor FP32 scale, and contrasts it with MXFP4.
+- **[End-to-End 4-Bit Training (Thinking Machines)](https://thinkingmachines.ai/blog/end-to-end-4-bit-training/)** — NVFP4 expert forward passes with MXFP8 backward, Four Over Six scale selection, and Hadamard-rotated MoE combine traffic, as used to train Inkling 2 Small.
 - **[FP8 Formats for Deep Learning](https://arxiv.org/abs/2209.05433)** 📄 — Joint NVIDIA, Arm, and Intel proposal of the E4M3 and E5M2 encodings later standardized by OCP, with training and inference accuracy results. <sub>arXiv 2022</sub>
 - **[GGUF Quantization Types](https://huggingface.co/docs/hub/gguf#quantization-types)** — Reference table of llama.cpp block formats, from legacy Q4_0 to k-quants, i-quants, ternary TQ, and MXFP4, with block layout and bits per weight.
 - **[BitNet b1.58 and bitnet.cpp](https://github.com/microsoft/BitNet)** — Ternary (1.58-bit) weights trained from scratch, with bitnet.cpp lookup-table kernels for running such models on CPUs and GPUs. <sub>MIT · ★ 42k · updated 2026-07</sub>
@@ -728,7 +730,8 @@ Running inference in production: profiling, telemetry, correctness and determini
 - **[SGLang Deterministic Inference](https://docs.sglang.io/docs/advanced_features/deterministic_inference)** — Covers the --enable-deterministic-inference flag, which attention backends keep radix caching and CUDA graphs, and seeded sampling for repeatable rollouts. <sub>Apache-2.0 · ★ 39k · updated 2026-11</sub>
 - **[TBIK: Deterministic Inference across Tensor Parallel Sizes](https://arxiv.org/abs/2511.17826)** 📄 — Tree-based invariant matmul and reduction kernels that give bit-identical results across tensor-parallel sizes, aligning vLLM rollouts with FSDP training. <sub>ICML 2026 · [code](https://github.com/nanomaoli/llm_reproducibility)</sub>
 - **[Understanding and Mitigating Numerical Sources of Nondeterminism in LLM Inference](https://arxiv.org/abs/2506.09501)** 📄 — Shows how GPU count, GPU type, and batch size change reasoning-model outputs under BF16 greedy decoding, and proposes computing in FP32 over 16-bit weights. <sub>NeurIPS 2025 · [code](https://github.com/nanomaoli/llm_reproducibility)</sub>
-- **[Kimi Vendor Verifier](https://github.com/MoonshotAI/Kimi-Vendor-Verifier)** — Moonshot's test suite and public scoreboard checking that third-party Kimi API providers match reference accuracy, tool-call validity, and token accounting. <sub>MIT · ★ 211 · updated 2026-11</sub>
+- **[Kimi Vendor Verifier](https://github.com/MoonshotAI/Kimi-Vendor-Verifier)** — Moonshot's test suite and public scoreboard checking that third-party Kimi API providers match reference accuracy, tool-call validity, and token accounting. <sub>MIT · ★ 186 · updated 2026-09</sub>
+- **[Inkling Verify](https://github.com/thinking-machines-lab/inkling-verify)** — Thinking Machines' scripts that check the accuracy of Inkling behind Chat Completions, Responses, or Messages APIs, from SWE tasks to 1M-token retrieval.
 
 ### Cost & Energy Efficiency
 
@@ -998,6 +1001,9 @@ How teams actually run inference at scale, written by the people who built it.
 - **[Better MoE Model Inference with Warp Decode (Cursor)](https://cursor.com/blog/warp-decode)** — Cursor's MoE decode kernel in which each warp computes one output value, with B200 measurements for a Qwen-style model on its internal inference system.
 - **[Editing Files at 1000 Tokens per Second (Cursor)](https://cursor.com/blog/instant-apply)** — Cursor's 2024 write-up of speculative edits, a draft-model-free form of speculative decoding for rewriting files, run on a fine-tuned Llama-3-70b via Fireworks.
 - **[How We Built Multi-Cloud Capacity Management (Baseten)](https://www.baseten.co/blog/how-we-built-multi-cloud-capacity-management/)** — Baseten's infrastructure team on a global scheduler that places inference replicas across clouds, with autoscaling, failover, and region constraints.
+- **[TML Inkling on vLLM: Day-0 Support with Optimized Performance](https://vllm.ai/blog/2026-07-15-inkling)** — Bring-up of a relative-attention, short-convolution MoE with an FA4 sheared-bias kernel, sconv-aware tensor parallelism, fused collectives, and MTP drafts.
+- **[Inkling 2 Small on vLLM: Day-0 Support](https://vllm.ai/blog/2026-11-12-inkling2-small)** — Fused all-reduce and short-conv sublayer kernels, sequence-parallel prefill, a Gluon relative-bias decode kernel, mixed NVFP4/MXFP8 experts, and DSpark drafts.
+- **[Inkling 2 Mini on vLLM: Day-0 Support for a Looped Model](https://vllm.ai/blog/2026-11-20-inkling2-mini)** — Serving a looped transformer whose middle layers repeat with shared weights, so every pass keeps its own KV and conv-state cache, with fused cross-pass merges.
 
 ### Engineering Blogs
 

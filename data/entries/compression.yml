@@ -191,6 +191,15 @@
   via: [wafer-ai]
   added: 2026-10-27
 
+- id: tml-end-to-end-4-bit-training
+  name: End-to-End 4-Bit Training (Thinking Machines)
+  url: https://thinkingmachines.ai/blog/end-to-end-4-bit-training/
+  description: NVFP4 expert forward passes with MXFP8 backward, Four Over Six scale selection, and Hadamard-rotated MoE combine traffic, as used to train Inkling 2 Small.
+  section: compression/formats
+  type: article
+  tags: [llm, moe, nvidia, rl]
+  added: 2026-11-25
+
 - id: fp8-formats-for-deep-learning
   name: FP8 Formats for Deep Learning
   url: https://arxiv.org/abs/2209.05433

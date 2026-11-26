@@ -211,6 +211,15 @@
   verified: 2026-10-27
   added: 2026-10-27
 
+- id: inkling-verify
+  name: Inkling Verify
+  url: https://github.com/thinking-machines-lab/inkling-verify
+  description: Thinking Machines' scripts that check the accuracy of Inkling behind Chat Completions, Responses, or Messages APIs, from SWE tasks to 1M-token retrieval.
+  section: observability/correctness
+  type: tool
+  tags: [llm, vlm, agents, python]
+  added: 2026-11-25
+
 # --- Cost & Energy Efficiency ---
 
 - id: zeus

@@ -100,6 +100,33 @@
   tags: [llm, kubernetes, datacenter]
   added: 2026-10-27
 
+- id: vllm-inkling-day-0
+  name: "TML Inkling on vLLM: Day-0 Support with Optimized Performance"
+  url: https://vllm.ai/blog/2026-07-15-inkling
+  description: Bring-up of a relative-attention, short-convolution MoE with an FA4 sheared-bias kernel, sconv-aware tensor parallelism, fused collectives, and MTP drafts.
+  section: case-studies/production
+  type: article
+  tags: [llm, moe, nvidia, datacenter]
+  added: 2026-11-25
+
+- id: vllm-inkling-2-small
+  name: "Inkling 2 Small on vLLM: Day-0 Support"
+  url: https://vllm.ai/blog/2026-11-12-inkling2-small
+  description: Fused all-reduce and short-conv sublayer kernels, sequence-parallel prefill, a Gluon relative-bias decode kernel, mixed NVFP4/MXFP8 experts, and DSpark drafts.
+  section: case-studies/production
+  type: article
+  tags: [llm, moe, nvidia, datacenter]
+  added: 2026-11-25
+
+- id: vllm-inkling-2-mini
+  name: "Inkling 2 Mini on vLLM: Day-0 Support for a Looped Model"
+  url: https://vllm.ai/blog/2026-11-20-inkling2-mini
+  description: Serving a looped transformer whose middle layers repeat with shared weights, so every pass keeps its own KV and conv-state cache, with fused cross-pass merges.
+  section: case-studies/production
+  type: article
+  tags: [llm, moe, nvidia]
+  added: 2026-11-25
+
 # Engineering Blogs
 - id: vllm-blog
   name: vLLM Blog
